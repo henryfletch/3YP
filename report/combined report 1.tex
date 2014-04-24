@@ -254,6 +254,126 @@ The online treatment aid implements the most up to date NICE guidelines for the 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section{Analysis of Existing Technology - \textit{Jeffrey Yu}}
+\subsection{Overview}
+ Analysing the strengths and weaknesses of existing works would give a sense of the opportunities available to improve on the current state of research. 
+\\ \indent
+The project stems from an idea of a relatively novel combination of different aspects of current medical practice and technology for the treatment of hypertension. Although the usual care of hypertension has been well established, there are new technologies and techniques being developed to improve it.   In particular, the focus of this project would be on informatic systems, which could be useful for handling and communicating with a large population of hypertension patients. 
+\\ \indent
+ The two main subtopics to be focused on are namely telemonitoring, clinical decision support, both of which show modest improvement of care of chronic illnesses in general\cite{Lit1}. Other common informatics systems implemented include: population reports, audit/feedback, advanced order entry, and electonic scheduling.\cite{Lit1}  The two were selected initially for simplicity; keeping fewer features could improve clarity.  Specifically for hypertension, there has been multiple studies exploring the effectiveness of the two  aspects individually. Even a small number which investigates both ideas in combination, to a certain extent.
+\\ \indent
+\subsection{Telemonitoring}
+\subsubsection{General telemedicine}
+Telemedicine is an emerging facet.  As the name implies, it is the practice of medicine remotely between healthcare professionals and patients, as opposed to the usual care in a clinical setting, or a carer transmitting data from the patients' location. With the advancement of the enabling communications technology, the treatment of patients through such medium is starting to be considered and implemented.  The term itself encompasses a range of activities, including educating patients, transferring data, promoting patient-doctor contact, and improving electronic health records. There are also two main modes of communication: real time (video-conferencing), and ansynchronous transmission of data.  Another parameter to examine is the degree of user input from the patient. Some systems passively monitor automatically, while others require patient measurement and input.\cite{TM5}  
+\\ \indent
+Considering the limited financial and temporal resources available for this project, an inital guess would be that asynchronous transmission, and non-automatic systems would be the less costly methods.   
+\\ \indent
+However the evidence base is still small, and future trials could provide more information on the actual effectiveness.
+\\ \indent
+There are multiple factors that support the adoption of telemonitoring for chronic diseases.  Table \ref{table:TMproscons} are some of the key driving elements.\cite{TM2}.  
+
+
+\begin{center}
+    \begin{tabular}{ | l |  p{10cm} |}
+    \hline
+    Drivers & Explanation 
+    \\ \hline
+    early intervention & to detect deterioration and intervene before unscheduled and preventable services are needed
+    \\ \hline
+     integration of care & exchange of data and communication across multiple comorbidities, multiple providers, and complex disease states
+     \\ \hline
+     coaching & motivational interviewing and other techniques to encourage patient behavioral change and self-care
+     \\ \hline
+      increased trust & patients satisfaction and feelings of connectedness with providers
+     \\ \hline
+     workforce changes & shifts to lower-cost and more plentiful health care workers
+     \\ \hline
+     increased productivity & decreased home visit travel time and automated documentation
+	\\ \hline
+    \label{table:TMproscons}
+
+    \end{tabular}
+\end{center}
+
+In general patients would be able to send more data for health practioners to analyse and react accordingly.  There would be a shorter time frame for action, which hopefully would result in more reliable treatment.  One of the largest (3230 patients) trials recently was the "Whoe System Demonstrator" trial performed by the department of health.  Chronic diseases such as diabetes, chronic obstuctive pulmonary disease, and heart failure was monitored remotely.  It resulted in lower lower emergency admission, and lower mortality rates.  
+\\ \indent
+However, there also are some barriers.  A mature financial model is needed to balance the costs and benefits. Some of the factors such as costs of equipment, and quality life years saved are easier to estimate.  Others such as disruption to the work environment, and social impacts, are harder to quantify. This uncertainty makes providers hesitant to take a risk at a larger scale of deployment.  As a whole, the evidence base is still weak, but points towards better healthcare results.\cite{TM5} 
+\\ \indent
+On the patients' side, their attitude towards the technology is also important.  If the patients are unwilling to adhere to the procedure, the health benefits would diminish.  Patients of the Whole System Demonstrator who have decided to withdraw have typically given reasons of: difficulty of operating equipment;loss of independence and self-care.\cite{TM4}  But in other studies in general, most patients welcome telemonitoring technologies and comply satisfactorily.  Empowering the patients have also shown to improve results.  Empowerment includes educating and increasing awareness, so that the patients have a feeling of more independence and control. \cite{TM6}
+\\ \indent
+\subsubsection{Hypertension Telemonitoring studies}
+%a bit too much paraphrasing, needs a bit more thought.
+In one systematic review for hypertension telemonitoring (AbuDagga et al)\cite{impact Lit}, most of the studies involved have shown to improved blood pressure on a similar level to usual care with hypertensive drugs. Like general telemonitoring, patients also seemed to be receptive to the technology. But more evidence is needed for the receptiveness of the clinicians, as well as their costs.   
+\\ \indent
+Different technologies and designs are analysed to find any patterns for positive results. Table \ref{table:TMtechs} is a group of the different technologies summarised by AbuDagga et al.  In essence, the overarching procedure involves the patient taking readings at home with a blood pressure monitor, transferring data through a telephone line or internet to a secure server, an alerting system for worthy events and a researcher/nurse/phsyican responding to such events.
+
+The BP monitoring devices could be stand-alone, which would require input from the patient. Or it could wire/wirelessly connect to other devices. Some were able to send via blue tooth.  The monitoring devices with less user input had a better adherence rates, but coming at a higher price.  
+
+Alerting models were varied too.  Some would directly notify the providers, while others would notify to patients to contact providers for guidance.  Typically, poor adherence would be alerted if there are not enough readings within a certain amount of time, for example 12 in 2 weeks.  Blood pressure not being controlled after a set length of time is also alerted sometimes.
+
+However, these studies were all clinical trials over a relatively short period of time, ranging from 2 months to 12 months.  Chronic disease management over a longer time may have different effects on the patients.   
+\begin{center}
+\begin{tabular}{|p{3cm}|p{15cm}|}
+\hline
+\textbf{Study} & \textbf{Telemonitoring Technology}                                                                                                                                         \\ \hline
+Artinian et al\cite{Im1} & BP monitor stores reading/links communication over phone line; patient presses send; server calls patient with result; report sent to physician and nurse                \\ \hline
+Artinian et al\cite{Im2} & BP monitor; link device; reports sent to nurse and PCP; telecounseling calls                                                                                               \\ \hline
+Bobrie et al\cite{Im3}   & BP reading and titration decision submitted by patient electronically over phone line                                                                                      \\ \hline
+Bondmass\cite{Im4}       & Home monitor programmed to measure BP; data transmitted over phone line; alarm                                                                                             \\ \hline
+Bosworth et al\cite{Im5} & BP monitor transmits data over phone line; alarm                                                                                                                           \\ \hline
+Carrasco et al\cite{Im6} & BP sphygmomanometer, cell phone (questions on self-management protocol), Web-management application for physician, SMS capability                                          \\ \hline
+Friedman et al\cite{Im7} & Autosphygmomanometer; computer-controlled phone system talk to patient using computer-controlled speech; touch-tone keypad on phone and data entered by patient            \\ \hline
+Fursse et al\cite{Im8}   & BP sphygmomanometer; home telemonitoring unit (touch screen to enter data); PCP viewed patient data (linked to medical records); applied personalized threshold algorithm  \\ \hline
+Green et al\cite{Im9}    & All have access to Web service; BP telemonitoring Group trained to use site, pharmacist-mediated group contact with Web-based communication; action plan put by pharmacist \\ \hline
+Logan et al\cite{Im10}    & Bluetooth-enabled home BP monitor; mobile phone; report to PCP; alert                                                                                                      \\ \hline
+Madsen et al\cite{Im11}   & BP device PDA with software BP; data transmit by PDA embedded mobile phone; PCP with Web access; patient communicates with PCP by email                                 \\ \hline
+Parati et al\cite{Im12}   & BP device/modem into phone line; reminder sent to patient to check BP; alert system                                                                                        \\ \hline
+Park et al\cite{Im13}     & BP home device; SMS cell phone and Web; tailored instructions                                                                                                              \\ \hline
+Rogers et al\cite{Im14}   & BP device submits data over phone line; reports sent to patient and physician                                                                                              \\ \hline
+Rinfret et al\cite{Im15}  & Adherence/BP monitor system; doctor/nurse/pharmacist reports; alert                                                                                                        \\ \hline
+\label{table:TMtechs}
+\end{tabular}
+\end{center}
+\newpage
+
+%One study tries measure the feasibility of implementing telemonitoring. Patients were given a wireless home BP monitor costing \$550 USD ,which sends the readings to a hub plugged to a telephone socket, which then sends data to a secure server. Alerts were sent to research assistants when patients were not sending readings at a sufficient frequency (ideally six over two weeks, following American Heart Association guidelines). The results show that 25\% of the patients followed protocol closely enough. And 21\% of the alerts were due to device or system problems.  For example, loss of power and telephone services, disconnecting of the hub,  or device error messages; sometimes these devices had to be replaced. %
+
+\subsubsection{Mobile applications}
+Without a dedicated blood pressure monitor to transmit data, an app on a smartphone device would be another option.  There are plenty of apps related to hypertension in the Android and Apple app stores.  Some of the higher rated apps will be examined here. 
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.4]{BPwatch}
+\caption{page screenshots of Android BPwatch app}
+\label{fig:BPwatch}
+\end{center}
+\end{figure}
+
+The Blood Pressure (BP) Watch app \cite{app1} is one of the most popular apps with over 6000 ratings at an average rating of 4.5/5.  Figure \ref{fig:BPwatch} shows certain pages that a patient typically interacts through.
+
+There is an area for user input of measurements, and an area to display the data as a graph or as summarized statistics.  One could add personalised notes, such as diet, sleep, exercise in order to identify patterns. A reminder is also available, where the patient can set a time interval to take the next measurement.  There is also a login for different accounts.  A noteworthy feature is the ability to export and import data as a csv file, or email. 
+
+Most reviews have been highly positive. Frequent praises were given to the simple, clean interface.  Many people also used it to email data to doctors, or save data to other devices, such as computers.
+
+Other highly rated apps\cite{UIiBP}\cite{UIbppp}\cite{UIbpmh}\cite{UIbpd} have practically identical features. The main difference is in the user interface, which users seem to like.  The features serve the same functions, with a little variation in the execution for some.  For example, input methods could be typed in, scroll selected, a mixture of both, or even through the smartphone camera with character recognition\cite{UIbpd}.  The history could be in the form of a list (with comments), or a line graph over time, or bar and pie charts for summaries. Data export could also be in other formats such as HTML and .xls .  
+
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.3]{AppsUI}
+\caption{screenshots of different UI of highly rated Android hypertension monitoring apps.  Left to right: iBP\cite{UIiBP}, Blood Pressure++\cite{UIbppp}, Blood Pressure (My Heart)\cite{UIbpmh}, Blood Pressure Diary\cite{UIbpd}}
+\label{fig:AppsUI}
+\end{center}
+\end{figure}
+
+
+Smartphone compatible blood pressure monitors are also available \cite{app2} \cite{app3}.  They have the benefit of being able to send blood pressure (and heart rate) data directly to a smartphone.  But along with the high price tag, another problem is that the app and measuring device usually rely heavily on each other.  There is no manual input and there is no display on the device. Nevertheless, it seems more convenient to the patient, and could possibly improve compliance of monitoring.  
+
+A drawback to these apps is that they are not integrated to a healthcare provider.  The export/imports give some flexibility to where data is sent, but at the cost of having to put in more effort.  With this feature, the app is intended more for a motivated patients using it as a supplement to usual treatment. Patients are mostly self-managing the hypertension, without extra input from the doctor.  They would be happy to send data every month before visiting the doctor, but not daily.  On the physicians side, receiving a csv file perhaps is good for a small number of patients. On a larger scale, receiving emails would not be practical. The various formats of differnt apps could be confusing. And it would be inefficient to extract the data from the email to a centralised database.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 \section{Application User Interface - \textit{Michael Fedosiuk}}
 The user interface (UI) for the Cardiac Track application is in two parts. There is a patient app, currently optimised for smartphones, where BP measurements are inputted and the patient is alerted to make an appointment with their GP when they breach their BP limit. The app also provides the patient with their GP contact details and a graphical representation of their historical BP data.
 \\ \indent
@@ -508,7 +628,7 @@ The image was saved as a Portable Network Graphic (PNG), a raster graphics file 
 \subsubsection{Login page}
 A login page for the doctor portal is required to grant the user access to the internal pages of the site, and to prevent others from viewing or altering sensitive data. It also ensures that only relevant data is displayed to the user. Access is controlled by identifying and authenticating the user. A PHP script is called to check the user's credentials (username and password) and grant or deny access to the internal pages of the site.
 
-The login page displays the Cardiac Track Pro logo and houses two text input boxes – one for the username and one for the password – and a submit button which will call the PHP script to check the login credentials when clicked.
+The login page displays the Cardiac Track Pro logo and houses two text input boxes - one for the username and one for the password - and a submit button which will call the PHP script to check the login credentials when clicked.
 
 \begin{figure}[ht]
 \begin{center}
@@ -616,13 +736,13 @@ The keystone becomes an \textit{enquiry}. A series of questions are posed to the
 \hline
 \textbf{Candidate name} & \textbf{Target BP (mmHg)} & \textbf{Argument 1} & \textbf{Argument 2} & \textbf{Description} \\
 \hline
-Systolic140 & 140/90 & Whitecoat="Yes" (--) & Age\_group="80+" (--) & Patient must not have white coat hypertension AND be younger than 80 years of age \\
+Systolic140 & 140/90 & Whitecoat="Yes" (- -) & Age\_group="80+" (- -) & Patient must not have white coat hypertension AND be younger than 80 years of age \\
 \hline
-Systolic150 & 150/90 & Whitecoat="Yes" (--) & Age\_group!="80+" (--) & Patient must not have white coat hypertension AND be younger than 80 years of age \\
+Systolic150 & 150/90 & Whitecoat="Yes" (- -) & Age\_group!="80+" (- -) & Patient must not have white coat hypertension AND be younger than 80 years of age \\
 \hline
-Systolic135 & 135/85 & Whitecoat="No" (--) & Age\_group="80+" (--) & Patient must not have white coat hypertension AND be younger than 80 years of age \\
+Systolic135 & 135/85 & Whitecoat="No" (- -) & Age\_group="80+" (- -) & Patient must not have white coat hypertension AND be younger than 80 years of age \\
 \hline
-Systolic145 & 145/85 & Whitecoat="No" (--) & Age\_group!="80+" (--) & Patient must not have white coat hypertension AND be younger than 80 years of age \\
+Systolic145 & 145/85 & Whitecoat="No" (- -) & Age\_group!="80+" (- -) & Patient must not have white coat hypertension AND be younger than 80 years of age \\
 \hline
 \end{tabular}
 \caption{Decision logic for determining target blood pressure in Tallis}
@@ -1456,14 +1576,83 @@ There are a couple of ways the current system may be improved upon if more data 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Tallis application}
+\section{Tallis application-\textit{Jeffrey Yu}}
+\subsection{function}
+The function of the Tallis model is to deal with most of the medical decisions. Since there are waiting times between steps of the care pathway, some of the medical decisions are separated.  As a result, there would be multiple use cases for Tallis, all of which is used by the doctor (or carer in general). The use cases are in the middle section of Figure \ref{fig:tallisAll2}.  The top left section is the input stage, where the use case is selected, and preliminary information read.   The bottom right section is the possible ending cases. The arrows between the tasks (nodes) show the sequential logic of the events. A task can only start if all  previous tasks  linking to it, which have to be ACTIVE, has finished. A task is active if all its "preconditions" are met.  Otherwise, it stays inactive, and could be seen as invisible for the time being. 
 
-\subsection{Initial treatment selection - \textit{Emma Saragossi}}
+Here are the use cases where Tallis will be opened:
+\begin{itemize}
+\item New Patient has been diagnosed with hypertension. Doctor opens Tallis to choose a new treatment for the patient.  "Treatment Change" directly.  Drug is chosen.  Then "Review Schedule" chooses the next appointment time, which depends on the drugs, and on preference.  
+
+\item Patient has recently started a new drug.  After a few weeks, the drugs' adverse effects (but not blood pressure yet, see use case on the patient is assessed.  The patient must attend clinic for these tests, since some tasks involve blood tests.  Doctor opens Tallis, inputs tests results, and Tallis helps assess wellbeing of patient.  The patient most likely is going to be fine, and proceeds to "review schedule".  If patient is not fine, doctor can either proceed with "treatment change" to reduce drug load or" refer to a specialist" if it is too complicated.
+
+\item Patient has recently started a new drug.  After 4 weeks, drugs' positive effect (i.e. on reducing hypertension) is finally assessed.  If patient's BP is on track, outside Tallis, nothing happens at all. The patient and doctor go on with their lives untouched. This is unlike usual clinical care where the patient must attend the clinic unnecessarily.  If the patient's BP is uncontrolled, the doctor can be contacted remotely. The doctor opens Tallis, chooses "Checkup" and assesses reasons for uncontrolled BP. The doctor is most likely going to select "treatment change" to increase drugs for BP control.  Otherwise, depending on the doctor's judgement, the step can be directly skipped to "review schedule". Or for complicated situations, "refer to specialist"
+\end{itemize}
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=1]{tallisAll2}
+\caption{Final top-level plan in Tallis}
+\label{fig:tallisAll2}
+\end{center}
+\end{figure}
+
+\subsection{Reading from database}
+
+The main function of this plan (see figure \ref{fig:tallisRead}for internal composition) is to read data from the database .  It is the first and only mandatory task when Tallis is opened.  By using enquiries, one could imagine that instead of "asking" for human data input, it is "asking" the database for the required data items.  Further details of how the data items are exactly mapped to the database is explained in section XXX.  
+
+There are two main trees of enquiries, separated into two subplans.  The first subplan is the "Treatment Status", where the treatment specific details (drug name, prescription etc.) of the patient are read from the records.  Table \ref{table:treamentstatus}	 shows all the data items read. It is constucted in such a sequence so that the correct amount of information is read everytime. Number of drugs needs to be read before reading the details of drug X. For example, if the patient is only taking 2 drugs, the reading sequence ends at "drug2" enquiry task and does not read "drug3" through the precondition (Number of drugs  >= 3). Otherwise, a null will be read from the database, which could possibly affect future tasks.  Alternatively, the task could be designed to read the 4 drugs in parallel instead of series, since any unnecessary task would be cancelled by preconditions anyway. Series is preferred because it ensures drug1 is read before drug2, adding an extra line of safety.  
+
+The second subplan is the "Patient Details", which is the data for all other related conditions of the patient that may affect future decision making processes.  It is directly taken from the previously made New Patient component, which now is transposed to outside of Tallis as shown in section XXX.
+\begin {table}[ht]
+\caption {Data Items for treatment status}
+\begin{center}
+\begin{tabular}{|p{3cm}|p{15cm}|}
+\hline
+\textbf{Enquiry Task} & \textbf{Data items}                                                                                                                                         \\ \hline
+Patient ID & Patient ID \\ \hline
+appointment read& appointment type\\ \hline
+Current treatment &BP controlled; Number of drugs;\\ \hline
+Drug X & DrugX name; DrugX class; DrugX prescription;\\ \hline
+maxDoseX & max dose X;\\ \hline
+\label{table:treatmentstatus}
+
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.7]{tallisRead}
+\caption{Enquire data from database in plan ALL READ. Top: subplan Treatment Status; Bottom: subplan Patient details}
+\label{fig:tallisRead}
+\end{center}
+\end{figure}
+
+\subsection{Treatment Change}
+This plan is activated whenever it is necessary to decide on a treatment change.  Figure \ref{fig:TreatmentChange} shows the structure of this task.   Dosage Alert at the start presents the existing treatment and other patient details that has been read from the database previously.  By reminding the doctor of the status of the patient, it can serve as a safety mechanism to double check.    "Update Status" writes the results to the database.  The meat of the component is the two main plans: "New Drug" and "Dosage Change", both of which decide on a drug and its prescription using logic adapted from guidelines.
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.9]{tallisTreatmentChange}
+\caption{Plan for treatment change decisions }
+\label{fig:tallisTreatmentChange}
+\end{center}
+\end{figure}
+
+Following the NICE guidelines, there are 4 stages of drug treatment.  A patient is incrementally given drugs until the blood pressure is controlled.  Once it is controlled, the patient keeps taking the medication. To illustrate, for example,first a single drug is given.  Assuming there are no adverse effects (explored at section XX), it should take 4 weeks for the drug to take effect noticeably.  The BP is still not controlled, so the dose is increased slightly.  The process is repeated until control is achieved, or a maximum safe dosage is reached.  If it still not controlled, a further stage of drug is prescribed (following a given rule). Again it repeats until all 4 drugs are at a maximum, which is a suitable time to label the patient as having "resistant hypertension". Referal to a specialist is recommended at this point.  
+
+%Figurexxx represents this ideal cycle without any adverse effects.
+The cycle is over a long time, and a single run through this task only realizes a single step in changing drug treatment.  Although choosing a drug, and changing the prescription seem like 2 separate steps, they can still be grouped together into the abstraction of  "treatment change" to give a neater loop and clearer overall structure.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Initial treatment selection - \textit{Emma Saragossi}}
 \label{sec:Treatment}
 
 The first course of pharmacological therapy for each patient is determined in the Tallis application. There are 24 possible drug candidates. There are upto 28 arguments for and against each drug. For example the patient's age or ethnicity can determine whether drug can be selected or not.
 
-A \textit{decision} task is populated with the arguments for and against each drug type. There are four types of argument: For (+), Against (-), Confirm (++) and Exclude (--). To demonstrate how they are used, the arguments for and against choosing the ACE Inhibitor \textit{Ramipril} are shown in Table~\ref{table:ramipril}. If a patient has a history of angioedema, hereditary or idiopathic angioedema, renovascular disease, stenosis or is breastfeeding, the drug is excluded from the list of possible candidates. If the patient is of black African or Black Caribbean descent or is over the age of 55, the drug is not excluded from the list but is not recommended. The drug is recommended for patients with heart failure of Myocardial Infarction. If a patient were to have both stenosis and heart failure, for example, while the drug is recommended for those with heart failure, it is contraindicated in patients with stenosis and the drug would not be recommended. The PRO\textit{forma} script for the arguments for and against selecting \textit{Ramipril} is shown in Extract~\ref{code:ramipril}.
+A \textit{decision} task is populated with the arguments for and against each drug type. There are four types of argument: For (+), Against (-), Confirm (++) and Exclude (- -). To demonstrate how they are used, the arguments for and against choosing the ACE Inhibitor \textit{Ramipril} are shown in Table~\ref{table:ramipril}. If a patient has a history of angioedema, hereditary or idiopathic angioedema, renovascular disease, stenosis or is breastfeeding, the drug is excluded from the list of possible candidates. If the patient is of black African or Black Caribbean descent or is over the age of 55, the drug is not excluded from the list but is not recommended. The drug is recommended for patients with heart failure of Myocardial Infarction. If a patient were to have both stenosis and heart failure, for example, while the drug is recommended for those with heart failure, it is contraindicated in patients with stenosis and the drug would not be recommended. The PRO\textit{forma} script for the arguments for and against selecting \textit{Ramipril} is shown in Extract~\ref{code:ramipril}.
 
 \begin{table}[ht]
 \begin{center}
@@ -1471,23 +1660,23 @@ A \textit{decision} task is populated with the arguments for and against each dr
 \hline
 \textbf{Comorbidity} & \textbf{Source name} & \textbf{Response} & \textbf{Argument} \\
 \hline
-History of angioedema & Angio\_expose & Yes & (--) \\
+History of angioedema & Angio\_expose & Yes & (- -) \\
 \hline
-Renovascular disease & Renovascular & Yes & (--) \\
+Renovascular disease & Renovascular & Yes & (- -) \\
 \hline
 Heart failure & Heart\_failure & Yes & (+) \\
 \hline
 Myocardial Infarction & MI & Yes & (+) \\
 \hline
-Hereditary or idiopathic angioedema	& Angio\_hered & Yes & (--) \\
+Hereditary or idiopathic angioedema	& Angio\_hered & Yes & (- -) \\
 \hline
-Stenosis & Stenosis & Yes & (--) \\
+Stenosis & Stenosis & Yes & (- -) \\
 \hline
 Black African or Caribbean & Ethnicity & No & (-) \\
 \hline
 Over 55 years of age & Age\_group & 55-79 & (-) \\
 \hline
-Breastfeeding & Breastfeed & Yes & (--) \\
+Breastfeeding & Breastfeed & Yes & (- -) \\
 \hline
 
 \end{tabular}
@@ -1562,6 +1751,93 @@ candidate :: 'ACE__ramipril' ;
 \end{code}
 
 \clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Further stages of treatment: extend - \textit{Jeffrey Yu}}  
+With the initial treatment in hand, the further stages are actually simpler to implement.  The contrainications for any drug will be invariant over all 4 stages.  Adding an extra drug to the treatment would not make previous ones safe from a comorbidity, therefore much of the previous logical arguments could be kept.
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.8]{tallisNewDrug}
+\caption{Summary of treatment stages by NICE \cite{NICE}}
+\label{fig:tallisNewDrug}
+\end{center}
+\end{figure}
+
+The arguments that give a suggestive for/against weighting would need to be re-examined for further stages.  For example, age group is no longer an applicable argument past the initial treatment for most drugs.  Then new arguments need to be created to model the new rules at each stage. Figure \ref{fig:tallisNewDrug} is a summary taken from NICE guidelines.  There are slightly more complexities, especially when inspecting individual drugs \cite{CKS}. But overall, the rules are between drug classes and not the specific ones.  Figure \ref{fig:tallisDrugArg2} shows the arguments that have been changed or added to the drug Ramipril.  For each of the drug stages, the logical AND combines the new rule with the number of drugs . As can be seen, only 6 new arguments had to be added, while keeping the 9 other comorbities the same.  
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.8]{tallisDrugArg2}
+\caption{New logical arguments for drug decisions, based on furthe stages of treatments}
+\label{fig:tallisDrugArg2}
+\end{center}
+\end{figure}
+
+While the process may seem algorithmic, flexibility is still given to the doctor.  The decision task presents the outcome as a list of possible candidates, with arguments for/against stated.  Much of the time, especially when patients have minimal comorbidities, many drugs of the same class would be equally recommended.  At this point, selecting the drug may be down to the doctor's own judgement on other issues such as price or experience.  
+
+After the drug is selected, a starting dose is given. It is based on published information about the drugs\cite{CKS}.   The starting dose, amongst other drug related information, has been collected and stored in the database for quick referencing by the enquiry task. The storing in the database is done because these simple numerical data (starting dose, maximum dose etc.) are consistent to interpret, and are a common property of all drugs.  
+
+\subsubsection{Dosage Change}
+The "Dosage Change" plan is chosen when the patient has not reached their maxium tolerable dose yet.  That is, the precondition to this task is: Max dosage = "No" AND Number of drugs  > 0
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=1]{tallisDoseChange}
+\caption{Dosage Change Plan}
+\label{fig:tallisDoseChange}
+\end{center}
+\end{figure}
+
+The special feature of this component is that it would not allow the dose  to be set above the maximum safe dose.  It was considered to allow the doctor to exercise judgement. But the maximum dose is a boundary which could be dangerous if breached. 
+
+Preventitive meaasures like this is implemented by including a variable which is a conditional to the cycling of this task. To illustrate the algorithm
+\begin{enumerate}
+\item maxDoseCheck enquiry reads the maximum value for the latest line of drug treatment.   
+\item Doctor enters desired new dose
+\item Check precondition maxdose>newDose
+\item if failed, then cycle plan
+\end{enumerate}
+
+\subsection{Checkup}
+This plan is executed when the patient comes back for a review with the doctor.  There would be two cases for using this plan. First,  the titration assessment is for detecting adequate renal functions when a patient starts taking certain drugs.  In the same appointment, the doctor discusses any adverse effects the patient may be experiencing.  The second case, would be when a titration assessment is not needed, and skips immediately to the discussion.  
+
+
+\subsubsection{Titration Assessment}
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=1]{tallisCheckup}
+\caption{tasks involved when doing a checkup at he clinic}
+\label{fig:tallisCheckup}
+\end{center}
+\end{figure}
+
+The titration assessment looks at not just how the drug interacts with hypertension, but also how it deteriorates the kidney's functions.  The test is done at the clinic by taking blood samples. Unfortunately, as much as it would be ideal to have the whole treatment done remotely, it would be less possible with this step.  Different features of the blood tests are compared in the decision task "blood results", which determines whether the results are acceptable or not.  If they are not acceptable, the task would lead back to the "treatment Change" plan, prompting a dose decrease.  Another option for unacceptable levels would be to refer to a specialist.
+
+\subsection{User Interface}
+The goal of this section is to change the original "legacy" template UI, into one that matches the home page on the web browser.  This is done by editing the templates, which are files stored in the Tallis web enactment folder.  
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.8]{tallisUItable}
+\caption{The different components of UI that need to be changed, in order to reach the desired UI}
+\label{fig:tallisUItable}
+\end{center}
+\end{figure}
+
+The structure of these templates follow a default "legacy" template.  This main template file points to where to find files that determine the behaviour for each of the components of Tallis web enactment.  The components and their locations are identified in figure \ref{fig:TallisUIevolve}. The list of components of interest are presented in table \ref{fig:tallisUItable}.  Most of the time, only a few features at a time need to be changed, and so this is performed by "extending" the original template.  The tabbed template only changes a few things, and thus extends the legacy template, instead of starting from scratch.  For the desired UI, it can be reached by extending the tabbed UI.
+\begin{figure}[!p]
+\begin{center}
+\includegraphics[scale=0.8]{tallisUIevolve}
+\caption{Changing from basic UI, to the desired UI. Top: legacy template, with components highlighted (red: header, yellow: footer, green: protocol box, pink: control menu, purple: tasks menu; Middle: tabbed template; Bottom: cardiac pro template }
+\label{fig:tallisUIevolve}
+\end{center}
+\end{figure}
+
+
+For example, by changing the file of tasks menu, it is possible to change it from a menu bar on the side, into a tab on the top.  A menu to a tab is a major change, therefore the whole file is replaced.  On the other hand, if a certain feature is added an extra subcomponent, then the file is appended, similar to extending.
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Server Environment - \textit{Henry Fletcher}}
@@ -2337,8 +2613,6 @@ The salaries for developers to finish and maintain the app would have to be dedu
 Webmd.com. 2014. High Blood Pressure Medication Side Effects. [online] Available at: \url{http://www.webmd.com/hypertension-\\high-blood-pressure/guide/side-effects-high-blood-pressure-medications} [Accessed: 9 Apr 2014].
 \bibitem{study}
 Larkin, K., Schauss, S., Elnicki, D. and Goodie, J. 2007. Detecting white coat and reverse white coat effects in clinic settings using measures of blood pressure habituation in the clinic and patient self-monitoring of blood pressure. Journal of human hypertension, 21 (7), pp. 516--524.
-\bibitem{linregdia}
-\url{http://www.marin.edu/~npsomas/Lectures/Ch\_2/Sections\_01to04.html} %not done
 \bibitem{Kryzig}
 Kreyszig, E., Kreyszig, H. and Norminton, E. J. 2011. Advanced engineering mathematics. [New York]: J. Wiley.
 \bibitem{linregdev}
@@ -2346,9 +2620,9 @@ The Mathematical Derivation of Least Squares. 2014. [e-book] Harvard, Psychology
 \bibitem{linregex}
 Upa.pdx.edu. 2014. [online] Available at: \url{http://www.upa.pdx.edu/IOA/newsom/pa551/scatter2.gif} [Accessed: 9 Apr 2014].
 \bibitem{Jquery}
-Bibliography: Jquery.Org, J. 2014. jQuery. [online] Available at: \url{http://www.jquery.com} [Accessed: 9 Apr 2014].
+Jquery.Org, J. 2014. jQuery. [online] Available at: \url{http://www.jquery.com} [Accessed: 9 Apr 2014].
 \bibitem{SPSS}
-Bibliography: Www-01.ibm.com. 2014. IBM - SPSS software - United Kingdom. [online] Available at: \url{http://www-01.ibm.com/software/uk/analytics/spss/} [Accessed: 9 Apr 2014].
+www-01.ibm.com. 2014. IBM - SPSS software - United Kingdom. [online] Available at: \url{http://www-01.ibm.com/software/uk/analytics/spss/} [Accessed: 9 Apr 2014].
 \bibitem{Mike}
 Burr, M. 2013. Mike's Technology and Finance Blog: SQL Linear Regression. [online] Available at: \url{http://mikemstech.blogspot.co.uk/2013/07/sql-linear-regression.html} [Accessed: 9 Apr 2014].
 \bibitem{paint}
@@ -2356,7 +2630,7 @@ Paint v2.0 ( Copyright ©2012 CrazzyWorks)
 \bibitem{chart}
 Google-developers.appspot.com. 2014. Visualization: Line Chart - Google Charts - Google Developers. [online] Available at: \url{https://google-developers.appspot.com/chart/interactive/docs/gallery/linechart} [Accessed: 9 Apr 2014].
 \bibitem{costhome}
-National Institute for Health and Clinical Excellence. 2011. Hypertension Costing report Implementing NICE guidance. National Costing report. [report] NICE. Available at:\url{http://www.nice.org.uk/nicemedia/live/13561/56016/56016.pdf} [Accessed: 9 Apr 2014].
+National Institute for Health and Clinical Excellence. 2011. Hypertension Costing report Implementing NICE guidance. National Costing report. [report] NICE. Available at: \url{http://www.nice.org.uk/nicemedia/live/13561/56016/56016.pdf} [Accessed: 9 Apr 2014].
 \bibitem{costdrug}
 National Institute for Health and Clinical Excellence. 2006. ￼ Management of hypertension in adults in primary care: partial update. Costing report. [report] NICE. Available at:\url{http://www.nice.org.uk/nicemedia/live/13561/56768/56768.pdf} [Accessed: 9 Apr 2014].
 \bibitem{isch}
@@ -2447,6 +2721,77 @@ Php.net, (2014). PHP: Introduction - Manual. [online] Available at: \url{http://
 Developer.github.com, (2014). Webhooks | GitHub API. [online] Available at: \url{https://developer.github.com/webhooks/} [Accessed 23 Apr. 2014].
 \bibitem{github:webhook-2}
 GitHub Gists, (2014). oodavid/README.md. [online] Available at: \url{https://gist.github.com/oodavid/1809044} [Accessed 23 Apr. 2014].
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibitem{tasminh2}
+McManus R, Mant J, Bray E, Holder R, Jones M, Greenfield S et al. Telemonitoring and self-management in the control of hypertension (TASMINH2): a randomised controlled trial. The Lancet. 2010;376(9736):163--172. 
+\bibitem{impact Lit}
+AbuDagga A, Resnick H, Alwan M. Impact of blood pressure telemonitoring on hypertension outcomes: a literature review. Telemedicine and e-Health. 2010;16(7):830--838. 
+\bibitem{tasminh2experience}
+Jones M, Greenfield S, Bray E, Baral- Grant S, Hobbs F, Holder R et al. Patients' experiences of self-monitoring blood pressure and self-titration of medication: the TASMINH2 trial qualitative study. British Journal of General Practice. 2012;62(595):135--142. 
+\bibitem{TM1}
+McKinstry B, Hanley J, Wild S, Pagliari C, Paterson M, Lewis S et al. Telemonitoring based service redesign for the management of uncontrolled hypertension: multicentre randomised controlled trial. BMJ: British Medical Journal. 2013;346. 
+\bibitem{TM2}
+Coye M, Haselkorn A, DeMello S. Remote patient management: technology-enabled innovation and evolving business models for chronic disease care. Health Affairs. 2009;28(1):126--135. 
+\bibitem{TM3}
+Steventon A, Bardsley M, Billings J, Dixon J, Doll H, Hirani S et al. Effect of telehealth on use of secondary care and mortality: findings from the Whole System Demonstrator cluster randomised trial. BMJ: British Medical Journal. 2012;344. 
+\bibitem{TM4}
+S, ers C, Rogers A, Bowen R, Bower P, Hirani S et al. Exploring barriers to participation and adoption of telehealth and telecare within the Whole System Demonstrator trial: a qualitative study. BMC health services research. 2012;12(1):220. 
+\bibitem{TM5}
+Wootton R. Twenty years of telemedicine in chronic disease management--an evidence synthesis. Journal of Telemedicine and Telecare. 2012;18(4):211--220.
+\bibitem{TM6}
+Par\'e G, Jaana M, Sicotte C. Systematic review of home telemonitoring for chronic diseases: the evidence base. Journal of the American Medical Informatics Association. 2007;14(3):269--277. 
+\bibitem{Im1}
+Artinian N, Washington O, Templin T. Effects of home telemonitoring and community-based monitoring on blood pressure control in urban African Americans: a pilot study. Heart \& Lung: The Journal of Acute and Critical Care. 2001;30(3):191--199. 
+\bibitem{Im2}
+ Artinian N, Flack J, Nordstrom C, Hockman E, Washington O, Jen K et al. Effects of nurse-managed telemonitoring on blood pressure at 12-month follow-up among urban African Americans. Nursing research. 2007;56(5):312--322. 
+\bibitem{Im3}
+Bobrie G, Postel-Vinay N, Delonca J, Corvol P. Self-Measurement and Self-Titration in Hypertension* A Pilot Telemedicine Study. American journal of hypertension. 2007;20(12):1314--1320. 
+\bibitem{Im4}
+Bondmass M, Bolger N, Castro G, Avitall B. The effect of home monitoring and telemanagement on blood pressure control among African Americans. Telemedicine Journal. 2000;6(1):15--23. 
+\bibitem{Im5}
+Bosworth H, Olsen M, Grubber J. Two self-management interventions to improve hypertension control: A randomized trial. Ann Intern Med. 2009;151:687-695. 
+\bibitem{Im6}
+Carrasco M, Salvador C, Sagredo P, M\'arquez-Montes J, de Mingo M, Fragua J et al. Impact of Patient--General Practitioner Short-Messages-Based Interaction on the Control of Hypertension in a Follow-up Service for Low-to-Medium Risk Hypertensive Patients: A Randomized Controlled Trial. Information Technology in Biomedicine, IEEE Transactions on. 2008;12(6):780--791. 
+\bibitem{Im7}
+ Friedman R, Kazis L, Jette A, Smith M, Stollerman J, Torgerson J et al. A telecommunications system for monitoring and counseling patients with hypertension: impact on medication adherence and blood pressure control. American journal of hypertension.
+\bibitem{Im8}
+Fursse J, Clarke M, Jones R, Khemka S, Findlay G. Early experience in using telemonitoring for the management of chronic disease in primary care. Journal of telemedicine and telecare. 2008;14(3):122--124. 
+\bibitem{Im9}
+ Green B, Cook A, Ralston J, Fishman P, Catz S, Carlson J et al. Effectiveness of home blood pressure monitoring, Web communication, and pharmacist care on hypertension control: a randomized controlled trial. Jama. 2008;299(24):2857--2867. 
+\bibitem{Im10}
+Logan A, McIsaac W, Tisler A, Irvine M, Saunders A, Dunai A et al. Mobile Phone--Based Remote Patient Monitoring System for Management of Hypertension in Diabetic Patients*. American journal of hypertension. 2007;20(9):942--948. 
+\bibitem{Im11}
+Madsen L, Kirkegaard P, Pedersen E. Blood pressure control during telemonitoring of home blood pressure. A randomized controlled trial during 6 months. Blood pressure. 2008;17(2):78--86. 
+\bibitem{Im12}
+Parati G, Omboni S, Albini F, Piantoni L, Giuliano A, Revera M et al. Home blood pressure telemonitoring improves hypertension control in general practice. The TeleBPCare study. Journal of hypertension. 2009;27(1):198--203. 
+\bibitem{Im13}
+Park M, Kim H, Kim K. Cellular phone and Internet-based individual intervention on blood pressure and obesity in obese patients with hypertension. International journal of medical informatics. 2009;78(10):704--710. 
+\bibitem{Im14}
+Rogers M, Small D, Buchan D. Home monitoring service improves mean arterial pressure in patients with essential hypertension. A randomized, controlled trial. Ann Intern Med. 2001;134:102--1032. 
+\bibitem{Im15}
+ Rinfret S, Lussier M, Peirce A, Duhamel F, Cossette S, Lalonde L et al. The impact of a multidisciplinary information technology--supported program on blood pressure control in primary care. Circulation: Cardiovascular Quality and Outcomes. 2009;2(3):170--177. 
+\bibitem{Lit1}
+Dorr D, Bonner L, Cohen A, Shoai R, Perrin R, Chaney E et al. Informatics systems to promote improved care for chronic illness: a literature review. Journal of the American Medical Informatics Association. 2007;14(2):156--163. 
+\bibitem{app1}
+Numbersmatter2.me. BP Watch [Internet]. [17 April 2014]. Available from: http://numbersmatter2.me/
+\bibitem{UIiBP}
+ Leadingedgeapps.com. iBP [Internet]. [17 April 2014]. Available from: http://leadingedgeapps.com/Welcome.html 
+\bibitem{UIbppp}
+ Play.google.com. Blood Pressure++ [Internet]. 2014 [23 April 2014]. Available from: https://play.google.com/store/apps/details?id=com.jucdejeb.bloodpressure
+\bibitem{UIbpmh}
+Klimaszewski.mobi. My Heart - Szymon Klimaszewski [Internet]. [23 April 2014]. Available from: http://www.klimaszewski.mobi/my-heart
+\bibitem{UIbpd}
+ Play.google.com. blood pressure diary [Internet]. [17 April 2014]. Available from: https://play.google.com/store/apps/details?id=org.fruct.yar.bloodpressurediary
+\bibitem{app2}
+Ihealthlabs.com. iHealth Wireless Blood Pressure Wrist Monitor [Internet]. [17 April 2014]. Available from: http://www.ihealthlabs.com
+\bibitem{app3}
+Vitrine.withings.com. Withings Store [Internet]. [17 April 2014]. Available from: http://vitrine.withings.com/blood-pressure-monitor.html
+\bibitem{NICE}
+National Institute for Health and Clinical Excellence (NICE). Hypertension: clinical management of primary hypertension
+in adults. Clinical Guideline 127. London: NICE; 2011.
+\bibitem{CKS}
+Cks.nice.org.uk, (2014). Hypertension - not diabetic - NICE CKS. [online] Available at: http://cks.nice.org.uk/hypertension-not-diabetic [Accessed 24 Apr. 2014].
+
 \end{singlespace} 
 \end{thebibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
