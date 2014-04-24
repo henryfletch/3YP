@@ -413,14 +413,14 @@ JavaScript facilitates dynamic functions to be performed within the browser. "jQ
 
 \section{Patient Application - \textit{Michael Fedosiuk}}
 
-The key goal for the patient application was usability. Due to hypertension mainly affecting those over 50 years of age, this is the target audience of the application. Firstly simplicity is key, uncluttered pages with distinct labelled buttons where possible. Secondly both font and button size need to be large, to account for loss of vision and dexterity in some users. 
+
 
 \begin{wrapfigure}{l}{.73\textwidth}
 \centering
 \includegraphics[width=1\linewidth]{patientUI.png}
 \caption{Patient UI journey walkthrough (page names shown in black at the bottom and refer to the following sections) \label{patientUI}}
 \end{wrapfigure} 
-Finally consistency between pages making learning to use the application easier and faster. The app itself is written in PHP for all but one page, however most of the content of these files consist of html. The app has been optimised for use on iPhone 5 however will also function on an iPad and android phones with minimal scaling problems. All pages bar one are styled using the same CSS file "Cardiac\_Track\_Style.css" that is 297 lines long. 
+The key goal for the patient application was usability. Due to hypertension mainly affecting those over 50 years of age, this is the target audience of the application. Firstly simplicity is key, uncluttered pages with distinct labelled buttons where possible. Secondly both font and button size need to be large, to account for loss of vision and dexterity in some users. Finally consistency between pages making learning to use the application easier and faster. The app itself is written in PHP for all but one page, however most of the content of these files consist of html. The app has been optimised for use on iPhone 5 however will also function on an iPad and android phones with minimal scaling problems. All pages bar one are styled using the same CSS file "Cardiac\_Track\_Style.css" that is 297 lines long. 
 
 \subsection{General format}
 For consistency and efficiency of programming, most pages have the same standard format. Fig.\ref{appstandard} shows the PHP, HTML and CSS that together form the standard page, also shown.
@@ -435,7 +435,7 @@ The rest of the script is written in html between the $<$html$>$ tags. Firstly i
 The first main div within the body of the page is given the class="main\_page", as seen in the CSS this sets the background of the app using the vh/vw units. Initially the app was programmed with the px unit (these has been left in for old browser compatibility), however they were updated to the new CSS 3 unit once they had been discovered for use in the currentpatients/index.php page. The benefit of their use in the patient app is that they provide greater device compatibility, as the app is now able to fill any screen. Before using the px unit meant the app specifically only fitted the screen of an iPhone 5. For further information on the scaling unit refer to the currentpatients/index.php, Page segments and scaling section. Finally the margin term is to remove the white edges which are automatically shown when a web page is displayed and the "overflow-x:hidden" stops the page from moving when scroll selection in the update page is used. The "title\_menu" is what formats the white "Cardiac Track" title. The final div "page\_header" is what creates the white band at the top of the page. The "position:relative" which is seen throughout all CSS means that any positioning is done relative to the surrounding div's, the other option is to set "position:absolute" this means positioning is done relative to the edge of the page. Within the div the image "menu\_button.png", the grey button, which was drawn in Paint \cite{paint} is screened. This is linked to the "menu.php" page. The CSS for the menu button has been written with the html using style="float:left" this makes the button position itself to the far left of the div it is within. The pages based on this format are the same except the title and the additional content which is added between the final $<$/div$>$ and $<$/body$>$ tags. 
 
 \subsection{patient/index.php}
-The index.php page is the page to which all users are initially directed so they can login. It based around a JavaScript form (left fig.\ref{logincode}), of which the JavaScript function (top right fig.\ref{logincode}) is held in the page's head and the form itself is a table within the html. There is a specific JavaScript function "submitform" which extracts the data from the form specified, in this case with the id="jsform". The form seen in the html has the action="login.php" and method="post", this means that the data entered is sent to the script login.php. The $<$input$>$ tags set what the input type is (password turns the covers text after the next letter is entered), it also names the variable and states whether or not it is required for the form to be submitted. Finally to run the JavaScript and submit the form a link href="javascript: submitform()" is set for the submit button. 
+The index.php page is the page to which all users are initially directed so they can login. It based around a JavaScript form (left fig.\ref{logincode}), of which the JavaScript function (top right fig.\ref{logincode}) is held in the page's head and the form itself is a table within the html. There is a specific JavaScript function "submitform" which extracts the data from the form specified, in this case with the id="jsform". The form seen in the html has the action="login.php" and method="post", this means that the data entered is sent to the script login.php. 
 \begin{figure}[h!] 
 \centering
 \includegraphics[width=1.0\linewidth]{logincode.png}
@@ -447,7 +447,7 @@ The index.php page is the page to which all users are initially directed so they
 \includegraphics[scale=0.07]{iphoneicon.png}
 \caption{iPhone icon \label{iphoneicon}} 
 \end{wrapfigure} 
-Within the head of the html the code in the bottom right of fig.\ref{logincode} was added. This sets the "apple-touch-icon". If a user adds a link to the home screen of their iPhone or iPad, the link will take the form of the "iphone-icon.png". The icon has been created in Paint \cite{paint} and gives the link the look of a native application, fig.\ref{iphoneicon}. This enhances usability by making the login page easier to navigate to. 
+The $<$input$>$ tags set what the input type is (password turns the covers text after the next letter is entered), it also names the variable and states whether or not it is required for the form to be submitted. Finally to run the JavaScript and submit the form a link href="javascript: submitform()" is set for the submit button. Within the head of the html the code in the bottom right of fig.\ref{logincode} was added. This sets the "apple-touch-icon". If a user adds a link to the home screen of their iPhone or iPad, the link will take the form of the "iphone-icon.png". The icon has been created in Paint \cite{paint} and gives the link the look of a native application, fig.\ref{iphoneicon}. This enhances usability by making the login page easier to navigate to. 
 
 \subsubsection{menu.php}
 This is the page to which the patient is sent once they have logged into the app. It allows users access to any of the apps other pages. It is very simple in its construction simply screening the text and arrow images and sets the applicable href="..." tag to set the link it to the relevant page. 
@@ -477,9 +477,9 @@ This section can be accessed from the menu and allows the user to see how their 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Doctor's Application - \textit{Emma Saragossi}}
+\section{Doctor's Application}
 
-\subsection{Function}
+\subsection{Function - \textit{Emma Saragossi}}
 
 The \textit{Cardiac Track Pro} doctor portal has three primary functions:
 \begin{enumerate}
@@ -488,11 +488,11 @@ The \textit{Cardiac Track Pro} doctor portal has three primary functions:
 \item \textbf{Treatment selection} - a treatment selection tool advises the doctor on the best course of treatment for the patient based on their medical history. It also determines when to schedule follow up appointments.
 \end{enumerate}
 
-\subsection{User interface}
+\subsection{User interface - \textit{Emma Saragossi}}
 
 The doctor application is to be viewed in a web browser. Web pages are built using two key technologies: HTML (the HyperText Markup Language) and CSS (Cascading Style Sheets). The HTML provides the structure of the page while CSS provides the layout and formatting. It is important to keep the page structure and design quite separate. This is because it allows all pages to share the same style sheet. The site is then easier to maintain, as only one file need be updated to change the appearance of the site.  In addition, CSS is much more flexible for specifying the design.
 
-\subsubsection{General page structure - HTML}
+\subsubsection{General page structure - HTML - \textit{Emma Saragossi}}
 
 
 \begin{code}[ht]
@@ -530,7 +530,7 @@ Standard to all pages is the header, sidebar, page content and footer. The heade
 
 The header, sidebar and page content are all held within a div called container. This is useful when it comes to formatting the page (see Section~\ref{sec:CSS}).
 
-\subsubsection{Optimizing layout for multiple browser dimensions}
+\subsubsection{Optimizing layout for multiple browser dimensions - \textit{Emma Saragossi}}
 \label{sec:CSS}
 It is unlikely that the doctor will view the site on a mobile device. The decision was made, therefore, to focus on optimizing the display for desktop and tablet web browsers.
 
@@ -602,7 +602,7 @@ header {
 %em: unit equal to the computed value of the font size property of the element on which it is used.
 %container ends 4em from bottom of page - allow room for footer.
 
-\subsubsection{Text formatting}
+\subsubsection{Text formatting - \textit{Emma Saragossi}}
 
 As well as defining the layout of the HTML elements, the CSS also provides the site's text formatting and colour profiles.
 
@@ -610,7 +610,7 @@ The typeface used for the site is Helvetica, an easy to read sans-serif font whi
 
 All text included in the page content is set to be black with a regular weight, apart from any text which serves as a hyperlink (which is defined in the HTML). To distinguish a hyperlink from plain text, a rule was created within the CSS to underline links and display them in bold. In addition, if a user scrolls over a link with their cursor, the link changes colour.
 
-\subsubsection{Logo image}
+\subsubsection{Logo image - \textit{Emma Saragossi}}
 The logo in the header (seen in Figure~\ref{fig:siteDesignGeneral}) was created as an image rather than displayed as live text on the site in order to preserve the appearance of the logo design. This is because the font chosen for the logo, Optima, does not come installed as standard on devices. If a visitor to the site does not have Optima installed, their browser would select an alternative font.
 
 The image was saved as a Portable Network Graphic (PNG), a raster graphics file format that supports lossless data compression. Raster graphics images are dot matrix data structures representing a grid of pixels, unlike vector graphics which comprise of paths and are defined by a start and end point. Vector images are often considered the first choice for logos, as they can be scaled easily. If you try to enlarge a raster image, the image edges get jagged as you enlarge them. However, the most common vector graphic file format, SVG (Scalable Vector Graphic), is not well supported by desktop and mobile browsers \cite{SVG}. As the logo is only to be viewed digitally and does not need to be scaled, a raster image format was therefore considered acceptable.
@@ -623,9 +623,9 @@ The image was saved as a Portable Network Graphic (PNG), a raster graphics file 
 \end{center}
 \end{figure}
 
-\subsection{User access}
+%\subsection{User access - \textit{Emma Saragossi}}
 
-\subsubsection{Login page}
+\subsubsection{Login page - \textit{Emma Saragossi}}
 A login page for the doctor portal is required to grant the user access to the internal pages of the site, and to prevent others from viewing or altering sensitive data. It also ensures that only relevant data is displayed to the user. Access is controlled by identifying and authenticating the user. A PHP script is called to check the user's credentials (username and password) and grant or deny access to the internal pages of the site.
 
 The login page displays the Cardiac Track Pro logo and houses two text input boxes - one for the username and one for the password - and a submit button which will call the PHP script to check the login credentials when clicked.
@@ -658,7 +658,7 @@ The METHOD attribute of the FORM element specifies the HTTP method used to send 
 The TEXT and PASSWORD fields are standard HTML input elements for forms. The characters in a password field are automatically masked (shown as asterisks) for security. The PLACEHOLDER attribute specifies the expected value of an input element (see Figure~\ref{fig:login_design}). The SUBMIT button sends the form data to the server. The data is sent to the page specified in the form's ACTION attribute - here it calls the PHP script \textbf{login.php} (See section \ref{drloginform})
 
 
-\subsubsection{Internal pages}
+\subsubsection{Internal pages - \textit{Emma Saragossi}}
 
 A user must only be granted access to the internal pages of the site if they have already logged in i.e. a user cannot gain access to the internal pages of the site by simply entering the page URL. A PHP script is included at the top of all internal pages which checks whether the user has logged in successfully and is authorised to view the page content. Otherwise, the user is redirected to the login page. The code is shown in Extract~\ref{code:intPages}
 
@@ -689,13 +689,13 @@ header('Location: https://3yp.villocq.com/doctor/loginPage.php');
 \end{code}
 
 
-\subsection{Creating a patient profile}
+\subsection{Creating a patient profile - \textit{Emma Saragossi}}
 
 Relevant information about the patient needs to be uploaded and saved to the database. This information is required to determine the patient's target blood pressure, and is used by the Tallis treatment tool to determine the best course of drug treatment for the patient.
 
 Initially, the data was entered, and the target blood pressure calculated, within the Tallis application. However for design reasons this was later removed and implemented separately.
 
-\subsubsection{Initial design}
+\subsubsection{Initial design - \textit{Emma Saragossi}}
 
 The initial design used Tallis to implement the enquiry and decision process. Tallis "is a suite of software tools to support authoring, publishing and enacting of clinical knowledge applications over the web" \cite{tallisDescription}. The software is built around PRO\textit{forma}, a language designed to model clinical processes. PRO\textit{forma} supports top down design. A defined set of tasks is mapped out into a network of plans and procedures. This represents the high-level structure of a guideline. 
 
@@ -816,7 +816,7 @@ As the target blood pressure decision task had relatively few candidates and arg
 \end{center}
 \end{figure}
 
-\subsubsection{Separate patient creation form}
+\subsubsection{Separate patient creation form - \textit{Emma Saragossi}}
 
 An online tool was created to allow the doctor to add a new patient to the database. A series of HTML forms allows the doctor to enter relevant information about their patient. Each form requires the doctor to enter a different class of information (for example one form for medical history, a second form for comorbidities etc.). Each form appears on a different web page. The first form must be completed to be able to continue to the next.
 
@@ -1064,7 +1064,7 @@ $newPatient->close();
 
 \end{enumerate}
 
-\subsection{News feed}
+\subsection{News feed - \textit{Emma Saragossi}}
 A news feed is displayed in the sidebar to flag for the doctor any alerted patients; that is, any patient who is not at their target blood pressure. The feed lists all alerted patients by their patient ID. The patient ID serves as a link which the doctor can click to take them straight to that patient's summary page, where they can then view the patient's blood pressure and medication history. 
 
 The PHP function \textbf{patientsidebar} which generates the news feed is shown in Extract~\ref{code:PHPsidebar}. The function first connects to the database. Once the MySQL connection parameters have been configured and a new MySQL instance has been established, the alerted patients are identified by their patient ID (PHP variable: \textbf{id}). Alerted patients are all those in the table \textbf{patientInfo} whose blood pressure is not controlled and whose doctor is identified by the function parameter \textbf{\$doctorID} (the doctor currently logged in to the site).
@@ -1105,56 +1105,52 @@ function patientsidebar($doctorID){
 \end{code}
 
 
-\subsection{Patient search bar}
+\subsection{Patient search bar - \textit{Emma Saragossi}}
 
-Embedded in the header on all pages is the patient search bar, which allows the doctor to search by patient ID for immediate access to a patient's blood pressure and treatment history. See section \ref{drapp:MF} for further details. 
+Embedded in the header on all pages is the patient search bar, which allows the doctor to search by patient ID for immediate access to a patient's blood pressure and treatment history. See section \ref{drapp:MF} and fig.\ref{searchbarhtml} for further details. 
 
 %An HTML form was created (Extract~\ref{code:searchBar}) which contains a standard TEXT input element and SUBMIT button. The form uses the GET method, which encodes the form data as a variable into the URL. When the SUBMIT button is pressed, the text entered into the TEXT element is appended to the link specified in the form's ACTION attribute and the page is redirected.
 
 
-\begin{code}[ht]
-\begin{html}
-<form name="search" action="currentpatients/index.php" method="get">
-<input type="text" name="w1" placeholder="Search by User ID" size="15">
-<input type="submit" value="Search">
-</form>
-<!-- page will redirect to currentpatients/index.php?w1=id -->
-\end{html}
-\caption{HTML form for patient ID search bar}
-\label{code:searchBar}
-\end{code}
+%\begin{code}[ht]
+%\begin{html}
+%<form name="search" action="currentpatients/index.php" method="get">
+%<input type="text" name="w1" placeholder="Search by User ID" size="15">
+%<input type="submit" value="Search">
+%</form>
+%<!-- page will redirect to currentpatients/index.php?w1=id -->
+%\end{html}
+%\caption{HTML form for patient ID search bar}
+%\label{code:searchBar}
+%\end{code}
 
 
-\subsection{Extension ideas for the Doctor Application}
+\subsection{Extension ideas for the Doctor Application - \textit{Emma Saragossi}}
 At present, the prototype application only makes it possible for the doctor to create a new patient profile. It is perhaps desirable that the doctor should be able to edit this information if necessary. For example, a patient may develop new conditions which will need to be included as a patient comorbidity. Further work needs to be done, therefore, to allow the doctor to update and edit patient data.
 
 \clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Doctor's Application - \textit{Michael Fedosiuk}} \label{drapp:MF}
-\subsection{currentpatients/index.php}
+\subsection{Patient checking and review - \textit{Michael Fedosiuk}} \label{drapp:MF}
 \begin{figure}[h!] 
 \includegraphics[width=\linewidth]{indexover.png}
 \caption{The currentpatients/index.php page \label{indexover}}
 \end{figure} 
 \noindent 
 Overview of index.php: It is a PHP file containing html, JavaScript, jQuery and SQL, it is 791 lines long. It is styled by the CSS file "Cardiac\_Track\_Style\_Pro.css", which is 835 lines long. 
-\subsubsection{Page Segments and Scaling}
-The page is created in 3 main div's, on the left, the patient selector, the top right the graph and the bottom is the patient information that is split between medication and personal information. The div's were created in the html and given different class names so they could be manipulated in CSS. 
-\\ \indent
-Originally the page scaling in the CSS was set using the \% unit, which sets the div to the stated \% of the viewport. The text within the div's was then set using the standard "font-size:20px", the px unit sets the size of the font by pixel number. 
+\subsubsection{Page Segments and Scaling - \textit{Michael Fedosiuk}}
 
 \begin{wrapfigure}{l}{.34\textwidth}
 \centering
 \includegraphics[scale=0.4]{CSSscaling.png}
 \caption{Use of vh/vw scaling \label{CSSscaling}} 
-\includegraphics[scale=0.04]{ipad.png}
-\caption{index.php tablet comaptibility \label{ipad}} 
+\includegraphics[scale=0.028]{ipad.png}
+\caption{tablet comaptibility \label{ipad}} 
 \end{wrapfigure} 
-This led to problems due to the page being programmed on a large high resolution screen when it was opened on a smaller device or in a smaller window the size of the div's change dramatically in terms of pixel width however the text remained constant. This caused the page to become a jumbled with text overflowing off the page. This problem was solved with the use of a new tag introduced in the 3rd version of CSS. The new units are denoted vh (for height) and vw (for width), 1 unit corresponds to $1/100$th of the viewport's height or width respectively. What makes this so useful is that it can also be used for scaling text. Therefore when the page is loaded both the font and dimensions are set in proportion to the viewport. The graph container CSS in fig.\ref{CSSscaling} to shows this, note that the original percentage settings are still kept. This is so that if someone is using an old browser that is not updated for CSS3 the divs will still be created in the old style. Using this new scaling technique means that the site is also compatible with tablet's, fig.\ref{ipad}. Also note in fig.\ref{CSSscaling}, the "background-image:url('cardioPic5.jpg')" command means that the jpg image which is saved within the currentpatients folder on the website is shown. Its repetition is set to "no-repeat" as without this the image is shown in its original pixel size but is repeated in a grid format. 
+The page is created in 3 main div's, on the left, the patient selector, the top right the graph and the bottom is the patient information that is split between medication and personal information. The div's were created in the html and given different class names so they could be manipulated in CSS. Originally the page scaling in the CSS was set using the \% unit, which sets the div to the stated \% of the viewport. The text within the div's was then set using the standard "font-size:20px", the px unit sets the size of the font by pixel number. This led to problems due to the page being programmed on a large high resolution screen when it was opened on a smaller device or in a smaller window the size of the div's change dramatically in terms of pixel width however the text remained constant. This caused the page to become a jumbled with text overflowing off the page. This problem was solved with the use of a new tag introduced in the 3rd version of CSS. The new units are denoted vh (for height) and vw (for width), 1 unit corresponds to $1/100$th of the viewport's height or width respectively. What makes this so useful is that it can also be used for scaling text. Therefore when the page is loaded both the font and dimensions are set in proportion to the viewport. The graph container CSS in fig.\ref{CSSscaling} to shows this, note that the original percentage settings are still kept. This is so that if someone is using an old browser that is not updated for CSS3 the divs will still be created in the old style. Using this new scaling technique means that the site is also compatible with tablet's, fig.\ref{ipad}. Also note in fig.\ref{CSSscaling}, the "background-image:url('cardioPic5.jpg')" command means that the jpg image which is saved within the currentpatients folder on the website is shown. Its repetition is set to "no-repeat" as without this the image is shown in its original pixel size but is repeated in a grid format. 
 
-\subsubsection{Patient Selector} 
+\subsubsection{Patient Selector - \textit{Michael Fedosiuk}} 
 This is what the doctor uses to select the patient whom he wishes to review. Firstly the list of "High BP" and "Normal" patients seen on the left of fig.\ref{indexover} had to be dynamically created using details called from the database. This was done using PHP within the index.php page. The SQL statement in the first line of fig.\ref{selectorphp}, "SELECTS" all the patient id's "FROM" the patientInfo table whose BP is stated as being uncontrolled and who are patients of the doctor currently logged into the application. The "mysql\_num\_rows" sets the variable \$num with the number of patients that have been selected in the SQL query and hence the number of iterations the following "while" loop needs to perform. 
 \begin{figure}[h!] 
 \minipage{0.59\textwidth}
@@ -1184,11 +1180,11 @@ Patient selection was also implemented in a search bar, to enhance the usability
 \end{wrapfigure}
 The form is initialised in the first line, action specifies the URL to which the forms data is directed, which in this case will be the same page. The "method="get"" command is what tells the form to append the data inputted to the URL, for this application it is the specific patient id variable. The next line sets the attributes of the search bar. The placeholder value is set so the doctor knows what they must enter and "name="w1"" is what is used to name the variable inputted. Note w1 again is used so the appended variable in the URL can be called by the PHP script in the same way. Finally the second input line screens the image of the magnifying glass which is used instead of the standard text search button to improve aesthetics. Once a patient id is entered into the bar and the magnifying glass is clicked the page is reloaded with the inputted id number appended to the URL as the global w1 variable, thus producing the patients data within the page. 
 
-\subsubsection{Graph}
+\subsubsection{Graph - \textit{Michael Fedosiuk}}
 As an aid to diagnosis the variation of the patients BP over time is presented graphically to the doctor. This is done using the same Google JavaScript package as was used within the patient app, for further details on its implementation refer to the patient application UI section. The one difference from the patient app was that it was not possible to call the graph-data.php script to import the relevant data array. This is due to the fact that global page variable "w1" which denotes the user selected is required in the SQL data query. As the graph-data.php is a small script the simple solution of copying its contents into the body of JavaScript was acceptable. The SQL query was also updated to include the w1 variable so that it was updated upon a new patient being selected. 
 
-\subsubsection{Patient information}
-This section is found at the bottom of fig.\ref{indexover}. Firstly the data had to be called from the database and be formed into a series of arrays. The SQL queries for the data are shown in fig.\ref{infoSQL}, note that the "*" refers to all data being called for the relevant patient. The relevant data was then displayed in a html table by creating a short PHP section within the relevant cells which selects data from the array and displays it using echo command. Fig.\ref{medtable} shows the table for the first piece of medication, the $<$tr$>$ tags surround rows and the $<$td$>$ create cells within these rows. 
+\subsubsection{Patient information - \textit{Michael Fedosiuk}}
+This section is found at the bottom of fig.\ref{indexover}. Firstly the data had to be called from the database and be formed into a series of arrays. The SQL queries for the data are shown in fig.\ref{infoSQL}, note that the "*" refers to all data being called for the relevant patient. The relevant data was then displayed in a html table by creating a short PHP section within the relevant cells which selects data from the array and displays it using echo command. Fig.\ref{medtable} shows the table for the first piece of medication, the $<$tr$>$ tags surround rows and the $<$td$>$ create cells within these rows. The patient info section is similar in creation however it does include the uncertainty bar and two buttons. The uncertainty bar is formed using jQuery, therefore scripts and links had to be imported within the page header, fig.\ref{buttonscripts}. The linked scripts contain the JavaScript functions that constructs the bar. 
 
 \begin{wrapfigure}{l}{0.35\textwidth}
 \centering
@@ -1197,7 +1193,7 @@ This section is found at the bottom of fig.\ref{indexover}. Firstly the data had
 \includegraphics[width=\linewidth]{medtable.png}
 \caption{Formatting patient medication data \label{medtable}}
 \end{wrapfigure} 
-The patient info section is similar in creation however it does include the uncertainty bar and two buttons. The uncertainty bar is formed using jQuery, therefore scripts and links had to be imported within the page header, fig.\ref{buttonscripts}. The linked scripts contain the JavaScript functions that constructs the bar. All that is required is to specify a div in which it should appear in this case "\#progressbar" and then set the value which here is the "\$flagno" (the patients data uncertainty) multiplied by 10 as the bar has 100 increments, fig.\ref{progressbar}. Outside the script in the html the div is created and given the required id="progressbar". The metric value is displayed on top of of the bar in the class="progress-label". 
+All that is required is to specify a div in which it should appear in this case "\#progressbar" and then set the value which here is the "\$flagno" (the patients data uncertainty) multiplied by 10 as the bar has 100 increments, fig.\ref{progressbar}. Outside the script in the html the div is created and given the required id="progressbar". The metric value is displayed on top of of the bar in the class="progress-label". The first button seen below is the uncertainty metric reset button, this calls a PHP script which enacts a single SQL query, "UPDATE patientInfo SET fraudFlag='0' WHERE patientID = '\$patientUsername'" this resets the patients uncertainty metric to 0. The second button opens the Tallis enactment script within a new window allowing the patient to be reviewed.
 
 \begin{figure}[h!] 
 \minipage{0.49\textwidth}
@@ -1209,9 +1205,9 @@ The patient info section is similar in creation however it does include the unce
 \caption{Creating the uncertainity bar \label{progressbar}}
 \endminipage
 \end{figure} 
-The first button seen below is the uncertainty metric reset button, this calls a PHP script which enacts a single SQL query, "UPDATE patientInfo SET fraudFlag='0' WHERE patientID = '\$patientUsername'" this resets the patients uncertainty metric to 0. The second button opens the Tallis enactment script within a new window allowing the patient to be reviewed.
 
-\subsubsection{Tutorial, About Us and Site Terms}
+
+\subsubsection{Tutorial, About Us and Site Terms - \textit{Michael Fedosiuk}}
 All of these are initiated within the bottom left hand of the index.php file. They each display their data in a similar format, with the tutorial being slightly more complex. The tutorial was included to aid usability for the doctor. Due to the time pressures GP's are under they will not have time to figure out how an application works and so may not use it unless they are succinctly taught how to operate it. The tutorial as shown from fig.\ref{tut}, highlights segments of the page individually and displays text on how to use them. The "About Us" and "Site Terms" are in the exact same format as the first tutorial section and just display the relevant data. 
 \begin{figure}[h!] 
 \minipage{0.49\textwidth}
@@ -1311,14 +1307,14 @@ The variance of blood pressure over time for patients taking anti-hypertension m
 Although there are risks which come with these assumptions, accepting them meant that we were able to implement a linear model for the set of seven daily blood pressure measurements of each patient. The analysis was initially performed in Excel, this was chosen because it was readily available, the data was already in this format and it allowed for simple data manipulation and graphical representation.
 
 \subsubsection{Linear Regression}
-Linear regression is a set of mathematical operations that creates a line of best fit for a set of scattered data points. Linear regression can either be multivariate linear regression or simple linear regression. Multivariate analysis allows you to considered multiple variables whereas simple regression analysis just relates a single driven variable. 
+Linear regression is a set of mathematical operations that creates a line of best fit for a set of scattered data points. Linear regression can either be multivariate linear regression or simple linear regression. 
 
 \begin{wrapfigure}{r}{.40\textwidth}
 \centering
 \fbox{\includegraphics[scale=0.4]{linexmp.png}}
 \caption{Least Squares Linear Regression Overview \cite{linregdia} \label{linregfig}}
 \end{wrapfigure} 
-For this application simple regression analysis was sufficient, to asses the single variable of BP over time. The use of linear regression usually falls within two main segments, prediction and correlation. This use of the model falls within the correlation category. For correlation testing a given variable $Y$ , in this model BP measurements relates a number of driving variables $X_1, X_2,...,X_i$ , in this model time progression. These are analysed with a linear regression to find out how strongly they are related and to highlight which values of $X_1, X_2,...,X_i$ contain data which does not conform.
+Multivariate analysis allows you to considered multiple variables whereas simple regression analysis just relates a single driven variable. For this application simple regression analysis was sufficient, to asses the single variable of BP over time. The use of linear regression usually falls within two main segments, prediction and correlation. This use of the model falls within the correlation category. For correlation testing a given variable $Y$ , in this model BP measurements relates a number of driving variables $X_1, X_2,...,X_i$ , in this model time progression. These are analysed with a linear regression to find out how strongly they are related and to highlight which values of $X_1, X_2,...,X_i$ contain data which does not conform.
 \\ \indent 
 In this model, linear least squares regression is "The straight line $y=a + bx$ should be fitted through the given points $(x_1,y_1)...(x_i,y_i)$ so that the sum of the squares of the distances of those points from the straight line is minimum, where the distance is measured on the vertical direction (the y-direction)" \cite{Kryzig}. Each data point is of the form shown below:
 \begin{figure}[h]
@@ -1526,7 +1522,7 @@ The statement has 4 main sections nested within each other, as with all SQL stat
 \end{wrapfigure} 
 The $\overline{x}$ and $\overline{y}$ are simply found using the "avg()" function which finds the mean value of a column. The number of data points is found using the "count()" function. Finally $\Sigma x^2, \Sigma y^2, \Sigma xy, \Sigma x$ can all be calculated by sum(x*x), sum(y*y), sum(x*y) and sum(x) respectively. The sum function adds all values within a column (* denotes multiplication of data points). 
 \\ \indent
-A further step up the page into the next nest segment is where the calculation of both linear regression coefficients, $m_0$ and $m_1$, takes place. This is the implementation of ({\color{red} needs referencing here!!!}) eq.10 and 15, pg.4!!!. The values of the variances$\Sigma x^2 -N\overline{y}\overline{y}, \Sigma y^2 - N\overline{y}\overline{y}, \Sigma xy - N\overline{x}\overline{y}$ are also calculated within and named with the prefixes ss\_xx, ss\_yy and ss\_xy. These are then called in the final nest segment to find the correlation coefficient and so complete the implementation of equation 18, pg 7!!!.
+A further step up the page into the next nest segment is where the calculation of both linear regression coefficients, $m_0$ and $m_1$, takes place. This is the implementation of equations 10 and 15 seen within previous linear regression section 7.3.1. The values of the variances$\Sigma x^2 -N\overline{y}\overline{y}, \Sigma y^2 - N\overline{y}\overline{y}, \Sigma xy - N\overline{x}\overline{y}$ are also calculated within and named with the prefixes ss\_xx, ss\_yy and ss\_xy. These are then called in the final nest segment to find the correlation coefficient and so complete the implementation of equation 18, pg 7!!!.
 \\ \indent
 Finally as shown in the last two lines the query is run in the database using the "mysql\_query" PHP function. The result is formed into an array using the "mysql\_fetch\_array" function. 
 
@@ -2613,6 +2609,8 @@ The salaries for developers to finish and maintain the app would have to be dedu
 Webmd.com. 2014. High Blood Pressure Medication Side Effects. [online] Available at: \url{http://www.webmd.com/hypertension-\\high-blood-pressure/guide/side-effects-high-blood-pressure-medications} [Accessed: 9 Apr 2014].
 \bibitem{study}
 Larkin, K., Schauss, S., Elnicki, D. and Goodie, J. 2007. Detecting white coat and reverse white coat effects in clinic settings using measures of blood pressure habituation in the clinic and patient self-monitoring of blood pressure. Journal of human hypertension, 21 (7), pp. 516--524.
+\bibitem{linregdia}
+Marin.edu, (2014). Chapter2--Correlation and Regression. [online] Available at: url{http://www.marin.edu/~npsomas/Lectures/Ch\_2/Sections\_01to04.htm} [Accessed 24 Apr. 2014].
 \bibitem{Kryzig}
 Kreyszig, E., Kreyszig, H. and Norminton, E. J. 2011. Advanced engineering mathematics. [New York]: J. Wiley.
 \bibitem{linregdev}
