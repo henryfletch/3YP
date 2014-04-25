@@ -35,9 +35,9 @@
 \contentsline {subsection}{\numberline {6.3}Creating a patient profile - \textit {Emma Saragossi}}{27}{subsection.6.3}
 \contentsline {subsubsection}{\numberline {6.3.1}Initial design - \textit {Emma Saragossi}}{27}{subsubsection.6.3.1}
 \contentsline {subsubsection}{\numberline {6.3.2}Separate patient creation form - \textit {Emma Saragossi}}{30}{subsubsection.6.3.2}
-\contentsline {subsection}{\numberline {6.4}News feed - \textit {Emma Saragossi}}{35}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Patient search bar - \textit {Emma Saragossi}}{35}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Extension ideas for the Doctor Application - \textit {Emma Saragossi}}{36}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.4}News feed - \textit {Emma Saragossi}}{37}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Patient search bar - \textit {Emma Saragossi}}{38}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Extension ideas for the Doctor Application - \textit {Emma Saragossi}}{38}{subsection.6.6}
 \contentsline {subsection}{\numberline {6.7}Patient checking and review - \textit {Michael Fedosiuk}}{39}{subsection.6.7}
 \contentsline {subsubsection}{\numberline {6.7.1}Page Segments and Scaling - \textit {Michael Fedosiuk}}{39}{subsubsection.6.7.1}
 \contentsline {subsubsection}{\numberline {6.7.2}Patient Selector - \textit {Michael Fedosiuk}}{40}{subsubsection.6.7.2}

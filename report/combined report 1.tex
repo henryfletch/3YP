@@ -47,6 +47,7 @@
     urlcolor=black
 }
 %%
+%%% numbers=left,frame=lines
 
 \lstnewenvironment{php}
 {\lstset{language=php,
@@ -731,10 +732,11 @@ The keystone becomes an \textit{enquiry}. A series of questions are posed to the
 \end{center}
 \end{figure}
 
-\item \textbf{Target blood pressure} - this determines the patient's target blood pressure. Target blood pressure is based on the patient's age and whether or not they have been diagnosed with 'white coat' hypertension\footnote{Patient exhibits elevated blood pressure in a clinical setting but not in other settings, often due to anxiety}. These are known from the \textit{patient data enquiry}. The keystone becomes a \textit{decision} task. A \textit{decision task} "defines the decision options, relevant information and a set of argument rules which determine which of the options should be chosen according to current data values" \cite{tallisDecision}. There are four candidates for the target blood pressure, each with two arguments (see Table~\ref{table:targetBP}). In the argument column, (--) means exclude this candidate if the source meets a particular argument. For example, if the candidate has 'white coat' hypertension, their target blood pressure cannot be 140/90mmHh or 150/90mmHg.
+\item \textbf{Target blood pressure} - this determines the patient's target blood pressure. Target blood pressure is based on the patient's age and whether or not they have been diagnosed with 'white coat' hypertension\footnote{Patient exhibits elevated blood pressure in a clinical setting but not in other settings, often due to anxiety}. These are known from the \textit{patient data enquiry}. The keystone becomes a \textit{decision} task. A \textit{decision task} "defines the decision options, relevant information and a set of argument rules which determine which of the options should be chosen according to current data values" \cite{tallisDecision}. There are four candidates for the target blood pressure, each with two arguments (see Table~\ref{table:targetBP}). In the argument column, (- -) means exclude this candidate if the source meets a particular argument. For example, if the candidate has 'white coat' hypertension, their target blood pressure cannot be 140/90mmHh or 150/90mmHg.
+
 \begin{table}[ht]
 \begin{center}
-\begin{tabular}{|p{1.8cm}|p{1.5cm}| l | l |p{3.5cm}|}
+\begin{tabular}{|p{1.8cm}|p{1.5cm}| l | l |p{4.3cm}|}
 \hline
 \textbf{Candidate name} & \textbf{Target BP (mmHg)} & \textbf{Argument 1} & \textbf{Argument 2} & \textbf{Description} \\
 \hline
@@ -1062,9 +1064,9 @@ $newPatient->close();
 \caption{Submitting all data to database}
 \label{code:submitAll}
 \end{code}
-
-
 \end{enumerate}
+
+\clearpage
 
 \subsection{News feed - \textit{Emma Saragossi}}
 A news feed is displayed in the sidebar to flag for the doctor any alerted patients; that is, any patient who is not at their target blood pressure. The feed lists all alerted patients by their patient ID. The patient ID serves as a link which the doctor can click to take them straight to that patient's summary page, where they can then view the patient's blood pressure and medication history. 
