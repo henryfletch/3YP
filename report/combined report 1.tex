@@ -15,7 +15,7 @@
 
 \usepackage{courier}
 \usepackage{float}
-\floatstyle{boxed}
+%\floatstyle{boxed} << This used to put a box around Emma's code
 \newfloat{code}{ht}{lop}
 \floatname{code}{Extract}
 
@@ -56,7 +56,8 @@
   showstringspaces=false,
   columns=flexible,
   basicstyle={\footnotesize\ttfamily},
-  numbers=none,
+  numbers=left,
+  frame=lines,
   numberstyle=\tiny\color{gray},
   keywordstyle=\color{blue},
   commentstyle=\color{dkgreen},
@@ -74,7 +75,8 @@
   showstringspaces=false,
   columns=flexible,
   basicstyle={\footnotesize\ttfamily},
-  numbers=none,
+  numbers=left,
+  frame=lines,
   numberstyle=\tiny\color{gray},
   keywordstyle=\color{blue},
   commentstyle=\color{dkgreen},
@@ -101,7 +103,8 @@
   showstringspaces=false,
   columns=flexible,
   basicstyle={\footnotesize\ttfamily},
-  numbers=none,
+  numbers=left,
+  frame=lines,
   numberstyle=\tiny\color{gray},
   keywordstyle=\color{blue},
   commentstyle=\color{dkgreen},
@@ -821,7 +824,7 @@ As the target blood pressure decision task had relatively few candidates and arg
 \end{figure}
 
 \subsubsection{Separate patient creation form - \textit{Emma Saragossi}}
-
+\label{tallis:separatenewuser}
 An online tool was created to allow the doctor to add a new patient to the database. A series of HTML forms allows the doctor to enter relevant information about their patient. Each form requires the doctor to enter a different class of information (for example one form for medical history, a second form for comorbidities etc.). Each form appears on a different web page. The first form must be completed to be able to continue to the next.
 
 The data is not saved to the database with each separate page. This would be more difficult than executing just one SQL command to submit ALL the data to the database in one go. For example, if the doctor clicks submit on the first page, but then doesn't continue, half of the data will exist in the database but some of it will be missing. Rather than each page submitting to the database, each form variable is stored as a SESSION variable. Session variables are saved locally between pages but are not yet stored in the database. Once the doctor has completed all the forms, the final form submit button will call a PHP script which will assign all the session variables as PHP variables and save them to the database.
@@ -1132,7 +1135,6 @@ Embedded in the header on all pages is the patient search bar, which allows the 
 \subsection{Extension ideas for the Doctor Application - \textit{Emma Saragossi}}
 At present, the prototype application only makes it possible for the doctor to create a new patient profile. It is perhaps desirable that the doctor should be able to edit this information if necessary. For example, a patient may develop new conditions which will need to be included as a patient comorbidity. Further work needs to be done, therefore, to allow the doctor to update and edit patient data.
 
-\clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1457,12 +1459,12 @@ The Pearson product-moment correlation coefficient, as shown in eq.16, is the ra
 \begin{equation}
 r = \frac{\sum\limits_{i=1}^N (X_i - \overline{X})(Y_i - \overline{Y})}{\sqrt{(X_i - \overline{X})^2}\sqrt{(Y_i - \overline{Y})^2}}
 \end{equation}
-\begin{equation}
+\begin{equation} \label{mike:equation18}
 r = \frac{\big(\Sigma xy - N\overline{x}\overline{y}\big)^2}{\big(\Sigma xx - N\overline{x}\overline{y}\big)\big(\Sigma yy - N\overline{x} \overline{y}\big)}
 %http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
 \end{equation}
 \endminipage
-\end{figure} x
+\end{figure}
 
 As with the linear regression the correlation coefficient was first calculated using the test data within Excel, using the following formula $=(((7)*([@Column7]))-(([@Day8])*([@Day9])))/((((7)*([@Column15])-([@Day9]^2))^(0.5))*(((7)*([@Column158])-(([@Day8])^2))^(0.5)))$ for eq.18. Then in juxtaposition to the linear regression analysis the lowest level of variance and hence highest absolute value of the correlation coefficient was found, so that people trying to cheat methodically would be caught. The limit was set $0.98<r<-0.98$ this was significantly higher than the greatest correlation of the data. An example is shown below, the graph on the left has a correlation coefficient of -0.653 and hence the uncertainty metric remains unchanged. The graph on the right however has a correlation coefficient of -0.985 and hence breaches the limit and raises the uncertainty metric by 1. 
 
@@ -1521,12 +1523,12 @@ The statement has 4 main sections nested within each other, as with all SQL stat
 
 \begin{wrapfigure}{l}{.50\textwidth}
 \centering
-\includegraphics[scale=0.4]{mainSQL.png}
+\includegraphics[scale=0.30]{mainSQL.png}
 \caption{\label{DB3} SQL linear regression and correlation coefficient equation \cite{Mike}} 
 \end{wrapfigure} 
 The $\overline{x}$ and $\overline{y}$ are simply found using the "avg()" function which finds the mean value of a column. The number of data points is found using the "count()" function. Finally $\Sigma x^2, \Sigma y^2, \Sigma xy, \Sigma x$ can all be calculated by sum(x*x), sum(y*y), sum(x*y) and sum(x) respectively. The sum function adds all values within a column (* denotes multiplication of data points). 
 \\ \indent
-A further step up the page into the next nest segment is where the calculation of both linear regression coefficients, $m_0$ and $m_1$, takes place. This is the implementation of equations 10 and 15 seen within previous linear regression section 7.3.1. The values of the variances$\Sigma x^2 -N\overline{y}\overline{y}, \Sigma y^2 - N\overline{y}\overline{y}, \Sigma xy - N\overline{x}\overline{y}$ are also calculated within and named with the prefixes ss\_xx, ss\_yy and ss\_xy. These are then called in the final nest segment to find the correlation coefficient and so complete the implementation of equation 18, pg 7!!!.
+A further step up the page into the next nest segment is where the calculation of both linear regression coefficients, $m_0$ and $m_1$, takes place. This is the implementation of equations 10 and 15 seen within previous linear regression section 7.3.1. The values of the variances $\Sigma x^2 -N\overline{y}\overline{y}, \Sigma y^2 - N\overline{y}\overline{y}, \Sigma xy - N\overline{x}\overline{y}$ are also calculated within and named with the prefixes ss\_xx, ss\_yy and ss\_xy. These are then called in the final nest segment to find the correlation coefficient and so complete the implementation of equation \ref{mike:equation18}, page \pageref{mike:equation18}.
 \\ \indent
 Finally as shown in the last two lines the query is run in the database using the "mysql\_query" PHP function. The result is formed into an array using the "mysql\_fetch\_array" function. 
 
@@ -1552,8 +1554,8 @@ For the linear regression percentage error limit's test the values of the regres
 \caption{Correlation coefficient inequalities} 
 \includegraphics[scale=0.6]{dowhile}
 \caption{The "do while" loop \label{dowhile}} 
-\end{wrapfigure} 
-
+\end{wrapfigure}
+ 
 This was coded for all 7 days; the first two are shown in the fig.\ref{inbound}. Following this, a slightly modified version of the SQL statement shown in fig.\ref{SQLBPquery} was used to call the BP data inputted by the patient and format it into an array. This meant that inequalities similar to that used for the correlation coefficient could be used to test whether any points laid outside the linear regression error bounds and modify the \$patient\_flag variable accordingly. The "if" statement inequality on the first line relates the top bound \$dayonetop and the day one patient measured value \$dayin[0] which is selected from the \$dayin array. The bottom bound is checked in the second "if" statement.
 \\ \indent 
 This section of code was modified firstly into the form of an "if" loop and then once more into a "do while" loop, fig.\ref{dowhile}. The loop, which is initialised with the command "do", contains exactly the same code segments as before however all sections are completed for each day in turn. Once all the values have been calculated and the boundaries checked for one day, an increment is added (\$i++) and the script is run for the next day. The "while (\$i $<$ 7)" in the final line stops the iterations when the increment reaches 6 as the script has been run for all seven days. Although the loop does not improve the codes efficiency, it does mean that it could be more easily modified to accommodate a longer analysis period. It was not possible to investigate the analysis of uncertainty over a longer time period in the scope of this project as the trial data sourced only spanned 7 days. 
@@ -1576,8 +1578,8 @@ There are a couple of ways the current system may be improved upon if more data 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Tallis application-\textit{Jeffrey Yu}}
-\subsection{function}
+\section{Tallis application - \textit{Jeffrey Yu}}
+\subsection{Function}
 The function of the Tallis model is to deal with most of the medical decisions. Since there are waiting times between steps of the care pathway, some of the medical decisions are separated.  As a result, there would be multiple use cases for Tallis, all of which is used by the doctor (or carer in general). The use cases are in the middle section of Figure \ref{fig:tallisAll2}.  The top left section is the input stage, where the use case is selected, and preliminary information read.   The bottom right section is the possible ending cases. The arrows between the tasks (nodes) show the sequential logic of the events. A task can only start if all  previous tasks  linking to it, which have to be ACTIVE, has finished. A task is active if all its "preconditions" are met.  Otherwise, it stays inactive, and could be seen as invisible for the time being. 
 
 Here are the use cases where Tallis will be opened:
@@ -1599,15 +1601,16 @@ Here are the use cases where Tallis will be opened:
 
 \subsection{Reading from database}
 
-The main function of this plan (see figure \ref{fig:tallisRead} for internal composition) is to read data from the database .  It is the first and only mandatory task when Tallis is opened.  By using enquiries, one could imagine that instead of "asking" for human data input, it is "asking" the database for the required data items.  Further details of how the data items are exactly mapped to the database is explained in section XXX.  
+The main function of this plan (see figure \ref{fig:tallisRead} for internal composition) is to read data from the database .  It is the first and only mandatory task when Tallis is opened.  By using enquiries, one could imagine that instead of "asking" for human data input, it is "asking" the database for the required data items.  Further details of how the data items are exactly mapped to the database is explained in section \ref{DBXMLWrapper}.  
 
 There are two main trees of enquiries, separated into two subplans.  The first subplan is the "Treatment Status", where the treatment specific details (drug name, prescription etc.) of the patient are read from the records.  Table \ref{table:treatmentstatus} shows all the data items read. It is constucted in such a sequence so that the correct amount of information is read everytime. Number of drugs needs to be read before reading the details of drug X. For example, if the patient is only taking 2 drugs, the reading sequence ends at "drug2" enquiry task and does not read "drug3" through the precondition (Number of drugs  >= 3). Otherwise, a null will be read from the database, which could possibly affect future tasks.  Alternatively, the task could be designed to read the 4 drugs in parallel instead of series, since any unnecessary task would be cancelled by preconditions anyway. Series is preferred because it ensures drug1 is read before drug2, adding an extra line of safety.  
 
-The second subplan is the "Patient Details", which is the data for all other related conditions of the patient that may affect future decision making processes.  It is directly taken from the previously made New Patient component, which now is transposed to outside of Tallis as shown in section XXX.
+The second subplan is the "Patient Details", which is the data for all other related conditions of the patient that may affect future decision making processes.  It is directly taken from the previously made New Patient component, which now is transposed to outside of Tallis as shown in section \ref{tallis:separatenewuser}.
+
 \begin {table}[ht]
-\caption {Data Items for treatment status}
-\begin{center}
-\begin{tabular}{|p{3cm}|p{15cm}|}
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|p{13cm}|}
 \hline
 \textbf{Enquiry Task} & \textbf{Data items}                                                                                                                                         \\ \hline
 Patient ID & Patient ID \\ \hline
@@ -1615,10 +1618,9 @@ appointment read& appointment type\\ \hline
 Current treatment &BP controlled; Number of drugs;\\ \hline
 Drug X & DrugX name; DrugX class; DrugX prescription;\\ \hline
 maxDoseX & max dose X;\\ \hline
-\label{table:treatmentstatus}
-
 \end{tabular}
-\end{center}
+\label{table:treatmentstatus}
+\caption {Data Items for treatment status}
 \end{table}
 
 
@@ -1763,12 +1765,12 @@ With the initial treatment in hand, the further stages are actually simpler to i
 \end{center}
 \end{figure}
 
-The arguments that give a suggestive for/against weighting would need to be re-examined for further stages.  For example, age group is no longer an applicable argument past the initial treatment for most drugs.  Then new arguments need to be created to model the new rules at each stage. Figure \ref{fig:tallisNewDrug} is a summary taken from NICE guidelines.  There are slightly more complexities, especially when inspecting individual drugs \cite{CKS}. But overall, the rules are between drug classes and not the specific ones.  Figure \ref{fig:tallisDrugArg2} shows the arguments that have been changed or added to the drug Ramipril.  For each of the drug stages, the logical AND combines the new rule with the number of drugs . As can be seen, only 6 new arguments had to be added, while keeping the 9 other comorbities the same.  
+The arguments that give a suggestive for/against weighting would need to be re-examined for further stages.  For example, age group is no longer an applicable argument past the initial treatment for most drugs.  Then new arguments need to be created to model the new rules at each stage. Figure \ref{fig:tallisNewDrug} is a summary taken from NICE guidelines.  There are slightly more complexities, especially when inspecting individual drugs \cite{CKS}. But overall, the rules are between drug classes and not the specific ones.  Figure \ref{fig:tallisDrugArg2} shows the arguments that have been changed or added to the drug Ramipril.  For each of the drug stages, the logical AND combines the new rule with the number of drugs . As can be seen, only 6 new arguments had to be added, while keeping the 9 other comorbidities the same.  
 
 \begin{figure}[ht]
 \begin{center}
-\includegraphics[scale=0.8]{tallisDrugArg2}
-\caption{New logical arguments for drug decisions, based on furthe stages of treatments}
+\includegraphics[scale=0.75]{tallisDrugArg2}
+\caption{New logical arguments for drug decisions, based on further stages of treatments}
 \label{fig:tallisDrugArg2}
 \end{center}
 \end{figure}
@@ -1824,7 +1826,7 @@ The goal of this section is to change the original "legacy" template UI, into on
 \end{center}
 \end{figure}
 
-The structure of these templates follow a default "legacy" template.  This main template file points to where to find files that determine the behaviour for each of the components of Tallis web enactment.  The components and their locations are identified in figure \ref{fig:TallisUIevolve}. The list of components of interest are presented in table \ref{fig:tallisUItable}.  Most of the time, only a few features at a time need to be changed, and so this is performed by "extending" the original template.  The tabbed template only changes a few things, and thus extends the legacy template, instead of starting from scratch.  For the desired UI, it can be reached by extending the tabbed UI.
+The structure of these templates follow a default "legacy" template.  This main template file points to where to find files that determine the behaviour for each of the components of Tallis web enactment.  The components and their locations are identified in figure \ref{fig:tallisUIevolve}. The list of components of interest are presented in table \ref{fig:tallisUItable}.  Most of the time, only a few features at a time need to be changed, and so this is performed by "extending" the original template.  The tabbed template only changes a few things, and thus extends the legacy template, instead of starting from scratch.  For the desired UI, it can be reached by extending the tabbed UI.
 \begin{figure}[!p]
 \begin{center}
 \includegraphics[scale=0.8]{tallisUIevolve}
@@ -1877,8 +1879,8 @@ The test server that was used for the purpose of the project was a Virtual Priva
 \end{figure}
 
 
-\subsection{Integrating Tallis \& the MySQL database}
-One of the important features of our application is the ability for the medical decision making software to access patient data from the database, in order to make tailored decisions for their treatment. The Tallis software can interact with a MySQL database by providing the software with a path to an XML (Extensible Markup Language) file. This XML defines the relationship between a Tallis data variable, via a SQL statement, to an object in the database. One such relationship is called an 'enquiryReader', which reads data from the database and inserts it into Tallis when an enquiry task is called (Code box \ref{xmlenquiryreader}). An enquiry task is a block in Tallis that requires user input, however with database access this data can now be read in from the database automatically. 
+\subsection{Integrating Tallis \& the MySQL database} \label{DBXMLWrapper}
+One of the important features of our application is the ability for the medical decision making software to access patient data from the database, in order to make tailored decisions for their treatment. The Tallis software can interact with a MySQL database by providing the software with a path to an XML (Extensible Markup Language) file. This XML defines the relationship between a Tallis data variable, via a SQL statement, to an object in the database. One such relationship is called an 'enquiryReader', which reads data from the database and inserts it into Tallis when an enquiry task is called (Extract \ref{xmlenquiryreader}). An enquiry task is a block in Tallis that requires user input, however with database access this data can now be read in from the database automatically. 
 
 
 %%XML Listing settings!
@@ -1899,7 +1901,7 @@ One of the important features of our application is the ability for the medical 
 }  
 %%
 
-\renewcommand{\lstlistingname}{Code box}
+\renewcommand{\lstlistingname}{Extract}
 \begin{lstlisting}[float=ht,numbers=left,frame=lines,caption="Example enquiryReader element",label=xmlenquiryreader,showstringspaces=false]
 <enquiryReader taskName="Current_treatment_READ" dataItem="Number_of_drugs">
 <preparedSQLStatement dbName="tallis" params="patientID">
@@ -1973,13 +1975,14 @@ The guideline also suggests the types of hashing algorithms that are suitable to
 
 \subsection{SSL Encryption} \label{SSLencryption}
 \subsubsection{Overview}
-%General overview: Then also the nitty-gritty of implementation including the apache settings? SSL2.0 disabled etc. TLS?
+
 The entire project is based as a web accessible application for both doctors and patients to access. As such, confidential information will be sent and received between the end-users and the server. Normally, Internet traffic is sent 'in the clear', such that if it were to be intercepted by a 3rd party en-route, all of the information being sent between client and server can be obtained. Clearly this is not viable when dealing with potentially confidential material, e.g. patient's blood pressure readings or what drugs they are on for treatment. Fortunately, there is a very common way of being able to send data over the Internet, whilst ensuring its security: Secure Sockets Layer (SSL) and Transport Layer Security (TLS). All manner of major websites that deal with user data such as banks, online shopping, social media and e-mail providers usually employ this system to secure data in transit between their servers and the end-user. SSL/TLS can be thought of as encrypting the data before it is sent over the Internet, and then it is decrypted on arrival at the clients computer. 
 
 \subsubsection{Server configuration}
 The NHS HSCIC Guidelines \cite{NHS:hsic:acs} recommend using either SSLv3 or TLSv1.0 or newer. It specifically mandates against using SSLv2, probably since it is officially depreciated and has known security flaws. When setting up the test server SSL settings, it was important to ensure that SSLv2 was disabled to comply with the HSCIC guidelines. 
 \\ \indent
-The first step of getting SSL to work was to enable the SSL module on the Apache webserver. Then using software called 'OpenSSL', the key and certificate files can be created. Finally, Apache has to be configured to use the key files that are saved on the server. All of these settings are stored in a file, httpd.conf. A snippet of the relevant settings is shown in code box \ref{apachehttpd}.
+The first step of getting SSL to work was to enable the SSL module on the Apache webserver. Then using software called 'OpenSSL', the key and certificate files can be created. Finally, Apache has to be configured to use the key files that are saved on the server. All of these settings are stored in a file, httpd.conf. A snippet of the relevant settings is shown in 
+extract \ref{apachehttpd}.
 
 
 \begin{lstlisting}[float=ht,numbers=left,frame=lines,caption="Apache httpd.conf",label=apachehttpd,basicstyle=\ttfamily\small,showstringspaces=false]
@@ -2004,13 +2007,13 @@ Lines 2 and 4 tell Apache that all requests to port 443 are to be handled using 
 \subsection{AES encryption}
 \subsubsection{Overview}
 
-Although the database which holds all of the application data is secure in the sense that under normal conditions only authorised users and systems will have access to it, there is still a risk that the entire server itself could become compromised and as such the database becomes readable by an un-authorised 3rd party. There are multiple ways to help mitigate against this sort of risk. One of the possible ways is to encrypt all of the data that is stored in the database, so that even if the data is stolen, it would essentially be worthless to someone without the correct key. 
+Although the database which holds all of the application data is secure in the sense that under normal conditions only authorised users and systems will have access to it, there is still a risk that the entire server itself could become compromised and as such the database becomes readable by an unauthorised 3rd party. There are multiple ways to help mitigate against this sort of risk. One of the possible ways is to encrypt all of the data that is stored in the database, so that even if the data is stolen, it would essentially be worthless to someone without the correct key. 
 \\ \indent
 The NHS guidelines as described in section \ref{security:nhsguidelines} mandate the use of various encryption standards that can be used to encrypt data. In order to encrypt a chunk of textual data, we needed to use a symmetric block cipher. A symmetric cypher uses the same key (password) to encrypt and decrypt the data. One of the primary block ciphers that are used globally is AES (Advanced Encryption Standard). AES with a 256-bit key length is used in the United States for encrypting top-secret information \cite{aes:nsa}, and as such is assumed nearly unbreakable if the key is kept secure. The NHS guideline requirement for using AES-256 therefore ensures that encrypted data remains extremely safe.
 
 \subsubsection{Implementing AES using MySQL}
 
-During the initial stages of the project, the patients iPhone application was built to use AES encryption using the MySQL "AES\_ENCRYPT" command. We chose to use the patient's login password as the encryption key since the plain text password was not stored on the database server, and so if the database was compromised, recovering the encrypted data would be essentially impossible. Code box \ref{mysqlencrypt} shows part of the submission code and SQL statement (shown in red) that was used to encrypt the submitted data before it was saved onto the database.
+During the initial stages of the project, the patients iPhone application was built to use AES encryption using the MySQL "AES\_ENCRYPT" command. We chose to use the patient's login password as the encryption key since the plain text password was not stored on the database server, and so if the database was compromised, recovering the encrypted data would be essentially impossible. Extract \ref{mysqlencrypt} shows part of the submission code and SQL statement (shown in red) that was used to encrypt the submitted data before it was saved onto the database.
 
 
 %%PHP Listing settings!
@@ -2149,7 +2152,7 @@ for($i=0;$i<10000;$i++){
 \end{lstlisting}
 
 
-A simple PHP example of key stretching is show  in code box \ref{stretching}. Essentially the result of each hash output is fed back into itself, this is repeated 10,000 times. This means it could take \(10^4\) times longer to brute-force this password hash using the same methods as before, causing a password to be revealed in months or years rather than minutes. The added iterations will slow down the user logging in just slightly, since a hash needs to be computed on every login, but the number of iterations is chosen correctly so that there is minimal user impact (a few tenths of a second is probably acceptable). 
+A simple PHP example of key stretching is show  in extract \ref{stretching}. Essentially the result of each hash output is fed back into itself, this is repeated 10,000 times. This means it could take \(10^4\) times longer to brute-force this password hash using the same methods as before, causing a password to be revealed in months or years rather than minutes. The added iterations will slow down the user logging in just slightly, since a hash needs to be computed on every login, but the number of iterations is chosen correctly so that there is minimal user impact (a few tenths of a second is probably acceptable). 
 
 \subsubsection{Hashing implementation in the 'Cardiac Track' application} \label{phpass-section}
 
@@ -2184,7 +2187,7 @@ $result = mysql_query($query);
 ?>
 \end{lstlisting}
 
-Code box \ref{sql-injection-1} shows a very simple system where a user submits their username, and their password is then retrieved from the database. However, this code is very susceptible to an SQL injection attack. Suppose the user entered into the website form the following:
+Extract \ref{sql-injection-1} shows a very simple system where a user submits their username, and their password is then retrieved from the database. However, this code is very susceptible to an SQL injection attack. Suppose the user entered into the website form the following:
 
 \begin{lstlisting}[showstringspaces=false]
 abc'; DROP TABLES users;
@@ -2201,7 +2204,7 @@ By including the single quote mark after the 'abc', the user has escaped outside
 \subsubsection{Mitigating against SQL injection attacks}
 Clearly it is important to mitigate against such an attack, especially since our database will hold sensitive patient data. One of the main ways that we protect against unauthorised data access is through user level control written in PHP. However if SQL injection were used, a hacker could easily obtain the data without having a valid login. 
 \\ \indent
-There are many ways to avoid SQL injection, most of which involve sanitising the data inputs before they are included in the SQL statement. However an easier way is to use the principal of separating data and queries. This is done in PHP using the more advanced MySQLi (MySQL improved) extension, which allows us to separate the data being sent to the database from the SQL query itself. Code box \ref{mysqli-example} demonstrates how this works.
+There are many ways to avoid SQL injection, most of which involve sanitising the data inputs before they are included in the SQL statement. However an easier way is to use the principal of separating data and queries. This is done in PHP using the more advanced MySQLi (MySQL improved) extension, which allows us to separate the data being sent to the database from the SQL query itself. Extract \ref{mysqli-example} demonstrates how this works.
 
 %%PHP Listing settings!
 \lstset{
@@ -2262,6 +2265,8 @@ This section of the project report includes two portions of the actual PHP code 
 \url{https://www.github.com/henryfletch/remote-care-application}
 \end{framed}
 Github was used to store all of the project code. It allows version control, the ability to merge files if edited by multiple people simultaneously, as well as clearly showing line-by-line changes. Since the application was mostly web based, file changes to the Github repository immediately updated on the test server. This was achieved using a 'webhook', which essentially notifies the web server of a change, and it then downloads the latest copy of the files \cite{github:webhooks,github:webhook-2}. 
+
+\newpage
 
 \subsection{Doctor's Login Form} \label{drloginform}
 
