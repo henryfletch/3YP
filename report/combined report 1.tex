@@ -260,81 +260,88 @@ The online treatment aid implements the most up to date NICE guidelines for the 
 \\ \indent
 The project stems from an idea of a relatively novel combination of different aspects of current medical practice and technology for the treatment of hypertension. Although the usual care of hypertension has been well established, there are new technologies and techniques being developed to improve it.   In particular, the focus of this project would be on informatic systems, which could be useful for handling and communicating with a large population of hypertension patients. 
 \\ \indent
- The two main subtopics to be focused on are namely telemonitoring, clinical decision support, both of which show modest improvement of care of chronic illnesses in general\cite{Lit1}. Other common informatics systems implemented include: population reports, audit/feedback, advanced order entry, and electonic scheduling.\cite{Lit1}  The two were selected initially for simplicity; keeping fewer features could improve clarity.  Specifically for hypertension, there has been multiple studies exploring the effectiveness of the two  aspects individually. Even a small number which investigates both ideas in combination, to a certain extent.
-\\ \indent
+ The two main subtopics to be focused on are namely telemonitoring, clinical decision support, both of which show modest improvement of care of chronic illnesses in general \cite{Lit1}. Other common informatics systems implemented include: population reports, audit/feedback, advanced order entry, and electonic scheduling \cite{Lit1}. The two were selected initially for simplicity; keeping fewer features could improve clarity.  Specifically for hypertension, there has been multiple studies exploring the effectiveness of the two  aspects individually. Even a small number which investigates both ideas in combination, to a certain extent.
+
+
 \subsection{Telemonitoring}
 \subsubsection{General telemedicine}
-Telemedicine is an emerging facet.  As the name implies, it is the practice of medicine remotely between healthcare professionals and patients, as opposed to the usual care in a clinical setting, or a carer transmitting data from the patients' location. With the advancement of the enabling communications technology, the treatment of patients through such medium is starting to be considered and implemented.  The term itself encompasses a range of activities, including educating patients, transferring data, promoting patient-doctor contact, and improving electronic health records. There are also two main modes of communication: real time (video-conferencing), and ansynchronous transmission of data.  Another parameter to examine is the degree of user input from the patient. Some systems passively monitor automatically, while others require patient measurement and input.\cite{TM5}  
+Telemedicine is an emerging facet. As the name implies, it is the practice of medicine remotely between healthcare professionals and patients, as opposed to the usual care in a clinical setting, or a carer transmitting data from the patients' location. With the advancement of the enabling communications technology, the treatment of patients through such medium is starting to be considered and implemented. The term itself encompasses a range of activities, including educating patients, transferring data, promoting patient-doctor contact, and improving electronic health records. There are also two main modes of communication: real time (video-conferencing), and asynchronous transmission of data. Another parameter to examine is the degree of user input from the patient. Some systems passively monitor automatically, while others require patient measurement and input \cite{TM5}.
 \\ \indent
-Considering the limited financial and temporal resources available for this project, an inital guess would be that asynchronous transmission, and non-automatic systems would be the less costly methods.   
+Considering the limited financial and temporal resources available for this project, an initial guess would be that asynchronous transmission, and non-automatic systems would be the less costly methods.
 \\ \indent
 However the evidence base is still small, and future trials could provide more information on the actual effectiveness.
 \\ \indent
-There are multiple factors that support the adoption of telemonitoring for chronic diseases.  Table \ref{table:TMproscons} are some of the key driving elements.\cite{TM2}.  
+There are multiple factors that support the adoption of telemonitoring for chronic diseases. Table \ref{table:TMproscons} are some of the key driving elements \cite{TM2}.  
 
 
-\begin{center}
-    \begin{tabular}{ | l |  p{10cm} |}
+\begin{table}[ht]
+\centering
+\renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{ | l |  p{13cm} |}
     \hline
-    Drivers & Explanation 
+    \textbf{Drivers} & \textbf{Explanation} 
     \\ \hline
-    early intervention & to detect deterioration and intervene before unscheduled and preventable services are needed
+    Early intervention & To detect deterioration and intervene before unscheduled and preventable services are needed
     \\ \hline
-     integration of care & exchange of data and communication across multiple comorbidities, multiple providers, and complex disease states
+     Integration of care & Exchange of data and communication across multiple comorbidities, multiple providers, and complex disease states
      \\ \hline
-     coaching & motivational interviewing and other techniques to encourage patient behavioral change and self-care
+     Coaching & Motivational interviewing and other techniques to encourage patient behavioural change and self-care
      \\ \hline
-      increased trust & patients satisfaction and feelings of connectedness with providers
+      Increased trust & Patients satisfaction and feelings of connectedness with providers
      \\ \hline
-     workforce changes & shifts to lower-cost and more plentiful health care workers
+     Workforce changes & Shifts to lower-cost and more plentiful health care workers
      \\ \hline
-     increased productivity & decreased home visit travel time and automated documentation
-	\\ \hline
-    \label{table:TMproscons}
-
+     Increased productivity & Decreased home visit travel time and automated documentation
+	 \\ \hline
     \end{tabular}
-\end{center}
+\caption{Key Drivers for Telemonitoring}
+\label{table:TMproscons}
+\end{table}
 
-In general patients would be able to send more data for health practioners to analyse and react accordingly.  There would be a shorter time frame for action, which hopefully would result in more reliable treatment.  One of the largest (3230 patients) trials recently was the "Whoe System Demonstrator" trial performed by the department of health.  Chronic diseases such as diabetes, chronic obstuctive pulmonary disease, and heart failure was monitored remotely.  It resulted in lower lower emergency admission, and lower mortality rates.  
+In general patients would be able to send more data for health practitioners to analyse and react accordingly. There would be a shorter time frame for action, which hopefully would result in more reliable treatment.  One of the largest (3230 patients) trials recently was the "Whoe System Demonstrator" trial performed by the department of health. Chronic diseases such as diabetes, chronic obstructive pulmonary disease, and heart failure was monitored remotely. It resulted in lower lower emergency admission, and lower mortality rates.  
 \\ \indent
-However, there also are some barriers.  A mature financial model is needed to balance the costs and benefits. Some of the factors such as costs of equipment, and quality life years saved are easier to estimate.  Others such as disruption to the work environment, and social impacts, are harder to quantify. This uncertainty makes providers hesitant to take a risk at a larger scale of deployment.  As a whole, the evidence base is still weak, but points towards better healthcare results.\cite{TM5} 
+However, there also are some barriers. A mature financial model is needed to balance the costs and benefits. Some of the factors such as costs of equipment, and quality life years saved are easier to estimate. Others such as disruption to the work environment, and social impacts, are harder to quantify. This uncertainty makes providers hesitant to take a risk at a larger scale of deployment. As a whole, the evidence base is still weak, but points towards better healthcare results \cite{TM5}.
 \\ \indent
-On the patients' side, their attitude towards the technology is also important.  If the patients are unwilling to adhere to the procedure, the health benefits would diminish.  Patients of the Whole System Demonstrator who have decided to withdraw have typically given reasons of: difficulty of operating equipment;loss of independence and self-care.\cite{TM4}  But in other studies in general, most patients welcome telemonitoring technologies and comply satisfactorily.  Empowering the patients have also shown to improve results.  Empowerment includes educating and increasing awareness, so that the patients have a feeling of more independence and control. \cite{TM6}
-\\ \indent
+On the patients' side, their attitude towards the technology is also important. If the patients are unwilling to adhere to the procedure, the health benefits would diminish. Patients of the Whole System Demonstrator who have decided to withdraw have typically given reasons of: difficulty of operating equipment;loss of independence and self-care \cite{TM4}. But in other studies in general, most patients welcome telemonitoring technologies and comply satisfactorily. Empowering the patients have also shown to improve results. Empowerment includes educating and increasing awareness, so that the patients have a feeling of more independence and control \cite{TM6}.
+
+
 \subsubsection{Hypertension Telemonitoring studies}
 %a bit too much paraphrasing, needs a bit more thought.
-In one systematic review for hypertension telemonitoring (AbuDagga et al)\cite{impact Lit}, most of the studies involved have shown to improved blood pressure on a similar level to usual care with hypertensive drugs. Like general telemonitoring, patients also seemed to be receptive to the technology. But more evidence is needed for the receptiveness of the clinicians, as well as their costs.   
+In one systematic review for hypertension telemonitoring (AbuDagga et al) \cite{impact Lit}, most of the studies involved have shown to improved blood pressure on a similar level to usual care with hypertensive drugs. Like general telemonitoring, patients also seemed to be receptive to the technology. But more evidence is needed for the receptiveness of the clinicians, as well as their costs.   
 \\ \indent
-Different technologies and designs are analysed to find any patterns for positive results. Table \ref{table:TMtechs} is a group of the different technologies summarised by AbuDagga et al.  In essence, the overarching procedure involves the patient taking readings at home with a blood pressure monitor, transferring data through a telephone line or internet to a secure server, an alerting system for worthy events and a researcher/nurse/phsyican responding to such events.
+Different technologies and designs are analysed to find any patterns for positive results. Table \ref{table:TMtechs} (page \pageref{table:TMtechs}) is a group of the different technologies summarised by AbuDagga et al. In essence, the overarching procedure involves the patient taking readings at home with a blood pressure monitor, transferring data through a telephone line or internet to a secure server, an alerting system for worthy events and a researcher/nurse/physician responding to such events.
 
-The BP monitoring devices could be stand-alone, which would require input from the patient. Or it could wire/wirelessly connect to other devices. Some were able to send via blue tooth.  The monitoring devices with less user input had a better adherence rates, but coming at a higher price.  
+The BP monitoring devices could be stand-alone, which would require input from the patient. Or it could wired/wirelessly connect to other devices. Some were able to send via bluetooth.  The monitoring devices with less user input had a better adherence rates, but coming at a higher price.  
 
 Alerting models were varied too.  Some would directly notify the providers, while others would notify to patients to contact providers for guidance.  Typically, poor adherence would be alerted if there are not enough readings within a certain amount of time, for example 12 in 2 weeks.  Blood pressure not being controlled after a set length of time is also alerted sometimes.
 
-However, these studies were all clinical trials over a relatively short period of time, ranging from 2 months to 12 months.  Chronic disease management over a longer time may have different effects on the patients.   
-\begin{center}
-\begin{tabular}{|p{3cm}|p{15cm}|}
+However, these studies were all clinical trials over a relatively short period of time, ranging from 2 months to 12 months.  Chronic disease management over a longer time may have different effects on the patients.
+   
+\begin{table}
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|p{13cm}|}
 \hline
 \textbf{Study} & \textbf{Telemonitoring Technology}                                                                                                                                         \\ \hline
-Artinian et al\cite{Im1} & BP monitor stores reading/links communication over phone line; patient presses send; server calls patient with result; report sent to physician and nurse                \\ \hline
-Artinian et al\cite{Im2} & BP monitor; link device; reports sent to nurse and PCP; telecounseling calls                                                                                               \\ \hline
-Bobrie et al\cite{Im3}   & BP reading and titration decision submitted by patient electronically over phone line                                                                                      \\ \hline
-Bondmass\cite{Im4}       & Home monitor programmed to measure BP; data transmitted over phone line; alarm                                                                                             \\ \hline
-Bosworth et al\cite{Im5} & BP monitor transmits data over phone line; alarm                                                                                                                           \\ \hline
-Carrasco et al\cite{Im6} & BP sphygmomanometer, cell phone (questions on self-management protocol), Web-management application for physician, SMS capability                                          \\ \hline
-Friedman et al\cite{Im7} & Autosphygmomanometer; computer-controlled phone system talk to patient using computer-controlled speech; touch-tone keypad on phone and data entered by patient            \\ \hline
-Fursse et al\cite{Im8}   & BP sphygmomanometer; home telemonitoring unit (touch screen to enter data); PCP viewed patient data (linked to medical records); applied personalized threshold algorithm  \\ \hline
-Green et al\cite{Im9}    & All have access to Web service; BP telemonitoring Group trained to use site, pharmacist-mediated group contact with Web-based communication; action plan put by pharmacist \\ \hline
-Logan et al\cite{Im10}    & Bluetooth-enabled home BP monitor; mobile phone; report to PCP; alert                                                                                                      \\ \hline
-Madsen et al\cite{Im11}   & BP device PDA with software BP; data transmit by PDA embedded mobile phone; PCP with Web access; patient communicates with PCP by email                                 \\ \hline
-Parati et al\cite{Im12}   & BP device/modem into phone line; reminder sent to patient to check BP; alert system                                                                                        \\ \hline
-Park et al\cite{Im13}     & BP home device; SMS cell phone and Web; tailored instructions                                                                                                              \\ \hline
-Rogers et al\cite{Im14}   & BP device submits data over phone line; reports sent to patient and physician                                                                                              \\ \hline
-Rinfret et al\cite{Im15}  & Adherence/BP monitor system; doctor/nurse/pharmacist reports; alert                                                                                                        \\ \hline
-\label{table:TMtechs}
+Artinian et al \cite{Im1} & BP monitor stores reading/links communication over phone line; patient presses send; server calls patient with result; report sent to physician and nurse                \\ \hline
+Artinian et al \cite{Im2} & BP monitor; link device; reports sent to nurse and PCP; telecounseling calls                                                                                               \\ \hline
+Bobrie et al \cite{Im3}   & BP reading and titration decision submitted by patient electronically over phone line                                                                                      \\ \hline
+Bondmass \cite{Im4}       & Home monitor programmed to measure BP; data transmitted over phone line; alarm                                                                                             \\ \hline
+Bosworth et al \cite{Im5} & BP monitor transmits data over phone line; alarm                                                                                                                           \\ \hline
+Carrasco et al \cite{Im6} & BP sphygmomanometer, cell phone (questions on self-management protocol), Web-management application for physician, SMS capability                                          \\ \hline
+Friedman et al \cite{Im7} & Autosphygmomanometer; computer-controlled phone system talk to patient using computer-controlled speech; touch-tone keypad on phone and data entered by patient            \\ \hline
+Fursse et al \cite{Im8}   & BP sphygmomanometer; home telemonitoring unit (touch screen to enter data); PCP viewed patient data (linked to medical records); applied personalized threshold algorithm  \\ \hline
+Green et al \cite{Im9}    & All have access to Web service; BP telemonitoring Group trained to use site, pharmacist-mediated group contact with Web-based communication; action plan put by pharmacist \\ \hline
+Logan et al \cite{Im10}    & Bluetooth-enabled home BP monitor; mobile phone; report to PCP; alert                                                                                                      \\ \hline
+Madsen et al \cite{Im11}   & BP device PDA with software BP; data transmit by PDA embedded mobile phone; PCP with Web access; patient communicates with PCP by email                                 \\ \hline
+Parati et al \cite{Im12}   & BP device/modem into phone line; reminder sent to patient to check BP; alert system                                                                                        \\ \hline
+Park et al \cite{Im13}     & BP home device; SMS cell phone and Web; tailored instructions                                                                                                              \\ \hline
+Rogers et al \cite{Im14}   & BP device submits data over phone line; reports sent to patient and physician                                                                                              \\ \hline
+Rinfret et al \cite{Im15}  & Adherence/BP monitor system; doctor/nurse/pharmacist reports; alert                                                                                                        \\ \hline
 \end{tabular}
-\end{center}
-\newpage
+\caption{Telemonitoring Studies}
+\label{table:TMtechs}
+\end{table}
 
 %One study tries measure the feasibility of implementing telemonitoring. Patients were given a wireless home BP monitor costing \$550 USD ,which sends the readings to a hub plugged to a telephone socket, which then sends data to a secure server. Alerts were sent to research assistants when patients were not sending readings at a sufficient frequency (ideally six over two weeks, following American Heart Association guidelines). The results show that 25\% of the patients followed protocol closely enough. And 21\% of the alerts were due to device or system problems.  For example, loss of power and telephone services, disconnecting of the hub,  or device error messages; sometimes these devices had to be replaced. %
 
@@ -355,23 +362,21 @@ There is an area for user input of measurements, and an area to display the data
 
 Most reviews have been highly positive. Frequent praises were given to the simple, clean interface.  Many people also used it to email data to doctors, or save data to other devices, such as computers.
 
-Other highly rated apps\cite{UIiBP}\cite{UIbppp}\cite{UIbpmh}\cite{UIbpd} have practically identical features. The main difference is in the user interface, which users seem to like.  The features serve the same functions, with a little variation in the execution for some.  For example, input methods could be typed in, scroll selected, a mixture of both, or even through the smartphone camera with character recognition\cite{UIbpd}.  The history could be in the form of a list (with comments), or a line graph over time, or bar and pie charts for summaries. Data export could also be in other formats such as HTML and .xls .  
+Other highly rated apps \cite{UIiBP,UIbppp,UIbpmh,UIbpd} have practically identical features. The main difference is in the user interface, which users seem to like.  The features serve the same functions, with a little variation in the execution for some.  For example, input methods could be typed in, scroll selected, a mixture of both, or even through the smartphone camera with character recognition \cite{UIbpd}.  The history could be in the form of a list (with comments), or a line graph over time, or bar and pie charts for summaries. Data export could also be in other formats such as HTML and .xls.  
 
 
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[scale=0.3]{AppsUI}
-\caption{screenshots of different UI of highly rated Android hypertension monitoring apps.  Left to right: iBP\cite{UIiBP}, Blood Pressure++\cite{UIbppp}, Blood Pressure (My Heart)\cite{UIbpmh}, Blood Pressure Diary\cite{UIbpd}}
+\caption{Screenshots of different UI of highly rated Android hypertension monitoring apps. Left to right: iBP \cite{UIiBP}, Blood Pressure++ \cite{UIbppp}, Blood Pressure (My Heart) \cite{UIbpmh}, Blood Pressure Diary \cite{UIbpd}}
 \label{fig:AppsUI}
 \end{center}
 \end{figure}
 
+Smartphone compatible blood pressure monitors are also available \cite{app2,app3}. They have the benefit of being able to send blood pressure (and heart rate) data directly to a smartphone.  But along with the high price tag, another problem is that the app and measuring device usually rely heavily on each other. There is no manual input and there is no display on the device. Nevertheless, it seems more convenient to the patient, and could possibly improve compliance of monitoring.  
 
-Smartphone compatible blood pressure monitors are also available \cite{app2} \cite{app3}.  They have the benefit of being able to send blood pressure (and heart rate) data directly to a smartphone.  But along with the high price tag, another problem is that the app and measuring device usually rely heavily on each other.  There is no manual input and there is no display on the device. Nevertheless, it seems more convenient to the patient, and could possibly improve compliance of monitoring.  
-
-A drawback to these apps is that they are not integrated to a healthcare provider.  The export/imports give some flexibility to where data is sent, but at the cost of having to put in more effort.  With this feature, the app is intended more for a motivated patients using it as a supplement to usual treatment. Patients are mostly self-managing the hypertension, without extra input from the doctor.  They would be happy to send data every month before visiting the doctor, but not daily.  On the physicians side, receiving a csv file perhaps is good for a small number of patients. On a larger scale, receiving emails would not be practical. The various formats of differnt apps could be confusing. And it would be inefficient to extract the data from the email to a centralised database.
+A drawback to these apps is that they are not integrated to a healthcare provider. The export/imports give some flexibility to where data is sent, but at the cost of having to put in more effort. With this feature, the app is intended more for a motivated patients using it as a supplement to usual treatment. Patients are mostly self-managing the hypertension, without extra input from the doctor. They would be happy to send data every month before visiting the doctor, but not daily. On the physicians side, receiving a csv file perhaps is good for a small number of patients. On a larger scale, receiving emails would not be practical. The various formats of different apps could be confusing. And it would be inefficient to extract the data from the email to a centralised database.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 
 \section{Application User Interface - \textit{Michael Fedosiuk}}
@@ -413,13 +418,12 @@ JavaScript facilitates dynamic functions to be performed within the browser. "jQ
 
 \section{Patient Application - \textit{Michael Fedosiuk}}
 
-
-
-\begin{wrapfigure}{l}{.73\textwidth}
+\begin{wrapfigure}{l}{.55\textwidth}
 \centering
-\includegraphics[width=1\linewidth]{patientUI.png}
+\includegraphics[width=0.85\linewidth]{patientUI.png}
 \caption{Patient UI journey walkthrough (page names shown in black at the bottom and refer to the following sections) \label{patientUI}}
 \end{wrapfigure} 
+
 The key goal for the patient application was usability. Due to hypertension mainly affecting those over 50 years of age, this is the target audience of the application. Firstly simplicity is key, uncluttered pages with distinct labelled buttons where possible. Secondly both font and button size need to be large, to account for loss of vision and dexterity in some users. Finally consistency between pages making learning to use the application easier and faster. The app itself is written in PHP for all but one page, however most of the content of these files consist of html. The app has been optimised for use on iPhone 5 however will also function on an iPad and android phones with minimal scaling problems. All pages bar one are styled using the same CSS file "Cardiac\_Track\_Style.css" that is 297 lines long. 
 
 \subsection{General format}
@@ -622,8 +626,6 @@ The image was saved as a Portable Network Graphic (PNG), a raster graphics file 
 \label{fig:siteDesignGeneral}
 \end{center}
 \end{figure}
-
-%\subsection{User access - \textit{Emma Saragossi}}
 
 \subsubsection{Login page - \textit{Emma Saragossi}}
 A login page for the doctor portal is required to grant the user access to the internal pages of the site, and to prevent others from viewing or altering sensitive data. It also ensures that only relevant data is displayed to the user. Access is controlled by identifying and authenticating the user. A PHP script is called to check the user's credentials (username and password) and grant or deny access to the internal pages of the site.
