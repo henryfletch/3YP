@@ -2047,7 +2047,7 @@ mysql_query($enterBPquery);
 
 The SQL statement performs a number of actions. Firstly, it is inserting a new row into the "patientCurrentBP" table, which contains all of the submitted patient data. The VALUES command tells the database what data to insert into each column of the new row. In this case, there are 4 columns that exist: The current date and time, the patients ID, their systolic blood pressure, and their diastolic blood pressure. The "now()" command simply inserts the current time stamp into the first column. For the remaining columns, we use MySQL's encryption function to encrypt the patient ID and their blood pressure readings. The function has the format: "AES\_ENCRYPT(\$data, \$key)", and so it is clear that we used the patients password as the encryption key in this case. One thing to note with this example is that both the data and the key is sent unencrypted to the database server. The encrypt command is only executed by the database and not before, and so the data could potentially travel over the Internet unsecured. However we have mitigated against this sort of loss by using an SSL connection between the client and the server (see section \ref{SSLencryption} for details).
  
-\subsubsection{Implementation difficulties and subsequent removal from test system}
+\subsubsection{Implementation difficulties and subsequent removal from test system} \label{henry:encryption}
 
 Unfortunately because of the nature of this project, encrypting the data would prove to be very difficult, due to the nature of one piece of data needing to accessible to multiple people (i.e. doctor and patient). Additionally, the need for the database access to be compatible with both the application website and the Tallis medical decision engine, meant that any data encryption had to occur using MySQL itself. The default version of AES encryption used by MySQL is 128-bits, rather than the 256-bits required by the NHS. MySQL can however be compiled to use AES-256 if required.
 \\ \indent
@@ -2610,8 +2610,12 @@ No comparable app has the Cardiac Track App USP the integrated doctor's system. 
 The salaries for developers to finish and maintain the app would have to be deducted for 5 full time web developers; on the average salary of \pounds 40000 \cite{salary} would cost \pounds 200000. We require 4 servers to have one dedicated Apache and MySQL and redundancies for both. A suitable server for the predicted number of initial users would be the  would be the PowerEdge R420 costing \pounds4656 for all four \cite{dell}. To use MySQL enterprise edition a licence must be purchased for \pounds3000 \cite{MySQL}. Including a generous contingency this predicts a first year pre tax profit of \pounds3.16 Million if the NHS were to push for implementation if the project at the projected price, fig.\ref{costing}.
 
 \section{Conclusion}
-\subsection{Project Future - \textit{Henry Fletcher}}
-
+\subsection{Project Limitations - \textit{Henry Fletcher}}
+The project was limited due to both time and resource constraints, as well as limits on technical possibility. A significant part of the project, the mandated encryption of patient data (Section \ref{henry:encryption}), was not possible for us to implement in the prototype environment. With the requisite resources and knowledge, we feel that creating an encryption system would be feasible if the application were to be deployed for real use. 
+\\ \indent
+Another area which is mostly unexplored during this prototype stage is the scalability of the system, and how it could be used by many thousands of users simultaneously. Whilst we have made attempts at identifying potential scalability issues, only a real world trial could actually identify these. We were, for example, unable to test the application with thousands of users at this early stage.
+\\ \indent
+Finally, many more features could be added in the future, such as geolocation information to check validity of entered data, a more polished user interface, better handling of large numbers of patient's on the doctor website, and the expansion of the patient application to include compatibility with other devices. We feel these sorts of extension ideas could be explored and easily added if more time and resources were made available, and to ultimately bring this software out of a prototype and into a trial environment. 
 
 
 
