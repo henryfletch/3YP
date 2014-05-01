@@ -1603,7 +1603,7 @@ Here are the use cases where Tallis will be opened:
 
 The main function of this plan (see figure \ref{fig:tallisRead} for internal composition) is to read data from the database .  It is the first and only mandatory task when Tallis is opened.  By using enquiries, one could imagine that instead of "asking" for human data input, it is "asking" the database for the required data items.  Further details of how the data items are exactly mapped to the database is explained in section \ref{DBXMLWrapper}.  
 
-There are two main trees of enquiries, separated into two subplans.  The first subplan is the "Treatment Status", where the treatment specific details (drug name, prescription etc.) of the patient are read from the records.  Table \ref{table:treatmentstatus} shows all the data items read. It is constucted in such a sequence so that the correct amount of information is read everytime. Number of drugs needs to be read before reading the details of drug X. For example, if the patient is only taking 2 drugs, the reading sequence ends at "drug2" enquiry task and does not read "drug3" through the precondition (Number of drugs  >= 3). Otherwise, a null will be read from the database, which could possibly affect future tasks.  Alternatively, the task could be designed to read the 4 drugs in parallel instead of series, since any unnecessary task would be cancelled by preconditions anyway. Series is preferred because it ensures drug1 is read before drug2, adding an extra line of safety.  
+There are two main trees of enquiries, separated into two subplans.  The first subplan is the "Treatment Status", where the treatment specific details (drug name, prescription etc.) of the patient are read from the records.  Table \ref{table:treatmentstatus} shows all the data items read. It is constructed in such a sequence so that the correct amount of information is read everytime. Number of drugs needs to be read before reading the details of drug X. For example, if the patient is only taking 2 drugs, the reading sequence ends at "drug2" enquiry task and does not read "drug3" through the precondition (Number of drugs  >= 3). Otherwise, a null will be read from the database, which could possibly affect future tasks.  Alternatively, the task could be designed to read the 4 drugs in parallel instead of series, since any unnecessary task would be cancelled by preconditions anyway. Series is preferred because it ensures drug1 is read before drug2, adding an extra line of safety.  
 
 The second subplan is the "Patient Details", which is the data for all other related conditions of the patient that may affect future decision making processes.  It is directly taken from the previously made New Patient component, which now is transposed to outside of Tallis as shown in section \ref{tallis:separatenewuser}.
 
@@ -1755,7 +1755,7 @@ candidate :: 'ACE__ramipril' ;
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Further stages of treatment: extend - \textit{Jeffrey Yu}}  
-With the initial treatment in hand, the further stages are actually simpler to implement.  The contrainications for any drug will be invariant over all 4 stages.  Adding an extra drug to the treatment would not make previous ones safe from a comorbidity, therefore much of the previous logical arguments could be kept.
+With the initial treatment in hand, the further stages are actually simpler to implement.  The contraindications for any drug will be invariant over all 4 stages.  Adding an extra drug to the treatment would not make previous ones safe from a comorbidity, therefore much of the previous logical arguments could be kept.
 
 \begin{figure}[ht]
 \begin{center}
@@ -1791,7 +1791,7 @@ The "Dosage Change" plan is chosen when the patient has not reached their maxium
 
 The special feature of this component is that it would not allow the dose  to be set above the maximum safe dose.  It was considered to allow the doctor to exercise judgement. But the maximum dose is a boundary which could be dangerous if breached. 
 
-Preventitive meaasures like this is implemented by including a variable which is a conditional to the cycling of this task. To illustrate the algorithm
+Preventative measures like this is implemented by including a variable which is a conditional to the cycling of this task. To illustrate the algorithm
 \begin{enumerate}
 \item maxDoseCheck enquiry reads the maximum value for the latest line of drug treatment.   
 \item Doctor enters desired new dose
