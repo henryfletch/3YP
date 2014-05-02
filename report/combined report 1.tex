@@ -265,7 +265,7 @@ The online treatment aid implements the most up to date NICE guidelines for the 
 \\ \indent
 The project stems from an idea of a relatively novel combination of different aspects of current medical practice and technology for the treatment of hypertension. Although the usual care of hypertension has been well established, there are new technologies and techniques being developed to improve it.   In particular, the focus of this project would be on informatic systems, which could be useful for handling and communicating with a large population of hypertension patients. 
 \\ \indent
- The two main subtopics to be focused on are namely telemonitoring, clinical decision support, both of which show modest improvement of care of chronic illnesses in general \cite{Lit1}. Other common informatics systems implemented include: population reports, audit/feedback, advanced order entry, and electonic scheduling \cite{Lit1}. The two were selected initially for simplicity; keeping fewer features could improve clarity.  Specifically for hypertension, there has been multiple studies exploring the effectiveness of the two  aspects individually. Even a small number which investigates both ideas in combination, to a certain extent.
+ The two main subtopics to be focused on are namely telemonitoring, clinical decision support, both of which show modest improvement of care of chronic illnesses in general \cite{Lit1}. Other common informatics systems implemented include: population reports, audit/feedback, advanced order entry, and electronic scheduling \cite{Lit1}. The two were selected initially for simplicity; keeping fewer features could improve clarity.  Specifically for hypertension, there has been multiple studies exploring the effectiveness of the two  aspects individually. Even a small number which investigates both ideas in combination, to a certain extent.
 
 
 \subsection{Telemonitoring}
@@ -499,7 +499,7 @@ The \textit{Cardiac Track Pro} doctor portal has three primary functions:
 
 \subsection{User interface - \textit{Emma Saragossi}}
 
-The doctor application is to be viewed in a web browser. Web pages are built using two key technologies: HTML (the HyperText Markup Language) and CSS (Cascading Style Sheets). The HTML provides the structure of the page while CSS provides the layout and formatting. It is important to keep the page structure and design quite separate. This is because it allows all pages to share the same style sheet. The site is then easier to maintain, as only one file need be updated to change the appearance of the site.  In addition, CSS is much more flexible for specifying the design.
+The doctor application is to be viewed in a web browser. Web pages are built using two key technologies: HTML (the HyperText Mark-up Language) and CSS (Cascading Style Sheets). The HTML provides the structure of the page while CSS provides the layout and formatting. It is important to keep the page structure and design quite separate. This is because it allows all pages to share the same style sheet. The site is then easier to maintain, as only one file need be updated to change the appearance of the site.  In addition, CSS is much more flexible for specifying the design.
 
 \subsubsection{General page structure - HTML - \textit{Emma Saragossi}}
 
@@ -961,54 +961,6 @@ header("Location: newPatientTargetBP.php");
 
 In the initial Tallis design, a \textit{decision} task implemented the decision logic for determining the patient's target blood pressure. This is now implemented in the PHP script \textbf{target.php} instead, (see Extract~\ref{code:phpTargetBP}). There are two separate blood pressure values which need to be determined: the systolic and diastolc blood pressures. These are assigned empty PHP variables at the start of the script for efficiency. These are then determined as before; for example, if a patient is over 80 years of age AND has 'white coat' hypertension, their target blood pressure is 145/85mmHg. The target values are then stored as SESSION variables for later submission to the database. 
 
-
-\begin{code}[ht]
-\begin{php}
-<?php
-
-session_start();
-
-$targetSystolic = "";
-$targetDiastolic = "";
-
-if ($_SESSION['ageGroup'] == "80+" AND $_SESSION['Whitecoat'] == "Yes")
-{
-$targetSystolic = "145";
-$targetDiastolic = "85";
-}
-
-elseif ($_SESSION['ageGroup'] == "80+" AND $_SESSION['Whitecoat'] == "No")
-{
-$targetSystolic = "150";
-$targetDiastolic = "90";
-}
-
-
-elseif ($_SESSION['ageGroup'] != "80+" AND $_SESSION['Whitecoat'] == "Yes")
-{
-$targetSystolic = "135";
-$targetDiastolic = "85";
-}
-
-else
-{
-$targetSystolic = "140";
-$targetDiastolic = "90";
-}
-
-$_SESSION['targetSystolic'] = $targetSystolic;
-$_SESSION['targetDiastolic'] = $targetDiastolic;
-
-?>
-\end{php}
-\caption{PHP for determining target blood pressure}
-\label{code:phpTargetBP}
-\end{code}
-
-
-The target blood pressure needs to be displayed to the doctor for their own records. This is achieved by including the PHP echo() function within the page HTML (see Extract ~\ref{code:dispBP}). The PHP script \textbf{target.php} which determined the target value is included within PHP tags, and the SESSION variables assigned to the two target blood pressure values are echoed within the page content.
-
-
 \begin{code}[ht]
 \begin{html}
 <?php include 'target.php' ?>
@@ -1025,7 +977,46 @@ Target diastolic blood pressure:<strong><?php echo $_SESSION['targetDiastolic'] 
 \label{code:dispBP}
 \end{code}
 
-  
+\begin{code}[ht]
+\begin{php}
+<?php
+session_start();
+$targetSystolic = "";
+$targetDiastolic = "";
+
+if ($_SESSION['ageGroup'] == "80+" AND $_SESSION['Whitecoat'] == "Yes")
+{
+$targetSystolic = "145";
+$targetDiastolic = "85";
+}
+elseif ($_SESSION['ageGroup'] == "80+" AND $_SESSION['Whitecoat'] == "No")
+{
+$targetSystolic = "150";
+$targetDiastolic = "90";
+}
+elseif ($_SESSION['ageGroup'] != "80+" AND $_SESSION['Whitecoat'] == "Yes")
+{
+$targetSystolic = "135";
+$targetDiastolic = "85";
+}
+else
+{
+$targetSystolic = "140";
+$targetDiastolic = "90";
+}
+$_SESSION['targetSystolic'] = $targetSystolic;
+$_SESSION['targetDiastolic'] = $targetDiastolic;
+?>
+\end{php}
+\caption{PHP for determining target blood pressure}
+\label{code:phpTargetBP}
+\end{code}
+
+
+The target blood pressure needs to be displayed to the doctor for their own records. This is achieved by including the PHP echo() function within the page HTML (see Extract ~\ref{code:dispBP}). The PHP script \textbf{target.php} which determined the target value is included within PHP tags, and the SESSION variables assigned to the two target blood pressure values are echoed within the page content.
+
+\clearpage
+   
 \item \textbf{Saving form data to database}
 
 Once all forms have been completed and all form variables assigned to SESSION variables, the data can all be uploaded to the database. When the SUBMIT button of the final form is pressed, it calls the PHP script \textbf{submitAll.php}. An excerpt from this script is shown in Extract~\ref{code:submitAll}. First, all SESSION variables are assigned to PHP variables. The MySQL connection parameters are then configured and a new MySQL instance is created. The values are then bound and executed to the appropriate table within the database. 
