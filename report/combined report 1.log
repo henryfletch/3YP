@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.23)  2 MAY 2014 10:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.12.19)  2 MAY 2014 11:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"combined report 1.tex"
 (./combined report 1.tex
 LaTeX2e <2011/06/27>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/size11.clo
@@ -213,24 +213,20 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks24
-\pgfutil@tempdima=\dimen131
-\pgfutil@tempdimb=\dimen132
-
-(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
-sts.tex))
+)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box29
 (/usr/local/texlive/2013/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
 ))
-Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks25
 \pgfkeys@temptoks=\toks26
@@ -239,40 +235,37 @@ Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 ode.tex
 \pgfkeys@tmptoks=\toks27
 ))
-\pgf@x=\dimen133
-\pgf@y=\dimen134
-\pgf@xa=\dimen135
-\pgf@ya=\dimen136
-\pgf@xb=\dimen137
-\pgf@yb=\dimen138
-\pgf@xc=\dimen139
-\pgf@yc=\dimen140
+\pgf@x=\dimen131
+\pgf@y=\dimen132
+\pgf@xa=\dimen133
+\pgf@ya=\dimen134
+\pgf@xb=\dimen135
+\pgf@yb=\dimen136
+\pgf@xc=\dimen137
+\pgf@yc=\dimen138
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
 \c@pgf@counta=\count108
 \c@pgf@countb=\count109
 \c@pgf@countc=\count110
 \c@pgf@countd=\count111
-\t@pgf@toka=\toks28
-\t@pgf@tokb=\toks29
-\t@pgf@tokc=\toks30
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
 ef
-File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
 df.def
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
 \pgfsyssoftpath@smallbuffer@items=\count112
 \pgfsyssoftpath@bigbuffer@items=\count113
 )
@@ -281,17 +274,17 @@ code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen141
+\pgfmath@dimen=\dimen139
 \pgfmath@count=\count114
 \pgfmath@box=\box30
-\pgfmath@toks=\toks31
-\pgfmath@stack@operand=\toks32
-\pgfmath@stack@operation=\toks33
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -308,45 +301,43 @@ code.tex)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
 .code.tex)
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
-code.tex)
-(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
-erarithmetics.code.tex)))
+code.tex)))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count115
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen142
-\pgf@picmaxx=\dimen143
-\pgf@picminy=\dimen144
-\pgf@picmaxy=\dimen145
-\pgf@pathminx=\dimen146
-\pgf@pathmaxx=\dimen147
-\pgf@pathminy=\dimen148
-\pgf@pathmaxy=\dimen149
-\pgf@xx=\dimen150
-\pgf@xy=\dimen151
-\pgf@yx=\dimen152
-\pgf@yy=\dimen153
-\pgf@zx=\dimen154
-\pgf@zy=\dimen155
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen140
+\pgf@picmaxx=\dimen141
+\pgf@picminy=\dimen142
+\pgf@picmaxy=\dimen143
+\pgf@pathminx=\dimen144
+\pgf@pathmaxx=\dimen145
+\pgf@pathminy=\dimen146
+\pgf@pathmaxy=\dimen147
+\pgf@xx=\dimen148
+\pgf@xy=\dimen149
+\pgf@yx=\dimen150
+\pgf@yy=\dimen151
+\pgf@zx=\dimen152
+\pgf@zy=\dimen153
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen156
-\pgf@path@lasty=\dimen157
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen154
+\pgf@path@lasty=\dimen155
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
-File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen158
-\pgf@shorten@start@additional=\dimen159
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen156
+\pgf@shorten@start@additional=\dimen157
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
-File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
 \pgfpic=\box31
 \pgf@hbox=\box32
 \pgf@layerbox@main=\box33
@@ -354,15 +345,15 @@ File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
-File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen160
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen158
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
-File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen161
-\pgf@pt@y=\dimen162
-\pgf@pt@temp=\dimen163
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen159
+\pgf@pt@y=\dimen160
+\pgf@pt@temp=\dimen161
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -374,93 +365,86 @@ File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
 ssing.code.tex
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
-File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen164
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen165
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen162
 \pgf@sys@shading@range@num=\count117
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
-File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
 \pgfexternal@startupbox=\box34
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
 ncy.code.tex
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
 code.tex
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 )))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
-File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
 \pgfnodeparttextbox=\box35
 )
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
-File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen166
-\pgf@nodesepend=\dimen167
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen163
+\pgf@nodesepend=\dimen164
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
 (/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
-) (/usr/local/texlive/2013/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
-
-(/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen168
-\pgffor@skip=\dimen169
-\pgffor@stack=\toks34
-\pgffor@toks=\toks35
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen165
+\pgffor@skip=\dimen166
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
-Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \pgf@plot@mark@count=\count118
-\pgfplotmarksize=\dimen170
+\pgfplotmarksize=\dimen167
 )
-\tikz@lastx=\dimen171
-\tikz@lasty=\dimen172
-\tikz@lastxsaved=\dimen173
-\tikz@lastysaved=\dimen174
-\tikzleveldistance=\dimen175
-\tikzsiblingdistance=\dimen176
+\tikz@lastx=\dimen168
+\tikz@lasty=\dimen169
+\tikz@lastxsaved=\dimen170
+\tikz@lastysaved=\dimen171
+\tikzleveldistance=\dimen172
+\tikzsiblingdistance=\dimen173
 \tikz@figbox=\box36
-\tikz@figbox@bg=\box37
-\tikz@tempbox=\box38
-\tikz@tempbox@bg=\box39
+\tikz@tempbox=\box37
 \tikztreelevel=\count119
 \tikznumberofchildren=\count120
 \tikznumberofcurrentchild=\count121
@@ -468,7 +452,7 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
 \pgfmatrixcurrentrow=\count123
 \pgfmatrixcurrentcolumn=\count124
 \pgf@matrix@numberofcolumns=\count125
@@ -477,18 +461,18 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 )))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count127
 \calc@Bcount=\count128
-\calc@Adimen=\dimen177
-\calc@Bdimen=\dimen178
+\calc@Adimen=\dimen174
+\calc@Bdimen=\dimen175
 \calc@Askip=\skip46
 \calc@Bskip=\skip47
 LaTeX Info: Redefining \setlength on input line 76.
@@ -501,10 +485,10 @@ LaTeX Info: Redefining \addtolength on input line 77.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip49
-\fb@frw=\dimen179
-\fb@frh=\dimen180
-\FrameRule=\dimen181
-\FrameSep=\dimen182
+\fb@frw=\dimen176
+\fb@frh=\dimen177
+\FrameRule=\dimen178
+\FrameSep=\dimen179
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
@@ -516,12 +500,12 @@ Package: courier 2005/04/12 PSNFSS-v9.2a (WaS)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count131
-\float@exts=\toks36
-\float@box=\box40
-\@float@everytoks=\toks37
-\@floatcapt=\box41
+\float@exts=\toks33
+\float@box=\box38
+\@float@everytoks=\toks34
+\@floatcapt=\box39
 )
-\@float@every@code=\toks38
+\@float@every@code=\toks35
 \c@code=\count132
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
@@ -533,40 +517,39 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.code.tex
-File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+File: tikzlibraryshapes.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
-
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.0 (rcs-revision 1.5)
+File: pgflibraryshapes.misc.code.tex 2008/10/07 v2.10 (rcs-revision 1.3)
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.symbols.code.tex
-File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.0 (rcs-revision 1.6)
+File: pgflibraryshapes.symbols.code.tex 2009/10/27 v2.10 (rcs-revision 1.3)
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.arrows.code.tex
-File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.callouts.code.tex
@@ -574,72 +557,71 @@ s/tikzlibraryshapes.callouts.code.tex
 shapes.callouts.code.tex))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
-
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.0 (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box42
-\pgfnodeparttwobox=\box43
-\pgfnodepartthreebox=\box44
-\pgfnodepartfourbox=\box45
-\pgfnodeparttwentybox=\box46
-\pgfnodepartnineteenbox=\box47
-\pgfnodeparteighteenbox=\box48
-\pgfnodepartseventeenbox=\box49
-\pgfnodepartsixteenbox=\box50
-\pgfnodepartfifteenbox=\box51
-\pgfnodepartfourteenbox=\box52
-\pgfnodepartthirteenbox=\box53
-\pgfnodeparttwelvebox=\box54
-\pgfnodepartelevenbox=\box55
-\pgfnodeparttenbox=\box56
-\pgfnodepartninebox=\box57
-\pgfnodeparteightbox=\box58
-\pgfnodepartsevenbox=\box59
-\pgfnodepartsixbox=\box60
-\pgfnodepartfivebox=\box61
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box40
+\pgfnodeparttwobox=\box41
+\pgfnodepartthreebox=\box42
+\pgfnodepartfourbox=\box43
+\pgfnodeparttwentybox=\box44
+\pgfnodepartnineteenbox=\box45
+\pgfnodeparteighteenbox=\box46
+\pgfnodepartseventeenbox=\box47
+\pgfnodepartsixteenbox=\box48
+\pgfnodepartfifteenbox=\box49
+\pgfnodepartfourteenbox=\box50
+\pgfnodepartthirteenbox=\box51
+\pgfnodeparttwelvebox=\box52
+\pgfnodepartelevenbox=\box53
+\pgfnodeparttenbox=\box54
+\pgfnodepartninebox=\box55
+\pgfnodeparteightbox=\box56
+\pgfnodepartsevenbox=\box57
+\pgfnodepartsixbox=\box58
+\pgfnodepartfivebox=\box59
 )))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/local/texlive/2013/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
-\arrowsize=\dimen183
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen180
 )) (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count133
-\lst@gtempboxa=\box62
-\lst@token=\toks39
+\lst@gtempboxa=\box60
+\lst@token=\toks36
 \lst@length=\count134
-\lst@currlwidth=\dimen184
+\lst@currlwidth=\dimen181
 \lst@column=\count135
 \lst@pos=\count136
-\lst@lostspace=\dimen185
-\lst@width=\dimen186
+\lst@lostspace=\dimen182
+\lst@width=\dimen183
 \lst@newlines=\count137
 \lst@lineno=\count138
-\lst@maxwidth=\dimen187
+\lst@maxwidth=\dimen184
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count139
 \lst@skipnumbers=\count140
-\lst@framebox=\box63
+\lst@framebox=\box61
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2014/03/04 1.5c listings configuration
+File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
-Package: listings 2014/03/04 1.5c (Carsten Heinz)
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -693,7 +675,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen188
+\@linkdim=\dimen185
 \Hy@linkcounter=\count141
 \Hy@pagecounter=\count142
 
@@ -714,10 +696,10 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count144
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen189
+\XeTeXLinkMargin=\dimen186
 \Fld@menulength=\count145
-\Field@Width=\dimen190
-\Fld@charsize=\dimen191
+\Field@Width=\dimen187
+\Fld@charsize=\dimen188
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -807,16 +789,16 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count151
-\scratchdimen=\dimen192
-\scratchbox=\box64
+\scratchdimen=\dimen189
+\scratchbox=\box62
 \nofMPsegments=\count152
 \nofMParguments=\count153
-\everyMPshowfont=\toks40
+\everyMPshowfont=\toks37
 \MPscratchCnt=\count154
-\MPscratchDim=\dimen193
+\MPscratchDim=\dimen190
 \MPnumerator=\count155
 \makeMPintoPDFobject=\count156
-\everyMPtoPDFconversion=\toks41
+\everyMPtoPDFconversion=\toks38
 ) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -840,7 +822,7 @@ Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
 \c@lstlisting=\count157
-\AtBeginShipoutBox=\box65
+\AtBeginShipoutBox=\box63
 Package hyperref Info: Link coloring ON on input line 126.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -874,782 +856,979 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./title
 img.png>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 163.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 164.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 164.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 164.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 168.
+
+
+LaTeX Warning: Citation `openclin' on page 1 undefined on input line 168.
 
 (./combined report 1.toc
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 27.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...{Emma Saragossi}}{22}{subsubsection.6.2.1}
-                                                   [1] [2] [3])
+l.8 ...ology - \textit {Jeffrey Yu}}{9}{section.3}
+                                                   [1]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 27.
+ [2] [3] [4])
 \tf@toc=\write6
 \openout6 = `"combined report 1.toc"'.
 
- [4]
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 166.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 166.
+ [5]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 167.
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 173.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 180.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 186.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 173.
- [5] [6]
-[7] <network.png, id=616, 507.8975pt x 356.33125pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 186.
+ [6] [7]
+[8] <network.png, id=624, 507.8975pt x 356.33125pt>
 File: network.png Graphic file (type png)
  <use network.png>
-Package pdftex.def Info: network.png used on input line 243.
+Package pdftex.def Info: network.png used on input line 256.
 (pdftex.def)             Requested size: 253.94814pt x 178.16518pt.
- [8 <./network.png>] [9] [10] [11] <BPwatch.jpg, id=680, 1099.10625pt x 635.373
-75pt>
+ [9 <./network.png>] [10] [11] [12] <BPwatch.jpg, id=693, 1099.10625pt x 635.37
+375pt>
 File: BPwatch.jpg Graphic file (type jpg)
 
 <use BPwatch.jpg>
-Package pdftex.def Info: BPwatch.jpg used on input line 358.
+Package pdftex.def Info: BPwatch.jpg used on input line 371.
 (pdftex.def)             Requested size: 439.6347pt x 254.14499pt.
- [12] [13] <AppsUI.jpg, id=719, 1480.02937pt x 618.81187pt>
+ [13] [14] <AppsUI.jpg, id=732, 1480.02937pt x 618.81187pt>
 File: AppsUI.jpg Graphic file (type jpg)
 
 <use AppsUI.jpg>
-Package pdftex.def Info: AppsUI.jpg used on input line 375.
+Package pdftex.def Info: AppsUI.jpg used on input line 388.
 (pdftex.def)             Requested size: 444.01224pt x 185.64499pt.
- [14 <./BPwatch.jpg>] [15 <./AppsUI.jpg>]
-<csslink.png, id=742, 527.9725pt x 18.0675pt>
+ [15 <./BPwatch.jpg>] [16 <./AppsUI.jpg>]
+<csslink.png, id=755, 527.9725pt x 18.0675pt>
 File: csslink.png Graphic file (type png)
  <use csslink.png>
-Package pdftex.def Info: csslink.png used on input line 409.
+Package pdftex.def Info: csslink.png used on input line 422.
 (pdftex.def)             Requested size: 395.37898pt x 13.52989pt.
 
-<exampleclass.png, id=743, 193.72375pt x 60.225pt>
+<exampleclass.png, id=756, 193.72375pt x 60.225pt>
 File: exampleclass.png Graphic file (type png)
  <use exampleclass.png>
-Package pdftex.def Info: exampleclass.png used on input line 413.
+Package pdftex.def Info: exampleclass.png used on input line 426.
 (pdftex.def)             Requested size: 95.09317pt x 29.56288pt.
 
-[16 <./csslink.png> <./exampleclass.png>]
-<patientUI.png, id=752, 560.0925pt x 772.8875pt>
+[17 <./csslink.png> <./exampleclass.png>]
+<patientUI.png, id=767, 560.0925pt x 772.8875pt>
 File: patientUI.png Graphic file (type png)
  <use patientUI.png>
-Package pdftex.def Info: patientUI.png used on input line 428.
+Package pdftex.def Info: patientUI.png used on input line 441.
 (pdftex.def)             Requested size: 187.68149pt x 258.99261pt.
- [17 <./patientUI.png>] <appstandard.png, id=760, 1153.30875pt x 511.9125pt>
+ [18 <./patientUI.png>] <appstandard.png, id=777, 1153.30875pt x 511.9125pt>
 File: appstandard.png Graphic file (type png)
 
 <use appstandard.png>
-Package pdftex.def Info: appstandard.png used on input line 437.
+Package pdftex.def Info: appstandard.png used on input line 450.
 (pdftex.def)             Requested size: 500.484pt x 222.14899pt.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 440.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 453.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [18 <./appstandard.png>] <logincode.png, id=773, 1464.47125pt x 107.40125pt>
+) [19 <./appstandard.png>] <logincode.png, id=789, 1464.47125pt x 107.40125pt>
 File: logincode.png Graphic file (type png)
 
 <use logincode.png>
-Package pdftex.def Info: logincode.png used on input line 450.
+Package pdftex.def Info: logincode.png used on input line 463.
 (pdftex.def)             Requested size: 500.484pt x 36.70439pt.
- <iphoneicon.png, id=774, 486.81876pt x 616.3025pt>
+ <iphoneicon.png, id=790, 486.81876pt x 616.3025pt>
 File: iphoneicon.png Graphic file (type png)
 
 <use iphoneicon.png>
-Package pdftex.def Info: iphoneicon.png used on input line 456.
+Package pdftex.def Info: iphoneicon.png used on input line 469.
 (pdftex.def)             Requested size: 34.08078pt x 43.14557pt.
- [19 <./logincode.png> <./iphoneicon.png>]
-<updateform.png, id=786, 370.38374pt x 135.50626pt>
+ [20 <./logincode.png> <./iphoneicon.png>]
+<updateform.png, id=802, 370.38374pt x 135.50626pt>
 File: updateform.png Graphic file (type png)
  <use updateform.png>
-Package pdftex.def Info: updateform.png used on input line 466.
+Package pdftex.def Info: updateform.png used on input line 479.
 (pdftex.def)             Requested size: 175.17244pt x 64.08699pt.
 
-[20 <./updateform.png>] <historyJS.png, id=796, 639.38875pt x 211.79124pt>
+[21 <./updateform.png>] <historyJS.png, id=812, 639.38875pt x 211.79124pt>
 File: historyJS.png Graphic file (type png)
 
 <use historyJS.png>
-Package pdftex.def Info: historyJS.png used on input line 481.
+Package pdftex.def Info: historyJS.png used on input line 494.
 (pdftex.def)             Requested size: 237.72913pt x 78.7461pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 491.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 504.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 491.
- [21 <./historyJS.png>]
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 504.
+ [22 <./historyJS.png>]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
+File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown code defaults to 0 on input l
-ine 531.
- [22]
-<pageLayout.png, id=839, 548.0475pt x 228.855pt>
+ine 544.
+ [23]
+<pageLayout.png, id=856, 548.0475pt x 228.855pt>
 File: pageLayout.png Graphic file (type png)
  <use pageLayout.png>
-Package pdftex.def Info: pageLayout.png used on input line 604.
+Package pdftex.def Info: pageLayout.png used on input line 617.
 (pdftex.def)             Requested size: 274.02307pt x 114.42722pt.
- [23 <./pageLayout.png>] [24] <siteDesignGeneral.jpg, id=898, 894.34125pt x 374
+ [24 <./pageLayout.png>] [25] <siteDesignGeneral.jpg, id=918, 894.34125pt x 374
 .14781pt>
 File: siteDesignGeneral.jpg Graphic file (type jpg)
 
 <use siteDesignGeneral.jpg>
-Package pdftex.def Info: siteDesignGeneral.jpg used on input line 629.
+Package pdftex.def Info: siteDesignGeneral.jpg used on input line 642.
 (pdftex.def)             Requested size: 447.16953pt x 187.07344pt.
- [25 <./siteDesignGeneral.jpg>]
-<login_design.png, id=906, 432.11438pt x 318.43968pt>
+ [26 <./siteDesignGeneral.jpg>]
+<login_design.png, id=927, 432.11438pt x 318.43968pt>
 File: login_design.png Graphic file (type png)
  <use login_design.png>
-Package pdftex.def Info: login_design.png used on input line 642.
+Package pdftex.def Info: login_design.png used on input line 655.
 (pdftex.def)             Requested size: 259.27061pt x 191.06528pt.
 
-[26 <./login_design.png>]
+[27 <./login_design.png>]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
+File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2014/03/04 1.5c listings language file
-) [27]
-<tallis_keystone_top.jpg, id=948, 335.75438pt x 43.66313pt>
+File: lstlang2.sty 2004/09/05 1.3 listings language file
+) [28]
+<tallis_keystone_top.jpg, id=970, 335.75438pt x 43.66313pt>
 File: tallis_keystone_top.jpg Graphic file (type jpg)
 
 <use tallis_keystone_top.jpg>
-Package pdftex.def Info: tallis_keystone_top.jpg used on input line 711.
+Package pdftex.def Info: tallis_keystone_top.jpg used on input line 724.
 (pdftex.def)             Requested size: 268.60387pt x 34.93053pt.
- [28 <./tallis_keystone_top.jpg>]
-<tallis_plan_patientdata.jpg, id=959, 387.69844pt x 109.91063pt>
+ [29 <./tallis_keystone_top.jpg>]
+<tallis_plan_patientdata.jpg, id=981, 387.69844pt x 109.91063pt>
 File: tallis_plan_patientdata.jpg Graphic file (type jpg)
 
 <use tallis_plan_patientdata.jpg>
-Package pdftex.def Info: tallis_plan_patientdata.jpg used on input line 733.
+Package pdftex.def Info: tallis_plan_patientdata.jpg used on input line 746.
 (pdftex.def)             Requested size: 310.15916pt x 87.9286pt.
 
-Overfull \hbox (1.71675pt too wide) in paragraph at lines 745--745
+Overfull \hbox (1.71675pt too wide) in paragraph at lines 758--758
 []\T1/phv/b/n/10.95 Candidate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 758--758
 []\T1/phv/b/n/10.95 Target
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--745
+Underfull \hbox (badness 10000) in paragraph at lines 758--758
 \T1/phv/b/n/10.95 BP
  []
 
 
-Overfull \hbox (4.77168pt too wide) in paragraph at lines 747--747
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 760--760
 []\T1/phv/m/n/10.95 Systolic140| 
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 747--748
+Underfull \hbox (badness 3291) in paragraph at lines 760--761
 []\T1/phv/m/n/10.95 Patient must not have
  []
 
 
-Overfull \hbox (4.77168pt too wide) in paragraph at lines 749--749
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 762--762
 []\T1/phv/m/n/10.95 Systolic150| 
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 749--750
+Underfull \hbox (badness 3291) in paragraph at lines 762--763
 []\T1/phv/m/n/10.95 Patient must not have
  []
 
 
-Overfull \hbox (4.77168pt too wide) in paragraph at lines 751--751
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 764--764
 []\T1/phv/m/n/10.95 Systolic135| 
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 751--752
+Underfull \hbox (badness 3291) in paragraph at lines 764--765
 []\T1/phv/m/n/10.95 Patient must not have
  []
 
 
-Overfull \hbox (4.77168pt too wide) in paragraph at lines 753--753
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 766--766
 []\T1/phv/m/n/10.95 Systolic145| 
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 753--754
+Underfull \hbox (badness 3291) in paragraph at lines 766--767
 []\T1/phv/m/n/10.95 Patient must not have
  []
 
-<tallis_task_top.jpg, id=965, 429.10312pt x 108.405pt>
+<tallis_task_top.jpg, id=987, 429.10312pt x 108.405pt>
 File: tallis_task_top.jpg Graphic file (type jpg)
 
 <use tallis_task_top.jpg>
-Package pdftex.def Info: tallis_task_top.jpg used on input line 768.
+Package pdftex.def Info: tallis_task_top.jpg used on input line 781.
 (pdftex.def)             Requested size: 343.28296pt x 86.7241pt.
- Excluding 'comment' comment. [29 <./tallis_plan_patientdata.jpg>] <Tallis_UI_u
-nsuitable.png, id=980, 659.55884pt x 485.3501pt>
+ [30 <./tallis_plan_patientdata.jpg>]
+<Tallis_UI_unsuitable.png, id=1003, 659.55884pt x 485.3501pt>
 File: Tallis_UI_unsuitable.png Graphic file (type png)
 
 <use Tallis_UI_unsuitable.png>
-Package pdftex.def Info: Tallis_UI_unsuitable.png used on input line 821.
+Package pdftex.def Info: Tallis_UI_unsuitable.png used on input line 834.
 (pdftex.def)             Requested size: 461.68805pt x 339.74275pt.
- [30 <./tallis_task_top.jpg>] [31 <./Tallis_UI_unsuitable.png>] <formCheckBox.j
-pg, id=994, 568.37344pt x 258.9675pt>
+ [31 <./tallis_task_top.jpg>] [32 <./Tallis_UI_unsuitable.png>] <formCheckBox.j
+pg, id=1016, 568.37344pt x 258.9675pt>
 File: formCheckBox.jpg Graphic file (type jpg)
 
 <use formCheckBox.jpg>
-Package pdftex.def Info: formCheckBox.jpg used on input line 839.
+Package pdftex.def Info: formCheckBox.jpg used on input line 852.
 (pdftex.def)             Requested size: 284.18602pt x 129.48341pt.
- [32 <./formCheckBox.jpg>]
-<comorbidity.jpg, id=1021, 491.58656pt x 429.10312pt>
+ [33 <./formCheckBox.jpg>]
+<comorbidity.jpg, id=1043, 491.58656pt x 429.10312pt>
 File: comorbidity.jpg Graphic file (type jpg)
  <use comorbidity.jpg>
-Package pdftex.def Info: comorbidity.jpg used on input line 902.
+Package pdftex.def Info: comorbidity.jpg used on input line 915.
 (pdftex.def)             Requested size: 393.26978pt x 343.28296pt.
 
-[33] [34 <./comorbidity.jpg>] [35] [36
+[34] [35 <./comorbidity.jpg>] [36] [37
 
-] [37
+] [38
 
 ]
-<indexover.png, id=1211, 1378.14874pt x 685.56125pt>
+<indexover.png, id=1233, 1378.14874pt x 685.56125pt>
 File: indexover.png Graphic file (type png)
  <use indexover.png>
-Package pdftex.def Info: indexover.png used on input line 1135.
+Package pdftex.def Info: indexover.png used on input line 1148.
 (pdftex.def)             Requested size: 500.484pt x 248.96724pt.
 
-<CSSscaling.png, id=1212, 306.14375pt x 289.08pt>
+<CSSscaling.png, id=1234, 306.14375pt x 289.08pt>
 File: CSSscaling.png Graphic file (type png)
  <use CSSscaling.png>
-Package pdftex.def Info: CSSscaling.png used on input line 1144.
+Package pdftex.def Info: CSSscaling.png used on input line 1157.
 (pdftex.def)             Requested size: 122.45532pt x 115.62994pt.
 
-<ipad.png, id=1213, 3276.24pt x 2457.18pt>
+<ipad.png, id=1235, 3276.24pt x 2457.18pt>
 File: ipad.png Graphic file (type png)
  <use ipad.png>
-Package pdftex.def Info: ipad.png used on input line 1146.
+Package pdftex.def Info: ipad.png used on input line 1159.
 (pdftex.def)             Requested size: 91.73409pt x 68.80057pt.
- [38 <./indexover.png>] <selectorphp.png, id=1225, 521.95pt x 181.67876pt>
+ [39 <./indexover.png>] <selectorphp.png, id=1251, 521.95pt x 181.67876pt>
 File: selectorphp.png Graphic file (type png)
  <use selectorphp.png>
-Package pdftex.def Info: selectorphp.png used on input line 1155.
+Package pdftex.def Info: selectorphp.png used on input line 1168.
 (pdftex.def)             Requested size: 295.28372pt x 102.78174pt.
 
-<selectorCSS.png, id=1226, 499.8675pt x 409.53pt>
+<selectorCSS.png, id=1252, 499.8675pt x 409.53pt>
 File: selectorCSS.png Graphic file (type png)
  <use selectorCSS.png>
-Package pdftex.def Info: selectorCSS.png used on input line 1159.
+Package pdftex.def Info: selectorCSS.png used on input line 1172.
 (pdftex.def)             Requested size: 195.18845pt x 159.90976pt.
 
-[39 <./CSSscaling.png> <./ipad.png>]
-<selectfunc.png, id=1236, 335.2525pt x 121.45375pt>
+[40 <./CSSscaling.png> <./ipad.png>]
+<selectfunc.png, id=1262, 335.2525pt x 121.45375pt>
 File: selectfunc.png Graphic file (type png)
  <use selectfunc.png>
-Package pdftex.def Info: selectfunc.png used on input line 1167.
+Package pdftex.def Info: selectfunc.png used on input line 1180.
 (pdftex.def)             Requested size: 167.62584pt x 60.72672pt.
 
-[40 <./selectorphp.png> <./selectorCSS.png> <./selectfunc.png>]
-<searchbarhtml.png, id=1246, 804.00375pt x 90.3375pt>
+[41 <./selectorphp.png> <./selectorCSS.png> <./selectfunc.png>]
+<searchbarhtml.png, id=1272, 804.00375pt x 90.3375pt>
 File: searchbarhtml.png Graphic file (type png)
  <use searchbarhtml.png>
-Package pdftex.def Info: searchbarhtml.png used on input line 1176.
+Package pdftex.def Info: searchbarhtml.png used on input line 1189.
 (pdftex.def)             Requested size: 321.59581pt x 36.13435pt.
 
-[41 <./searchbarhtml.png>] <infoSQL.png, id=1255, 502.87875pt x 91.34125pt>
+[42 <./searchbarhtml.png>] <infoSQL.png, id=1283, 502.87875pt x 91.34125pt>
 File: infoSQL.png Graphic file (type png)
 
 <use infoSQL.png>
-Package pdftex.def Info: infoSQL.png used on input line 1189.
+Package pdftex.def Info: infoSQL.png used on input line 1202.
 (pdftex.def)             Requested size: 175.17244pt x 31.81659pt.
- <medtable.png, id=1256, 341.275pt x 273.02pt>
+ <medtable.png, id=1284, 341.275pt x 273.02pt>
 File: medtable.png Graphic file (type png)
 
 <use medtable.png>
-Package pdftex.def Info: medtable.png used on input line 1191.
+Package pdftex.def Info: medtable.png used on input line 1204.
 (pdftex.def)             Requested size: 175.17244pt x 140.1382pt.
- <buttonscripts.png, id=1258, 638.385pt x 61.22874pt>
+ <buttonscripts.png, id=1286, 638.385pt x 61.22874pt>
 File: buttonscripts.png Graphic file (type png)
 
 <use buttonscripts.png>
-Package pdftex.def Info: buttonscripts.png used on input line 1198.
+Package pdftex.def Info: buttonscripts.png used on input line 1211.
 (pdftex.def)             Requested size: 245.2399pt x 23.52127pt.
- <progressbar.png, id=1259, 652.4375pt x 137.51375pt>
+ <progressbar.png, id=1287, 652.4375pt x 137.51375pt>
 File: progressbar.png Graphic file (type png)
 
 <use progressbar.png>
-Package pdftex.def Info: progressbar.png used on input line 1202.
+Package pdftex.def Info: progressbar.png used on input line 1215.
 (pdftex.def)             Requested size: 245.2399pt x 51.68922pt.
- <tutorial1.png, id=1261, 1200.485pt x 632.3625pt>
+ <tutorial1.png, id=1289, 1200.485pt x 632.3625pt>
 File: tutorial1.png Graphic file (type png)
 
 <use tutorial1.png>
-Package pdftex.def Info: tutorial1.png used on input line 1213.
+Package pdftex.def Info: tutorial1.png used on input line 1226.
 (pdftex.def)             Requested size: 196.19266pt x 103.34145pt.
- <tutorial2.png, id=1262, 1199.48125pt x 630.355pt>
+ <tutorial2.png, id=1290, 1199.48125pt x 630.355pt>
 File: tutorial2.png Graphic file (type png)
 
 <use tutorial2.png>
-Package pdftex.def Info: tutorial2.png used on input line 1214.
+Package pdftex.def Info: tutorial2.png used on input line 1227.
 (pdftex.def)             Requested size: 196.19266pt x 103.09995pt.
- <tutorial3.png, id=1263, 1202.4925pt x 632.3625pt>
+ <tutorial3.png, id=1291, 1202.4925pt x 632.3625pt>
 File: tutorial3.png Graphic file (type png)
 
 <use tutorial3.png>
-Package pdftex.def Info: tutorial3.png used on input line 1215.
+Package pdftex.def Info: tutorial3.png used on input line 1228.
 (pdftex.def)             Requested size: 196.19266pt x 103.16777pt.
- <tutorial4.png, id=1264, 1203.49625pt x 632.3625pt>
+ <tutorial4.png, id=1292, 1203.49625pt x 632.3625pt>
 File: tutorial4.png Graphic file (type png)
 
 <use tutorial4.png>
-Package pdftex.def Info: tutorial4.png used on input line 1219.
+Package pdftex.def Info: tutorial4.png used on input line 1232.
 (pdftex.def)             Requested size: 196.19266pt x 103.08093pt.
- <tutorial5.png, id=1265, 1202.4925pt x 632.3625pt>
+ <tutorial5.png, id=1293, 1202.4925pt x 632.3625pt>
 File: tutorial5.png Graphic file (type png)
 
 <use tutorial5.png>
-Package pdftex.def Info: tutorial5.png used on input line 1220.
+Package pdftex.def Info: tutorial5.png used on input line 1233.
 (pdftex.def)             Requested size: 196.19266pt x 103.16777pt.
- <tutorial6.png, id=1266, 1202.4925pt x 631.35875pt>
+ <tutorial6.png, id=1294, 1202.4925pt x 631.35875pt>
 File: tutorial6.png Graphic file (type png)
 
 <use tutorial6.png>
-Package pdftex.def Info: tutorial6.png used on input line 1221.
+Package pdftex.def Info: tutorial6.png used on input line 1234.
 (pdftex.def)             Requested size: 196.19266pt x 103.00401pt.
- <tutorialCSS.png, id=1268, 392.46625pt x 253.94875pt>
+ <tutorialCSS.png, id=1296, 392.46625pt x 253.94875pt>
 File: tutorialCSS.png Graphic file (type png)
 
 <use tutorialCSS.png>
-Package pdftex.def Info: tutorialCSS.png used on input line 1228.
+Package pdftex.def Info: tutorialCSS.png used on input line 1241.
 (pdftex.def)             Requested size: 156.9837pt x 101.5777pt.
- <tutorial1jQuery.png, id=1269, 441.65pt x 198.7425pt>
+ <tutorial1jQuery.png, id=1297, 441.65pt x 198.7425pt>
 File: tutorial1jQuery.png Graphic file (type png)
 
 <use tutorial1jQuery.png>
-Package pdftex.def Info: tutorial1jQuery.png used on input line 1230.
+Package pdftex.def Info: tutorial1jQuery.png used on input line 1243.
 (pdftex.def)             Requested size: 176.65686pt x 79.49557pt.
 
-Overfull \hbox (1.48442pt too wide) in paragraph at lines 1230--1231
+Overfull \hbox (1.48442pt too wide) in paragraph at lines 1243--1244
  [][] 
  []
 
-[42 <./infoSQL.png> <./medtable.png> <./buttonscripts.png> <./progressbar.png>]
-[43 <./tutorial1.png> <./tutorial2.png> <./tutorial3.png> <./tutorial4.png> <./
-tutorial5.png> <./tutorial6.png>] [44 <./tutorialCSS.png> <./tutorial1jQuery.pn
+[43 <./infoSQL.png> <./medtable.png> <./buttonscripts.png> <./progressbar.png>]
+[44 <./tutorial1.png> <./tutorial2.png> <./tutorial3.png> <./tutorial4.png> <./
+tutorial5.png> <./tutorial6.png>] [45 <./tutorialCSS.png> <./tutorial1jQuery.pn
 g>]
-Overfull \hbox (1.06136pt too wide) in paragraph at lines 1272--1272
+Overfull \hbox (1.06136pt too wide) in paragraph at lines 1285--1285
  [][][][]\T1/phv/m/n/10.95 Uncertainty 
  []
 
 
-Overfull \hbox (1.06136pt too wide) in paragraph at lines 1273--1273
+Overfull \hbox (1.06136pt too wide) in paragraph at lines 1286--1286
  [][][][]\T1/phv/m/n/10.95 Uncertainty 
  []
 
-[45] [46] <linexmp.png, id=1308, 291.0875pt x 184.69pt>
+[46] [47] <linexmp.png, id=1337, 291.0875pt x 184.69pt>
 File: linexmp.png Graphic file (type png)
  <use linexmp.png>
-Package pdftex.def Info: linexmp.png used on input line 1312.
+Package pdftex.def Info: linexmp.png used on input line 1325.
 (pdftex.def)             Requested size: 116.43292pt x 73.87468pt.
 
-[47 <./linexmp.png>] [48] <replinreg.png, id=1353, 728.9634pt x 444.2196pt>
+[48 <./linexmp.png>] [49] <replinreg.png, id=1382, 728.9634pt x 444.2196pt>
 File: replinreg.png Graphic file (type png)
 
 <use replinreg.png>
-Package pdftex.def Info: replinreg.png used on input line 1415.
+Package pdftex.def Info: replinreg.png used on input line 1428.
 (pdftex.def)             Requested size: 291.58018pt x 177.6847pt.
- [49] <linreggood.png, id=1359, 728.9634pt x 444.2196pt>
+ [50] <linreggood.png, id=1389, 728.9634pt x 444.2196pt>
 File: linreggood.png Graphic file (type png)
 
 <use linreggood.png>
-Package pdftex.def Info: linreggood.png used on input line 1422.
+Package pdftex.def Info: linreggood.png used on input line 1435.
 (pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1422--1423
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1435--1436
 [][] 
  []
 
-<linregbad.png, id=1360, 728.9634pt x 444.2196pt>
+<linregbad.png, id=1390, 728.9634pt x 444.2196pt>
 File: linregbad.png Graphic file (type png)
  <use linregbad.png>
-Package pdftex.def Info: linregbad.png used on input line 1426.
+Package pdftex.def Info: linregbad.png used on input line 1439.
 (pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1426--1427
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1439--1440
 [][] 
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 1419--1430
+Underfull \hbox (badness 2221) in paragraph at lines 1432--1443
 \T1/phv/m/n/10.95 per-cent-age er-ror to be found. In
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 1419--1430
+Underfull \hbox (badness 2617) in paragraph at lines 1432--1443
 \T1/phv/m/n/10.95 ex-cel the func-tion, =ABS(([@Day1]-
  []
 
-[50 <./replinreg.png> <./linreggood.png> <./linregbad.png>]
-<correx.png, id=1372, 768.8725pt x 205.76875pt>
+[51 <./replinreg.png> <./linreggood.png> <./linregbad.png>]
+<correx.png, id=1401, 768.8725pt x 205.76875pt>
 File: correx.png Graphic file (type png)
  <use correx.png>
-Package pdftex.def Info: correx.png used on input line 1438.
+Package pdftex.def Info: correx.png used on input line 1451.
 (pdftex.def)             Requested size: 350.33727pt x 93.75993pt.
- [51 <./correx.png>] <corrgood.png, id=1386, 728.9634pt x 444.2196pt>
+ [52 <./correx.png>] <corrgood.png, id=1415, 728.9634pt x 444.2196pt>
 File: corrgood.png Graphic file (type png)
  <use corrgood.png>
-Package pdftex.def Info: corrgood.png used on input line 1465.
+Package pdftex.def Info: corrgood.png used on input line 1478.
 (pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1465--1466
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1478--1479
 [][] 
  []
 
-<corrbad.png, id=1387, 728.9634pt x 444.2196pt>
+<corrbad.png, id=1416, 728.9634pt x 444.2196pt>
 File: corrbad.png Graphic file (type png)
  <use corrbad.png>
-Package pdftex.def Info: corrbad.png used on input line 1469.
+Package pdftex.def Info: corrbad.png used on input line 1482.
 (pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1469--1470
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1482--1483
 [][] 
  []
 
-[52 <./corrgood.png> <./corrbad.png>]
-<DB1.png, id=1398, 580.1675pt x 74.2775pt>
+[53 <./corrgood.png> <./corrbad.png>]
+<DB1.png, id=1427, 580.1675pt x 74.2775pt>
 File: DB1.png Graphic file (type png)
  <use DB1.png>
-Package pdftex.def Info: DB1.png used on input line 1489.
+Package pdftex.def Info: DB1.png used on input line 1502.
 (pdftex.def)             Requested size: 232.06288pt x 29.71046pt.
 
-<SQLBPquery.png, id=1399, 959.585pt x 45.16875pt>
+<SQLBPquery.png, id=1428, 959.585pt x 45.16875pt>
 File: SQLBPquery.png Graphic file (type png)
  <use SQLBPquery.png>
-Package pdftex.def Info: SQLBPquery.png used on input line 1497.
+Package pdftex.def Info: SQLBPquery.png used on input line 1510.
 (pdftex.def)             Requested size: 395.37898pt x 18.61096pt.
 
-<SQLBPprequery.png, id=1400, 209.78375pt x 20.075pt>
+<SQLBPprequery.png, id=1429, 209.78375pt x 20.075pt>
 File: SQLBPprequery.png Graphic file (type png)
  <use SQLBPprequery.png>
-Package pdftex.def Info: SQLBPprequery.png used on input line 1501.
+Package pdftex.def Info: SQLBPprequery.png used on input line 1514.
 (pdftex.def)             Requested size: 95.09317pt x 9.09982pt.
 
-<DB2.png, id=1401, 83.31125pt x 145.54375pt>
+<DB2.png, id=1430, 83.31125pt x 145.54375pt>
 File: DB2.png Graphic file (type png)
  <use DB2.png>
-Package pdftex.def Info: DB2.png used on input line 1509.
+Package pdftex.def Info: DB2.png used on input line 1522.
 (pdftex.def)             Requested size: 33.3239pt x 58.21646pt.
- [53 <./DB1.png> <./SQLBPquery.png> <./SQLBPprequery.png>]
-<mainSQL.png, id=1411, 582.175pt x 834.11626pt>
+ [54 <./DB1.png> <./SQLBPquery.png> <./SQLBPprequery.png>]
+<mainSQL.png, id=1441, 582.175pt x 834.11626pt>
 File: mainSQL.png Graphic file (type png)
  <use mainSQL.png>
-Package pdftex.def Info: mainSQL.png used on input line 1518.
+Package pdftex.def Info: mainSQL.png used on input line 1531.
 (pdftex.def)             Requested size: 174.65384pt x 250.2368pt.
 
-Underfull \hbox (badness 1509) in paragraph at lines 1521--1526
+Underfull \hbox (badness 1509) in paragraph at lines 1534--1539
 \T1/phv/m/n/10.95 can all be cal-cu-lated by sum(x*x), sum(y*y),
  []
 
-[54 <./DB2.png> <./mainSQL.png>]
-<corrcheck.png, id=1424, 195.73125pt x 106.3975pt>
+[55 <./DB2.png> <./mainSQL.png>]
+<corrcheck.png, id=1453, 195.73125pt x 106.3975pt>
 File: corrcheck.png Graphic file (type png)
  <use corrcheck.png>
-Package pdftex.def Info: corrcheck.png used on input line 1535.
+Package pdftex.def Info: corrcheck.png used on input line 1548.
 (pdftex.def)             Requested size: 117.43964pt x 63.83897pt.
 
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-1541.
+1554.
 
-<linbound.png, id=1427, 285.065pt x 108.405pt>
+<linbound.png, id=1456, 285.065pt x 108.405pt>
 File: linbound.png Graphic file (type png)
  <use linbound.png>
-Package pdftex.def Info: linbound.png used on input line 1543.
+Package pdftex.def Info: linbound.png used on input line 1556.
 (pdftex.def)             Requested size: 171.04031pt x 65.04349pt.
 
-<boundtest1.png, id=1428, 316.18124pt x 96.36pt>
+<boundtest1.png, id=1457, 316.18124pt x 96.36pt>
 File: boundtest1.png Graphic file (type png)
  <use boundtest1.png>
-Package pdftex.def Info: boundtest1.png used on input line 1545.
+Package pdftex.def Info: boundtest1.png used on input line 1558.
 (pdftex.def)             Requested size: 189.7102pt x 57.81642pt.
 
-<dowhile.png, id=1429, 377.41pt x 245.91875pt>
+<dowhile.png, id=1458, 377.41pt x 245.91875pt>
 File: dowhile.png Graphic file (type png)
  <use dowhile.png>
-Package pdftex.def Info: dowhile.png used on input line 1547.
+Package pdftex.def Info: dowhile.png used on input line 1560.
 (pdftex.def)             Requested size: 226.44774pt x 147.55237pt.
 
-Overfull \hbox (16.24539pt too wide) in paragraph at lines 1547--1548
+Overfull \hbox (16.24539pt too wide) in paragraph at lines 1560--1561
  [][] 
  []
 
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 15
-49.
+62.
 
-[55 <./corrcheck.png> <./linbound.png> <./boundtest1.png> <./dowhile.png>]
-<finalupdate.png, id=1439, 702.625pt x 16.06pt>
+[56 <./corrcheck.png> <./linbound.png> <./boundtest1.png> <./dowhile.png>]
+<finalupdate.png, id=1471, 702.625pt x 16.06pt>
 File: finalupdate.png Graphic file (type png)
  <use finalupdate.png>
-Package pdftex.def Info: finalupdate.png used on input line 1557.
+Package pdftex.def Info: finalupdate.png used on input line 1570.
 (pdftex.def)             Requested size: 500.484pt x 11.43991pt.
 
-<unbar.png, id=1440, 401.5pt x 71.26625pt>
+<unbar.png, id=1472, 401.5pt x 71.26625pt>
 File: unbar.png Graphic file (type png)
  <use unbar.png>
-Package pdftex.def Info: unbar.png used on input line 1563.
+Package pdftex.def Info: unbar.png used on input line 1576.
 (pdftex.def)             Requested size: 140.5271pt x 24.94354pt.
- [56 <./finalupdate.png> <./unbar.png>] [57] <tallisAll2.jpg, id=1455, 523.2046
+ [57 <./finalupdate.png> <./unbar.png>] [58] <tallisAll2.jpg, id=1488, 523.2046
 8pt x 295.1025pt>
 File: tallisAll2.jpg Graphic file (type jpg)
 
 <use tallisAll2.jpg>
-Package pdftex.def Info: tallisAll2.jpg used on input line 1588.
+Package pdftex.def Info: tallisAll2.jpg used on input line 1601.
 (pdftex.def)             Requested size: 523.2034pt x 295.10176pt.
 
-Overfull \hbox (22.7194pt too wide) in paragraph at lines 1588--1589
+Overfull \hbox (22.7194pt too wide) in paragraph at lines 1601--1602
  [] 
  []
 
-[58 <./tallisAll2.jpg>] <tallisRead.jpg, id=1465, 739.26187pt x 289.08pt>
+[59 <./tallisAll2.jpg>] <tallisRead.jpg, id=1498, 739.26187pt x 289.08pt>
 File: tallisRead.jpg Graphic file (type jpg)
 
 <use tallisRead.jpg>
-Package pdftex.def Info: tallisRead.jpg used on input line 1621.
+Package pdftex.def Info: tallisRead.jpg used on input line 1634.
 (pdftex.def)             Requested size: 517.47978pt x 202.35461pt.
 
-Overfull \hbox (16.99579pt too wide) in paragraph at lines 1621--1622
+Overfull \hbox (16.99579pt too wide) in paragraph at lines 1634--1635
  [] 
  []
 
-<tallisTreatmentChange.jpg, id=1467, 575.14874pt x 289.08pt>
+<tallisTreatmentChange.jpg, id=1500, 575.14874pt x 289.08pt>
 File: tallisTreatmentChange.jpg Graphic file (type jpg)
 
 <use tallisTreatmentChange.jpg>
-Package pdftex.def Info: tallisTreatmentChange.jpg used on input line 1632.
+Package pdftex.def Info: tallisTreatmentChange.jpg used on input line 1645.
 (pdftex.def)             Requested size: 517.62909pt x 260.16959pt.
 
-Overfull \hbox (17.1451pt too wide) in paragraph at lines 1632--1633
+Overfull \hbox (17.1451pt too wide) in paragraph at lines 1645--1646
  [] 
  []
 
-[59] [60 <./tallisRead.jpg>] [61 <./tallisTreatmentChange.jpg>] [62] [63]
-<tallisNewDrug.jpg, id=1555, 461.47406pt x 402.00188pt>
+[60] [61 <./tallisRead.jpg>] [62 <./tallisTreatmentChange.jpg>] [63] [64]
+<tallisNewDrug.jpg, id=1589, 461.47406pt x 402.00188pt>
 File: tallisNewDrug.jpg Graphic file (type jpg)
 
 <use tallisNewDrug.jpg>
-Package pdftex.def Info: tallisNewDrug.jpg used on input line 1754.
+Package pdftex.def Info: tallisNewDrug.jpg used on input line 1767.
 (pdftex.def)             Requested size: 369.17973pt x 321.60193pt.
- <tallisDrugArg2.jpg, id=1561, 687.31781pt x 83.5622pt>
+ <tallisDrugArg2.jpg, id=1595, 687.31781pt x 83.5622pt>
 File: tallisDrugArg2.jpg Graphic file (type jpg)
 
 <use tallisDrugArg2.jpg>
-Package pdftex.def Info: tallisDrugArg2.jpg used on input line 1764.
+Package pdftex.def Info: tallisDrugArg2.jpg used on input line 1777.
 (pdftex.def)             Requested size: 515.48709pt x 62.67148pt.
 
-Overfull \hbox (15.0031pt too wide) in paragraph at lines 1764--1765
+Overfull \hbox (15.0031pt too wide) in paragraph at lines 1777--1778
  [] 
  []
 
-[64
+[65
 
  <./tallisNewDrug.jpg>]
-<tallisDoseChange.jpg, id=1571, 295.85532pt x 132.495pt>
+<tallisDoseChange.jpg, id=1606, 295.85532pt x 132.495pt>
 File: tallisDoseChange.jpg Graphic file (type jpg)
 
 <use tallisDoseChange.jpg>
-Package pdftex.def Info: tallisDoseChange.jpg used on input line 1778.
+Package pdftex.def Info: tallisDoseChange.jpg used on input line 1791.
 (pdftex.def)             Requested size: 295.85458pt x 132.49466pt.
- [65 <./tallisDrugArg2.jpg> <./tallisDoseChange.jpg>] <tallisCheckup.jpg, id=15
-77, 437.38406pt x 97.86563pt>
+ [66 <./tallisDrugArg2.jpg> <./tallisDoseChange.jpg>] <tallisCheckup.jpg, id=16
+14, 437.38406pt x 97.86563pt>
 File: tallisCheckup.jpg Graphic file (type jpg)
 
 <use tallisCheckup.jpg>
-Package pdftex.def Info: tallisCheckup.jpg used on input line 1802.
+Package pdftex.def Info: tallisCheckup.jpg used on input line 1815.
 (pdftex.def)             Requested size: 437.38298pt x 97.86537pt.
- [66 <./tallisCheckup.jpg>]
-<tallisUItable.jpg, id=1588, 239.39438pt x 203.25937pt>
+ [67 <./tallisCheckup.jpg>]
+<tallisUItable.jpg, id=1624, 239.39438pt x 203.25937pt>
 File: tallisUItable.jpg Graphic file (type jpg)
 
 <use tallisUItable.jpg>
-Package pdftex.def Info: tallisUItable.jpg used on input line 1815.
+Package pdftex.def Info: tallisUItable.jpg used on input line 1828.
 (pdftex.def)             Requested size: 191.51575pt x 162.60771pt.
 
-<tallisUIevolve.jpg, id=1591, 499.8675pt x 713.66624pt>
+<tallisUIevolve.jpg, id=1627, 499.8675pt x 713.66624pt>
 File: tallisUIevolve.jpg Graphic file (type jpg)
 
 <use tallisUIevolve.jpg>
-Package pdftex.def Info: tallisUIevolve.jpg used on input line 1824.
+Package pdftex.def Info: tallisUIevolve.jpg used on input line 1837.
 (pdftex.def)             Requested size: 399.89453pt x 570.93376pt.
- [67 <./tallisUItable.jpg>] [68 <./tallisUIevolve.jpg>] [69] <server-environmen
-t-pdf-2.pdf, id=1613, 508.90125pt x 342.27875pt>
+ [68 <./tallisUItable.jpg>] [69 <./tallisUIevolve.jpg>] [70] <server-environmen
+t-pdf-2.pdf, id=1652, 508.90125pt x 342.27875pt>
 File: server-environment-pdf-2.pdf Graphic file (type pdf)
 
 <use server-environment-pdf-2.pdf>
-Package pdftex.def Info: server-environment-pdf-2.pdf used on input line 1868.
+Package pdftex.def Info: server-environment-pdf-2.pdf used on input line 1881.
 (pdftex.def)             Requested size: 432.5681pt x 290.9383pt.
- [70] [71 <./server-environment-pdf-2.pdf>]
-[72] [73] [74] [75] [76] [77] [78]
-<passwordhashing-loginform.pdf, id=1771, 547.04375pt x 242.9075pt>
+ [71] [72 <./server-environment-pdf-2.pdf>]
+[73] [74] [75] [76] [77] [78] [79]
+<passwordhashing-loginform.pdf, id=1819, 547.04375pt x 242.9075pt>
 File: passwordhashing-loginform.pdf Graphic file (type pdf)
 
 <use passwordhashing-loginform.pdf>
-Package pdftex.def Info: passwordhashing-loginform.pdf used on input line 2077.
+Package pdftex.def Info: passwordhashing-loginform.pdf used on input line 2090.
 
 (pdftex.def)             Requested size: 464.98938pt x 206.47234pt.
- [79 <./passwordhashing-loginform.pdf>]
-<passwordsfreq.png, id=1835, 1168.365pt x 528.97626pt>
+ [80 <./passwordhashing-loginform.pdf>]
+<passwordsfreq.png, id=1885, 1168.365pt x 528.97626pt>
 File: passwordsfreq.png Graphic file (type png)
  <use passwordsfreq.png>
-Package pdftex.def Info: passwordsfreq.png used on input line 2090.
+Package pdftex.def Info: passwordsfreq.png used on input line 2103.
 (pdftex.def)             Requested size: 467.33772pt x 211.58675pt.
 
-[80 <./passwordsfreq.png (PNG copy)>] [81] [82] [83] [84] [85] [86] [87]
-[88] [89] [90] [91] [92] <strokecost.png, id=2156, 359.3425pt x 259.97125pt>
+[81 <./passwordsfreq.png (PNG copy)>] [82] [83] [84] [85] [86] [87] [88]
+[89] [90] [91] [92] [93] <strokecost.png, id=2216, 359.3425pt x 259.97125pt>
 File: strokecost.png Graphic file (type png)
 
 <use strokecost.png>
-Package pdftex.def Info: strokecost.png used on input line 2540.
+Package pdftex.def Info: strokecost.png used on input line 2553.
 (pdftex.def)             Requested size: 143.73445pt x 103.98665pt.
 
-Underfull \hbox (badness 3281) in paragraph at lines 2544--2560
+Underfull \hbox (badness 3281) in paragraph at lines 2557--2573
 \T1/phv/m/n/10.95 a fur-ther 20,000 tran-sient
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 2544--2560
+Underfull \hbox (badness 1226) in paragraph at lines 2557--2573
 \T1/phv/m/n/10.95 is-chaemic at-tacks oc-cur in
  []
 
-[93 <./strokecost.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2565--2567
+[94 <./strokecost.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2578--2580
 
  []
 
-[94] <strides.png, id=2175, 225.84375pt x 222.8325pt>
+[95] <strides.png, id=2237, 225.84375pt x 222.8325pt>
 File: strides.png Graphic file (type png)
  <use strides.png>
-Package pdftex.def Info: strides.png used on input line 2586.
+Package pdftex.def Info: strides.png used on input line 2599.
 (pdftex.def)             Requested size: 22.5857pt x 22.28455pt.
 
-<BPtracker.png, id=2176, 223.83624pt x 221.82875pt>
+<BPtracker.png, id=2238, 223.83624pt x 221.82875pt>
 File: BPtracker.png Graphic file (type png)
  <use BPtracker.png>
-Package pdftex.def Info: BPtracker.png used on input line 2587.
+Package pdftex.def Info: BPtracker.png used on input line 2600.
 (pdftex.def)             Requested size: 22.38493pt x 22.18416pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2587--2587
+Underfull \hbox (badness 10000) in paragraph at lines 2600--2600
 []\T1/phv/m/n/10.95 Blood Pres-
  []
 
-<healthcloud.png, id=2177, 223.83624pt x 222.8325pt>
+<healthcloud.png, id=2239, 223.83624pt x 222.8325pt>
 File: healthcloud.png Graphic file (type png)
  <use healthcloud.png>
-Package pdftex.def Info: healthcloud.png used on input line 2588.
+Package pdftex.def Info: healthcloud.png used on input line 2601.
 (pdftex.def)             Requested size: 22.38493pt x 22.28455pt.
 
-[95 <./strides.png> <./BPtracker.png> <./healthcloud.png>]
-<costing.png, id=2187, 556.0775pt x 205.76875pt>
+[96 <./strides.png> <./BPtracker.png> <./healthcloud.png>]
+<costing.png, id=2251, 556.0775pt x 205.76875pt>
 File: costing.png Graphic file (type png)
  <use costing.png>
-Package pdftex.def Info: costing.png used on input line 2598.
+Package pdftex.def Info: costing.png used on input line 2611.
 (pdftex.def)             Requested size: 222.42705pt x 82.30603pt.
 
-Overfull \hbox (22.23651pt too wide) in paragraph at lines 2598--2599
+Overfull \hbox (22.23651pt too wide) in paragraph at lines 2611--2612
  [][] 
  []
 
-[96 <./costing.png>] [97]
-Underfull \hbox (badness 10000) in paragraph at lines 2650--2651
+[97 <./costing.png>] [98]
+Underfull \hbox (badness 10000) in paragraph at lines 2665--2666
 []\T1/phv/m/n/9 Krzysztof Za-ucha, W. L. 2014. Web De-vel-oper Salaries. [on-li
 ne] Avail-able at: urlhttp://salary-
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 2687.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 2702.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2687--2688
+Underfull \hbox (badness 10000) in paragraph at lines 2702--2703
 []\T1/phv/m/n/9 COSSAC. 2014. Knowl-edge Mod-elling - PRO\T1/phv/m/sl/9 forma \
 T1/phv/m/n/9 tasks. [on-line] Avail-able at:
  []
 
-[98]
-Underfull \hbox (badness 5175) in paragraph at lines 2714--2715
+[99]
+Underfull \hbox (badness 5175) in paragraph at lines 2729--2730
 []\T1/phv/m/n/9 Media.ofcom.org.uk, (2014). Of-com | UK adults tak-ing on-line 
 pass-word se-cu-rity risks. [on-line] Avail-able
  []
 
-[99] [100]
-Underfull \hbox (badness 10000) in paragraph at lines 2789--2790
+[100] [101]
+Underfull \hbox (badness 10000) in paragraph at lines 2804--2805
 []\T1/phv/m/n/9 Play.google.com. Blood Pres-sure++ [In-ter-net]. 2014 [23 April
  2014]. Avail-able from:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2791--2792
+Underfull \hbox (badness 10000) in paragraph at lines 2806--2807
 []\T1/phv/m/n/9 Klimaszewski.mobi. My Heart - Szy-mon Kli-maszewski [In-ter-net
 ]. [23 April 2014]. Avail-able from:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2793--2794
+Underfull \hbox (badness 10000) in paragraph at lines 2808--2809
 []\T1/phv/m/n/9 Play.google.com. blood pres-sure di-ary [In-ter-net]. [17 April
  2014]. Avail-able from:
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 2795--2796
+Underfull \hbox (badness 3557) in paragraph at lines 2810--2811
 []\T1/phv/m/n/9 Ihealthlabs.com. iHealth Wire-less Blood Pres-sure Wrist Mon-i-
 tor [In-ter-net]. [17 April 2014]. Avail-able from:
  []
 
-[101]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2807.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2807.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2822.
+[102]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2822.
  (./combined report 1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2807.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2807.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2822.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2822.
 
-Package rerunfilecheck Info: File `"combined report 1".out' has not changed.
-(rerunfilecheck)             Checksum: C95519B409C891D4CA3BF9F9E02E664E;9133.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2807.
+
+
+Package rerunfilecheck Warning: File `"combined report 1".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"combined report 1".out':
+(rerunfilecheck)             Before: C95519B409C891D4CA3BF9F9E02E664E;9133
+(rerunfilecheck)             After:  BC0768E40577C17531D60751C948E455;9227.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2822.
  ) 
 Here is how much of TeX's memory you used:
- 25744 strings out of 493312
- 488524 string characters out of 6137870
- 935793 words of memory out of 5000000
- 27693 multiletter control sequences out of 15000+600000
+ 23872 strings out of 493315
+ 434773 string characters out of 6137903
+ 899140 words of memory out of 5000000
+ 25769 multiletter control sequences out of 15000+600000
  75901 words of font info for 78 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 62i,14n,78p,2003b,3094s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
-013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/
-texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
-1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/h
-elvetic/uhvro8a.pfb>
-Output written on "combined report 1.pdf" (102 pages, 8475971 bytes).
+ 63i,14n,78p,2003b,3094s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{equation.7.18} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.12.2.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.12.1.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.6.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.6.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.6.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.10.6} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.5.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.5.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.10.5} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.4.5} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.4.4} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.4.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.3.3} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.3.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.3.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.2.2} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.10.2.1} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.9.4.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.9.1.4} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.9.1.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.9.1.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.9.1.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.8.3.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.7.4.4} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.7.4.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.7.4.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.7.4.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.7.5} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.7.4} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.7.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.7.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.7.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.7} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.6} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.3.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.3.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.2.6} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.6.2.5} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.2.4} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.2.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.2.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.5.2.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.1.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.1.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.1.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.2.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.2.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.2.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/
+type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/
+urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/hel
+vetic/uhvro8a.pfb>
+Output written on "combined report 1.pdf" (103 pages, 8460903 bytes).
 PDF statistics:
- 2547 PDF objects out of 2984 (max. 8388607)
- 2268 compressed objects within 23 object streams
- 1010 named destinations out of 1200 (max. 500000)
+ 2626 PDF objects out of 2984 (max. 8388607)
+ 2345 compressed objects within 24 object streams
+ 1073 named destinations out of 1200 (max. 500000)
  1276 words of extra memory for PDF output out of 10000 (max. 10000000)
 
