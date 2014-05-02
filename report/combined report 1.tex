@@ -1946,6 +1946,8 @@ MySQL database \textbf{replication} \cite{mysql:chapter16} is a relatively simpl
 MySQL \textbf{clustering} \cite{mysql:chapter17} is a more advanced method that involves many interconnected server nodes that operate synchronously with each other. Such systems have no single point of failure, since each node can run on a physically separate machine. Accessing the database can be done by connecting to any one of the nodes, and any changes are propagated to the other nodes instantly. 
 
 
+\newpage
+
 \section{Security - \textit{Henry Fletcher}} \label{security}
 
 Since one of the main features of the project is the ability to save and share patient data between patients and clinicians, the project inherently requires the data to be stored somewhere. Since the data is being held on an electronic database, and that data may also contain confidential patient information, the aspect of application security is an important one.
@@ -2040,7 +2042,7 @@ The SQL statement performs a number of actions. Firstly, it is inserting a new r
  
 \subsubsection{Implementation difficulties and subsequent removal from test system} \label{henry:encryption}
 
-Unfortunately because of the nature of this project, encrypting the data would prove to be very difficult, due to the nature of one piece of data needing to accessible to multiple people (i.e. doctor and patient). Additionally, the need for the database access to be compatible with both the application website and the Tallis medical decision engine, meant that any data encryption had to occur using MySQL itself. The default version of AES encryption used by MySQL is 128-bits, rather than the 256-bits required by the NHS. MySQL can however be compiled to use AES-256 if required.
+Unfortunately because of the nature of this project, encrypting the data would prove to be very difficult, since one piece of data needs to be accessible to multiple people (i.e. doctor and patient). Additionally, the need for the database access to be compatible with both the application website and the Tallis medical decision engine, meant that any data encryption had to occur using MySQL itself. The default version of AES encryption used by MySQL is 128-bits, rather than the 256-bits required by the NHS. MySQL can however be compiled to use AES-256 if required.
 \\ \indent
 It became apparent later in the project that the practicalities of getting AES encryption to work across the larger system would significantly complicate the application. The main issue that the project faced was the need for a shared key: if both the doctor and patient need to access the same data, they would both have to use the same encryption key. This would mean the encryption key would have to be stored somewhere on the server so that both users can access the data. However if the  database were compromised, it would be pointless to encrypt the data if the key itself was stored on the compromised database! In a real system, it is likely that a separate secure database or a physical hardware module would be needed to store the encryption key, so that if the primary database were compromised, the key (and hence the data) isn't. Similar approaches are used by Oracle to secure their database products \cite[section 3.1.3]{oracle:keymanagement}.
 \\ \indent
