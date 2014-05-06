@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.23)  2 MAY 2014 16:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.23)  6 MAY 2014 10:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -891,103 +891,103 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7 ...umberline {2.5}Database}{9}{subsection.2.5}
+l.7 ...umberline {2.5}Database}{8}{subsection.2.5}
                                                    [1]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 28.
- [2] [3] [4])
+ [2])
 \tf@toc=\write6
 \openout6 = `"combined report 1.toc"'.
 
- [5]
+ [3]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 180.
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 186.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 181.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 187.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 186.
- [6] [7]
-[8] <network.png, id=627, 507.8975pt x 356.33125pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 187.
+ [4] [5]
+[6] <network.png, id=563, 507.8975pt x 356.33125pt>
 File: network.png Graphic file (type png)
  <use network.png>
-Package pdftex.def Info: network.png used on input line 256.
+Package pdftex.def Info: network.png used on input line 257.
 (pdftex.def)             Requested size: 253.94814pt x 178.16518pt.
- [9 <./network.png>] [10] [11] [12] <BPwatch.jpg, id=692, 1099.10625pt x 635.37
-375pt>
+ [7 <./network.png>] [8] [9] [10] <BPwatch.jpg, id=626, 1099.10625pt x 635.3737
+5pt>
 File: BPwatch.jpg Graphic file (type jpg)
 
 <use BPwatch.jpg>
-Package pdftex.def Info: BPwatch.jpg used on input line 371.
+Package pdftex.def Info: BPwatch.jpg used on input line 372.
 (pdftex.def)             Requested size: 439.6347pt x 254.14499pt.
- [13] [14] <AppsUI.jpg, id=730, 1480.02937pt x 618.81187pt>
+ [11] [12] <AppsUI.jpg, id=665, 1480.02937pt x 618.81187pt>
 File: AppsUI.jpg Graphic file (type jpg)
 
 <use AppsUI.jpg>
-Package pdftex.def Info: AppsUI.jpg used on input line 388.
+Package pdftex.def Info: AppsUI.jpg used on input line 389.
 (pdftex.def)             Requested size: 444.01224pt x 185.64499pt.
- [15 <./BPwatch.jpg>] [16 <./AppsUI.jpg>]
-<csslink.png, id=753, 527.9725pt x 18.0675pt>
+ [13 <./BPwatch.jpg>] [14 <./AppsUI.jpg>]
+<csslink.png, id=689, 527.9725pt x 18.0675pt>
 File: csslink.png Graphic file (type png)
  <use csslink.png>
-Package pdftex.def Info: csslink.png used on input line 422.
+Package pdftex.def Info: csslink.png used on input line 423.
 (pdftex.def)             Requested size: 395.37898pt x 13.52989pt.
 
-<exampleclass.png, id=754, 193.72375pt x 60.225pt>
+<exampleclass.png, id=690, 193.72375pt x 60.225pt>
 File: exampleclass.png Graphic file (type png)
  <use exampleclass.png>
-Package pdftex.def Info: exampleclass.png used on input line 426.
+Package pdftex.def Info: exampleclass.png used on input line 427.
 (pdftex.def)             Requested size: 95.09317pt x 29.56288pt.
 
-[17 <./csslink.png> <./exampleclass.png>]
-<patientUI.png, id=763, 560.0925pt x 772.8875pt>
+[15 <./csslink.png> <./exampleclass.png>]
+<patientUI.png, id=699, 560.0925pt x 772.8875pt>
 File: patientUI.png Graphic file (type png)
  <use patientUI.png>
-Package pdftex.def Info: patientUI.png used on input line 441.
+Package pdftex.def Info: patientUI.png used on input line 442.
 (pdftex.def)             Requested size: 187.68149pt x 258.99261pt.
- [18 <./patientUI.png>] <appstandard.png, id=772, 1153.30875pt x 511.9125pt>
+ [16 <./patientUI.png>] <appstandard.png, id=707, 1153.30875pt x 511.9125pt>
 File: appstandard.png Graphic file (type png)
 
 <use appstandard.png>
-Package pdftex.def Info: appstandard.png used on input line 450.
+Package pdftex.def Info: appstandard.png used on input line 451.
 (pdftex.def)             Requested size: 500.484pt x 222.14899pt.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 453.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 454.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [19 <./appstandard.png>] <logincode.png, id=784, 1464.47125pt x 107.40125pt>
+) [17 <./appstandard.png>] <logincode.png, id=719, 1464.47125pt x 107.40125pt>
 File: logincode.png Graphic file (type png)
 
 <use logincode.png>
-Package pdftex.def Info: logincode.png used on input line 463.
+Package pdftex.def Info: logincode.png used on input line 464.
 (pdftex.def)             Requested size: 500.484pt x 36.70439pt.
- <iphoneicon.png, id=785, 486.81876pt x 616.3025pt>
+ <iphoneicon.png, id=720, 486.81876pt x 616.3025pt>
 File: iphoneicon.png Graphic file (type png)
 
 <use iphoneicon.png>
-Package pdftex.def Info: iphoneicon.png used on input line 469.
+Package pdftex.def Info: iphoneicon.png used on input line 470.
 (pdftex.def)             Requested size: 34.08078pt x 43.14557pt.
- [20 <./logincode.png> <./iphoneicon.png>]
-<updateform.png, id=797, 370.38374pt x 135.50626pt>
+ [18 <./logincode.png> <./iphoneicon.png>]
+<updateform.png, id=733, 370.38374pt x 135.50626pt>
 File: updateform.png Graphic file (type png)
  <use updateform.png>
-Package pdftex.def Info: updateform.png used on input line 479.
+Package pdftex.def Info: updateform.png used on input line 480.
 (pdftex.def)             Requested size: 175.17244pt x 64.08699pt.
 
-[21 <./updateform.png>] <historyJS.png, id=807, 639.38875pt x 211.79124pt>
+[19 <./updateform.png>] <historyJS.png, id=742, 639.38875pt x 211.79124pt>
 File: historyJS.png Graphic file (type png)
 
 <use historyJS.png>
-Package pdftex.def Info: historyJS.png used on input line 494.
+Package pdftex.def Info: historyJS.png used on input line 495.
 (pdftex.def)             Requested size: 237.72913pt x 78.7461pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 504.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 505.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 504.
- [22 <./historyJS.png>]
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 505.
+ [20 <./historyJS.png>]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
@@ -995,639 +995,649 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown code defaults to 0 on input l
-ine 544.
- [23]
-<pageLayout.png, id=850, 548.0475pt x 228.855pt>
+ine 545.
+ [21]
+<pageLayout.png, id=785, 548.0475pt x 228.855pt>
 File: pageLayout.png Graphic file (type png)
  <use pageLayout.png>
-Package pdftex.def Info: pageLayout.png used on input line 617.
+Package pdftex.def Info: pageLayout.png used on input line 618.
 (pdftex.def)             Requested size: 274.02307pt x 114.42722pt.
- [24 <./pageLayout.png>] [25] <siteDesignGeneral.jpg, id=910, 894.34125pt x 374
+ [22 <./pageLayout.png>] [23] <siteDesignGeneral.jpg, id=844, 894.34125pt x 374
 .14781pt>
 File: siteDesignGeneral.jpg Graphic file (type jpg)
 
 <use siteDesignGeneral.jpg>
-Package pdftex.def Info: siteDesignGeneral.jpg used on input line 642.
+Package pdftex.def Info: siteDesignGeneral.jpg used on input line 643.
 (pdftex.def)             Requested size: 447.16953pt x 187.07344pt.
- [26 <./siteDesignGeneral.jpg>]
-<login_design.png, id=917, 432.11438pt x 318.43968pt>
+ [24 <./siteDesignGeneral.jpg>]
+<login_design.png, id=852, 432.11438pt x 318.43968pt>
 File: login_design.png Graphic file (type png)
  <use login_design.png>
-Package pdftex.def Info: login_design.png used on input line 655.
+Package pdftex.def Info: login_design.png used on input line 656.
 (pdftex.def)             Requested size: 259.27061pt x 191.06528pt.
 
-[27 <./login_design.png>]
+[25 <./login_design.png>]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2014/03/04 1.5c listings language file
-) [28]
-<tallis_keystone_top.jpg, id=959, 335.75438pt x 43.66313pt>
+) [26]
+<tallis_keystone_top.jpg, id=894, 335.75438pt x 43.66313pt>
 File: tallis_keystone_top.jpg Graphic file (type jpg)
 
 <use tallis_keystone_top.jpg>
-Package pdftex.def Info: tallis_keystone_top.jpg used on input line 724.
+Package pdftex.def Info: tallis_keystone_top.jpg used on input line 725.
 (pdftex.def)             Requested size: 268.60387pt x 34.93053pt.
- [29 <./tallis_keystone_top.jpg>]
-<tallis_plan_patientdata.jpg, id=970, 387.69844pt x 109.91063pt>
+ [27 <./tallis_keystone_top.jpg>]
+<tallis_plan_patientdata.jpg, id=906, 387.69844pt x 109.91063pt>
 File: tallis_plan_patientdata.jpg Graphic file (type jpg)
 
 <use tallis_plan_patientdata.jpg>
-Package pdftex.def Info: tallis_plan_patientdata.jpg used on input line 746.
+Package pdftex.def Info: tallis_plan_patientdata.jpg used on input line 747.
 (pdftex.def)             Requested size: 310.15916pt x 87.9286pt.
 
-Overfull \hbox (1.71675pt too wide) in paragraph at lines 758--758
+Overfull \hbox (1.71675pt too wide) in paragraph at lines 759--759
 []\T1/phv/b/n/10.95 Candidate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 759--759
 []\T1/phv/b/n/10.95 Target
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 759--759
 \T1/phv/b/n/10.95 BP
  []
 
 
-Overfull \hbox (4.77168pt too wide) in paragraph at lines 760--760
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 761--761
 []\T1/phv/m/n/10.95 Systolic140| 
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 760--761
+Underfull \hbox (badness 3291) in paragraph at lines 761--762
 []\T1/phv/m/n/10.95 Patient must not have
  []
 
 
-Overfull \hbox (4.77168pt too wide) in paragraph at lines 762--762
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 763--763
 []\T1/phv/m/n/10.95 Systolic150| 
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 762--763
+Underfull \hbox (badness 3291) in paragraph at lines 763--764
 []\T1/phv/m/n/10.95 Patient must not have
  []
 
 
-Overfull \hbox (4.77168pt too wide) in paragraph at lines 764--764
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 765--765
 []\T1/phv/m/n/10.95 Systolic135| 
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 764--765
+Underfull \hbox (badness 3291) in paragraph at lines 765--766
 []\T1/phv/m/n/10.95 Patient must not have
  []
 
 
-Overfull \hbox (4.77168pt too wide) in paragraph at lines 766--766
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 767--767
 []\T1/phv/m/n/10.95 Systolic145| 
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 766--767
+Underfull \hbox (badness 3291) in paragraph at lines 767--768
 []\T1/phv/m/n/10.95 Patient must not have
  []
 
-<tallis_task_top.jpg, id=976, 429.10312pt x 108.405pt>
+<tallis_task_top.jpg, id=912, 429.10312pt x 108.405pt>
 File: tallis_task_top.jpg Graphic file (type jpg)
 
 <use tallis_task_top.jpg>
-Package pdftex.def Info: tallis_task_top.jpg used on input line 781.
+Package pdftex.def Info: tallis_task_top.jpg used on input line 782.
 (pdftex.def)             Requested size: 343.28296pt x 86.7241pt.
- Excluding 'comment' comment. [30 <./tallis_plan_patientdata.jpg>] <Tallis_UI_u
-nsuitable.png, id=992, 659.55884pt x 485.3501pt>
+ Excluding 'comment' comment. [28 <./tallis_plan_patientdata.jpg>] <Tallis_UI_u
+nsuitable.png, id=927, 659.55884pt x 485.3501pt>
 File: Tallis_UI_unsuitable.png Graphic file (type png)
 
 <use Tallis_UI_unsuitable.png>
-Package pdftex.def Info: Tallis_UI_unsuitable.png used on input line 834.
+Package pdftex.def Info: Tallis_UI_unsuitable.png used on input line 835.
 (pdftex.def)             Requested size: 461.68805pt x 339.74275pt.
- [31 <./tallis_task_top.jpg>] [32 <./Tallis_UI_unsuitable.png>] <formCheckBox.j
-pg, id=1005, 568.37344pt x 258.9675pt>
+ [29 <./tallis_task_top.jpg>] [30 <./Tallis_UI_unsuitable.png>] <formCheckBox.j
+pg, id=941, 568.37344pt x 258.9675pt>
 File: formCheckBox.jpg Graphic file (type jpg)
 
 <use formCheckBox.jpg>
-Package pdftex.def Info: formCheckBox.jpg used on input line 852.
+Package pdftex.def Info: formCheckBox.jpg used on input line 853.
 (pdftex.def)             Requested size: 284.18602pt x 129.48341pt.
- [33 <./formCheckBox.jpg>]
-<comorbidity.jpg, id=1032, 491.58656pt x 429.10312pt>
+ [31 <./formCheckBox.jpg>]
+<comorbidity.jpg, id=967, 491.58656pt x 429.10312pt>
 File: comorbidity.jpg Graphic file (type jpg)
  <use comorbidity.jpg>
-Package pdftex.def Info: comorbidity.jpg used on input line 915.
+Package pdftex.def Info: comorbidity.jpg used on input line 916.
 (pdftex.def)             Requested size: 393.26978pt x 343.28296pt.
 
-[34] [35 <./comorbidity.jpg>] [36] [37
+[32] [33 <./comorbidity.jpg>] [34] [35
 
-] [38
+] [36
 
 ]
-<indexover.png, id=1222, 1378.14874pt x 685.56125pt>
+<indexover.png, id=1158, 1378.14874pt x 685.56125pt>
 File: indexover.png Graphic file (type png)
  <use indexover.png>
-Package pdftex.def Info: indexover.png used on input line 1148.
+Package pdftex.def Info: indexover.png used on input line 1149.
 (pdftex.def)             Requested size: 500.484pt x 248.96724pt.
 
-<CSSscaling.png, id=1223, 306.14375pt x 289.08pt>
+<CSSscaling.png, id=1159, 306.14375pt x 289.08pt>
 File: CSSscaling.png Graphic file (type png)
  <use CSSscaling.png>
-Package pdftex.def Info: CSSscaling.png used on input line 1157.
+Package pdftex.def Info: CSSscaling.png used on input line 1158.
 (pdftex.def)             Requested size: 122.45532pt x 115.62994pt.
 
-<ipad.png, id=1224, 3276.24pt x 2457.18pt>
+<ipad.png, id=1160, 3276.24pt x 2457.18pt>
 File: ipad.png Graphic file (type png)
  <use ipad.png>
-Package pdftex.def Info: ipad.png used on input line 1159.
+Package pdftex.def Info: ipad.png used on input line 1160.
 (pdftex.def)             Requested size: 91.73409pt x 68.80057pt.
- [39 <./indexover.png>] <selectorphp.png, id=1237, 521.95pt x 181.67876pt>
+ [37 <./indexover.png>] <selectorphp.png, id=1172, 521.95pt x 181.67876pt>
 File: selectorphp.png Graphic file (type png)
  <use selectorphp.png>
-Package pdftex.def Info: selectorphp.png used on input line 1168.
+Package pdftex.def Info: selectorphp.png used on input line 1169.
 (pdftex.def)             Requested size: 295.28372pt x 102.78174pt.
 
-<selectorCSS.png, id=1238, 499.8675pt x 409.53pt>
+<selectorCSS.png, id=1173, 499.8675pt x 409.53pt>
 File: selectorCSS.png Graphic file (type png)
  <use selectorCSS.png>
-Package pdftex.def Info: selectorCSS.png used on input line 1172.
+Package pdftex.def Info: selectorCSS.png used on input line 1173.
 (pdftex.def)             Requested size: 195.18845pt x 159.90976pt.
 
-[40 <./CSSscaling.png> <./ipad.png>]
-<selectfunc.png, id=1247, 335.2525pt x 121.45375pt>
+[38 <./CSSscaling.png> <./ipad.png>]
+<selectfunc.png, id=1182, 335.2525pt x 121.45375pt>
 File: selectfunc.png Graphic file (type png)
  <use selectfunc.png>
-Package pdftex.def Info: selectfunc.png used on input line 1180.
+Package pdftex.def Info: selectfunc.png used on input line 1181.
 (pdftex.def)             Requested size: 167.62584pt x 60.72672pt.
 
-[41 <./selectorphp.png> <./selectorCSS.png> <./selectfunc.png>]
-<searchbarhtml.png, id=1257, 804.00375pt x 90.3375pt>
+[39 <./selectorphp.png> <./selectorCSS.png> <./selectfunc.png>]
+<searchbarhtml.png, id=1192, 804.00375pt x 90.3375pt>
 File: searchbarhtml.png Graphic file (type png)
  <use searchbarhtml.png>
-Package pdftex.def Info: searchbarhtml.png used on input line 1189.
+Package pdftex.def Info: searchbarhtml.png used on input line 1190.
 (pdftex.def)             Requested size: 321.59581pt x 36.13435pt.
 
-[42 <./searchbarhtml.png>] <infoSQL.png, id=1267, 502.87875pt x 91.34125pt>
+[40 <./searchbarhtml.png>] <infoSQL.png, id=1201, 502.87875pt x 91.34125pt>
 File: infoSQL.png Graphic file (type png)
 
 <use infoSQL.png>
-Package pdftex.def Info: infoSQL.png used on input line 1202.
+Package pdftex.def Info: infoSQL.png used on input line 1203.
 (pdftex.def)             Requested size: 175.17244pt x 31.81659pt.
- <medtable.png, id=1268, 341.275pt x 273.02pt>
+ <medtable.png, id=1202, 341.275pt x 273.02pt>
 File: medtable.png Graphic file (type png)
 
 <use medtable.png>
-Package pdftex.def Info: medtable.png used on input line 1204.
+Package pdftex.def Info: medtable.png used on input line 1205.
 (pdftex.def)             Requested size: 175.17244pt x 140.1382pt.
- <buttonscripts.png, id=1270, 638.385pt x 61.22874pt>
+ <buttonscripts.png, id=1204, 638.385pt x 61.22874pt>
 File: buttonscripts.png Graphic file (type png)
 
 <use buttonscripts.png>
-Package pdftex.def Info: buttonscripts.png used on input line 1211.
+Package pdftex.def Info: buttonscripts.png used on input line 1212.
 (pdftex.def)             Requested size: 245.2399pt x 23.52127pt.
- <progressbar.png, id=1271, 652.4375pt x 137.51375pt>
+ <progressbar.png, id=1205, 652.4375pt x 137.51375pt>
 File: progressbar.png Graphic file (type png)
 
 <use progressbar.png>
-Package pdftex.def Info: progressbar.png used on input line 1215.
+Package pdftex.def Info: progressbar.png used on input line 1216.
 (pdftex.def)             Requested size: 245.2399pt x 51.68922pt.
- <tutorial1.png, id=1273, 1200.485pt x 632.3625pt>
+ <tutorial1.png, id=1207, 1200.485pt x 632.3625pt>
 File: tutorial1.png Graphic file (type png)
 
 <use tutorial1.png>
-Package pdftex.def Info: tutorial1.png used on input line 1226.
+Package pdftex.def Info: tutorial1.png used on input line 1227.
 (pdftex.def)             Requested size: 196.19266pt x 103.34145pt.
- <tutorial2.png, id=1274, 1199.48125pt x 630.355pt>
+ <tutorial2.png, id=1208, 1199.48125pt x 630.355pt>
 File: tutorial2.png Graphic file (type png)
 
 <use tutorial2.png>
-Package pdftex.def Info: tutorial2.png used on input line 1227.
+Package pdftex.def Info: tutorial2.png used on input line 1228.
 (pdftex.def)             Requested size: 196.19266pt x 103.09995pt.
- <tutorial3.png, id=1275, 1202.4925pt x 632.3625pt>
+ <tutorial3.png, id=1209, 1202.4925pt x 632.3625pt>
 File: tutorial3.png Graphic file (type png)
 
 <use tutorial3.png>
-Package pdftex.def Info: tutorial3.png used on input line 1228.
+Package pdftex.def Info: tutorial3.png used on input line 1229.
 (pdftex.def)             Requested size: 196.19266pt x 103.16777pt.
- <tutorial4.png, id=1276, 1203.49625pt x 632.3625pt>
+ <tutorial4.png, id=1210, 1203.49625pt x 632.3625pt>
 File: tutorial4.png Graphic file (type png)
 
 <use tutorial4.png>
-Package pdftex.def Info: tutorial4.png used on input line 1232.
+Package pdftex.def Info: tutorial4.png used on input line 1233.
 (pdftex.def)             Requested size: 196.19266pt x 103.08093pt.
- <tutorial5.png, id=1277, 1202.4925pt x 632.3625pt>
+ <tutorial5.png, id=1211, 1202.4925pt x 632.3625pt>
 File: tutorial5.png Graphic file (type png)
 
 <use tutorial5.png>
-Package pdftex.def Info: tutorial5.png used on input line 1233.
+Package pdftex.def Info: tutorial5.png used on input line 1234.
 (pdftex.def)             Requested size: 196.19266pt x 103.16777pt.
- <tutorial6.png, id=1278, 1202.4925pt x 631.35875pt>
+ <tutorial6.png, id=1212, 1202.4925pt x 631.35875pt>
 File: tutorial6.png Graphic file (type png)
 
 <use tutorial6.png>
-Package pdftex.def Info: tutorial6.png used on input line 1234.
+Package pdftex.def Info: tutorial6.png used on input line 1235.
 (pdftex.def)             Requested size: 196.19266pt x 103.00401pt.
- <tutorialCSS.png, id=1280, 392.46625pt x 253.94875pt>
+ <tutorialCSS.png, id=1214, 392.46625pt x 253.94875pt>
 File: tutorialCSS.png Graphic file (type png)
 
 <use tutorialCSS.png>
-Package pdftex.def Info: tutorialCSS.png used on input line 1241.
+Package pdftex.def Info: tutorialCSS.png used on input line 1242.
 (pdftex.def)             Requested size: 156.9837pt x 101.5777pt.
- <tutorial1jQuery.png, id=1281, 441.65pt x 198.7425pt>
+ <tutorial1jQuery.png, id=1215, 441.65pt x 198.7425pt>
 File: tutorial1jQuery.png Graphic file (type png)
 
 <use tutorial1jQuery.png>
-Package pdftex.def Info: tutorial1jQuery.png used on input line 1243.
+Package pdftex.def Info: tutorial1jQuery.png used on input line 1244.
 (pdftex.def)             Requested size: 176.65686pt x 79.49557pt.
 
-Overfull \hbox (1.48442pt too wide) in paragraph at lines 1243--1244
+Overfull \hbox (1.48442pt too wide) in paragraph at lines 1244--1245
  [][] 
  []
 
-[43 <./infoSQL.png> <./medtable.png> <./buttonscripts.png> <./progressbar.png>]
-[44 <./tutorial1.png> <./tutorial2.png> <./tutorial3.png> <./tutorial4.png> <./
-tutorial5.png> <./tutorial6.png>] [45 <./tutorialCSS.png> <./tutorial1jQuery.pn
+[41 <./infoSQL.png> <./medtable.png> <./buttonscripts.png> <./progressbar.png>]
+[42 <./tutorial1.png> <./tutorial2.png> <./tutorial3.png> <./tutorial4.png> <./
+tutorial5.png> <./tutorial6.png>] [43 <./tutorialCSS.png> <./tutorial1jQuery.pn
 g>]
-Overfull \hbox (1.06136pt too wide) in paragraph at lines 1285--1285
- [][][][]\T1/phv/m/n/10.95 Uncertainty 
- []
-
-
 Overfull \hbox (1.06136pt too wide) in paragraph at lines 1286--1286
  [][][][]\T1/phv/m/n/10.95 Uncertainty 
  []
 
-[46] [47] <linexmp.png, id=1319, 291.0875pt x 184.69pt>
+
+Overfull \hbox (1.06136pt too wide) in paragraph at lines 1287--1287
+ [][][][]\T1/phv/m/n/10.95 Uncertainty 
+ []
+
+[44] [45] <linexmp.png, id=1255, 291.0875pt x 184.69pt>
 File: linexmp.png Graphic file (type png)
  <use linexmp.png>
-Package pdftex.def Info: linexmp.png used on input line 1325.
+Package pdftex.def Info: linexmp.png used on input line 1326.
 (pdftex.def)             Requested size: 116.43292pt x 73.87468pt.
 
-[48 <./linexmp.png>] [49] <replinreg.png, id=1365, 728.9634pt x 444.2196pt>
+[46 <./linexmp.png>] [47] <replinreg.png, id=1299, 728.9634pt x 444.2196pt>
 File: replinreg.png Graphic file (type png)
 
 <use replinreg.png>
-Package pdftex.def Info: replinreg.png used on input line 1428.
+Package pdftex.def Info: replinreg.png used on input line 1429.
 (pdftex.def)             Requested size: 291.58018pt x 177.6847pt.
- [50] <linreggood.png, id=1371, 728.9634pt x 444.2196pt>
+ [48] <linreggood.png, id=1306, 728.9634pt x 444.2196pt>
 File: linreggood.png Graphic file (type png)
 
 <use linreggood.png>
-Package pdftex.def Info: linreggood.png used on input line 1435.
+Package pdftex.def Info: linreggood.png used on input line 1436.
 (pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1435--1436
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1436--1437
 [][] 
  []
 
-<linregbad.png, id=1372, 728.9634pt x 444.2196pt>
+<linregbad.png, id=1307, 728.9634pt x 444.2196pt>
 File: linregbad.png Graphic file (type png)
  <use linregbad.png>
-Package pdftex.def Info: linregbad.png used on input line 1439.
+Package pdftex.def Info: linregbad.png used on input line 1440.
 (pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1439--1440
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1440--1441
 [][] 
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 1432--1443
+Underfull \hbox (badness 2221) in paragraph at lines 1433--1444
 \T1/phv/m/n/10.95 per-cent-age er-ror to be found. In
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 1432--1443
+Underfull \hbox (badness 2617) in paragraph at lines 1433--1444
 \T1/phv/m/n/10.95 ex-cel the func-tion, =ABS(([@Day1]-
  []
 
-[51 <./replinreg.png> <./linreggood.png> <./linregbad.png>]
-<correx.png, id=1383, 768.8725pt x 205.76875pt>
+[49 <./replinreg.png> <./linreggood.png> <./linregbad.png>]
+<correx.png, id=1318, 768.8725pt x 205.76875pt>
 File: correx.png Graphic file (type png)
  <use correx.png>
-Package pdftex.def Info: correx.png used on input line 1451.
+Package pdftex.def Info: correx.png used on input line 1452.
 (pdftex.def)             Requested size: 350.33727pt x 93.75993pt.
- [52 <./correx.png>] <corrgood.png, id=1397, 728.9634pt x 444.2196pt>
+ [50 <./correx.png>] <corrgood.png, id=1332, 728.9634pt x 444.2196pt>
 File: corrgood.png Graphic file (type png)
  <use corrgood.png>
-Package pdftex.def Info: corrgood.png used on input line 1478.
+Package pdftex.def Info: corrgood.png used on input line 1479.
 (pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1478--1479
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1479--1480
 [][] 
  []
 
-<corrbad.png, id=1398, 728.9634pt x 444.2196pt>
+<corrbad.png, id=1333, 728.9634pt x 444.2196pt>
 File: corrbad.png Graphic file (type png)
  <use corrbad.png>
-Package pdftex.def Info: corrbad.png used on input line 1482.
+Package pdftex.def Info: corrbad.png used on input line 1483.
 (pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 1482--1483
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1483--1484
 [][] 
  []
 
-[53 <./corrgood.png> <./corrbad.png>]
-<DB1.png, id=1409, 580.1675pt x 74.2775pt>
+[51 <./corrgood.png> <./corrbad.png>]
+<DB1.png, id=1344, 580.1675pt x 74.2775pt>
 File: DB1.png Graphic file (type png)
  <use DB1.png>
-Package pdftex.def Info: DB1.png used on input line 1502.
+Package pdftex.def Info: DB1.png used on input line 1503.
 (pdftex.def)             Requested size: 232.06288pt x 29.71046pt.
 
-<SQLBPquery.png, id=1410, 959.585pt x 45.16875pt>
+<SQLBPquery.png, id=1345, 959.585pt x 45.16875pt>
 File: SQLBPquery.png Graphic file (type png)
  <use SQLBPquery.png>
-Package pdftex.def Info: SQLBPquery.png used on input line 1510.
+Package pdftex.def Info: SQLBPquery.png used on input line 1511.
 (pdftex.def)             Requested size: 395.37898pt x 18.61096pt.
 
-<SQLBPprequery.png, id=1411, 209.78375pt x 20.075pt>
+<SQLBPprequery.png, id=1346, 209.78375pt x 20.075pt>
 File: SQLBPprequery.png Graphic file (type png)
  <use SQLBPprequery.png>
-Package pdftex.def Info: SQLBPprequery.png used on input line 1514.
+Package pdftex.def Info: SQLBPprequery.png used on input line 1515.
 (pdftex.def)             Requested size: 95.09317pt x 9.09982pt.
 
-<DB2.png, id=1412, 83.31125pt x 145.54375pt>
+<DB2.png, id=1347, 83.31125pt x 145.54375pt>
 File: DB2.png Graphic file (type png)
  <use DB2.png>
-Package pdftex.def Info: DB2.png used on input line 1522.
+Package pdftex.def Info: DB2.png used on input line 1523.
 (pdftex.def)             Requested size: 33.3239pt x 58.21646pt.
- [54 <./DB1.png> <./SQLBPquery.png> <./SQLBPprequery.png>]
-<mainSQL.png, id=1423, 582.175pt x 834.11626pt>
+ [52 <./DB1.png> <./SQLBPquery.png> <./SQLBPprequery.png>]
+<mainSQL.png, id=1357, 582.175pt x 834.11626pt>
 File: mainSQL.png Graphic file (type png)
  <use mainSQL.png>
-Package pdftex.def Info: mainSQL.png used on input line 1531.
+Package pdftex.def Info: mainSQL.png used on input line 1532.
 (pdftex.def)             Requested size: 174.65384pt x 250.2368pt.
 
-Underfull \hbox (badness 1509) in paragraph at lines 1534--1539
+Underfull \hbox (badness 1509) in paragraph at lines 1535--1540
 \T1/phv/m/n/10.95 can all be cal-cu-lated by sum(x*x), sum(y*y),
  []
 
-[55 <./DB2.png> <./mainSQL.png>]
-<corrcheck.png, id=1435, 195.73125pt x 106.3975pt>
+[53 <./DB2.png> <./mainSQL.png>]
+<corrcheck.png, id=1369, 195.73125pt x 106.3975pt>
 File: corrcheck.png Graphic file (type png)
  <use corrcheck.png>
-Package pdftex.def Info: corrcheck.png used on input line 1548.
+Package pdftex.def Info: corrcheck.png used on input line 1549.
 (pdftex.def)             Requested size: 117.43964pt x 63.83897pt.
 
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
-1554.
+1555.
 
-<linbound.png, id=1438, 285.065pt x 108.405pt>
+<linbound.png, id=1372, 285.065pt x 108.405pt>
 File: linbound.png Graphic file (type png)
  <use linbound.png>
-Package pdftex.def Info: linbound.png used on input line 1556.
+Package pdftex.def Info: linbound.png used on input line 1557.
 (pdftex.def)             Requested size: 171.04031pt x 65.04349pt.
 
-<boundtest1.png, id=1439, 316.18124pt x 96.36pt>
+<boundtest1.png, id=1373, 316.18124pt x 96.36pt>
 File: boundtest1.png Graphic file (type png)
  <use boundtest1.png>
-Package pdftex.def Info: boundtest1.png used on input line 1558.
+Package pdftex.def Info: boundtest1.png used on input line 1559.
 (pdftex.def)             Requested size: 189.7102pt x 57.81642pt.
 
-<dowhile.png, id=1440, 377.41pt x 245.91875pt>
+<dowhile.png, id=1374, 377.41pt x 245.91875pt>
 File: dowhile.png Graphic file (type png)
  <use dowhile.png>
-Package pdftex.def Info: dowhile.png used on input line 1560.
+Package pdftex.def Info: dowhile.png used on input line 1561.
 (pdftex.def)             Requested size: 226.44774pt x 147.55237pt.
 
-Overfull \hbox (16.24539pt too wide) in paragraph at lines 1560--1561
+Overfull \hbox (16.24539pt too wide) in paragraph at lines 1561--1562
  [][] 
  []
 
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 15
-62.
+63.
 
-[56 <./corrcheck.png> <./linbound.png> <./boundtest1.png> <./dowhile.png>]
-<finalupdate.png, id=1450, 702.625pt x 16.06pt>
+[54 <./corrcheck.png> <./linbound.png> <./boundtest1.png> <./dowhile.png>]
+<finalupdate.png, id=1385, 702.625pt x 16.06pt>
 File: finalupdate.png Graphic file (type png)
  <use finalupdate.png>
-Package pdftex.def Info: finalupdate.png used on input line 1570.
+Package pdftex.def Info: finalupdate.png used on input line 1571.
 (pdftex.def)             Requested size: 500.484pt x 11.43991pt.
 
-<unbar.png, id=1451, 401.5pt x 71.26625pt>
+<unbar.png, id=1386, 401.5pt x 71.26625pt>
 File: unbar.png Graphic file (type png)
  <use unbar.png>
-Package pdftex.def Info: unbar.png used on input line 1576.
+Package pdftex.def Info: unbar.png used on input line 1577.
 (pdftex.def)             Requested size: 140.5271pt x 24.94354pt.
- [57 <./finalupdate.png> <./unbar.png>] [58] <tallisAll2.jpg, id=1466, 523.2046
+ [55 <./finalupdate.png> <./unbar.png>] [56] <tallisAll2.jpg, id=1402, 523.2046
 8pt x 295.1025pt>
 File: tallisAll2.jpg Graphic file (type jpg)
 
 <use tallisAll2.jpg>
-Package pdftex.def Info: tallisAll2.jpg used on input line 1601.
+Package pdftex.def Info: tallisAll2.jpg used on input line 1602.
 (pdftex.def)             Requested size: 523.2034pt x 295.10176pt.
 
-Overfull \hbox (22.7194pt too wide) in paragraph at lines 1601--1602
+Overfull \hbox (22.7194pt too wide) in paragraph at lines 1602--1603
  [] 
  []
 
-[59 <./tallisAll2.jpg>] <tallisRead.jpg, id=1476, 739.26187pt x 289.08pt>
+[57 <./tallisAll2.jpg>] <tallisRead.jpg, id=1412, 739.26187pt x 289.08pt>
 File: tallisRead.jpg Graphic file (type jpg)
 
 <use tallisRead.jpg>
-Package pdftex.def Info: tallisRead.jpg used on input line 1634.
+Package pdftex.def Info: tallisRead.jpg used on input line 1635.
 (pdftex.def)             Requested size: 517.47978pt x 202.35461pt.
 
-Overfull \hbox (16.99579pt too wide) in paragraph at lines 1634--1635
+Overfull \hbox (16.99579pt too wide) in paragraph at lines 1635--1636
  [] 
  []
 
-<tallisTreatmentChange.jpg, id=1478, 575.14874pt x 289.08pt>
+<tallisTreatmentChange.jpg, id=1414, 575.14874pt x 289.08pt>
 File: tallisTreatmentChange.jpg Graphic file (type jpg)
 
 <use tallisTreatmentChange.jpg>
-Package pdftex.def Info: tallisTreatmentChange.jpg used on input line 1645.
+Package pdftex.def Info: tallisTreatmentChange.jpg used on input line 1646.
 (pdftex.def)             Requested size: 517.62909pt x 260.16959pt.
 
-Overfull \hbox (17.1451pt too wide) in paragraph at lines 1645--1646
+Overfull \hbox (17.1451pt too wide) in paragraph at lines 1646--1647
  [] 
  []
 
-[60] [61 <./tallisRead.jpg>] [62 <./tallisTreatmentChange.jpg>] [63] [64]
-<tallisNewDrug.jpg, id=1566, 461.47406pt x 402.00188pt>
+[58] [59 <./tallisRead.jpg>] [60 <./tallisTreatmentChange.jpg>] [61] [62]
+<tallisNewDrug.jpg, id=1502, 461.47406pt x 402.00188pt>
 File: tallisNewDrug.jpg Graphic file (type jpg)
 
 <use tallisNewDrug.jpg>
-Package pdftex.def Info: tallisNewDrug.jpg used on input line 1767.
+Package pdftex.def Info: tallisNewDrug.jpg used on input line 1768.
 (pdftex.def)             Requested size: 369.17973pt x 321.60193pt.
- <tallisDrugArg2.jpg, id=1572, 687.31781pt x 83.5622pt>
+ <tallisDrugArg2.jpg, id=1508, 687.31781pt x 83.5622pt>
 File: tallisDrugArg2.jpg Graphic file (type jpg)
 
 <use tallisDrugArg2.jpg>
-Package pdftex.def Info: tallisDrugArg2.jpg used on input line 1777.
+Package pdftex.def Info: tallisDrugArg2.jpg used on input line 1778.
 (pdftex.def)             Requested size: 515.48709pt x 62.67148pt.
 
-Overfull \hbox (15.0031pt too wide) in paragraph at lines 1777--1778
+Overfull \hbox (15.0031pt too wide) in paragraph at lines 1778--1779
  [] 
  []
 
-[65
+[63
 
  <./tallisNewDrug.jpg>]
-<tallisDoseChange.jpg, id=1582, 295.85532pt x 132.495pt>
+<tallisDoseChange.jpg, id=1518, 295.85532pt x 132.495pt>
 File: tallisDoseChange.jpg Graphic file (type jpg)
 
 <use tallisDoseChange.jpg>
-Package pdftex.def Info: tallisDoseChange.jpg used on input line 1791.
+Package pdftex.def Info: tallisDoseChange.jpg used on input line 1792.
 (pdftex.def)             Requested size: 295.85458pt x 132.49466pt.
- [66 <./tallisDrugArg2.jpg> <./tallisDoseChange.jpg>] <tallisCheckup.jpg, id=15
-89, 437.38406pt x 97.86563pt>
+ [64 <./tallisDrugArg2.jpg> <./tallisDoseChange.jpg>] <tallisCheckup.jpg, id=15
+24, 437.38406pt x 97.86563pt>
 File: tallisCheckup.jpg Graphic file (type jpg)
 
 <use tallisCheckup.jpg>
-Package pdftex.def Info: tallisCheckup.jpg used on input line 1815.
+Package pdftex.def Info: tallisCheckup.jpg used on input line 1816.
 (pdftex.def)             Requested size: 437.38298pt x 97.86537pt.
- [67 <./tallisCheckup.jpg>]
-<tallisUItable.jpg, id=1599, 239.39438pt x 203.25937pt>
+ [65 <./tallisCheckup.jpg>]
+<tallisUItable.jpg, id=1534, 239.39438pt x 203.25937pt>
 File: tallisUItable.jpg Graphic file (type jpg)
 
 <use tallisUItable.jpg>
-Package pdftex.def Info: tallisUItable.jpg used on input line 1828.
+Package pdftex.def Info: tallisUItable.jpg used on input line 1829.
 (pdftex.def)             Requested size: 191.51575pt x 162.60771pt.
 
-<tallisUIevolve.jpg, id=1602, 499.8675pt x 713.66624pt>
+<tallisUIevolve.jpg, id=1537, 499.8675pt x 713.66624pt>
 File: tallisUIevolve.jpg Graphic file (type jpg)
 
 <use tallisUIevolve.jpg>
-Package pdftex.def Info: tallisUIevolve.jpg used on input line 1837.
+Package pdftex.def Info: tallisUIevolve.jpg used on input line 1838.
 (pdftex.def)             Requested size: 399.89453pt x 570.93376pt.
- [68 <./tallisUItable.jpg>] [69 <./tallisUIevolve.jpg>] [70] <server-environmen
-t-pdf-2.pdf, id=1624, 508.90125pt x 342.27875pt>
+ [66 <./tallisUItable.jpg>] [67 <./tallisUIevolve.jpg>] [68] <server-environmen
+t-pdf-2.pdf, id=1559, 508.90125pt x 342.27875pt>
 File: server-environment-pdf-2.pdf Graphic file (type pdf)
 
 <use server-environment-pdf-2.pdf>
-Package pdftex.def Info: server-environment-pdf-2.pdf used on input line 1881.
+Package pdftex.def Info: server-environment-pdf-2.pdf used on input line 1882.
 (pdftex.def)             Requested size: 432.5681pt x 290.9383pt.
- [71] [72 <./server-environment-pdf-2.pdf>]
-[73] [74] [75] [76] [77] [78] [79]
-<passwordhashing-loginform.pdf, id=1782, 547.04375pt x 242.9075pt>
+ [69] [70 <./server-environment-pdf-2.pdf>]
+[71] [72] [73] [74] [75] [76] [77]
+<passwordhashing-loginform.pdf, id=1716, 547.04375pt x 242.9075pt>
 File: passwordhashing-loginform.pdf Graphic file (type pdf)
 
 <use passwordhashing-loginform.pdf>
-Package pdftex.def Info: passwordhashing-loginform.pdf used on input line 2092.
+Package pdftex.def Info: passwordhashing-loginform.pdf used on input line 2093.
 
 (pdftex.def)             Requested size: 464.98938pt x 206.47234pt.
- [80 <./passwordhashing-loginform.pdf>]
-<passwordsfreq.png, id=1846, 1168.365pt x 528.97626pt>
+ [78 <./passwordhashing-loginform.pdf>]
+<passwordsfreq.png, id=1782, 1168.365pt x 528.97626pt>
 File: passwordsfreq.png Graphic file (type png)
  <use passwordsfreq.png>
-Package pdftex.def Info: passwordsfreq.png used on input line 2105.
+Package pdftex.def Info: passwordsfreq.png used on input line 2106.
 (pdftex.def)             Requested size: 467.33772pt x 211.58675pt.
 
-[81 <./passwordsfreq.png (PNG copy)>] [82] [83] [84] [85] [86] [87] [88]
-[89] [90] [91] [92] [93] <strokecost.png, id=2167, 359.3425pt x 259.97125pt>
+[79 <./passwordsfreq.png (PNG copy)>] [80] [81] [82] [83] [84] [85] [86]
+[87] [88] [89] [90] [91] <strokecost.png, id=2103, 359.3425pt x 259.97125pt>
 File: strokecost.png Graphic file (type png)
 
 <use strokecost.png>
-Package pdftex.def Info: strokecost.png used on input line 2555.
+Package pdftex.def Info: strokecost.png used on input line 2556.
 (pdftex.def)             Requested size: 143.73445pt x 103.98665pt.
 
-Underfull \hbox (badness 3281) in paragraph at lines 2559--2575
+Underfull \hbox (badness 3281) in paragraph at lines 2560--2576
 \T1/phv/m/n/10.95 a fur-ther 20,000 tran-sient
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 2559--2575
+Underfull \hbox (badness 1226) in paragraph at lines 2560--2576
 \T1/phv/m/n/10.95 is-chaemic at-tacks oc-cur in
  []
 
-[94 <./strokecost.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2580--2582
+[92 <./strokecost.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2581--2583
 
  []
 
-[95] <strides.png, id=2186, 225.84375pt x 222.8325pt>
+[93] <strides.png, id=2121, 225.84375pt x 222.8325pt>
 File: strides.png Graphic file (type png)
  <use strides.png>
-Package pdftex.def Info: strides.png used on input line 2601.
+Package pdftex.def Info: strides.png used on input line 2602.
 (pdftex.def)             Requested size: 22.5857pt x 22.28455pt.
 
-<BPtracker.png, id=2187, 223.83624pt x 221.82875pt>
+<BPtracker.png, id=2122, 223.83624pt x 221.82875pt>
 File: BPtracker.png Graphic file (type png)
  <use BPtracker.png>
-Package pdftex.def Info: BPtracker.png used on input line 2602.
+Package pdftex.def Info: BPtracker.png used on input line 2603.
 (pdftex.def)             Requested size: 22.38493pt x 22.18416pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2602--2602
+Underfull \hbox (badness 10000) in paragraph at lines 2603--2603
 []\T1/phv/m/n/10.95 Blood Pres-
  []
 
-<healthcloud.png, id=2188, 223.83624pt x 222.8325pt>
+<healthcloud.png, id=2123, 223.83624pt x 222.8325pt>
 File: healthcloud.png Graphic file (type png)
  <use healthcloud.png>
-Package pdftex.def Info: healthcloud.png used on input line 2603.
+Package pdftex.def Info: healthcloud.png used on input line 2604.
 (pdftex.def)             Requested size: 22.38493pt x 22.28455pt.
 
-[96 <./strides.png> <./BPtracker.png> <./healthcloud.png>]
-<costing.png, id=2199, 556.0775pt x 205.76875pt>
+[94 <./strides.png> <./BPtracker.png> <./healthcloud.png>]
+<costing.png, id=2133, 556.0775pt x 205.76875pt>
 File: costing.png Graphic file (type png)
  <use costing.png>
-Package pdftex.def Info: costing.png used on input line 2613.
+Package pdftex.def Info: costing.png used on input line 2614.
 (pdftex.def)             Requested size: 222.42705pt x 82.30603pt.
 
-Overfull \hbox (22.23651pt too wide) in paragraph at lines 2613--2614
+Overfull \hbox (22.23651pt too wide) in paragraph at lines 2614--2615
  [][] 
  []
 
-[97 <./costing.png>] [98]
-Underfull \hbox (badness 10000) in paragraph at lines 2667--2668
+[95 <./costing.png>] [96]
+Underfull \hbox (badness 10000) in paragraph at lines 2668--2669
 []\T1/phv/m/n/9 Krzysztof Za-ucha, W. L. 2014. Web De-vel-oper Salaries. [on-li
 ne] Avail-able at: urlhttp://salary-
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 2704.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 2705.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2704--2705
+Underfull \hbox (badness 10000) in paragraph at lines 2705--2706
 []\T1/phv/m/n/9 COSSAC. 2014. Knowl-edge Mod-elling - PRO\T1/phv/m/sl/9 forma \
 T1/phv/m/n/9 tasks. [on-line] Avail-able at:
  []
 
-[99]
-Underfull \hbox (badness 5175) in paragraph at lines 2731--2732
+[97]
+Underfull \hbox (badness 5175) in paragraph at lines 2732--2733
 []\T1/phv/m/n/9 Media.ofcom.org.uk, (2014). Of-com | UK adults tak-ing on-line 
 pass-word se-cu-rity risks. [on-line] Avail-able
  []
 
-[100] [101]
-Underfull \hbox (badness 10000) in paragraph at lines 2806--2807
+[98] [99]
+Underfull \hbox (badness 10000) in paragraph at lines 2807--2808
 []\T1/phv/m/n/9 Play.google.com. Blood Pres-sure++ [In-ter-net]. 2014 [23 April
  2014]. Avail-able from:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2808--2809
+Underfull \hbox (badness 10000) in paragraph at lines 2809--2810
 []\T1/phv/m/n/9 Klimaszewski.mobi. My Heart - Szy-mon Kli-maszewski [In-ter-net
 ]. [23 April 2014]. Avail-able from:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2810--2811
+Underfull \hbox (badness 10000) in paragraph at lines 2811--2812
 []\T1/phv/m/n/9 Play.google.com. blood pres-sure di-ary [In-ter-net]. [17 April
  2014]. Avail-able from:
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 2812--2813
+Underfull \hbox (badness 3557) in paragraph at lines 2813--2814
 []\T1/phv/m/n/9 Ihealthlabs.com. iHealth Wire-less Blood Pres-sure Wrist Mon-i-
 tor [In-ter-net]. [17 April 2014]. Avail-able from:
  []
 
-[102]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2824.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2824.
+[100]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2825.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2825.
  (./combined report 1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2824.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2824.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2825.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2825.
 
-Package rerunfilecheck Info: File `"combined report 1".out' has not changed.
-(rerunfilecheck)             Checksum: BC0768E40577C17531D60751C948E455;9227.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2824.
+
+
+Package rerunfilecheck Warning: File `"combined report 1".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"combined report 1".out':
+(rerunfilecheck)             Before: BC0768E40577C17531D60751C948E455;9227
+(rerunfilecheck)             After:  370846131941BEAC3C5439DAF9E1226D;4100.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2825.
  ) 
 Here is how much of TeX's memory you used:
- 25749 strings out of 493312
- 488597 string characters out of 6137870
- 935831 words of memory out of 5000000
+ 25747 strings out of 493312
+ 488581 string characters out of 6137870
+ 935693 words of memory out of 5000000
  27695 multiletter control sequences out of 15000+600000
  75901 words of font info for 78 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1647,10 +1657,10 @@ st/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/font
 s/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
 1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/h
 elvetic/uhvro8a.pfb>
-Output written on "combined report 1.pdf" (103 pages, 8446468 bytes).
+Output written on "combined report 1.pdf" (101 pages, 8441587 bytes).
 PDF statistics:
- 2559 PDF objects out of 2984 (max. 8388607)
- 2279 compressed objects within 23 object streams
- 1013 named destinations out of 1200 (max. 500000)
+ 2494 PDF objects out of 2984 (max. 8388607)
+ 2216 compressed objects within 23 object streams
+ 1011 named destinations out of 1200 (max. 500000)
  1284 words of extra memory for PDF output out of 10000 (max. 10000000)
 

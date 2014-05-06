@@ -1,112 +1,112 @@
 \contentsline {section}{\numberline {1}Executive Summary - \textit {Michael Fedosiuk}}{1}{section.1}
-\contentsline {section}{\numberline {2}Design brief and specification - \textit {Emma Saragossi}}{6}{section.2}
-\contentsline {subsection}{\numberline {2.1}Overview}{6}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Patient Application}{6}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Doctor Application}{7}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Tallis Application}{8}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Database}{9}{subsection.2.5}
-\contentsline {section}{\numberline {3}Clinical need - \textit {Emma Saragossi}}{9}{section.3}
-\contentsline {section}{\numberline {4}Analysis of Existing Technology - \textit {Jeffrey Yu}}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Overview}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Telemonitoring}{11}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}General telemedicine}{11}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Hypertension Telemonitoring studies}{12}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Mobile applications}{13}{subsubsection.4.2.3}
-\contentsline {section}{\numberline {5}Application User Interface - \textit {Michael Fedosiuk}}{16}{section.5}
-\contentsline {subsection}{\numberline {5.1}Why a Web based application was chosen and what languages were used}{16}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}HTML5}{17}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}CSS3}{17}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}JavaScript and JQuery}{18}{subsubsection.5.1.3}
-\contentsline {section}{\numberline {6}Patient Application - \textit {Michael Fedosiuk}}{18}{section.6}
-\contentsline {subsection}{\numberline {6.1}General format}{19}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}patient/index.php}{20}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}menu.php}{21}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}update.php}{21}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Result pages}{21}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}history.php}{22}{subsubsection.6.2.4}
-\contentsline {section}{\numberline {7}Doctor's Application}{22}{section.7}
-\contentsline {subsection}{\numberline {7.1}Function - \textit {Emma Saragossi}}{22}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}User interface - \textit {Emma Saragossi}}{23}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}General page structure - HTML - \textit {Emma Saragossi}}{23}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}Optimizing layout for multiple browser dimensions - \textit {Emma Saragossi}}{24}{subsubsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.3}Text formatting - \textit {Emma Saragossi}}{24}{subsubsection.7.2.3}
-\contentsline {subsubsection}{\numberline {7.2.4}Logo image - \textit {Emma Saragossi}}{26}{subsubsection.7.2.4}
-\contentsline {subsubsection}{\numberline {7.2.5}Login page - \textit {Emma Saragossi}}{26}{subsubsection.7.2.5}
-\contentsline {subsubsection}{\numberline {7.2.6}Internal pages - \textit {Emma Saragossi}}{28}{subsubsection.7.2.6}
-\contentsline {subsection}{\numberline {7.3}Creating a patient profile - \textit {Emma Saragossi}}{28}{subsection.7.3}
-\contentsline {subsubsection}{\numberline {7.3.1}Initial design - \textit {Emma Saragossi}}{29}{subsubsection.7.3.1}
-\contentsline {subsubsection}{\numberline {7.3.2}Separate patient creation form - \textit {Emma Saragossi}}{31}{subsubsection.7.3.2}
-\contentsline {subsection}{\numberline {7.4}News feed - \textit {Emma Saragossi}}{38}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Patient search bar - \textit {Emma Saragossi}}{39}{subsection.7.5}
-\contentsline {subsection}{\numberline {7.6}Extension ideas for the Doctor Application - \textit {Emma Saragossi}}{39}{subsection.7.6}
-\contentsline {subsection}{\numberline {7.7}Patient checking and review - \textit {Michael Fedosiuk}}{39}{subsection.7.7}
-\contentsline {subsubsection}{\numberline {7.7.1}Page Segments and Scaling - \textit {Michael Fedosiuk}}{39}{subsubsection.7.7.1}
-\contentsline {subsubsection}{\numberline {7.7.2}Patient Selector - \textit {Michael Fedosiuk}}{40}{subsubsection.7.7.2}
-\contentsline {subsubsection}{\numberline {7.7.3}Graph - \textit {Michael Fedosiuk}}{42}{subsubsection.7.7.3}
-\contentsline {subsubsection}{\numberline {7.7.4}Patient information - \textit {Michael Fedosiuk}}{43}{subsubsection.7.7.4}
-\contentsline {subsubsection}{\numberline {7.7.5}Tutorial, About Us and Site Terms - \textit {Michael Fedosiuk}}{44}{subsubsection.7.7.5}
-\contentsline {section}{\numberline {8}Uncertainty Metric - \textit {Michael Fedosiuk}}{45}{section.8}
-\contentsline {subsection}{\numberline {8.1}Data Sourcing}{46}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Metric Overview}{47}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Metric make up}{47}{subsection.8.3}
-\contentsline {subsubsection}{\numberline {8.3.1}Linear Regression}{48}{subsubsection.8.3.1}
-\contentsline {subsubsection}{\numberline {8.3.2}Pearson product-moment correlation coefficient}{52}{subsubsection.8.3.2}
-\contentsline {subsection}{\numberline {8.4}Metric Implementation}{53}{subsection.8.4}
-\contentsline {subsubsection}{\numberline {8.4.1}Data Input and calculation}{54}{subsubsection.8.4.1}
-\contentsline {subsubsection}{\numberline {8.4.2}Call the current uncertainty metric value from the data base}{56}{subsubsection.8.4.2}
-\contentsline {subsubsection}{\numberline {8.4.3}Calculating limits and test points for patient inputted data}{56}{subsubsection.8.4.3}
-\contentsline {subsubsection}{\numberline {8.4.4}Interaction with currentpatients.php page}{57}{subsubsection.8.4.4}
-\contentsline {subsection}{\numberline {8.5}Extensions}{58}{subsection.8.5}
-\contentsline {section}{\numberline {9}Tallis application - \textit {Jeffrey Yu}}{58}{section.9}
-\contentsline {subsection}{\numberline {9.1}Function}{58}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Reading from database}{59}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Treatment Change}{60}{subsection.9.3}
-\contentsline {subsubsection}{\numberline {9.3.1}Initial treatment selection - \textit {Emma Saragossi}}{61}{subsubsection.9.3.1}
-\contentsline {subsubsection}{\numberline {9.3.2}Further stages of treatment: extend - \textit {Jeffrey Yu}}{65}{subsubsection.9.3.2}
-\contentsline {subsubsection}{\numberline {9.3.3}Dosage Change}{66}{subsubsection.9.3.3}
-\contentsline {subsection}{\numberline {9.4}Checkup}{67}{subsection.9.4}
-\contentsline {subsubsection}{\numberline {9.4.1}Titration Assessment}{67}{subsubsection.9.4.1}
-\contentsline {subsection}{\numberline {9.5}User Interface}{68}{subsection.9.5}
-\contentsline {section}{\numberline {10}Server Environment - \textit {Henry Fletcher}}{70}{section.10}
-\contentsline {subsection}{\numberline {10.1}Key Project Software}{70}{subsection.10.1}
-\contentsline {subsubsection}{\numberline {10.1.1}PHP: a server-side scripting language}{70}{subsubsection.10.1.1}
-\contentsline {subsubsection}{\numberline {10.1.2}MySQL: a relational database management system}{70}{subsubsection.10.1.2}
-\contentsline {subsubsection}{\numberline {10.1.3}Apache Web Server}{71}{subsubsection.10.1.3}
-\contentsline {subsubsection}{\numberline {10.1.4}Tallis: clinical decision making software}{71}{subsubsection.10.1.4}
-\contentsline {subsection}{\numberline {10.2}Server Environment Overview}{71}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Integrating Tallis \& the MySQL database}{71}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}Data storage \& redundancy}{73}{subsection.10.4}
-\contentsline {subsubsection}{\numberline {10.4.1}Database normalisation}{73}{subsubsection.10.4.1}
-\contentsline {subsubsection}{\numberline {10.4.2}Database scalability}{74}{subsubsection.10.4.2}
-\contentsline {section}{\numberline {11}Security - \textit {Henry Fletcher}}{75}{section.11}
-\contentsline {subsection}{\numberline {11.1}NHS Guidelines for data transmission and storage}{75}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}SSL Encryption}{76}{subsection.11.2}
-\contentsline {subsubsection}{\numberline {11.2.1}Overview}{76}{subsubsection.11.2.1}
-\contentsline {subsubsection}{\numberline {11.2.2}Server configuration}{76}{subsubsection.11.2.2}
-\contentsline {subsection}{\numberline {11.3}AES encryption}{77}{subsection.11.3}
-\contentsline {subsubsection}{\numberline {11.3.1}Overview}{77}{subsubsection.11.3.1}
-\contentsline {subsubsection}{\numberline {11.3.2}Implementing AES using MySQL}{77}{subsubsection.11.3.2}
-\contentsline {subsubsection}{\numberline {11.3.3}Implementation difficulties and subsequent removal from test system}{78}{subsubsection.11.3.3}
-\contentsline {subsection}{\numberline {11.4}Password Hashing}{79}{subsection.11.4}
-\contentsline {subsubsection}{\numberline {11.4.1}Example hash functions}{80}{subsubsection.11.4.1}
-\contentsline {subsubsection}{\numberline {11.4.2}Using hash functions in a login system}{80}{subsubsection.11.4.2}
-\contentsline {subsubsection}{\numberline {11.4.3}The first problem: Lookup tables}{81}{subsubsection.11.4.3}
-\contentsline {subsubsection}{\numberline {11.4.4}The second problem: Brute-force attacks}{82}{subsubsection.11.4.4}
-\contentsline {subsubsection}{\numberline {11.4.5}Hashing implementation in the 'Cardiac Track' application}{83}{subsubsection.11.4.5}
-\contentsline {subsection}{\numberline {11.5}MySQLi Connector}{83}{subsection.11.5}
-\contentsline {subsubsection}{\numberline {11.5.1}SQL injection example}{84}{subsubsection.11.5.1}
-\contentsline {subsubsection}{\numberline {11.5.2}Mitigating against SQL injection attacks}{84}{subsubsection.11.5.2}
-\contentsline {subsection}{\numberline {11.6}Other security considerations}{86}{subsection.11.6}
-\contentsline {subsubsection}{\numberline {11.6.1}Application access control}{86}{subsubsection.11.6.1}
-\contentsline {subsubsection}{\numberline {11.6.2}Access logging}{86}{subsubsection.11.6.2}
-\contentsline {subsubsection}{\numberline {11.6.3}Physical hardware security}{87}{subsubsection.11.6.3}
-\contentsline {section}{\numberline {12}Application PHP examples - \textit {Henry Fletcher}}{87}{section.12}
-\contentsline {subsection}{\numberline {12.1}Doctor's Login Form}{88}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Patient's Submission Form}{90}{subsection.12.2}
-\contentsline {section}{\numberline {13}Economic Viability - \textit {Michael Fedosiuk}}{93}{section.13}
-\contentsline {subsection}{\numberline {13.1}Cost benefits to the customer: Focused on NHS}{93}{subsection.13.1}
-\contentsline {subsubsection}{\numberline {13.1.1}Reduction in Strokes and Ischaemic heart disease}{94}{subsubsection.13.1.1}
-\contentsline {subsection}{\numberline {13.2}Implementation Costs}{95}{subsection.13.2}
-\contentsline {subsubsection}{\numberline {13.2.1}Comparables}{96}{subsubsection.13.2.1}
-\contentsline {section}{\numberline {14}Conclusion}{97}{section.14}
-\contentsline {subsection}{\numberline {14.1}Project Limitations - \textit {Henry Fletcher}}{97}{subsection.14.1}
+\contentsline {section}{\numberline {2}Design brief and specification - \textit {Emma Saragossi}}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Overview}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Patient Application}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Doctor Application}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Tallis Application}{6}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Database}{7}{subsection.2.5}
+\contentsline {section}{\numberline {3}Clinical need - \textit {Emma Saragossi}}{7}{section.3}
+\contentsline {section}{\numberline {4}Analysis of Existing Technology - \textit {Jeffrey Yu}}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Overview}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Telemonitoring}{9}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}General telemedicine}{9}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Hypertension Telemonitoring studies}{10}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Mobile applications}{11}{subsubsection.4.2.3}
+\contentsline {section}{\numberline {5}Application User Interface - \textit {Michael Fedosiuk}}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}Why a Web based application was chosen and what languages were used}{14}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}HTML5}{15}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}CSS3}{15}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}JavaScript and JQuery}{16}{subsubsection.5.1.3}
+\contentsline {section}{\numberline {6}Patient Application - \textit {Michael Fedosiuk}}{16}{section.6}
+\contentsline {subsection}{\numberline {6.1}General format}{17}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}patient/index.php}{18}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}menu.php}{19}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}update.php}{19}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Result pages}{19}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}history.php}{20}{subsubsection.6.2.4}
+\contentsline {section}{\numberline {7}Doctor's Application}{20}{section.7}
+\contentsline {subsection}{\numberline {7.1}Function - \textit {Emma Saragossi}}{20}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}User interface - \textit {Emma Saragossi}}{21}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}General page structure - HTML - \textit {Emma Saragossi}}{21}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Optimizing layout for multiple browser dimensions - \textit {Emma Saragossi}}{22}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}Text formatting - \textit {Emma Saragossi}}{22}{subsubsection.7.2.3}
+\contentsline {subsubsection}{\numberline {7.2.4}Logo image - \textit {Emma Saragossi}}{24}{subsubsection.7.2.4}
+\contentsline {subsubsection}{\numberline {7.2.5}Login page - \textit {Emma Saragossi}}{24}{subsubsection.7.2.5}
+\contentsline {subsubsection}{\numberline {7.2.6}Internal pages - \textit {Emma Saragossi}}{26}{subsubsection.7.2.6}
+\contentsline {subsection}{\numberline {7.3}Creating a patient profile - \textit {Emma Saragossi}}{26}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Initial design - \textit {Emma Saragossi}}{27}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Separate patient creation form - \textit {Emma Saragossi}}{29}{subsubsection.7.3.2}
+\contentsline {subsection}{\numberline {7.4}News feed - \textit {Emma Saragossi}}{36}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Patient search bar - \textit {Emma Saragossi}}{37}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Extension ideas for the Doctor Application - \textit {Emma Saragossi}}{37}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}Patient checking and review - \textit {Michael Fedosiuk}}{37}{subsection.7.7}
+\contentsline {subsubsection}{\numberline {7.7.1}Page Segments and Scaling - \textit {Michael Fedosiuk}}{37}{subsubsection.7.7.1}
+\contentsline {subsubsection}{\numberline {7.7.2}Patient Selector - \textit {Michael Fedosiuk}}{38}{subsubsection.7.7.2}
+\contentsline {subsubsection}{\numberline {7.7.3}Graph - \textit {Michael Fedosiuk}}{40}{subsubsection.7.7.3}
+\contentsline {subsubsection}{\numberline {7.7.4}Patient information - \textit {Michael Fedosiuk}}{41}{subsubsection.7.7.4}
+\contentsline {subsubsection}{\numberline {7.7.5}Tutorial, About Us and Site Terms - \textit {Michael Fedosiuk}}{42}{subsubsection.7.7.5}
+\contentsline {section}{\numberline {8}Uncertainty Metric - \textit {Michael Fedosiuk}}{43}{section.8}
+\contentsline {subsection}{\numberline {8.1}Data Sourcing}{44}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Metric Overview}{45}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Metric make up}{45}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Linear Regression}{46}{subsubsection.8.3.1}
+\contentsline {subsubsection}{\numberline {8.3.2}Pearson product-moment correlation coefficient}{50}{subsubsection.8.3.2}
+\contentsline {subsection}{\numberline {8.4}Metric Implementation}{51}{subsection.8.4}
+\contentsline {subsubsection}{\numberline {8.4.1}Data Input and calculation}{52}{subsubsection.8.4.1}
+\contentsline {subsubsection}{\numberline {8.4.2}Call the current uncertainty metric value from the data base}{54}{subsubsection.8.4.2}
+\contentsline {subsubsection}{\numberline {8.4.3}Calculating limits and test points for patient inputted data}{54}{subsubsection.8.4.3}
+\contentsline {subsubsection}{\numberline {8.4.4}Interaction with currentpatients.php page}{55}{subsubsection.8.4.4}
+\contentsline {subsection}{\numberline {8.5}Extensions}{56}{subsection.8.5}
+\contentsline {section}{\numberline {9}Tallis application - \textit {Jeffrey Yu}}{56}{section.9}
+\contentsline {subsection}{\numberline {9.1}Function}{56}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Reading from database}{57}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Treatment Change}{58}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}Initial treatment selection - \textit {Emma Saragossi}}{59}{subsubsection.9.3.1}
+\contentsline {subsubsection}{\numberline {9.3.2}Further stages of treatment: extend - \textit {Jeffrey Yu}}{63}{subsubsection.9.3.2}
+\contentsline {subsubsection}{\numberline {9.3.3}Dosage Change}{64}{subsubsection.9.3.3}
+\contentsline {subsection}{\numberline {9.4}Checkup}{65}{subsection.9.4}
+\contentsline {subsubsection}{\numberline {9.4.1}Titration Assessment}{65}{subsubsection.9.4.1}
+\contentsline {subsection}{\numberline {9.5}User Interface}{66}{subsection.9.5}
+\contentsline {section}{\numberline {10}Server Environment - \textit {Henry Fletcher}}{68}{section.10}
+\contentsline {subsection}{\numberline {10.1}Key Project Software}{68}{subsection.10.1}
+\contentsline {subsubsection}{\numberline {10.1.1}PHP: a server-side scripting language}{68}{subsubsection.10.1.1}
+\contentsline {subsubsection}{\numberline {10.1.2}MySQL: a relational database management system}{68}{subsubsection.10.1.2}
+\contentsline {subsubsection}{\numberline {10.1.3}Apache Web Server}{69}{subsubsection.10.1.3}
+\contentsline {subsubsection}{\numberline {10.1.4}Tallis: clinical decision making software}{69}{subsubsection.10.1.4}
+\contentsline {subsection}{\numberline {10.2}Server Environment Overview}{69}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Integrating Tallis \& the MySQL database}{69}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}Data storage \& redundancy}{71}{subsection.10.4}
+\contentsline {subsubsection}{\numberline {10.4.1}Database normalisation}{71}{subsubsection.10.4.1}
+\contentsline {subsubsection}{\numberline {10.4.2}Database scalability}{72}{subsubsection.10.4.2}
+\contentsline {section}{\numberline {11}Security - \textit {Henry Fletcher}}{73}{section.11}
+\contentsline {subsection}{\numberline {11.1}NHS Guidelines for data transmission and storage}{73}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}SSL Encryption}{74}{subsection.11.2}
+\contentsline {subsubsection}{\numberline {11.2.1}Overview}{74}{subsubsection.11.2.1}
+\contentsline {subsubsection}{\numberline {11.2.2}Server configuration}{74}{subsubsection.11.2.2}
+\contentsline {subsection}{\numberline {11.3}AES encryption}{75}{subsection.11.3}
+\contentsline {subsubsection}{\numberline {11.3.1}Overview}{75}{subsubsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.2}Implementing AES using MySQL}{75}{subsubsection.11.3.2}
+\contentsline {subsubsection}{\numberline {11.3.3}Implementation difficulties and subsequent removal from test system}{76}{subsubsection.11.3.3}
+\contentsline {subsection}{\numberline {11.4}Password Hashing}{77}{subsection.11.4}
+\contentsline {subsubsection}{\numberline {11.4.1}Example hash functions}{78}{subsubsection.11.4.1}
+\contentsline {subsubsection}{\numberline {11.4.2}Using hash functions in a login system}{78}{subsubsection.11.4.2}
+\contentsline {subsubsection}{\numberline {11.4.3}The first problem: Lookup tables}{79}{subsubsection.11.4.3}
+\contentsline {subsubsection}{\numberline {11.4.4}The second problem: Brute-force attacks}{80}{subsubsection.11.4.4}
+\contentsline {subsubsection}{\numberline {11.4.5}Hashing implementation in the 'Cardiac Track' application}{81}{subsubsection.11.4.5}
+\contentsline {subsection}{\numberline {11.5}MySQLi Connector}{81}{subsection.11.5}
+\contentsline {subsubsection}{\numberline {11.5.1}SQL injection example}{82}{subsubsection.11.5.1}
+\contentsline {subsubsection}{\numberline {11.5.2}Mitigating against SQL injection attacks}{82}{subsubsection.11.5.2}
+\contentsline {subsection}{\numberline {11.6}Other security considerations}{84}{subsection.11.6}
+\contentsline {subsubsection}{\numberline {11.6.1}Application access control}{84}{subsubsection.11.6.1}
+\contentsline {subsubsection}{\numberline {11.6.2}Access logging}{84}{subsubsection.11.6.2}
+\contentsline {subsubsection}{\numberline {11.6.3}Physical hardware security}{85}{subsubsection.11.6.3}
+\contentsline {section}{\numberline {12}Application PHP examples - \textit {Henry Fletcher}}{85}{section.12}
+\contentsline {subsection}{\numberline {12.1}Doctor's Login Form}{86}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Patient's Submission Form}{88}{subsection.12.2}
+\contentsline {section}{\numberline {13}Economic Viability - \textit {Michael Fedosiuk}}{91}{section.13}
+\contentsline {subsection}{\numberline {13.1}Cost benefits to the customer: Focused on NHS}{91}{subsection.13.1}
+\contentsline {subsubsection}{\numberline {13.1.1}Reduction in Strokes and Ischaemic heart disease}{92}{subsubsection.13.1.1}
+\contentsline {subsection}{\numberline {13.2}Implementation Costs}{93}{subsection.13.2}
+\contentsline {subsubsection}{\numberline {13.2.1}Comparables}{94}{subsubsection.13.2.1}
+\contentsline {section}{\numberline {14}Conclusion}{95}{section.14}
+\contentsline {subsection}{\numberline {14.1}Project Limitations - \textit {Henry Fletcher}}{95}{subsection.14.1}
