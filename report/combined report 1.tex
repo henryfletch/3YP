@@ -2014,7 +2014,7 @@ SSLCertificateKeyFile /etc/apache2/ssl/server2.key
 \end{lstlisting}
 
 
-Lines 2 and 4 tell Apache that all requests to port 443 are to be handled using SSL. Port 443 is the port used for HTTP over SSL (HTTPS) \cite{port443}. Lines 6,7 and 8 define the exact type of SSL that is allowed to be used. Initially we use the "-all" flag to disable all of the available protocols, and then we use "+TLSv1 +SSLv3" to enable only these particular protocols. This ensures that SSLv2 remains disabled as required by the NHS guidelines. Note that TLSv1 is the successor to SSLv3 and is marginally more secure. Finally, on lines 10 and 11, we tell Apache where the certificate and key file are stored on the server. These files are required for the encryption process, since they hold the encryption keys.
+Lines 3 and 4 tell Apache that all requests to port 443 are to be handled using SSL. Port 443 is the port used for HTTP over SSL (HTTPS) \cite{port443}. Lines 6,7 and 8 define the exact type of SSL that is allowed to be used. Initially we use the "-all" flag to disable all of the available protocols, and then we use "+TLSv1 +SSLv3" to enable only these particular protocols. This ensures that SSLv2 remains disabled as required by the NHS guidelines. Note that TLSv1 is the successor to SSLv3 and is marginally more secure. Finally, on lines 10 and 11, we tell Apache where the certificate and key file are stored on the server. These files are required for the encryption process, since they hold the encryption keys.
 
 \subsection{AES encryption}
 \subsubsection{Overview}
