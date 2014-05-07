@@ -650,7 +650,7 @@ The image was saved as a Portable Network Graphic (PNG), a raster graphics file 
 \end{center}
 \end{figure}
 
-\subsubsection{Login page - \textit{Emma Saragossi}}
+\subsection{Login page - \textit{Emma Saragossi}}
 A login page for the doctor portal is required to grant the user access to the internal pages of the site, and to prevent others from viewing or altering sensitive data. It also ensures that only relevant data is displayed to the user. Access is controlled by identifying and authenticating the user. A PHP script is called to check the user's credentials (username and password) and grant or deny access to the internal pages of the site.
 
 The login page displays the Cardiac Track Pro logo and houses two text input boxes - one for the username and one for the password - and a submit button which will call the PHP script to check the login credentials when clicked.
@@ -1124,7 +1124,7 @@ function patientsidebar($doctorID){
 
 \subsection{Patient search bar - \textit{Emma Saragossi}}
 
-Embedded in the header on all pages is the patient search bar, which allows the doctor to search by patient ID for immediate access to a patient's blood pressure and treatment history. See section \ref{drapp:MF} and fig.\ref{searchbarhtml} for further details. 
+Embedded in the header on all pages is the patient search bar, which allows the doctor to search by patient ID for immediate access to a patient's blood pressure and treatment history. See Section \ref{drapp:MF} and Figure~\ref{searchbarhtml} for further details. 
 
 %An HTML form was created (Extract~\ref{code:searchBar}) which contains a standard TEXT input element and SUBMIT button. The form uses the GET method, which encodes the form data as a variable into the URL. When the SUBMIT button is pressed, the text entered into the TEXT element is appended to the link specified in the form's ACTION attribute and the page is redirected.
 
@@ -2620,7 +2620,11 @@ No comparable app has the Cardiac Track App USP the integrated doctor's system. 
 \end{wrapfigure}
 The salaries for developers to finish and maintain the app would have to be deducted for 5 full time web developers; on the average salary of \pounds 40000 \cite{salary} would cost \pounds 200000. We require 4 servers to have one dedicated Apache and MySQL and redundancies for both. A suitable server for the predicted number of initial users would be the  would be the PowerEdge R420 costing \pounds4656 for all four \cite{dell}. To use MySQL enterprise edition a licence must be purchased for \pounds3000 \cite{MySQL}. Including a generous contingency this predicts a first year pre tax profit of \pounds3.16 Million if the NHS were to push for implementation if the project at the projected price, fig.\ref{costing}.
 
-\section{Conclusion}
+\section{Conclusion -\textit{Emma Saragossi}}
+When challenged with the task of developing a software tool to aid a clinical diagnostic or treatment pathway, our initial plan was to design a remote care application for hypertension. In the early development stages, our focus was telemonitoring, and we began developing an application which would allow patients to regularly upload their blood pressure values from a non-clinical setting. These could then be monitored remotely by a doctor to aid treatment selection. A Tallis tool to implement the treatment protocol for primary hypertension in adults was developed separately. The design naturally evolved to incorporate the two functions to provide a holistic treatment tool for hypertension. 
+
+We believe we have designed an application with real value; there is a clinical need and a place for our application in the market. In its prototype stage, our application has several distinctive competencies. The doctor is provided with a wealth of data on a patient’s blood pressure history, meaning treatment decisions no longer need to be based on a single blood pressure reading made at the time of the consultation. In addition, the alert system for patients with an unexpected rise in blood pressure ensures that patients receive medical attention when it is required and don't go unseen for long periods of time if there is a cause for concern.
+
 \subsection{Project Limitations - \textit{Henry Fletcher}}
 The project was limited due to both time and resource constraints, as well as limits on technical possibility. A significant part of the project, the mandated encryption of patient data (Section \ref{henry:encryption}), was not possible for us to implement in the prototype environment. With the requisite resources and knowledge, we feel that creating an encryption system would be feasible if the application were to be deployed for real use. 
 \\ \indent
