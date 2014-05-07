@@ -184,7 +184,7 @@ The aim is to provide up to date information and treatment for a patient's hyper
 \section{Design brief and specification - \textit{Emma Saragossi}}
 \subsection{Overview}
 
-Our aim is to research, design and build an intelligent software application that will aid clinicians with the pharmacological treatment of primary hypertension\footnote{Note: patients will have already been diagnosed with the condition by a medical professional.}. The application will comprise of two separate web-based applications, one for the doctor and one for the patient, which can both read-from and write-to a shared database. Patients will be able to upload their blood pressure remotely (i.e. not within a clinical setting) to the database on a daily basis. The doctor application will read in the patients' blood pressure data and display it on a chart for the doctor to view. The doctor application will also provide a link to launch a Tallis web decision tool that will advise the doctor on the best course of treatment, based on the patient's medical history, background, and charted blood pressure history.
+Our aim is to research, design and build an intelligent software application that will aid clinicians with the pharmacological treatment of primary hypertension\footnote{Note: patients will have already been diagnosed with the condition by a medical professional.}. The application will comprise of two separate web-based applications, one for the doctor and one for the patient, which can both read-from and write-to a shared database. Patients will be able to upload their blood pressure remotely (i.e. not within a clinical setting) to the database on a daily basis. The doctor application will read in the patients' blood pressure data and display it on a chart for the doctor to view. The doctor application will also provide a link to launch a Tallis web decision tool that will advise the doctor on the best course of treatment, based on a patient's medical history, background, and charted blood pressure history.
 
 \subsection{Patient Application}
 \begin{itemize}
@@ -192,9 +192,9 @@ Our aim is to research, design and build an intelligent software application tha
 \item The application must be hosted on a suitable server.
 \item The application must have a secure login system, to identify the patient using the application and to prevent others from accessing sensitive patient data.
 \item The application must be able to read-from and write-to the shared database.
-\item The application must provide a submission form, allowing patient to enter their systolic and diastolic blood pressure values. This data must be uploaded to the database, along with time and date of upload. Note: this may be extended to include other metrics which may be of value (e.g. heart rate, weight etc.).
+\item The application must provide a submission form, allowing patients to enter their systolic and diastolic blood pressure values. This data must be uploaded to the database, along with the time and date of upload. Note: this may be extended to include other metrics which may be of value (e.g. heart rate, weight etc.).
 \item The application must have a charting tool which plots blood pressure values against date, to allow the user to track their progress.
-\item The application must provide the contact details for patient's doctor.
+\item The application must provide the contact details for the patient's doctor.
 \item The application must indicate when the patient is due for a scheduled follow up appointment with their doctor.
 \item The application must advise the patient if they should contact their doctor (for example if their blood pressure has not reached the target level, or has risen unexpectedly). An alert should be sent to the doctor if this is the case so that the responsibility is not solely on the patient to make contact.
 \end{itemize}
@@ -203,7 +203,7 @@ Our aim is to research, design and build an intelligent software application tha
 \begin{itemize}
 \item The application must run in a desktop or tablet web browser.
 \item The application must be hosted on a suitable server.
-\item The application must have a secure login system, which identifies the doctor and allows them access to view only their own patients' profiles.
+\item The application must have a secure login system, which identifies the doctor and grants them access to view only their own patients' profiles.
 \item The application must be able to read-from and write-to the shared database.
 \item The application must allow the doctor to create a new patient profile.
 	\begin{itemize}
@@ -235,7 +235,7 @@ Our aim is to research, design and build an intelligent software application tha
 \item The application must allow the doctor to review the patient
 	\begin{itemize}
     \item The application must allow the doctor to perform a titration assessment of the patient and upload the values to the database.
-    \item The application must recommend a secondary drug treatment or allow the doctor to update the dosage of previously prescribed drug if the patient's target blood pressure has not been met.
+    \item The application must recommend a secondary drug treatment or allow the doctor to update the dosage of any previously prescribed drugs if the patient's target blood pressure has not been met.
     \item The review-recommendation process must cycle until the patient's target blood pressure has been met.
     \end{itemize}
 \item All medical recommendations must be made in accordance with the relevant medical guideline \cite{CG127}.
@@ -680,14 +680,14 @@ An HTML form was created to send the login data to the server (see Extract~\ref{
 
 The METHOD attribute of the FORM element specifies the HTTP method used to send the form to the processing agent. There are two commonly used methods for a request-response between a client and server: GET and POST. The GET method encodes the form data into the URL, while the POST method hides the data in the message body meaning it cannot be seen by the user. POST requests cannot be cached or bookmarked and do not remain in the browser history. Due to the sensitive nature of the form data, POST was chosen.
 
-The TEXT and PASSWORD fields are standard HTML input elements for forms. The characters in a password field are automatically masked (shown as asterisks) for security. The PLACEHOLDER attribute specifies the expected value of an input element (see Figure~\ref{fig:login_design}). The SUBMIT button sends the form data to the server. The data is sent to the page specified in the form's ACTION attribute - here it calls the PHP script \textbf{login.php} (See section \ref{drloginform})
+The TEXT and PASSWORD fields are standard HTML input elements for forms. The characters in a password field are automatically masked (shown as asterisks) for security. The PLACEHOLDER attribute specifies the expected value of an input element (see Figure~\ref{fig:login_design}). The SUBMIT button sends the form data to the server. The data is sent to the page specified in the form's ACTION attribute - here it calls the PHP script \textbf{login.php} (See Section \ref{drloginform})
 
 
 \subsubsection{Internal pages - \textit{Emma Saragossi}}
 
 A user must only be granted access to the internal pages of the site if they have already logged in i.e. a user cannot gain access to the internal pages of the site by simply entering the page URL. A PHP script is included at the top of all internal pages which checks whether the user has logged in successfully and is authorised to view the page content. Otherwise, the user is redirected to the login page. The code is shown in Extract~\ref{code:intPages}
 
-The user ID was stored as a session variable in \textbf{login.php}. Session variables (see section \ref{phpsessions}) store information about a single user and make it available to all pages of the site. These are temporary and are deleted after the user logs out or closes their browser. The isset() function checks whether the session variable \mbox{\$\_SESSION['userID']} has already been set. This will only be true if the user has logged in successfully previously. If the variable has not been set, the user has not been granted access, and is redirected to the login page.
+The user ID was stored as a session variable in \textbf{login.php}. Session variables (see Section \ref{phpsessions}) store information about a single user and make it available to all pages of the site. These are temporary and are deleted after the user logs out or closes their browser. The isset() function checks whether the session variable \mbox{\$\_SESSION['userID']} has already been set. This will only be true if the user has logged in successfully previously. If the variable has not been set, the user has not been granted access, and is redirected to the login page.
 
 
 \begin{code}[ht]
@@ -779,7 +779,7 @@ Systolic145 & 145/85 & Whitecoat="No" (- -) & Age\_group!="80+" (- -) & Patient 
 \item \textbf{Treatment selection} - this chooses the drug treatment for the patient (see Section~\ref{sec:Treatment} for more detail).
 \end{enumerate}
 
-The network of specific tasks, shown in Figure~\ref{fig:tallis_task_top}.
+The network of specific tasks is shown in Figure~\ref{fig:tallis_task_top}.
 
 \begin{figure}[ht]
 \begin{center}
@@ -1031,7 +1031,7 @@ $_SESSION['targetDiastolic'] = $targetDiastolic;
 \end{code}
 
 
-The target blood pressure needs to be displayed to the doctor for their own records. This is achieved by including the PHP echo() function within the page HTML (see Extract ~\ref{code:dispBP}). The PHP script \textbf{target.php} which determined the target value is included within PHP tags, and the SESSION variables assigned to the two target blood pressure values are echoed within the page content.
+The target blood pressure needs to be displayed to the doctor for their own records. This is achieved by including the PHP echo() function within the page HTML (see Extract~\ref{code:dispBP}). The PHP script \textbf{target.php} which determined the target value is included within PHP tags, and the SESSION variables assigned to the two target blood pressure values are echoed within the page content.
 
 \clearpage
    
@@ -1082,11 +1082,11 @@ $newPatient->close();
 \clearpage
 
 \subsection{News feed - \textit{Emma Saragossi}}
-A news feed is displayed in the sidebar to flag for the doctor any alerted patients; that is, any patient who is not at their target blood pressure. The feed lists all alerted patients by their patient ID. The patient ID serves as a link which the doctor can click to take them straight to that patient's summary page, where they can then view the patient's blood pressure and medication history. 
+A news feed is displayed in the sidebar to flag for the doctor any alerted patients; that is, any patient who is not at their target blood pressure. The feed lists all alerted patients by their Patient ID. The Patient ID serves as a link which the doctor can click to take them straight to that patient's summary page, where they can then view the patient's blood pressure and medication history. 
 
-The PHP function \textbf{patientsidebar} which generates the news feed is shown in Extract~\ref{code:PHPsidebar}. The function first connects to the database. Once the MySQL connection parameters have been configured and a new MySQL instance has been established, the alerted patients are identified by their patient ID (PHP variable: \textbf{id}). Alerted patients are all those in the table \textbf{patientInfo} whose blood pressure is not controlled and whose doctor is identified by the function parameter \textbf{\$doctorID} (the doctor currently logged in to the site).
+The PHP function \textbf{patientsidebar} which generates the news feed is shown in Extract~\ref{code:PHPsidebar}. The function first connects to the database. Once the MySQL connection parameters have been configured and a new MySQL instance has been established, the alerted patients are identified by their patient ID (PHP variable: \textbf{\$id}). Alerted patients are all those in the table \textbf{patientInfo} whose bloodPpressure is not controlled and whose doctor is identified by the function parameter \textbf{\$doctorID} (the doctor currently logged in to the site).
 
-The patient ID is then displayed to the user using the PHP echo() function. The HTML tag <a> indicates that the text is a hyperlink, while the href attribute specifies the link's destination. The URL to access the patient summary page is formulated such that the patient ID is embedded within the URL.
+The Patient ID is then displayed to the user using the PHP echo() function. The HTML tag <a> indicates that the text is a hyperlink, while the href attribute specifies the link's destination. The URL to access the patient summary page is formulated such that the Patient ID is embedded within the URL.
 
 
 \begin{code}[ht]
@@ -2621,7 +2621,7 @@ No comparable app has the Cardiac Track App USP the integrated doctor's system. 
 The salaries for developers to finish and maintain the app would have to be deducted for 5 full time web developers; on the average salary of \pounds 40000 \cite{salary} would cost \pounds 200000. We require 4 servers to have one dedicated Apache and MySQL and redundancies for both. A suitable server for the predicted number of initial users would be the  would be the PowerEdge R420 costing \pounds4656 for all four \cite{dell}. To use MySQL enterprise edition a licence must be purchased for \pounds3000 \cite{MySQL}. Including a generous contingency this predicts a first year pre tax profit of \pounds3.16 Million if the NHS were to push for implementation if the project at the projected price, fig.\ref{costing}.
 
 \section{Conclusion - \textit{Emma Saragossi}}
-When challenged with the task of developing a software tool to aid a clinical diagnostic or treatment pathway, our initial plan was to design a remote care application for hypertension. In the early development stages, our focus was telemonitoring, and we began developing an application which would allow patients to regularly upload their blood pressure values from a non-clinical setting. These could then be monitored remotely by a doctor to aid treatment selection. A Tallis tool to implement the treatment protocol for primary hypertension in adults was developed separately. The design naturally evolved to incorporate the two functions to provide a holistic treatment tool for hypertension. 
+When challenged with the task of developing a software tool to aid a clinical diagnostic or treatment pathway, we chose to design a remote care application for treating hypertension. In the early development stages, our focus was telemonitoring, and we began developing an application which would allow patients to regularly upload their blood pressure values from a non-clinical setting. These could then be monitored remotely by a doctor to aid treatment selection. A Tallis tool to implement the treatment protocol for primary hypertension in adults was developed separately. The design naturally evolved to incorporate the two functions to provide a holistic treatment tool for hypertension. 
 
 We believe we have designed an application with real value; there is a clinical need and a place for our application in the market. In its prototype stage, our application has several distinctive competencies. The doctor is provided with a wealth of data on a patient's blood pressure history, meaning treatment decisions no longer need to be based on a single blood pressure reading made at the time of the consultation. In addition, the alert system for patients with an unexpected rise in blood pressure ensures that patients receive medical attention when it is required and don't go unseen for long periods of time if there is a cause for concern.
 
