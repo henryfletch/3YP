@@ -180,89 +180,7 @@ The aim is to provide up to date information and treatment for a patient's hyper
 \setcounter{tocdepth}{2}
 \tableofcontents
 \newpage
-
-\section{Design brief and specification - \textit{Emma Saragossi}}
-\subsection{Overview}
-
-Our aim is to research, design and build an intelligent software application that will aid clinicians with the pharmacological treatment of primary hypertension\footnote{Note: patients will have already been diagnosed with the condition by a medical professional.}. The application will comprise of two separate web-based applications, one for the doctor and one for the patient, which can both read-from and write-to a shared database. Patients will be able to upload their blood pressure remotely (i.e. not within a clinical setting) to the database on a daily basis. The doctor application will read in the patients' blood pressure data and display it on a chart for the doctor to view. The doctor application will also provide a link to launch a Tallis web decision tool that will advise the doctor on the best course of treatment, based on the patient's medical history, background, and charted blood pressure history.
-
-\subsection{Patient Application}
-\begin{itemize}
-\item The application must run in a desktop, tablet or mobile web browser.
-\item The application must be hosted on a suitable server.
-\item The application must have a secure login system, to identify the patient using the application and to prevent others from accessing sensitive patient data.
-\item The application must be able to read-from and write-to the shared database.
-\item The application must provide a submission form, allowing patient to enter their systolic and diastolic blood pressure values. This data must be uploaded to the database, along with time and date of upload. Note: this may be extended to include other metrics which may be of value (e.g. heart rate, weight etc.).
-\item The application must have a charting tool which plots blood pressure values against date, to allow the user to track their progress.
-\item The application must provide the contact details for patient's doctor.
-\item The application must indicate when the patient is due for a scheduled follow up appointment with their doctor.
-\item The application must advise the patient if they should contact their doctor (for example if their blood pressure has not reached the target level, or has risen unexpectedly). An alert should be sent to the doctor if this is the case so that the responsibility is not solely on the patient to make contact.
-\end{itemize}
-
-\subsection{Doctor Application}
-\begin{itemize}
-\item The application must run in a desktop or tablet web browser.
-\item The application must be hosted on a suitable server.
-\item The application must have a secure login system, which identifies the doctor and allows them access to view only their own patients' profiles.
-\item The application must be able to read-from and write-to the shared database.
-\item The application must allow the doctor to create a new patient profile.
-	\begin{itemize}
-    \item The doctor must be able to enter relevant patient data\footnote{The information required to determine the appropriate course of treatment for a patient is defined in NICE Clinical Guideline 127 \cite{CG127}.} (e.g. age, gender, medical history etc.)
-    \item The patient's target blood pressure must be determined based on the patient data provided
-    \item All patient data must be submitted to the database
-    \item Each patient must be assigned a unique Patient ID.
-    \item The doctor must be able to assign the patient unique login details for access to the patient application
-    \item The patient must meet the scope of the application\footnote{As outlined in NICE Clinical Guideline 127\cite{CG127}.}. The patient profile creation process must terminate if the patient is unsuitable.
-	\end{itemize}
-\item The application must allow the doctor to view the progress of all their patients
-	\begin{itemize}
-    \item The doctor must be able to search for the profile of a specific patient using their unique Patient ID
-    \item The application must have a charting tool which plots the patient's blood pressure against date, to allow the doctor to monitor their progress
-    \item The application must summarize the pharmacological treatment currently being offered to the patient
-    \item The application must alert the doctor if the patient has not met their target blood pressure within the expected time range, or if the patient's blood pressure has suddenly risen above the target value.
-    \end{itemize}
-\item The application must provide a link to launch the Tallis treatment decision tool (see below)
-\end{itemize}
-
-\subsection{Tallis Application}
-\begin{itemize}
-\item The application must run in a desktop or tablet web browser.
-\item The application must be hosted on a suitable server.
-\item The application must be able to read-from and write-to the database
-\item The application must recommend the best initial course of treatment for the patient based on the patient data submitted during the patient profile creation process.
-\item The application must recommend an appropriate drug dosage.
-\item The application must schedule an appropriate review date, by which time the target blood pressure should be met.
-\item The application must allow the doctor to review the patient
-	\begin{itemize}
-    \item The application must allow the doctor to perform a titration assessment of the patient and upload the values to the database.
-    \item The application must recommend a secondary drug treatment or allow the doctor to update the dosage of previously prescribed drug if the patient's target blood pressure has not been met.
-    \item The review-recommendation process must cycle until the patient's target blood pressure has been met.
-    \end{itemize}
-\item All medical recommendations must be made in accordance with the relevant medical guideline \cite{CG127}.
-\end{itemize}
-
-\subsection{Database}
-\begin{itemize}
-\item The database must be hosted on a server
-\item The database must be able to send and receive data from both the patient and doctor application (including the Tallis decision tool)
-\item The database must be structured to store:
-	\begin{itemize}
-	\item A doctor access log
-    \item Doctor login information
-    \item Patient information (including their doctor, medical history, target blood pressure, login details, drug type etc.)
-    \item Patient blood pressure data and the time and date of upload
-	\end{itemize}
-\item The database must meet the encryption standard expected of medical software set by the NHS \cite{encryption}
-\item The database must allow multiple users to read-from and write-to the database at the same time. 
-\end{itemize}
-
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[scale=0.5]{network}
-\caption{Overall architecture of software application}
-\label{fig:network}
-\end{center}
-\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -276,14 +194,44 @@ In addition to providing more accurate and reliable data, home monitoring of hyp
 The online treatment aid implements the most up to date NICE guidelines for the management of hypertension. This can be regularly updated to implement best practice and ensure the doctor is offering consistent, high quality, safe and accountable care.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hypertension Care Pathway - \textit{Jeffrey Yu}}
 
+\subsection{What is Hypertension}
+Hypertension is when blood pressure is too high, leading to high stress and strains on the walls of the arteries and the heart.  There is an increased risk for further cardiovascular diseases such as strokes and heart attacks. Two measures of the blood pressure are combined.  One is the pressure when the heart muscles contract (systolic pressure). The other is when it relaxes (diastolic pressure).
+
+An inital layout of the whole process is useful for dividing tasks into modular components.  Figure \ref{fig:TreatPath} is a readapted version of the primary care pathway for hypertension, based on NICE guidelines\cite{CG127}.  Primary care means that it is the main point of contact for patients with their healthcare provider. It is where the patient sees a general practioner of nurse first, before having any specialist treatment for complicated situations.  The pathway is shown to give a very broad overview of the whole process of dealing with hypertension.  In fact, such a workflow can be generalized to many other diseases. We aim to model most of these components, with finer details to be discussed later.
+\begin{figure}[!p]
+\begin{center}
+\includegraphics[scale=0.30]{TreatPath}
+\caption{Overview of treatment pathway}
+\label{fig:TreatPath}
+\end{center}
+\end{figure}
+\subsection{Diagnosis}
+A new patient would come for their health checkup. If the blood pressure is too high, other assessments are performed.  This blood pressure threshold is based on some of the patients background medical history.   Also, the guideline is only applicable to certain conditions in addition to hypertension.  For example, a patient who has hypertension as a result of other illnesses such as diabetes, should follow a treatment plan for that illness instead. Or if the patient has a condition that may interact with the treatment of hypertension, a specialist may be needed in secondary care.  At the end of the diagnosis, the patient would go back to a long term review if blood pressure is under control. Or in the case of our app where the patient is diagnosed, treatment of hypertension is started.
+\subsection{Treatment}
+The treatment here is summarised in a single block tenatively named "change treatment". Complex decisions need to be made. There are many factors which may affect how a physician decides to progress with the treatment.  For example, different conditions may indicate or contraindicate certain drugs. Or a patient may be allergic to some.  Financial and practical costs may also be taken into acccount.
+
+Also, according to NICE guidelines, there could be 4 stages of drug treatments, before a patient is deemed to have resistant hypertension (need to refer to specialist).  Each of these 4 stages of drugs depend on the previous stage with some logical algorithm.  
+
+At the end of this step, a patient is given a new treatment course, which includes a drug and its prescription.  
+
+\subsection{Monitor}
+The monitoring stage is part of the "management of hypertension" section of the guidelines.  Once the patient starts having medication changes (i.e. an input), it is important to assess some of the health parameters (i.e. the output).  Then the output is fedback into the treatment stage; and the medication is readjusted with the target BP in mind. 
+
+The key parameter is reduction in systolic and diastolic blood pressure. Adverse effects are also constanltly assessed to make sure the patient is reacting well.   If there is any noteworthy event, then the doctor is alerted. In usual care, these events is just a patient having an review appointment, or a patient contacting the doctor if symptoms of side effects are worsening.  In the case of remote monitoring, further alerts may be needed such as for patients not using the equipment according to protocol. Also, alerts would be more frequent leading to a tighter loop of control.
+
+Two cycles of monitoring are in effect generally.  First is a short term cycle, which occurs once a treatment has changed.  The parameters of Blood pressure (and possible adverse effects) at this point is unstable, and a closer observation of its changes would allow quicker response.  Usual care would wait 4 weeks to see changes in BP, and even earlier to sometimes monitor adverse effects for certain drugs.  The treatment keeps changing according to the rules mentioned above, until treatment is sufficient.
+
+This is when the patient enters the second longer cycle of monitoring.  Now the parameters are in a steady stable state, as long as the patient keeps following their treatment regime.  Normally patients are reviewed annually at this stage in order to see if hypertension has relapsed.  The relapse has a higher chance of occuring if the review is at a longer time frame.  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Analysis of Existing Technology - \textit{Jeffrey Yu}}
 \subsection{Overview}
  Analysing the strengths and weaknesses of existing works would give a sense of the opportunities available to improve on the current state of research. 
 \\ \indent
 The project stems from an idea of a relatively novel combination of different aspects of current medical practice and technology for the treatment of hypertension. Although the usual care of hypertension has been well established, there are new technologies and techniques being developed to improve it.   In particular, the focus of this project would be on informatic systems, which could be useful for handling and communicating with a large population of hypertension patients. 
 \\ \indent
- The two main subtopics to be focused on are namely telemonitoring, clinical decision support, both of which show modest improvement of care of chronic illnesses in general \cite{Lit1}. Other common informatics systems implemented include: population reports, audit/feedback, advanced order entry, and electronic scheduling \cite{Lit1}. The two were selected initially for simplicity; keeping fewer features could improve clarity.  Specifically for hypertension, there has been multiple studies exploring the effectiveness of the two  aspects individually. Even a small number which investigates both ideas in combination, to a certain extent.
+ The two main subtopics to be focused on are namely telemonitoring, clinical decision support, both of which show modest improvement of care of chronic illnesses in general \cite{Lit1}. Other common informatics systems implemented include: population reports, audit/feedback, advanced order entry, and electronic scheduling \cite{Lit1}. The two were selected initially for simplicity; keeping fewer features could improve clarity.  Specifically for hypertension, there are a good number of studies and products for the general telemonitoring of hypertension.
 
 
 \subsection{Telemonitoring}
@@ -366,8 +314,6 @@ Rinfret et al \cite{Im15}  & Adherence/BP monitor system; doctor/nurse/pharmacis
 \label{table:TMtechs}
 \end{table}
 
-%One study tries measure the feasibility of implementing telemonitoring. Patients were given a wireless home BP monitor costing \$550 USD ,which sends the readings to a hub plugged to a telephone socket, which then sends data to a secure server. Alerts were sent to research assistants when patients were not sending readings at a sufficient frequency (ideally six over two weeks, following American Heart Association guidelines). The results show that 25\% of the patients followed protocol closely enough. And 21\% of the alerts were due to device or system problems.  For example, loss of power and telephone services, disconnecting of the hub,  or device error messages; sometimes these devices had to be replaced. %
-
 \subsubsection{Mobile applications}
 Without a dedicated blood pressure monitor to transmit data, an app on a smartphone device would be another option.  There are plenty of apps related to hypertension in the Android and Apple app stores.  Some of the higher rated apps will be examined here. 
 
@@ -399,8 +345,97 @@ Other highly rated apps \cite{UIiBP,UIbppp,UIbpmh,UIbpd} have practically identi
 Smartphone compatible blood pressure monitors are also available \cite{app2,app3}. They have the benefit of being able to send blood pressure (and heart rate) data directly to a smartphone.  But along with the high price tag, another problem is that the app and measuring device usually rely heavily on each other. There is no manual input and there is no display on the device. Nevertheless, it seems more convenient to the patient, and could possibly improve compliance of monitoring.  
 
 A drawback to these apps is that they are not integrated to a healthcare provider. The export/imports give some flexibility to where data is sent, but at the cost of having to put in more effort. With this feature, the app is intended more for a motivated patients using it as a supplement to usual treatment. Patients are mostly self-managing the hypertension, without extra input from the doctor. They would be happy to send data every month before visiting the doctor, but not daily. On the physicians side, receiving a csv file perhaps is good for a small number of patients. On a larger scale, receiving emails would not be practical. The various formats of different apps could be confusing. And it would be inefficient to extract the data from the email to a centralised database.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Conclusions}
+Telemonitoring of hypertension has been studied and briefly implemented.  In the short run of months, studies have shown it has had a good effect on improving high blood pressure.  However, these studies have not included much clinical decision support software to guide the physicians, especially in the diagnosis and treatment stage.  At most, it was a printed algorithm created by the physicians themselves, custom made for individual patients. A software could automate and raise the efficiency of some of these procedures in the doctor's app.
+
+On the market, there are also patient side apps available.  They have a method to record blood pressure readings easily. But it is not connected to the healthcare provider.
+
+It would be useful to have a system where a doctor's app could both monitor and recommend decisions. While a patient app could connect and feed data remotely.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Design brief and specification - \textit{Emma Saragossi}}
+\subsection{Overview}
+
+Our aim is to research, design and build an intelligent software application that will aid clinicians with the pharmacological treatment of primary hypertension\footnote{Note: patients will have already been diagnosed with the condition by a medical professional.}. The application will comprise of two separate web-based applications, one for the doctor and one for the patient, which can both read-from and write-to a shared database. Patients will be able to upload their blood pressure remotely (i.e. not within a clinical setting) to the database on a daily basis. The doctor application will read in the patients' blood pressure data and display it on a chart for the doctor to view. The doctor application will also provide a link to launch a Tallis web decision tool that will advise the doctor on the best course of treatment, based on the patient's medical history, background, and charted blood pressure history.
+
+\subsection{Patient Application}
+\begin{itemize}
+\item The application must run in a desktop, tablet or mobile web browser.
+\item The application must be hosted on a suitable server.
+\item The application must have a secure login system, to identify the patient using the application and to prevent others from accessing sensitive patient data.
+\item The application must be able to read-from and write-to the shared database.
+\item The application must provide a submission form, allowing patient to enter their systolic and diastolic blood pressure values. This data must be uploaded to the database, along with time and date of upload. Note: this may be extended to include other metrics which may be of value (e.g. heart rate, weight etc.).
+\item The application must have a charting tool which plots blood pressure values against date, to allow the user to track their progress.
+\item The application must provide the contact details for patient's doctor.
+\item The application must indicate when the patient is due for a scheduled follow up appointment with their doctor.
+\item The application must advise the patient if they should contact their doctor (for example if their blood pressure has not reached the target level, or has risen unexpectedly). An alert should be sent to the doctor if this is the case so that the responsibility is not solely on the patient to make contact.
+\end{itemize}
+
+\subsection{Doctor Application}
+\begin{itemize}
+\item The application must run in a desktop or tablet web browser.
+\item The application must be hosted on a suitable server.
+\item The application must have a secure login system, which identifies the doctor and allows them access to view only their own patients' profiles.
+\item The application must be able to read-from and write-to the shared database.
+\item The application must allow the doctor to create a new patient profile.
+	\begin{itemize}
+    \item The doctor must be able to enter relevant patient data\footnote{The information required to determine the appropriate course of treatment for a patient is defined in NICE Clinical Guideline 127 \cite{CG127}.} (e.g. age, gender, medical history etc.)
+    \item The patient's target blood pressure must be determined based on the patient data provided
+    \item All patient data must be submitted to the database
+    \item Each patient must be assigned a unique Patient ID.
+    \item The doctor must be able to assign the patient unique login details for access to the patient application
+    \item The patient must meet the scope of the application\footnote{As outlined in NICE Clinical Guideline 127\cite{CG127}.}. The patient profile creation process must terminate if the patient is unsuitable.
+	\end{itemize}
+\item The application must allow the doctor to view the progress of all their patients
+	\begin{itemize}
+    \item The doctor must be able to search for the profile of a specific patient using their unique Patient ID
+    \item The application must have a charting tool which plots the patient's blood pressure against date, to allow the doctor to monitor their progress
+    \item The application must summarize the pharmacological treatment currently being offered to the patient
+    \item The application must alert the doctor if the patient has not met their target blood pressure within the expected time range, or if the patient's blood pressure has suddenly risen above the target value.
+    \end{itemize}
+\item The application must provide a link to launch the Tallis treatment decision tool (see below)
+\end{itemize}
+
+\subsection{Tallis Application}
+\begin{itemize}
+\item The application must run in a desktop or tablet web browser.
+\item The application must be hosted on a suitable server.
+\item The application must be able to read-from and write-to the database
+\item The application must recommend the best initial course of treatment for the patient based on the patient data submitted during the patient profile creation process.
+\item The application must recommend an appropriate drug dosage.
+\item The application must schedule an appropriate review date, by which time the target blood pressure should be met.
+\item The application must allow the doctor to review the patient
+	\begin{itemize}
+    \item The application must allow the doctor to perform a titration assessment of the patient and upload the values to the database.
+    \item The application must recommend a secondary drug treatment or allow the doctor to update the dosage of previously prescribed drug if the patient's target blood pressure has not been met.
+    \item The review-recommendation process must cycle until the patient's target blood pressure has been met.
+    \end{itemize}
+\item All medical recommendations must be made in accordance with the relevant medical guideline \cite{CG127}.
+\end{itemize}
+
+\subsection{Database}
+\begin{itemize}
+\item The database must be hosted on a server
+\item The database must be able to send and receive data from both the patient and doctor application (including the Tallis decision tool)
+\item The database must be structured to store:
+	\begin{itemize}
+	\item A doctor access log
+    \item Doctor login information
+    \item Patient information (including their doctor, medical history, target blood pressure, login details, drug type etc.)
+    \item Patient blood pressure data and the time and date of upload
+	\end{itemize}
+\item The database must meet the encryption standard expected of medical software set by the NHS \cite{encryption}
+\item The database must allow multiple users to read-from and write-to the database at the same time. 
+\end{itemize}
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.5]{network}
+\caption{Overall architecture of software application}
+\label{fig:network}
+\end{center}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Application User Interface - \textit{Michael Fedosiuk}}
 The user interface (UI) for the Cardiac Track application is in two parts. There is a patient app, currently optimised for smartphones, where BP measurements are inputted and the patient is alerted to make an appointment with their GP when they breach their BP limit. The app also provides the patient with their GP contact details and a graphical representation of their historical BP data.
@@ -1589,8 +1624,42 @@ There are a couple of ways the current system may be improved upon if more data 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Tallis application - \textit{Jeffrey Yu}}
-\subsection{Function}
-The function of the Tallis model is to deal with most of the medical decisions. Since there are waiting times between steps of the care pathway, some of the medical decisions are separated. As a result, there would be multiple use cases for Tallis, all of which is used by the doctor (or carer in general). The use cases are in the middle section of Figure \ref{fig:tallisAll2}.  The top left section is the input stage, where the use case is selected, and preliminary information read. The bottom right section is the possible ending cases. The arrows between the tasks (nodes) show the sequential logic of the events. A task can only start if all  previous tasks  linking to it, which have to be ACTIVE, has finished. A task is active if all its "preconditions" are met.  Otherwise, it stays inactive, and could be seen as invisible for the time being. 
+Overall, the Tallis web application component is used to make the medical decisions during the treatment cycle.  First, an introductory description of the Tallis software and it's limitations are provided.  Then the implementation of the subcomponents are illustrated. 
+
+\subsection{Scope of Tallis}
+
+Tallis is  user-friendly, high level and less technical. It excels at linking and representing the sequential workflow that a lot of medicine is. At the same time, it preserves some flexibility in the components, which is needed in such a highly complex medical knowledgebase.
+
+Tallis originally was presented as the backbone software for developing the app. Ideally, it would be convenient to have all the required components in one package.  This would reduce the interface with external components, thus minimising any potential errors and simplifying the software for further update.The problem however, stems from the fact that the project aims to encompass the whole care pathway for hypertension.  
+
+Many tasks performed in a clinical setting are treated in a one-off basis. In that case, Tallis would perform well by assisting the physician in deciding on the execution of a series of tasks within a short timeframe.  The Tallis session could be loaded once and, for example, could help decide what to do with the patients during their short visit.  But hypertension is a chronic disease where the patients' history has to be followed for a long time. As outlined in the care pathway, there would be certain waiting periods, such as for the annual review, or for the reassessment of drug effects. One method would be to have a session of Tallis open for a single patient.  The web enactment has the ability to save a session.  
+
+A further problem encountered would be the high number of patients that need to be treated. Hypertension, like many other chronic diseases, is highly prevalent. Given that a patient is going to seek medical attention at intervals of the order of weeks, or months, a physician would have to face patients overlapping at different stages of treatment.  Saving and reloading a single session of Tallis would not be possible.  To overcome that, it is necessary to have a method of storing and retrieving data.  
+
+Tallis handles data to a certain extent by the "enquiry" task, which creates and writes a data item as a variable.  However, the variables are predefined by the programmer when using the Tallis composer. For example, a programmer would create n variables for n patients by manually creating "sources", as shown in  figure \ref{fig:tallisEnq}. This is fine when creating for a small number of patients.  For a larger number of patients, this process of clicking through the Tallis Composer software to create sources becomes tedious.  But it could be automated by editing the proForma script (which could come in a format of a text file) underlying the Tallis process description.  For example, code can be written to create n data sources of the same type, with an output as shown in figure \ref{fig:tallisEnq2}.  So if there is a large number of patients, and that number is known beforehand, then it is possible to handle a lot in a single session of Tallis. This could possibly be used for a clinical trial where numbers are known. But the process breaks down if one wants to add an extra patient to the existing session.  The whole proForma script needs to be recreated and uploaded.
+
+An alternative is to map the data items to a database.  This method is a much more efficient use of resources because Tallis is not dedicated to handling large arrays of data.  The intuitive flow-chart like presentation of Tallis indicates that it is better to have a single variable representitive of multiple patients. But this comes at the small cost of creating an interface potentially prone to mistakes; for example, the possibility of names mismatching when one edits the Tallis guidelines or the database fields.
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.5]{tallisEnq}
+\caption{Data storage in Tallis composer in the form of enquiry sources }
+\label{fig:tallisEnq}
+\end{center}
+\end{figure}
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.5]{tallisEnq2}
+\caption{A version of data storage in Tallis, scripted in proForma}
+\label{fig:tallisEnq2}
+\end{center}
+\end{figure}
+
+Now with the individual patient data sets decoupled from Tallis, there is still the problem of waiting time.  As mentioned before, these blocks of time are for waiting for the drug to take effect, or just waiting for the next scheduled appointment.  An initial idea would  be to let the Tallis run its session, and constantly let it read from the database.  Whenever one of these events happen (an alert), the database updates, then Tallis reads it immediately and allowing the next step to begin.  This would not work, however, because it would not be practical for the GP to keep Tallis open and running in the background constantly, whether on a computer or a mobile device.  Also, it is not necessary to be constantly updated because these alert events are not emergencies. The GP has leeway to be updated at a longer time interval. For example, updating daily on patient status is more than enough.  In the case of actual emergencies, existing means of contact such as telephone is also enough, since this is outside the scope of the app.
+
+\subsection{Use Cases}
+The resulting function of the Tallis model is to deal with most of the medical decisions, after a patient has already been initialized on the website. Since there are waiting times between steps of the care pathway, some of the medical decisions are separated. As a result, there would be multiple use cases for Tallis, all of which is used by the doctor (or carer in general). The use cases are in the middle section of Figure \ref{fig:tallisAll2}.  The top left section is the input stage, where the use case is selected, and preliminary information read. The bottom right section is the possible ending cases. The arrows between the tasks (nodes) show the sequential logic of the events. A task can only start if all  previous tasks  linking to it, which have to be ACTIVE, has finished. A task is active if all its "preconditions" are met.  Otherwise, it stays inactive, and could be seen as invisible for the time being. 
 
 Here are the use cases where Tallis will be opened:
 \begin{itemize}
@@ -1655,8 +1724,7 @@ This plan is activated whenever it is necessary to decide on a treatment change.
 
 Following the NICE guidelines, there are 4 stages of drug treatment. A patient is incrementally given drugs until the blood pressure is controlled. Once it is controlled, the patient keeps taking the medication. To illustrate, for example, first a single drug is given. Assuming there are no adverse effects (explored in section \ref{jeff:checkup}), it should take 4 weeks for the drug to take effect noticeably. The BP is still not controlled, so the dose is increased slightly. The process is repeated until control is achieved, or a maximum safe dosage is reached.  If it still not controlled, a further stage of drug is prescribed (following a given rule). Again it repeats until all 4 drugs are at a maximum, which is a suitable time to label the patient as having "resistant hypertension". Referral to a specialist is recommended at this point.  
 
-%Figurexxx represents this ideal cycle without any adverse effects.
-The cycle is over a long time, and a single run through this task only realizes a single step in changing drug treatment.  Although choosing a drug, and changing the prescription seem like 2 separate steps, they can still be grouped together into the abstraction of  "treatment change" to give a neater loop and clearer overall structure.
+The cycle is over a long time, and a single run through this task only realizes a single step in changing drug treatment.  Although choosing a new drug, and changing the prescription seem like 2 separate steps, they can still be grouped together into the abstraction of  "treatment change" to give a neater loop and clearer overall structure.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Initial treatment selection - \textit{Emma Saragossi}}
@@ -1848,7 +1916,7 @@ The structure of these templates follow a default "legacy" template.  This main 
 
 For example, by changing the file of tasks menu, it is possible to change it from a menu bar on the side, into a tab on the top.  A menu to a tab is a major change, therefore the whole file is replaced.  On the other hand, if a certain feature is added an extra subcomponent, then the file is appended, similar to extending.
 
-
+The tabbed UI shows the basic tasks in a clearer interface with tabs at the top, as opposed to a menu on the left hand side of the legacy template.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
