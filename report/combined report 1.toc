@@ -1,17 +1,15 @@
 \contentsline {section}{\numberline {1}Executive Summary - \textit {Michael Fedosiuk}}{5}{section.1}
-\contentsline {section}{\numberline {2}Clinical need - \textit {Emma Saragossi}}{9}{section.2}
-\contentsline {section}{\numberline {3}Hypertension Care Pathway - \textit {Jeffrey Yu}}{10}{section.3}
-\contentsline {subsection}{\numberline {3.1}What is Hypertension}{10}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Diagnosis}{10}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Treatment}{10}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Monitor}{12}{subsection.3.4}
-\contentsline {section}{\numberline {4}Analysis of Existing Technology - \textit {Jeffrey Yu}}{13}{section.4}
-\contentsline {subsection}{\numberline {4.1}Overview}{13}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Telemonitoring}{13}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}General telemedicine}{13}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Hypertension Telemonitoring studies}{15}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Mobile applications}{15}{subsubsection.4.2.3}
-\contentsline {subsection}{\numberline {4.3}Conclusions}{18}{subsection.4.3}
+\contentsline {section}{\numberline {2}Hypertension Care Pathway - \textit {Jeffrey Yu}}{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}What is Hypertension}{9}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Diagnosis}{9}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Treatment}{9}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Monitor}{11}{subsection.2.4}
+\contentsline {section}{\numberline {3}Analysis of Existing Technology - \textit {Jeffrey Yu}}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}Overview}{12}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}General telemedicine}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Hypertension Telemonitoring studies}{14}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Mobile applications}{16}{subsection.3.4}
+\contentsline {section}{\numberline {4}Clinical need - \textit {Emma Saragossi}}{17}{section.4}
 \contentsline {section}{\numberline {5}Design brief and specification - \textit {Emma Saragossi}}{19}{section.5}
 \contentsline {subsection}{\numberline {5.1}Overview}{19}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Patient Application}{19}{subsection.5.2}
@@ -67,8 +65,8 @@
 \contentsline {subsection}{\numberline {10.1}Scope of Tallis}{65}{subsection.10.1}
 \contentsline {subsection}{\numberline {10.2}Use Cases}{67}{subsection.10.2}
 \contentsline {subsection}{\numberline {10.3}Reading from database}{69}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}Treatment Change}{69}{subsection.10.4}
-\contentsline {subsubsection}{\numberline {10.4.1}Initial treatment selection - \textit {Emma Saragossi}}{70}{subsubsection.10.4.1}
+\contentsline {subsection}{\numberline {10.4}Treatment Change}{70}{subsection.10.4}
+\contentsline {subsubsection}{\numberline {10.4.1}Initial treatment selection - \textit {Emma Saragossi}}{71}{subsubsection.10.4.1}
 \contentsline {subsubsection}{\numberline {10.4.2}Further stages of treatment: extend - \textit {Jeffrey Yu}}{74}{subsubsection.10.4.2}
 \contentsline {subsubsection}{\numberline {10.4.3}Dosage Change}{75}{subsubsection.10.4.3}
 \contentsline {subsection}{\numberline {10.5}Checkup}{76}{subsection.10.5}
