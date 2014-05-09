@@ -1,4 +1,5 @@
 \BOOKMARK [1][-]{section.1}{Executive Summary - Michael Fedosiuk}{}% 1
+<<<<<<< HEAD
 \BOOKMARK [1][-]{section.2}{Clinical need - Emma Saragossi}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Patient Application}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Doctor Application}{section.2}% 4
@@ -65,3 +66,69 @@
 \BOOKMARK [2][-]{subsection.14.2}{Implementation Costs}{section.14}% 65
 \BOOKMARK [1][-]{section.15}{Conclusion - Emma Saragossi}{}% 66
 \BOOKMARK [2][-]{subsection.15.1}{Project Limitations - Henry Fletcher}{section.15}% 67
+=======
+\BOOKMARK [1][-]{section.2}{Hypertension Care Pathway - Jeffrey Yu}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{What is Hypertension}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Diagnosis}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Treatment}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Monitor}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Analysis of Existing Technology - Jeffrey Yu}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Overview}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{General telemedicine}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{Hypertension Telemonitoring studies}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.4}{Mobile applications}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Clinical need - Emma Saragossi}{}% 12
+\BOOKMARK [1][-]{section.5}{Design brief and specification - Emma Saragossi}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Overview}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Patient Application}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Doctor Application}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.4}{Tallis Application}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.5}{Database}{section.5}% 18
+\BOOKMARK [1][-]{section.6}{Application User Interface - Michael Fedosiuk}{}% 19
+\BOOKMARK [2][-]{subsection.6.1}{Why a Web based application was chosen and what languages were used}{section.6}% 20
+\BOOKMARK [1][-]{section.7}{Patient Application - Michael Fedosiuk}{}% 21
+\BOOKMARK [2][-]{subsection.7.1}{General format}{section.7}% 22
+\BOOKMARK [2][-]{subsection.7.2}{patient/index.php}{section.7}% 23
+\BOOKMARK [1][-]{section.8}{Doctor's Application}{}% 24
+\BOOKMARK [2][-]{subsection.8.1}{Function - Emma Saragossi}{section.8}% 25
+\BOOKMARK [2][-]{subsection.8.2}{User interface - Emma Saragossi}{section.8}% 26
+\BOOKMARK [2][-]{subsection.8.3}{Login page - Emma Saragossi}{section.8}% 27
+\BOOKMARK [2][-]{subsection.8.4}{Creating a patient profile - Emma Saragossi}{section.8}% 28
+\BOOKMARK [2][-]{subsection.8.5}{News feed - Emma Saragossi}{section.8}% 29
+\BOOKMARK [2][-]{subsection.8.6}{Patient search bar - Emma Saragossi}{section.8}% 30
+\BOOKMARK [2][-]{subsection.8.7}{Extension ideas for the Doctor Application - Emma Saragossi}{section.8}% 31
+\BOOKMARK [2][-]{subsection.8.8}{Patient checking and review - Michael Fedosiuk}{section.8}% 32
+\BOOKMARK [1][-]{section.9}{Uncertainty Metric - Michael Fedosiuk}{}% 33
+\BOOKMARK [2][-]{subsection.9.1}{Data Sourcing}{section.9}% 34
+\BOOKMARK [2][-]{subsection.9.2}{Metric Overview}{section.9}% 35
+\BOOKMARK [2][-]{subsection.9.3}{Metric make up}{section.9}% 36
+\BOOKMARK [2][-]{subsection.9.4}{Metric Implementation}{section.9}% 37
+\BOOKMARK [2][-]{subsection.9.5}{Extensions}{section.9}% 38
+\BOOKMARK [1][-]{section.10}{Tallis application - Jeffrey Yu}{}% 39
+\BOOKMARK [2][-]{subsection.10.1}{Scope of Tallis}{section.10}% 40
+\BOOKMARK [2][-]{subsection.10.2}{Use Cases}{section.10}% 41
+\BOOKMARK [2][-]{subsection.10.3}{Reading from database}{section.10}% 42
+\BOOKMARK [2][-]{subsection.10.4}{Treatment Change}{section.10}% 43
+\BOOKMARK [2][-]{subsection.10.5}{Checkup}{section.10}% 44
+\BOOKMARK [2][-]{subsection.10.6}{User Interface}{section.10}% 45
+\BOOKMARK [1][-]{section.11}{Server Environment - Henry Fletcher}{}% 46
+\BOOKMARK [2][-]{subsection.11.1}{Key Project Software}{section.11}% 47
+\BOOKMARK [2][-]{subsection.11.2}{Server Environment Overview}{section.11}% 48
+\BOOKMARK [2][-]{subsection.11.3}{Integrating Tallis \046 the MySQL database}{section.11}% 49
+\BOOKMARK [2][-]{subsection.11.4}{Data storage \046 redundancy}{section.11}% 50
+\BOOKMARK [1][-]{section.12}{Security - Henry Fletcher}{}% 51
+\BOOKMARK [2][-]{subsection.12.1}{NHS Guidelines for data transmission and storage}{section.12}% 52
+\BOOKMARK [2][-]{subsection.12.2}{SSL Encryption}{section.12}% 53
+\BOOKMARK [2][-]{subsection.12.3}{AES encryption}{section.12}% 54
+\BOOKMARK [2][-]{subsection.12.4}{Password Hashing}{section.12}% 55
+\BOOKMARK [2][-]{subsection.12.5}{MySQLi Connector}{section.12}% 56
+\BOOKMARK [2][-]{subsection.12.6}{Other security considerations}{section.12}% 57
+\BOOKMARK [1][-]{section.13}{Application PHP examples - Henry Fletcher}{}% 58
+\BOOKMARK [2][-]{subsection.13.1}{Doctor's Login Form}{section.13}% 59
+\BOOKMARK [2][-]{subsection.13.2}{Patient's Submission Form}{section.13}% 60
+\BOOKMARK [1][-]{section.14}{Economic Viability - Michael Fedosiuk}{}% 61
+\BOOKMARK [2][-]{subsection.14.1}{Cost benefits to the customer: Focused on NHS}{section.14}% 62
+\BOOKMARK [2][-]{subsection.14.2}{Implementation Costs}{section.14}% 63
+\BOOKMARK [1][-]{section.15}{Conclusion - Emma Saragossi}{}% 64
+\BOOKMARK [2][-]{subsection.15.1}{Project Limitations - Henry Fletcher}{section.15}% 65
+>>>>>>> FETCH_HEAD

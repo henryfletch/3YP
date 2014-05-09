@@ -184,6 +184,7 @@ The aim is to provide up to date information and treatment for a patient's hyper
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+<<<<<<< HEAD
 \section{Clinical need - \textit{Emma Saragossi}}
 Hypertension is one of the most common conditions treated by primary care in the United Kingdom, affecting more than a quarter of all adults and more than half of those aged 65 years and over \cite{surveyEngland2009}. As it is such a common condition, it places a heavy strain on NHS resources. Our aim is to reduce the amount of contact time between doctors and patients, freeing doctors to better spend their time elsewhere. Remote monitoring of patients' blood pressure ensures that the doctor only need meet the patient for a consultation or check up when necessary. One of the key functions of our application is that it will alert the doctor if a patient's blood pressure is not at the target level, meaning appointments are only scheduled when there is clinical need.
 
@@ -251,13 +252,15 @@ Our aim is to research, design and build an intelligent software application tha
 \end{itemize}
 >>>>>>> 19495c43655f1bc0990e9809336d4f9fca1a6fb9
 
+=======
+>>>>>>> FETCH_HEAD
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hypertension Care Pathway - \textit{Jeffrey Yu}}
 
 \subsection{What is Hypertension}
-Hypertension is when blood pressure is too high, leading to high stress and strains on the walls of the arteries and the heart.  There is an increased risk for further cardiovascular diseases such as strokes and heart attacks. Two measures of the blood pressure are combined.  One is the pressure when the heart muscles contract (systolic pressure). The other is when it relaxes (diastolic pressure).
+Hypertension is when blood pressure is too high, leading to high stress and strains on the walls of the arteries and the heart.  There is an increased risk for further cardiovascular diseases such as strokes and heart attacks. Two measures of the blood pressure are combined.  One is the pressure when the heart muscles contract (systolic pressure). The other is when it relaxes (diastolic pressure).  As a general case, hypertension is diagnosed when the reading is above 140/90 mmHg  (systolic/diastolic) at the clinic. 
 
-An inital layout of the whole process is useful for dividing tasks into modular components.  Figure \ref{fig:TreatPath} is a readapted version of the primary care pathway for hypertension, based on NICE guidelines\cite{CG127}.  Primary care means that it is the main point of contact for patients with their healthcare provider. It is where the patient sees a general practioner of nurse first, before having any specialist treatment for complicated situations.  The pathway is shown to give a very broad overview of the whole process of dealing with hypertension.  In fact, such a workflow can be generalized to many other diseases. We aim to model most of these components, with finer details to be discussed later.
+With hypertension being a chronic disease, an inital layout of the whole process is useful for dividing tasks into modular components.  Figure \ref{fig:TreatPath} is a readapted version of the primary care pathway for hypertension, based on NICE guidelines\cite{CG127}.  Primary care means that it is the main point of contact for patients with their healthcare provider. It is where the patient sees a general practioner of nurse first, before having any specialist treatment for complicated situations.  The pathway is shown to give a very broad overview of the whole process of dealing with hypertension.  In fact, such a workflow can be generalized to many other diseases. Below, a general description is given, with finer details to be discussed later.
 \begin{figure}[!p]
 \begin{center}
 \includegraphics[scale=0.30]{TreatPath}
@@ -268,20 +271,20 @@ An inital layout of the whole process is useful for dividing tasks into modular 
 \subsection{Diagnosis}
 A new patient would come for their health checkup. If the blood pressure is too high, other assessments are performed.  This blood pressure threshold is based on some of the patients background medical history.   Also, the guideline is only applicable to certain conditions in addition to hypertension.  For example, a patient who has hypertension as a result of other illnesses such as diabetes, should follow a treatment plan for that illness instead. Or if the patient has a condition that may interact with the treatment of hypertension, a specialist may be needed in secondary care.  At the end of the diagnosis, the patient would go back to a long term review if blood pressure is under control. Or in the case of our app where the patient is diagnosed, treatment of hypertension is started.
 \subsection{Treatment}
-The treatment here is summarised in a single block tenatively named "change treatment". Complex decisions need to be made. There are many factors which may affect how a physician decides to progress with the treatment.  For example, different conditions may indicate or contraindicate certain drugs. Or a patient may be allergic to some.  Financial and practical costs may also be taken into acccount.
+The treatment here is summarised in a single block tenatively named "change treatment". Complex decisions need to be made on how to choose the drugs. There are many factors which may affect how a physician decides to progress with the treatment.  For example, different conditions may indicate or contraindicate certain drugs. Or a patient may be allergic to some.  Financial and practical costs may also be taken into acccount.
 
-Also, according to NICE guidelines, there could be 4 stages of drug treatments, before a patient is deemed to have resistant hypertension (need to refer to specialist).  Each of these 4 stages of drugs depend on the previous stage with some logical algorithm.  
-
-At the end of this step, a patient is given a new treatment course, which includes a drug and its prescription.  
+At the end of this step, a patient is given a new treatment course, which includes a drug and its prescription. The new treatment could simply be an increase in dosage until hypertension is controlled (a process known as titration). Or if this drug has reached a maximum tolerable dose, a new drug is added. Either way, it is simply labled as a "treatment change" for now.  Also, according to NICE guidelines, there could be 4 stages of drug treatments, before a patient is deemed to have resistant hypertension (need to refer to specialist).  Each of these 4 stages of drugs depend on the previous stage with some logical algorithm.  
 
 \subsection{Monitor}
 The monitoring stage is part of the "management of hypertension" section of the guidelines.  Once the patient starts having medication changes (i.e. an input), it is important to assess some of the health parameters (i.e. the output).  Then the output is fedback into the treatment stage; and the medication is readjusted with the target BP in mind. 
 
-The key parameter is reduction in systolic and diastolic blood pressure. Adverse effects are also constanltly assessed to make sure the patient is reacting well.   If there is any noteworthy event, then the doctor is alerted. In usual care, these events is just a patient having an review appointment, or a patient contacting the doctor if symptoms of side effects are worsening.  In the case of remote monitoring, further alerts may be needed such as for patients not using the equipment according to protocol. Also, alerts would be more frequent leading to a tighter loop of control.
+The key parameter is reduction in systolic and diastolic blood pressure. Adverse effects are also constantly assessed to make sure the patient is reacting well.   If there is any noteworthy event, then the doctor is alerted. In usual care, these events is just a patient having an review appointment, or a patient contacting the doctor if symptoms of side effects are worsening.  In the case of remote monitoring, further alerts may be needed such as for patients not using the equipment according to protocol. Also, alerts would be more frequent leading to a tighter loop of control.
 
-Two cycles of monitoring are in effect generally.  First is a short term cycle, which occurs once a treatment has changed.  The parameters of Blood pressure (and possible adverse effects) at this point is unstable, and a closer observation of its changes would allow quicker response.  Usual care would wait 4 weeks to see changes in BP, and even earlier to sometimes monitor adverse effects for certain drugs.  The treatment keeps changing according to the rules mentioned above, until treatment is sufficient.
+Two cycles of monitoring are in effect generally.  First is a short term cycle, which occurs once a treatment has changed (new drug, or dose increased).  The parameters of Blood pressure (and possible adverse effects) at this point is unstable, and a closer observation of its changes would allow quicker response.  Usual care would wait 4 weeks to see changes in BP.  For certain drugs, adverse effects are monitored even earlier at about 2 weeks to perform blood tests to ensure kidney function is normal.  Until treatment is sufficient, the treatment keeps adjusting according to the change of the parameters of blood pressure and adverse effects.
 
-This is when the patient enters the second longer cycle of monitoring.  Now the parameters are in a steady stable state, as long as the patient keeps following their treatment regime.  Normally patients are reviewed annually at this stage in order to see if hypertension has relapsed.  The relapse has a higher chance of occuring if the review is at a longer time frame.  
+Once blood pressure is under control, patient enters the second longer cycle of monitoring.  Now the parameters are in a steady stable state, as long as the patient keeps following their treatment regime.  Normally patients are reviewed annually at this stage in order to see if hypertension has relapsed.  The relapse has a higher chance of occuring if the review is at a longer time frame.  
+
+For both these cycles, the blood pressure is only measured at the end of the wait, and complications could happen before that. But by having data available more frequently, say daily, the treatment could potentially be improved by shortening this loop of control.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Analysis of Existing Technology - \textit{Jeffrey Yu}}
 \subsection{Overview}
@@ -292,8 +295,8 @@ The project stems from an idea of a relatively novel combination of different as
  The two main subtopics to be focused on are namely telemonitoring, clinical decision support, both of which show modest improvement of care of chronic illnesses in general \cite{Lit1}. Other common informatics systems implemented include: population reports, audit/feedback, advanced order entry, and electronic scheduling \cite{Lit1}. The two were selected initially for simplicity; keeping fewer features could improve clarity.  Specifically for hypertension, there are a good number of studies and products for the general telemonitoring of hypertension.
 
 
-\subsection{Telemonitoring}
-\subsubsection{General telemedicine}
+
+\subsection{General telemedicine}
 Telemedicine is an emerging facet. As the name implies, it is the practice of medicine remotely between healthcare professionals and patients, as opposed to the usual care in a clinical setting, or a carer transmitting data from the patients' location. With the advancement of the enabling communications technology, the treatment of patients through such medium is starting to be considered and implemented. The term itself encompasses a range of activities, including educating patients, transferring data, promoting patient-doctor contact, and improving electronic health records. There are also two main modes of communication: real time (video-conferencing), and asynchronous transmission of data. Another parameter to examine is the degree of user input from the patient. Some systems passively monitor automatically, while others require patient measurement and input \cite{TM5}.
 \\ \indent
 Considering the limited financial and temporal resources available for this project, an initial guess would be that asynchronous transmission, and non-automatic systems would be the less costly methods.
@@ -323,7 +326,7 @@ There are multiple factors that support the adoption of telemonitoring for chron
      Increased productivity & Decreased home visit travel time and automated documentation
 	 \\ \hline
     \end{tabular}
-\caption{Key Drivers for Telemonitoring}
+\caption{Key Drivers for Telemonitoring\cite{TM2}.  }
 \label{table:TMproscons}
 \end{table}
 
@@ -334,7 +337,7 @@ However, there also are some barriers. A mature financial model is needed to bal
 On the patients' side, their attitude towards the technology is also important. If the patients are unwilling to adhere to the procedure, the health benefits would diminish. Patients of the Whole System Demonstrator who have decided to withdraw have typically given reasons of: difficulty of operating equipment;loss of independence and self-care \cite{TM4}. But in other studies in general, most patients welcome telemonitoring technologies and comply satisfactorily. Empowering the patients have also shown to improve results. Empowerment includes educating and increasing awareness, so that the patients have a feeling of more independence and control \cite{TM6}.
 
 
-\subsubsection{Hypertension Telemonitoring studies}
+\subsection{Hypertension Telemonitoring studies}
 %a bit too much paraphrasing, needs a bit more thought.
 In one systematic review for hypertension telemonitoring (AbuDagga et al) \cite{impact Lit}, most of the studies involved have shown to improved blood pressure on a similar level to usual care with hypertensive drugs. Like general telemonitoring, patients also seemed to be receptive to the technology. But more evidence is needed for the receptiveness of the clinicians, as well as their costs.   
 \\ \indent
@@ -345,7 +348,7 @@ The BP monitoring devices could be stand-alone, which would require input from t
 Alerting models were varied too.  Some would directly notify the providers, while others would notify to patients to contact providers for guidance.  Typically, poor adherence would be alerted if there are not enough readings within a certain amount of time, for example 12 in 2 weeks.  Blood pressure not being controlled after a set length of time is also alerted sometimes.
 
 However, these studies were all clinical trials over a relatively short period of time, ranging from 2 months to 12 months.  Chronic disease management over a longer time may have different effects on the patients.
-   
+
 \begin{table}
 \centering
 \renewcommand{\arraystretch}{1.3}
@@ -368,11 +371,11 @@ Park et al \cite{Im13}     & BP home device; SMS cell phone and Web; tailored in
 Rogers et al \cite{Im14}   & BP device submits data over phone line; reports sent to patient and physician                                                                                              \\ \hline
 Rinfret et al \cite{Im15}  & Adherence/BP monitor system; doctor/nurse/pharmacist reports; alert                                                                                                        \\ \hline
 \end{tabular}
-\caption{Telemonitoring Studies}
+\caption{Telemonitoring Studies by  summarised by AbuDagga et al\cite{impact Lit}}
 \label{table:TMtechs}
 \end{table}
-
-\subsubsection{Mobile applications}
+ \clearpage 
+\subsection{Mobile applications}
 Without a dedicated blood pressure monitor to transmit data, an app on a smartphone device would be another option.  There are plenty of apps related to hypertension in the Android and Apple app stores.  Some of the higher rated apps will be examined here. 
 
 \begin{figure}[ht]
@@ -402,15 +405,23 @@ Other highly rated apps \cite{UIiBP,UIbppp,UIbpmh,UIbpd} have practically identi
 
 Smartphone compatible blood pressure monitors are also available \cite{app2,app3}. They have the benefit of being able to send blood pressure (and heart rate) data directly to a smartphone.  But along with the high price tag, another problem is that the app and measuring device usually rely heavily on each other. There is no manual input and there is no display on the device. Nevertheless, it seems more convenient to the patient, and could possibly improve compliance of monitoring.  
 
-A drawback to these apps is that they are not integrated to a healthcare provider. The export/imports give some flexibility to where data is sent, but at the cost of having to put in more effort. With this feature, the app is intended more for a motivated patients using it as a supplement to usual treatment. Patients are mostly self-managing the hypertension, without extra input from the doctor. They would be happy to send data every month before visiting the doctor, but not daily. On the physicians side, receiving a csv file perhaps is good for a small number of patients. On a larger scale, receiving emails would not be practical. The various formats of different apps could be confusing. And it would be inefficient to extract the data from the email to a centralised database.
-
-\subsection{Conclusions}
-Telemonitoring of hypertension has been studied and briefly implemented.  In the short run of months, studies have shown it has had a good effect on improving high blood pressure.  However, these studies have not included much clinical decision support software to guide the physicians, especially in the diagnosis and treatment stage.  At most, it was a printed algorithm created by the physicians themselves, custom made for individual patients. A software could automate and raise the efficiency of some of these procedures in the doctor's app.
 
 On the market, there are also patient side apps available.  They have a method to record blood pressure readings easily. But it is not connected to the healthcare provider.
 
 It would be useful to have a system where a doctor's app could both monitor and recommend decisions. While a patient app could connect and feed data remotely.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Clinical need - \textit{Emma Saragossi}}
+Hypertension is one of the most common conditions treated by primary care in the United Kingdom, affecting more than a quarter of all adults and more than half of those aged 65 years and over \cite{surveyEngland2009}. As it is such a common condition, it places a heavy strain on NHS resources. Our aim is to reduce the amount of contact time between doctors and patients, freeing doctors to better spend their time elsewhere. Remote monitoring of patients' blood pressure ensures that the doctor only need meet the patient for a consultation or check up when necessary. One of the key functions of our application is that it will alert the doctor if a patient's blood pressure is not at the target level, meaning appointments are only scheduled when there is clinical need.
+
+The treatment of hypertension has relied on blood pressure measurements made within a clinical setting for over 100 years \cite{SICC}, but this method of recording blood pressure has its limitations. A single blood pressure reading made at a primary care facility may not represent a patient's true blood pressure; blood pressure changes continuously over time, and is sensitive to both random and systematic errors (e.g. white coat effect). An alternative is to allow the patient to record their own blood pressure at home. A major advantage of out-of-office blood pressure monitoring is that it provides a large number of blood pressure measurements made away from a medical setting, better reflecting the patient's blood pressure during usual daytime activities \cite{ESH}. As a result of this more reliable measure of blood pressure, more suitable treatment decisions can be made.
+
+In addition to providing more accurate and reliable data, home monitoring of hypertension empowers the patient, influencing their attitude and behaviour. The NICE clinical guideline for the management of primary hypertension in adults recognises that engaging patients in their own blood pressure monitoring process could lead to improved blood pressure control \cite{CG127}. Moreover, a meta-analysis by Bray et al., 2010 \cite{metaSelfMonitoring} showed that patients who self-monitor their own blood pressure have an increased chance of achieving their target blood pressure.
+
+The online treatment aid implements the most up to date NICE guidelines for the management of hypertension. This can be regularly updated to implement best practice and ensure the doctor is offering consistent, high quality, safe and accountable care.
+=======
+Our aim is to research, design and build an intelligent software application that will aid clinicians with the pharmacological treatment of primary hypertension\footnote{Note: patients will have already been diagnosed with the condition by a medical professional.}. The application will comprise of two separate web-based applications, one for the doctor and one for the patient, which can both read-from and write-to a shared database. Patients will be able to upload their blood pressure remotely (i.e. not within a clinical setting) to the database on a daily basis. The doctor application will read in the patients' blood pressure data and display it on a chart for the doctor to view. The doctor application will also provide a link to launch a Tallis web decision tool that will advise the doctor on the best course of treatment, based on a patient's medical history, background, and charted blood pressure history.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Design brief and specification - \textit{Emma Saragossi}}
 \subsection{Overview}
 
@@ -1739,7 +1750,13 @@ Here are the use cases where Tallis will be opened:
 \subsection{Reading from database}
 
 The main function of this plan (see figure \ref{fig:tallisRead} for internal composition) is to read data from the database. It is the first and only mandatory task when Tallis is opened. By using enquiries, one could imagine that instead of "asking" for human data input, it is "asking" the database for the required data items. Further details of how the data items are exactly mapped to the database is explained in section \ref{DBXMLWrapper}.  
-
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.7]{tallisRead}
+\caption{Enquire data from database in plan ALL READ. Top: subplan Treatment Status; Bottom: subplan Patient details}
+\label{fig:tallisRead}
+\end{center}
+\end{figure}
 There are two main trees of enquiries, separated into two subplans. The first subplan is the "Treatment Status", where the treatment specific details (drug name, prescription etc.) of the patient are read from the records. Table \ref{table:treatmentstatus} shows all the data items read. It is constructed in such a sequence so that the correct amount of information is read every time. Number of drugs needs to be read before reading the details of drug X. For example, if the patient is only taking 2 drugs, the reading sequence ends at "drug2" enquiry task and does not read "drug3" through the precondition (Number of drugs  >= 3). Otherwise, a null will be read from the database, which could possibly affect future tasks.  Alternatively, the task could be designed to read the 4 drugs in parallel instead of series, since any unnecessary task would be cancelled by preconditions anyway. Series is preferred because it ensures drug1 is read before drug2, adding an extra line of safety.  
 
 The second subplan is the "Patient Details", which is the data for all other related conditions of the patient that may affect future decision making processes.  It is directly taken from the previously made New Patient component, which now is transposed to outside of Tallis as shown in section \ref{tallis:separatenewuser}.
@@ -1761,13 +1778,7 @@ maxDoseX & max dose X;\\ \hline
 \end{table}
 
 
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[scale=0.7]{tallisRead}
-\caption{Enquire data from database in plan ALL READ. Top: subplan Treatment Status; Bottom: subplan Patient details}
-\label{fig:tallisRead}
-\end{center}
-\end{figure}
+
 
 \subsection{Treatment Change}
 This plan is activated whenever it is necessary to decide on a treatment change.  Figure \ref{fig:tallisTreatmentChange} shows the structure of this task.   Dosage Alert at the start presents the existing treatment and other patient details that has been read from the database previously.  By reminding the doctor of the status of the patient, it can serve as a safety mechanism to double check. "Update Status" writes the results to the database. The meat of the component is the two main plans: "New Drug" and "Dosage Change", both of which decide on a drug and its prescription using logic adapted from guidelines.
@@ -1901,7 +1912,7 @@ With the initial treatment in hand, the further stages are actually simpler to i
 \end{center}
 \end{figure}
 
-The arguments that give a suggestive for/against weighting would need to be re-examined for further stages.  For example, age group is no longer an applicable argument past the initial treatment for most drugs.  Then new arguments need to be created to model the new rules at each stage. Figure \ref{fig:tallisNewDrug} is a summary taken from NICE guidelines.  There are slightly more complexities, especially when inspecting individual drugs \cite{CKS}. But overall, the rules are between drug classes and not the specific ones.  Figure \ref{fig:tallisDrugArg2} shows the arguments that have been changed or added to the drug Ramipril.  For each of the drug stages, the logical AND combines the new rule with the number of drugs . As can be seen, only 6 new arguments had to be added, while keeping the 9 other comorbidities the same.  
+The arguments that give a suggestive for/against weighting would need to be re-examined for further stages.  For example, age group is no longer an applicable argument past the initial treatment for most drugs.  Then new arguments need to be created to model the new rules at each stage. Figure \ref{fig:tallisNewDrug} is a summary taken from NICE guidelines.  There are slightly more complexities, especially when inspecting individual drugs \cite{CKS}. These further drug evidence is provided by NICE CKS (clinical knowledge summaries).  But overall, the rules are between drug classes and not between specific drugs.  Figure \ref{fig:tallisDrugArg2} shows the arguments that have been changed or added to the drug Ramipril.  For each of the drug stages, the logical AND combines the new rule with the number of drugs . As can be seen, only 6 new arguments had to be added, while keeping the 9 other comorbidities the same.  
 
 \begin{figure}[ht]
 \begin{center}
@@ -2886,53 +2897,53 @@ GitHub Gists, (2014). oodavid/README.md. [online] Available at: \url{https://gis
 \bibitem{tasminh2}
 McManus R, Mant J, Bray E, Holder R, Jones M, Greenfield S et al. Telemonitoring and self-management in the control of hypertension (TASMINH2): a randomised controlled trial. The Lancet. 2010;376(9736):163--172. 
 \bibitem{impact Lit}
-AbuDagga A, Resnick H, Alwan M. Impact of blood pressure telemonitoring on hypertension outcomes: a literature review. Telemedicine and e-Health. 2010;16(7):830--838. 
+AbuDagga A, Resnick H, Alwan M.2010. Impact of blood pressure telemonitoring on hypertension outcomes: a literature review. Telemedicine and e-Health. 16(7):830--838. 
 \bibitem{tasminh2experience}
-Jones M, Greenfield S, Bray E, Baral- Grant S, Hobbs F, Holder R et al. Patients' experiences of self-monitoring blood pressure and self-titration of medication: the TASMINH2 trial qualitative study. British Journal of General Practice. 2012;62(595):135--142. 
+Jones M, Greenfield S, Bray E, Baral- Grant S, Hobbs F, Holder R et al. 2012.Patients' experiences of self-monitoring blood pressure and self-titration of medication: the TASMINH2 trial qualitative study. British Journal of General Practice. 62(595):135--142. 
 \bibitem{TM1}
-McKinstry B, Hanley J, Wild S, Pagliari C, Paterson M, Lewis S et al. Telemonitoring based service redesign for the management of uncontrolled hypertension: multicentre randomised controlled trial. BMJ: British Medical Journal. 2013;346. 
+McKinstry B, Hanley J, Wild S, Pagliari C, Paterson M, Lewis S et al. 2013.Telemonitoring based service redesign for the management of uncontrolled hypertension: multicentre randomised controlled trial. BMJ: British Medical Journal. 346. 
 \bibitem{TM2}
-Coye M, Haselkorn A, DeMello S. Remote patient management: technology-enabled innovation and evolving business models for chronic disease care. Health Affairs. 2009;28(1):126--135. 
+Coye M, Haselkorn A, DeMello S. 2009.Remote patient management: technology-enabled innovation and evolving business models for chronic disease care. Health Affairs. 28(1):126--135. 
 \bibitem{TM3}
-Steventon A, Bardsley M, Billings J, Dixon J, Doll H, Hirani S et al. Effect of telehealth on use of secondary care and mortality: findings from the Whole System Demonstrator cluster randomised trial. BMJ: British Medical Journal. 2012;344. 
+Steventon A, Bardsley M, Billings J, Dixon J, Doll H, Hirani S et al. 2012. Effect of telehealth on use of secondary care and mortality: findings from the Whole System Demonstrator cluster randomised trial. BMJ: British Medical Journal. 344. 
 \bibitem{TM4}
-S, ers C, Rogers A, Bowen R, Bower P, Hirani S et al. Exploring barriers to participation and adoption of telehealth and telecare within the Whole System Demonstrator trial: a qualitative study. BMC health services research. 2012;12(1):220. 
+S, ers C, Rogers A, Bowen R, Bower P, Hirani S et al. 2012. Exploring barriers to participation and adoption of telehealth and telecare within the Whole System Demonstrator trial: a qualitative study. BMC health services research. 12(1):220. 
 \bibitem{TM5}
-Wootton R. Twenty years of telemedicine in chronic disease management--an evidence synthesis. Journal of Telemedicine and Telecare. 2012;18(4):211--220.
+Wootton R. 2012. Twenty years of telemedicine in chronic disease management--an evidence synthesis. Journal of Telemedicine and Telecare. 18(4):211--220.
 \bibitem{TM6}
-Par\'e G, Jaana M, Sicotte C. Systematic review of home telemonitoring for chronic diseases: the evidence base. Journal of the American Medical Informatics Association. 2007;14(3):269--277. 
+Par\'e G, Jaana M, Sicotte C. 2007. Systematic review of home telemonitoring for chronic diseases: the evidence base. Journal of the American Medical Informatics Association. 14(3):269--277. 
 \bibitem{Im1}
-Artinian N, Washington O, Templin T. Effects of home telemonitoring and community-based monitoring on blood pressure control in urban African Americans: a pilot study. Heart \& Lung: The Journal of Acute and Critical Care. 2001;30(3):191--199. 
+Artinian N, Washington O, Templin T. 2001. Effects of home telemonitoring and community-based monitoring on blood pressure control in urban African Americans: a pilot study. Heart \& Lung: The Journal of Acute and Critical Care. 30(3):191--199. 
 \bibitem{Im2}
- Artinian N, Flack J, Nordstrom C, Hockman E, Washington O, Jen K et al. Effects of nurse-managed telemonitoring on blood pressure at 12-month follow-up among urban African Americans. Nursing research. 2007;56(5):312--322. 
+ Artinian N, Flack J, Nordstrom C, Hockman E, Washington O, Jen K et al. 2007. Effects of nurse-managed telemonitoring on blood pressure at 12-month follow-up among urban African Americans. Nursing research. 56(5):312--322. 
 \bibitem{Im3}
-Bobrie G, Postel-Vinay N, Delonca J, Corvol P. Self-Measurement and Self-Titration in Hypertension* A Pilot Telemedicine Study. American journal of hypertension. 2007;20(12):1314--1320. 
+Bobrie G, Postel-Vinay N, Delonca J, Corvol P. 2007. Self-Measurement and Self-Titration in Hypertension* A Pilot Telemedicine Study. American journal of hypertension. 20(12):1314--1320. 
 \bibitem{Im4}
-Bondmass M, Bolger N, Castro G, Avitall B. The effect of home monitoring and telemanagement on blood pressure control among African Americans. Telemedicine Journal. 2000;6(1):15--23. 
+Bondmass M, Bolger N, Castro G, Avitall B. 2000. The effect of home monitoring and telemanagement on blood pressure control among African Americans. Telemedicine Journal. 6(1):15--23. 
 \bibitem{Im5}
-Bosworth H, Olsen M, Grubber J. Two self-management interventions to improve hypertension control: A randomized trial. Ann Intern Med. 2009;151:687-695. 
+Bosworth H, Olsen M, Grubber J.2009.  Two self-management interventions to improve hypertension control: A randomized trial. Ann Intern Med. 151:687-695. 
 \bibitem{Im6}
-Carrasco M, Salvador C, Sagredo P, M\'arquez-Montes J, de Mingo M, Fragua J et al. Impact of Patient--General Practitioner Short-Messages-Based Interaction on the Control of Hypertension in a Follow-up Service for Low-to-Medium Risk Hypertensive Patients: A Randomized Controlled Trial. Information Technology in Biomedicine, IEEE Transactions on. 2008;12(6):780--791. 
+Carrasco M, Salvador C, Sagredo P, M\'arquez-Montes J, de Mingo M, Fragua J et al. 2008.  Impact of Patient--General Practitioner Short-Messages-Based Interaction on the Control of Hypertension in a Follow-up Service for Low-to-Medium Risk Hypertensive Patients: A Randomized Controlled Trial. Information Technology in Biomedicine, IEEE Transactions on. 12(6):780--791. 
 \bibitem{Im7}
  Friedman R, Kazis L, Jette A, Smith M, Stollerman J, Torgerson J et al. A telecommunications system for monitoring and counseling patients with hypertension: impact on medication adherence and blood pressure control. American journal of hypertension.
 \bibitem{Im8}
-Fursse J, Clarke M, Jones R, Khemka S, Findlay G. Early experience in using telemonitoring for the management of chronic disease in primary care. Journal of telemedicine and telecare. 2008;14(3):122--124. 
+Fursse J, Clarke M, Jones R, Khemka S, Findlay G.  2008. Early experience in using telemonitoring for the management of chronic disease in primary care. Journal of telemedicine and telecare.14(3):122--124. 
 \bibitem{Im9}
- Green B, Cook A, Ralston J, Fishman P, Catz S, Carlson J et al. Effectiveness of home blood pressure monitoring, Web communication, and pharmacist care on hypertension control: a randomized controlled trial. Jama. 2008;299(24):2857--2867. 
+ Green B, Cook A, Ralston J, Fishman P, Catz S, Carlson J et al. 2008. Effectiveness of home blood pressure monitoring, Web communication, and pharmacist care on hypertension control: a randomized controlled trial. Jama. 299(24):2857--2867. 
 \bibitem{Im10}
-Logan A, McIsaac W, Tisler A, Irvine M, Saunders A, Dunai A et al. Mobile Phone--Based Remote Patient Monitoring System for Management of Hypertension in Diabetic Patients*. American journal of hypertension. 2007;20(9):942--948. 
+Logan A, McIsaac W, Tisler A, Irvine M, Saunders A, Dunai A et al. 2007. Mobile Phone--Based Remote Patient Monitoring System for Management of Hypertension in Diabetic Patients*. American journal of hypertension. 20(9):942--948. 
 \bibitem{Im11}
-Madsen L, Kirkegaard P, Pedersen E. Blood pressure control during telemonitoring of home blood pressure. A randomized controlled trial during 6 months. Blood pressure. 2008;17(2):78--86. 
+Madsen L, Kirkegaard P, Pedersen E. 2008. Blood pressure control during telemonitoring of home blood pressure. A randomized controlled trial during 6 months. Blood pressure. 17(2):78--86. 
 \bibitem{Im12}
-Parati G, Omboni S, Albini F, Piantoni L, Giuliano A, Revera M et al. Home blood pressure telemonitoring improves hypertension control in general practice. The TeleBPCare study. Journal of hypertension. 2009;27(1):198--203. 
+Parati G, Omboni S, Albini F, Piantoni L, Giuliano A, Revera M et al. 2009. Home blood pressure telemonitoring improves hypertension control in general practice. The TeleBPCare study. Journal of hypertension. 27(1):198--203. 
 \bibitem{Im13}
-Park M, Kim H, Kim K. Cellular phone and Internet-based individual intervention on blood pressure and obesity in obese patients with hypertension. International journal of medical informatics. 2009;78(10):704--710. 
+Park M, Kim H, Kim K. 2009. Cellular phone and Internet-based individual intervention on blood pressure and obesity in obese patients with hypertension. International journal of medical informatics. 78(10):704--710. 
 \bibitem{Im14}
-Rogers M, Small D, Buchan D. Home monitoring service improves mean arterial pressure in patients with essential hypertension. A randomized, controlled trial. Ann Intern Med. 2001;134:102--1032. 
+Rogers M, Small D, Buchan D. 2001. Home monitoring service improves mean arterial pressure in patients with essential hypertension. A randomized, controlled trial. Ann Intern Med. 134:102--1032. 
 \bibitem{Im15}
- Rinfret S, Lussier M, Peirce A, Duhamel F, Cossette S, Lalonde L et al. The impact of a multidisciplinary information technology--supported program on blood pressure control in primary care. Circulation: Cardiovascular Quality and Outcomes. 2009;2(3):170--177. 
+ Rinfret S, Lussier M, Peirce A, Duhamel F, Cossette S, Lalonde L et al. 2009. The impact of a multidisciplinary information technology--supported program on blood pressure control in primary care. Circulation: Cardiovascular Quality and Outcomes. 2(3):170--177. 
 \bibitem{Lit1}
-Dorr D, Bonner L, Cohen A, Shoai R, Perrin R, Chaney E et al. Informatics systems to promote improved care for chronic illness: a literature review. Journal of the American Medical Informatics Association. 2007;14(2):156--163. 
+Dorr D, Bonner L, Cohen A, Shoai R, Perrin R, Chaney E et al. 2007. Informatics systems to promote improved care for chronic illness: a literature review. Journal of the American Medical Informatics Association. 14(2):156--163. 
 \bibitem{app1}
 Numbersmatter2.me. BP Watch [Internet]. [17 April 2014]. Available from: http://numbersmatter2.me/
 \bibitem{UIiBP}

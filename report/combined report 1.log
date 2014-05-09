@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.12.19)  9 MAY 2014 07:41
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.24)  9 MAY 2014 08:19
+>>>>>>> FETCH_HEAD
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -856,7 +860,12 @@ LaTeX Info: Redefining \nameref on input line 127.
 
 (./combined report 1.out) (./combined report 1.out)
 \@outlinefile=\write5
+<<<<<<< HEAD
 \openout5 = `"combined report 1.out"'.
+=======
+ <titleimg.png, id=266, 257.96375pt x 228.855pt>
+File: titleimg.png Graphic file (type png)
+>>>>>>> FETCH_HEAD
 
 
 <titleimg.png, id=276, 257.96375pt x 228.855pt>
@@ -870,9 +879,26 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 147.
  [1
 
+<<<<<<< HEAD
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./title
 img.png>]
 <declaration.pdf, id=287, page=1, 597.55246pt x 845.07718pt>
+=======
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/user/Documents/G
+itHub/Real/remote-care-application/report/titleimg.png>]
+<declaration.pdf, id=275, 597.55246pt x 845.07718pt>
+File: declaration.pdf Graphic file (type pdf)
+ <use declaration.pdf>
+Package pdftex.def Info: declaration.pdf used on input line 162.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: declaration.pdf Graphic file (type pdf)
+
+<use declaration.pdf>
+Package pdftex.def Info: declaration.pdf used on input line 162.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+
+<declaration.pdf, id=278, page=1, 597.55246pt x 845.07718pt>
+>>>>>>> FETCH_HEAD
 File: declaration.pdf Graphic file (type pdf)
 
 <use declaration.pdf, page 1>
@@ -988,6 +1014,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 1.
  [5]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+<<<<<<< HEAD
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 37.
  [6]
 Overfull \hbox (1.29184pt too wide) detected at line 114
@@ -1006,6 +1033,21 @@ Overfull \hbox (1.29184pt too wide) detected at line 117
 
 
 Overfull \hbox (1.29184pt too wide) detected at line 119
+=======
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 32.
+ [6] [7]
+Overfull \hbox (1.29184pt too wide) detected at line 112
+ []\T1/phv/m/n/10.95 102
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 114
+ []\T1/phv/m/n/10.95 104
+ []
+
+
+Overfull \hbox (1.29184pt too wide) detected at line 117
+>>>>>>> FETCH_HEAD
  []\T1/phv/m/n/10.95 107
  []
 
@@ -1020,6 +1062,7 @@ Overfull \hbox (1.29184pt too wide) detected at line 122
 
  [8] [9]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+<<<<<<< HEAD
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 198.
 LaTeX Font Info:    Try loading font information for OMS+phv on input line 200.
 
@@ -1083,9 +1126,86 @@ File: appstandard.png Graphic file (type png)
 Package pdftex.def Info: appstandard.png used on input line 548.
 (pdftex.def)             Requested size: 500.484pt x 222.14899pt.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 551.
+=======
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 190.
+ <TreatPath.jpeg, id=426, 1731.46875pt x 2157.05875pt>
+File: TreatPath.jpeg Graphic file (type jpg)
+
+<use TreatPath.jpeg>
+Package pdftex.def Info: TreatPath.jpeg used on input line 196.
+(pdftex.def)             Requested size: 519.44464pt x 647.12262pt.
+
+Overfull \hbox (18.96065pt too wide) in paragraph at lines 196--197
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 2.56363pt on input line 200.
+
+[9] [10 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/Tre
+atPath.jpeg>] [11] [12] [13] [14] [15]
+<BPwatch.jpg, id=511, 1099.10625pt x 635.37375pt>
+File: BPwatch.jpg Graphic file (type jpg)
+ <use BPwatch.jpg>
+Package pdftex.def Info: BPwatch.jpg used on input line 313.
+(pdftex.def)             Requested size: 439.6347pt x 254.14499pt.
+ [16
+
+ <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/BPwatch.jp
+g>]
+<AppsUI.jpg, id=529, 1480.02937pt x 618.81187pt>
+File: AppsUI.jpg Graphic file (type jpg)
+ <use AppsUI.jpg>
+Package pdftex.def Info: AppsUI.jpg used on input line 330.
+(pdftex.def)             Requested size: 444.01224pt x 185.64499pt.
+ [17 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/AppsUI
+.jpg>]
+[18]
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 362.
+
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsphv.fd"
+File: omsphv.fd 
+)
+LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 362.
+ [19]
+[20] [21] <network.png, id=586, 507.8975pt x 356.33125pt>
+File: network.png Graphic file (type png)
+ <use network.png>
+Package pdftex.def Info: network.png used on input line 432.
+(pdftex.def)             Requested size: 253.94814pt x 178.16518pt.
+
+[22 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/network
+.png>] [23] <csslink.png, id=602, 527.9725pt x 18.0675pt>
+File: csslink.png Graphic file (type png)
+ <use csslink.png>
+Package pdftex.def Info: csslink.png used on input line 461.
+(pdftex.def)             Requested size: 395.37898pt x 13.52989pt.
+
+<exampleclass.png, id=603, 193.72375pt x 60.225pt>
+File: exampleclass.png Graphic file (type png)
+ <use exampleclass.png>
+Package pdftex.def Info: exampleclass.png used on input line 465.
+(pdftex.def)             Requested size: 95.09317pt x 29.56288pt.
+
+<patientUI.png, id=606, 560.0925pt x 772.8875pt>
+File: patientUI.png Graphic file (type png)
+ <use patientUI.png>
+Package pdftex.def Info: patientUI.png used on input line 480.
+(pdftex.def)             Requested size: 187.68149pt x 258.99261pt.
+ [24 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/csslin
+k.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/exam
+pleclass.png>] <appstandard.png, id=617, 1153.30875pt x 511.9125pt>
+File: appstandard.png Graphic file (type png)
+ <use appstandard.png>
+Package pdftex.def Info: appstandard.png used on input line 489.
+(pdftex.def)             Requested size: 500.484pt x 222.14899pt.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 492.
+>>>>>>> FETCH_HEAD
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+<<<<<<< HEAD
 ) [28 <./appstandard.png>] <logincode.png, id=662, 1464.47125pt x 107.40125pt>
 File: logincode.png Graphic file (type png)
 
@@ -1118,11 +1238,56 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
 [31 <./historyJS.png>]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
+=======
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/patient
+UI.png>] <logincode.png, id=629, 1464.47125pt x 107.40125pt>
+File: logincode.png Graphic file (type png)
+
+<use logincode.png>
+Package pdftex.def Info: logincode.png used on input line 502.
+(pdftex.def)             Requested size: 500.484pt x 36.70439pt.
+ [26 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/appsta
+ndard.png>]
+<iphoneicon.png, id=636, 486.81876pt x 616.3025pt>
+File: iphoneicon.png Graphic file (type png)
+ <use iphoneicon.png>
+Package pdftex.def Info: iphoneicon.png used on input line 508.
+(pdftex.def)             Requested size: 34.08078pt x 43.14557pt.
+
+<updateform.png, id=640, 370.38374pt x 135.50626pt>
+File: updateform.png Graphic file (type png)
+ <use updateform.png>
+Package pdftex.def Info: updateform.png used on input line 518.
+(pdftex.def)             Requested size: 175.17244pt x 64.08699pt.
+
+[27 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/loginco
+de.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/iph
+oneicon.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/repor
+t/updateform.png>] <historyJS.png, id=654, 639.38875pt x 211.79124pt>
+File: historyJS.png Graphic file (type png)
+
+<use historyJS.png>
+Package pdftex.def Info: historyJS.png used on input line 533.
+(pdftex.def)             Requested size: 237.72913pt x 78.7461pt.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 543.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 543.
+ [28 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/histor
+yJS.png>]
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+>>>>>>> FETCH_HEAD
 )
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown code defaults to 0 on input l
+<<<<<<< HEAD
 ine 642.
  [32]
 <pageLayout.png, id=733, 548.0475pt x 228.855pt>
@@ -1142,12 +1307,35 @@ Package pdftex.def Info: siteDesignGeneral.jpg used on input line 740.
 File: login_design.png Graphic file (type png)
  <use login_design.png>
 Package pdftex.def Info: login_design.png used on input line 753.
+=======
+ine 583.
+ [29]
+[30] <pageLayout.png, id=707, 548.0475pt x 228.855pt>
+File: pageLayout.png Graphic file (type png)
+ <use pageLayout.png>
+Package pdftex.def Info: pageLayout.png used on input line 656.
+(pdftex.def)             Requested size: 274.02307pt x 114.42722pt.
+
+[31] <siteDesignGeneral.jpg, id=760, 894.34125pt x 374.14781pt>
+File: siteDesignGeneral.jpg Graphic file (type jpg)
+
+<use siteDesignGeneral.jpg>
+Package pdftex.def Info: siteDesignGeneral.jpg used on input line 681.
+(pdftex.def)             Requested size: 447.16953pt x 187.07344pt.
+ [32 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/pageLa
+yout.png>]
+<login_design.png, id=769, 432.11438pt x 318.43968pt>
+File: login_design.png Graphic file (type png)
+ <use login_design.png>
+Package pdftex.def Info: login_design.png used on input line 694.
+>>>>>>> FETCH_HEAD
 (pdftex.def)             Requested size: 259.27061pt x 191.06528pt.
 
 [35 <./pageLayout.png>] [36 <./siteDesignGeneral.jpg> <./login_design.png>]
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2013/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2004/09/05 1.3 listings language file
 ) [37]
@@ -1166,55 +1354,114 @@ Package pdftex.def Info: tallis_plan_patientdata.jpg used on input line 844.
 (pdftex.def)             Requested size: 310.15916pt x 87.9286pt.
 
 Overfull \hbox (1.71675pt too wide) in paragraph at lines 856--856
+=======
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
+File: lstlang2.sty 2014/03/04 1.5c listings language file
+) [34]
+<tallis_keystone_top.jpg, id=796, 335.75438pt x 43.66313pt>
+File: tallis_keystone_top.jpg Graphic file (type jpg)
+
+<use tallis_keystone_top.jpg>
+Package pdftex.def Info: tallis_keystone_top.jpg used on input line 763.
+(pdftex.def)             Requested size: 268.60387pt x 34.93053pt.
+ [35 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/tallis
+_keystone_top.jpg>]
+<tallis_plan_patientdata.jpg, id=825, 387.69844pt x 109.91063pt>
+File: tallis_plan_patientdata.jpg Graphic file (type jpg)
+
+<use tallis_plan_patientdata.jpg>
+Package pdftex.def Info: tallis_plan_patientdata.jpg used on input line 785.
+(pdftex.def)             Requested size: 310.15916pt x 87.9286pt.
+ [36 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/tallis
+_plan_patientdata.jpg>]
+Overfull \hbox (1.71675pt too wide) in paragraph at lines 797--797
+>>>>>>> FETCH_HEAD
 []\T1/phv/b/n/10.95 Candidate
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 856--856
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 797--797
+>>>>>>> FETCH_HEAD
 []\T1/phv/b/n/10.95 Target
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 856--856
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 797--797
+>>>>>>> FETCH_HEAD
 \T1/phv/b/n/10.95 BP
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (4.77168pt too wide) in paragraph at lines 858--858
+=======
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 799--799
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/10.95 Systolic140| 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 3291) in paragraph at lines 858--859
+=======
+Underfull \hbox (badness 3291) in paragraph at lines 799--800
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/10.95 Patient must not have
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (4.77168pt too wide) in paragraph at lines 860--860
+=======
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 801--801
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/10.95 Systolic150| 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 3291) in paragraph at lines 860--861
+=======
+Underfull \hbox (badness 3291) in paragraph at lines 801--802
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/10.95 Patient must not have
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (4.77168pt too wide) in paragraph at lines 862--862
+=======
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 803--803
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/10.95 Systolic135| 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 3291) in paragraph at lines 862--863
+=======
+Underfull \hbox (badness 3291) in paragraph at lines 803--804
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/10.95 Patient must not have
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (4.77168pt too wide) in paragraph at lines 864--864
+=======
+Overfull \hbox (4.77168pt too wide) in paragraph at lines 805--805
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/10.95 Systolic145| 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 3291) in paragraph at lines 864--865
 []\T1/phv/m/n/10.95 Patient must not have
  []
@@ -1245,12 +1492,47 @@ File: comorbidity.jpg Graphic file (type jpg)
 
 <use comorbidity.jpg>
 Package pdftex.def Info: comorbidity.jpg used on input line 1013.
+=======
+Underfull \hbox (badness 3291) in paragraph at lines 805--806
+[]\T1/phv/m/n/10.95 Patient must not have
+ []
+
+<tallis_task_top.jpg, id=840, 429.10312pt x 108.405pt>
+File: tallis_task_top.jpg Graphic file (type jpg)
+
+<use tallis_task_top.jpg>
+Package pdftex.def Info: tallis_task_top.jpg used on input line 820.
+(pdftex.def)             Requested size: 343.28296pt x 86.7241pt.
+ Excluding 'comment' comment. [37 <C:/Users/user/Documents/GitHub/Real/remote-c
+are-application/report/tallis_task_top.jpg>]
+<Tallis_UI_unsuitable.png, id=852, 659.55884pt x 485.3501pt>
+File: Tallis_UI_unsuitable.png Graphic file (type png)
+
+<use Tallis_UI_unsuitable.png>
+Package pdftex.def Info: Tallis_UI_unsuitable.png used on input line 873.
+(pdftex.def)             Requested size: 461.68805pt x 339.74275pt.
+ [38 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/Tallis
+_UI_unsuitable.png>]
+<formCheckBox.jpg, id=861, 568.37344pt x 258.9675pt>
+File: formCheckBox.jpg Graphic file (type jpg)
+ <use formCheckBox.jpg>
+Package pdftex.def Info: formCheckBox.jpg used on input line 891.
+(pdftex.def)             Requested size: 284.18602pt x 129.48341pt.
+
+[39 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/formChe
+ckBox.jpg>] <comorbidity.jpg, id=885, 491.58656pt x 429.10312pt>
+File: comorbidity.jpg Graphic file (type jpg)
+
+<use comorbidity.jpg>
+Package pdftex.def Info: comorbidity.jpg used on input line 954.
+>>>>>>> FETCH_HEAD
 (pdftex.def)             Requested size: 393.26978pt x 343.28296pt.
  [43] [44 <./comorbidity.jpg>] [45] [46] [47
 
 ] [48
 
 ]
+<<<<<<< HEAD
 <indexover.png, id=1118, 1378.14874pt x 685.56125pt>
 File: indexover.png Graphic file (type png)
  <use indexover.png>
@@ -1376,10 +1658,154 @@ Overfull \hbox (1.48442pt too wide) in paragraph at lines 1341--1342
 tutorial5.png> <./tutorial6.png>] [55 <./tutorialCSS.png> <./tutorial1jQuery.pn
 g>]
 Overfull \hbox (1.06136pt too wide) in paragraph at lines 1383--1383
+=======
+<indexover.png, id=1081, 1378.14874pt x 685.56125pt>
+File: indexover.png Graphic file (type png)
+ <use indexover.png>
+Package pdftex.def Info: indexover.png used on input line 1187.
+(pdftex.def)             Requested size: 500.484pt x 248.96724pt.
+
+<CSSscaling.png, id=1082, 306.14375pt x 289.08pt>
+File: CSSscaling.png Graphic file (type png)
+ <use CSSscaling.png>
+Package pdftex.def Info: CSSscaling.png used on input line 1196.
+(pdftex.def)             Requested size: 122.45532pt x 115.62994pt.
+
+<ipad.png, id=1083, 3276.24pt x 2457.18pt>
+File: ipad.png Graphic file (type png)
+ <use ipad.png>
+Package pdftex.def Info: ipad.png used on input line 1198.
+(pdftex.def)             Requested size: 91.73409pt x 68.80057pt.
+ [46 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/indexo
+ver.png>]
+<selectorphp.png, id=1096, 521.95pt x 181.67876pt>
+File: selectorphp.png Graphic file (type png)
+ <use selectorphp.png>
+Package pdftex.def Info: selectorphp.png used on input line 1207.
+(pdftex.def)             Requested size: 295.28372pt x 102.78174pt.
+
+<selectorCSS.png, id=1097, 499.8675pt x 409.53pt>
+File: selectorCSS.png Graphic file (type png)
+ <use selectorCSS.png>
+Package pdftex.def Info: selectorCSS.png used on input line 1211.
+(pdftex.def)             Requested size: 195.18845pt x 159.90976pt.
+
+[47 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/CSSscal
+ing.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/ip
+ad.png>] <selectfunc.png, id=1107, 335.2525pt x 121.45375pt>
+File: selectfunc.png Graphic file (type png)
+
+<use selectfunc.png>
+Package pdftex.def Info: selectfunc.png used on input line 1219.
+(pdftex.def)             Requested size: 167.62584pt x 60.72672pt.
+ [48 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/select
+orphp.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/
+selectorCSS.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/r
+eport/selectfunc.png>]
+<searchbarhtml.png, id=1118, 804.00375pt x 90.3375pt>
+File: searchbarhtml.png Graphic file (type png)
+ <use searchbarhtml.png>
+Package pdftex.def Info: searchbarhtml.png used on input line 1228.
+(pdftex.def)             Requested size: 321.59581pt x 36.13435pt.
+
+[49 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/searchb
+arhtml.png>] <infoSQL.png, id=1128, 502.87875pt x 91.34125pt>
+File: infoSQL.png Graphic file (type png)
+
+<use infoSQL.png>
+Package pdftex.def Info: infoSQL.png used on input line 1241.
+(pdftex.def)             Requested size: 175.17244pt x 31.81659pt.
+ <medtable.png, id=1129, 341.275pt x 273.02pt>
+File: medtable.png Graphic file (type png)
+
+<use medtable.png>
+Package pdftex.def Info: medtable.png used on input line 1243.
+(pdftex.def)             Requested size: 175.17244pt x 140.1382pt.
+ <buttonscripts.png, id=1131, 638.385pt x 61.22874pt>
+File: buttonscripts.png Graphic file (type png)
+
+<use buttonscripts.png>
+Package pdftex.def Info: buttonscripts.png used on input line 1250.
+(pdftex.def)             Requested size: 245.2399pt x 23.52127pt.
+ <progressbar.png, id=1132, 652.4375pt x 137.51375pt>
+File: progressbar.png Graphic file (type png)
+
+<use progressbar.png>
+Package pdftex.def Info: progressbar.png used on input line 1254.
+(pdftex.def)             Requested size: 245.2399pt x 51.68922pt.
+ <tutorial1.png, id=1134, 1200.485pt x 632.3625pt>
+File: tutorial1.png Graphic file (type png)
+
+<use tutorial1.png>
+Package pdftex.def Info: tutorial1.png used on input line 1265.
+(pdftex.def)             Requested size: 196.19266pt x 103.34145pt.
+ <tutorial2.png, id=1135, 1199.48125pt x 630.355pt>
+File: tutorial2.png Graphic file (type png)
+
+<use tutorial2.png>
+Package pdftex.def Info: tutorial2.png used on input line 1266.
+(pdftex.def)             Requested size: 196.19266pt x 103.09995pt.
+ <tutorial3.png, id=1136, 1202.4925pt x 632.3625pt>
+File: tutorial3.png Graphic file (type png)
+
+<use tutorial3.png>
+Package pdftex.def Info: tutorial3.png used on input line 1267.
+(pdftex.def)             Requested size: 196.19266pt x 103.16777pt.
+ <tutorial4.png, id=1137, 1203.49625pt x 632.3625pt>
+File: tutorial4.png Graphic file (type png)
+
+<use tutorial4.png>
+Package pdftex.def Info: tutorial4.png used on input line 1271.
+(pdftex.def)             Requested size: 196.19266pt x 103.08093pt.
+ <tutorial5.png, id=1138, 1202.4925pt x 632.3625pt>
+File: tutorial5.png Graphic file (type png)
+
+<use tutorial5.png>
+Package pdftex.def Info: tutorial5.png used on input line 1272.
+(pdftex.def)             Requested size: 196.19266pt x 103.16777pt.
+ <tutorial6.png, id=1139, 1202.4925pt x 631.35875pt>
+File: tutorial6.png Graphic file (type png)
+
+<use tutorial6.png>
+Package pdftex.def Info: tutorial6.png used on input line 1273.
+(pdftex.def)             Requested size: 196.19266pt x 103.00401pt.
+ <tutorialCSS.png, id=1141, 392.46625pt x 253.94875pt>
+File: tutorialCSS.png Graphic file (type png)
+
+<use tutorialCSS.png>
+Package pdftex.def Info: tutorialCSS.png used on input line 1280.
+(pdftex.def)             Requested size: 156.9837pt x 101.5777pt.
+ <tutorial1jQuery.png, id=1142, 441.65pt x 198.7425pt>
+File: tutorial1jQuery.png Graphic file (type png)
+
+<use tutorial1jQuery.png>
+Package pdftex.def Info: tutorial1jQuery.png used on input line 1282.
+(pdftex.def)             Requested size: 176.65686pt x 79.49557pt.
+
+Overfull \hbox (1.48442pt too wide) in paragraph at lines 1282--1283
+ [][] 
+ []
+
+[50 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/infoSQL
+.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/medta
+ble.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/bu
+ttonscripts.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/r
+eport/progressbar.png>] [51 <C:/Users/user/Documents/GitHub/Real/remote-care-ap
+plication/report/tutorial1.png> <C:/Users/user/Documents/GitHub/Real/remote-car
+e-application/report/tutorial2.png> <C:/Users/user/Documents/GitHub/Real/remote
+-care-application/report/tutorial3.png> <C:/Users/user/Documents/GitHub/Real/re
+mote-care-application/report/tutorial4.png> <C:/Users/user/Documents/GitHub/Rea
+l/remote-care-application/report/tutorial5.png> <C:/Users/user/Documents/GitHub
+/Real/remote-care-application/report/tutorial6.png>] [52 <C:/Users/user/Documen
+ts/GitHub/Real/remote-care-application/report/tutorialCSS.png> <C:/Users/user/D
+ocuments/GitHub/Real/remote-care-application/report/tutorial1jQuery.png>]
+Overfull \hbox (1.06136pt too wide) in paragraph at lines 1324--1324
+>>>>>>> FETCH_HEAD
  [][][][]\T1/phv/m/n/10.95 Uncertainty 
  []
 
 
+<<<<<<< HEAD
 Overfull \hbox (1.06136pt too wide) in paragraph at lines 1384--1384
  [][][][]\T1/phv/m/n/10.95 Uncertainty 
  []
@@ -1414,15 +1840,57 @@ Package pdftex.def Info: linregbad.png used on input line 1537.
 (pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
 
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 1537--1538
+=======
+Overfull \hbox (1.06136pt too wide) in paragraph at lines 1325--1325
+ [][][][]\T1/phv/m/n/10.95 Uncertainty 
+ []
+
+[53] [54] <linexmp.png, id=1183, 291.0875pt x 184.69pt>
+File: linexmp.png Graphic file (type png)
+ <use linexmp.png>
+Package pdftex.def Info: linexmp.png used on input line 1364.
+(pdftex.def)             Requested size: 116.43292pt x 73.87468pt.
+
+[55 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/linexmp
+.png>] [56] <replinreg.png, id=1228, 728.9634pt x 444.2196pt>
+File: replinreg.png Graphic file (type png)
+
+<use replinreg.png>
+Package pdftex.def Info: replinreg.png used on input line 1467.
+(pdftex.def)             Requested size: 291.58018pt x 177.6847pt.
+ [57] <linreggood.png, id=1234, 728.9634pt x 444.2196pt>
+File: linreggood.png Graphic file (type png)
+
+<use linreggood.png>
+Package pdftex.def Info: linreggood.png used on input line 1474.
+(pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1474--1475
+[][] 
+ []
+
+<linregbad.png, id=1235, 728.9634pt x 444.2196pt>
+File: linregbad.png Graphic file (type png)
+ <use linregbad.png>
+Package pdftex.def Info: linregbad.png used on input line 1478.
+(pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1478--1479
+>>>>>>> FETCH_HEAD
 [][] 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 2221) in paragraph at lines 1530--1541
+=======
+Underfull \hbox (badness 2221) in paragraph at lines 1471--1482
+>>>>>>> FETCH_HEAD
 \T1/phv/m/n/10.95 per-cent-age er-ror to be found. In
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 2617) in paragraph at lines 1530--1541
 \T1/phv/m/n/10.95 ex-cel the func-tion, =ABS(([@Day1]-
  []
@@ -1493,10 +1961,93 @@ Underfull \hbox (badness 1509) in paragraph at lines 1632--1637
 File: corrcheck.png Graphic file (type png)
  <use corrcheck.png>
 Package pdftex.def Info: corrcheck.png used on input line 1646.
+=======
+Underfull \hbox (badness 2617) in paragraph at lines 1471--1482
+\T1/phv/m/n/10.95 ex-cel the func-tion, =ABS(([@Day1]-
+ []
+
+[58 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/replinr
+eg.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/lin
+reggood.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/repor
+t/linregbad.png>] <correx.png, id=1246, 768.8725pt x 205.76875pt>
+File: correx.png Graphic file (type png)
+
+<use correx.png>
+Package pdftex.def Info: correx.png used on input line 1490.
+(pdftex.def)             Requested size: 350.33727pt x 93.75993pt.
+ [59 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/correx
+.png>] <corrgood.png, id=1261, 728.9634pt x 444.2196pt>
+File: corrgood.png Graphic file (type png)
+
+<use corrgood.png>
+Package pdftex.def Info: corrgood.png used on input line 1517.
+(pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1517--1518
+[][] 
+ []
+
+<corrbad.png, id=1262, 728.9634pt x 444.2196pt>
+File: corrbad.png Graphic file (type png)
+ <use corrbad.png>
+Package pdftex.def Info: corrbad.png used on input line 1521.
+(pdftex.def)             Requested size: 245.2399pt x 149.44655pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 1521--1522
+[][] 
+ []
+
+[60 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/corrgoo
+d.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/corr
+bad.png>] <DB1.png, id=1274, 580.1675pt x 74.2775pt>
+File: DB1.png Graphic file (type png)
+ <use DB1.png>
+Package pdftex.def Info: DB1.png used on input line 1541.
+(pdftex.def)             Requested size: 232.06288pt x 29.71046pt.
+
+<SQLBPquery.png, id=1275, 959.585pt x 45.16875pt>
+File: SQLBPquery.png Graphic file (type png)
+ <use SQLBPquery.png>
+Package pdftex.def Info: SQLBPquery.png used on input line 1549.
+(pdftex.def)             Requested size: 395.37898pt x 18.61096pt.
+
+<SQLBPprequery.png, id=1276, 209.78375pt x 20.075pt>
+File: SQLBPprequery.png Graphic file (type png)
+ <use SQLBPprequery.png>
+Package pdftex.def Info: SQLBPprequery.png used on input line 1553.
+(pdftex.def)             Requested size: 95.09317pt x 9.09982pt.
+
+<DB2.png, id=1277, 83.31125pt x 145.54375pt>
+File: DB2.png Graphic file (type png)
+ <use DB2.png>
+Package pdftex.def Info: DB2.png used on input line 1561.
+(pdftex.def)             Requested size: 33.3239pt x 58.21646pt.
+ [61 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/DB1.pn
+g> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/SQLBPque
+ry.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/SQL
+BPprequery.png>]
+<mainSQL.png, id=1288, 582.175pt x 834.11626pt>
+File: mainSQL.png Graphic file (type png)
+ <use mainSQL.png>
+Package pdftex.def Info: mainSQL.png used on input line 1570.
+(pdftex.def)             Requested size: 174.65384pt x 250.2368pt.
+
+Underfull \hbox (badness 1509) in paragraph at lines 1573--1578
+\T1/phv/m/n/10.95 can all be cal-cu-lated by sum(x*x), sum(y*y),
+ []
+
+[62 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/DB2.png
+> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/mainSQL.p
+ng>] <corrcheck.png, id=1300, 195.73125pt x 106.3975pt>
+File: corrcheck.png Graphic file (type png)
+ <use corrcheck.png>
+Package pdftex.def Info: corrcheck.png used on input line 1587.
+>>>>>>> FETCH_HEAD
 (pdftex.def)             Requested size: 117.43964pt x 63.83897pt.
 
 
 Package wrapfig Warning: Collision between wrapping environments on input line 
+<<<<<<< HEAD
 1652.
 
 <linbound.png, id=1340, 285.065pt x 108.405pt>
@@ -1518,11 +2069,35 @@ Package pdftex.def Info: dowhile.png used on input line 1658.
 (pdftex.def)             Requested size: 226.44774pt x 147.55237pt.
 
 Overfull \hbox (16.24539pt too wide) in paragraph at lines 1658--1659
+=======
+1593.
+
+<linbound.png, id=1303, 285.065pt x 108.405pt>
+File: linbound.png Graphic file (type png)
+ <use linbound.png>
+Package pdftex.def Info: linbound.png used on input line 1595.
+(pdftex.def)             Requested size: 171.04031pt x 65.04349pt.
+
+<boundtest1.png, id=1304, 316.18124pt x 96.36pt>
+File: boundtest1.png Graphic file (type png)
+ <use boundtest1.png>
+Package pdftex.def Info: boundtest1.png used on input line 1597.
+(pdftex.def)             Requested size: 189.7102pt x 57.81642pt.
+
+<dowhile.png, id=1305, 377.41pt x 245.91875pt>
+File: dowhile.png Graphic file (type png)
+ <use dowhile.png>
+Package pdftex.def Info: dowhile.png used on input line 1599.
+(pdftex.def)             Requested size: 226.44774pt x 147.55237pt.
+
+Overfull \hbox (16.24539pt too wide) in paragraph at lines 1599--1600
+>>>>>>> FETCH_HEAD
  [][] 
  []
 
 
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 16
+<<<<<<< HEAD
 60.
 
 [66 <./corrcheck.png> <./linbound.png> <./boundtest1.png> <./dowhile.png>]
@@ -1598,11 +2173,99 @@ Package pdftex.def Info: tallisDrugArg2.jpg used on input line 1908.
 (pdftex.def)             Requested size: 515.48709pt x 62.67148pt.
 
 Overfull \hbox (15.0031pt too wide) in paragraph at lines 1908--1909
+=======
+01.
+
+[63 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/corrche
+ck.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/lin
+bound.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/
+boundtest1.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/re
+port/dowhile.png>] <finalupdate.png, id=1317, 702.625pt x 16.06pt>
+File: finalupdate.png Graphic file (type png)
+
+<use finalupdate.png>
+Package pdftex.def Info: finalupdate.png used on input line 1609.
+(pdftex.def)             Requested size: 500.484pt x 11.43991pt.
+ <unbar.png, id=1318, 401.5pt x 71.26625pt>
+File: unbar.png Graphic file (type png)
+
+<use unbar.png>
+Package pdftex.def Info: unbar.png used on input line 1615.
+(pdftex.def)             Requested size: 140.5271pt x 24.94354pt.
+ [64 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/finalu
+pdate.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/
+unbar.png>] [65]
+<tallisEnq.jpg, id=1334, 474.27188pt x 118.94438pt>
+File: tallisEnq.jpg Graphic file (type jpg)
+ <use tallisEnq.jpg>
+Package pdftex.def Info: tallisEnq.jpg used on input line 1644.
+(pdftex.def)             Requested size: 237.13536pt x 59.47203pt.
+
+<tallisEnq2.jpg, id=1335, 144.54pt x 230.36063pt>
+File: tallisEnq2.jpg Graphic file (type jpg)
+ <use tallisEnq2.jpg>
+Package pdftex.def Info: tallisEnq2.jpg used on input line 1652.
+(pdftex.def)             Requested size: 72.2698pt x 115.18002pt.
+ [66 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/tallis
+Enq.jpg>] [67 <C:/Users/user/Documents/GitHub/Real/remote-care-application/repo
+rt/tallisEnq2.jpg>] <tallisAll2.jpg, id=1349, 523.20468pt x 295.1025pt>
+File: tallisAll2.jpg Graphic file (type jpg)
+
+<use tallisAll2.jpg>
+Package pdftex.def Info: tallisAll2.jpg used on input line 1674.
+(pdftex.def)             Requested size: 523.2034pt x 295.10176pt.
+
+Overfull \hbox (22.7194pt too wide) in paragraph at lines 1674--1675
+ [] 
+ []
+
+<tallisRead.jpg, id=1352, 739.26187pt x 289.08pt>
+File: tallisRead.jpg Graphic file (type jpg)
+ <use tallisRead.jpg>
+Package pdftex.def Info: tallisRead.jpg used on input line 1685.
+(pdftex.def)             Requested size: 517.47978pt x 202.35461pt.
+
+Overfull \hbox (16.99579pt too wide) in paragraph at lines 1685--1686
+ [] 
+ []
+
+[68 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/tallisA
+ll2.jpg>] [69 <C:/Users/user/Documents/GitHub/Real/remote-care-application/repo
+rt/tallisRead.jpg>]
+<tallisTreatmentChange.jpg, id=1366, 575.14874pt x 289.08pt>
+File: tallisTreatmentChange.jpg Graphic file (type jpg)
+
+<use tallisTreatmentChange.jpg>
+Package pdftex.def Info: tallisTreatmentChange.jpg used on input line 1718.
+(pdftex.def)             Requested size: 517.62909pt x 260.16959pt.
+
+Overfull \hbox (17.1451pt too wide) in paragraph at lines 1718--1719
+ [] 
+ []
+
+[70 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/tallisT
+reatmentChange.jpg>] [71] [72] [73]
+<tallisNewDrug.jpg, id=1448, 461.47406pt x 402.00188pt>
+File: tallisNewDrug.jpg Graphic file (type jpg)
+
+<use tallisNewDrug.jpg>
+Package pdftex.def Info: tallisNewDrug.jpg used on input line 1839.
+(pdftex.def)             Requested size: 369.17973pt x 321.60193pt.
+ <tallisDrugArg2.jpg, id=1454, 687.31781pt x 83.5622pt>
+File: tallisDrugArg2.jpg Graphic file (type jpg)
+
+<use tallisDrugArg2.jpg>
+Package pdftex.def Info: tallisDrugArg2.jpg used on input line 1849.
+(pdftex.def)             Requested size: 515.48709pt x 62.67148pt.
+
+Overfull \hbox (15.0031pt too wide) in paragraph at lines 1849--1850
+>>>>>>> FETCH_HEAD
  [] 
  []
 
 [77
 
+<<<<<<< HEAD
  <./tallisNewDrug.jpg>]
 <tallisDoseChange.jpg, id=1504, 295.85532pt x 132.495pt>
 File: tallisDoseChange.jpg Graphic file (type jpg)
@@ -1663,10 +2326,80 @@ Package pdftex.def Info: strokecost.png used on input line 2686.
 (pdftex.def)             Requested size: 143.73445pt x 103.98665pt.
 
 Underfull \hbox (badness 3281) in paragraph at lines 2690--2706
+=======
+ <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/tallisNewD
+rug.jpg>] <tallisDoseChange.jpg, id=1465, 295.85532pt x 132.495pt>
+File: tallisDoseChange.jpg Graphic file (type jpg)
+
+<use tallisDoseChange.jpg>
+Package pdftex.def Info: tallisDoseChange.jpg used on input line 1863.
+(pdftex.def)             Requested size: 295.85458pt x 132.49466pt.
+ [75 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/tallis
+DrugArg2.jpg> <C:/Users/user/Documents/GitHub/Real/remote-care-application/repo
+rt/tallisDoseChange.jpg>]
+<tallisCheckup.jpg, id=1472, 437.38406pt x 97.86563pt>
+File: tallisCheckup.jpg Graphic file (type jpg)
+ <use tallisCheckup.jpg>
+Package pdftex.def Info: tallisCheckup.jpg used on input line 1887.
+(pdftex.def)             Requested size: 437.38298pt x 97.86537pt.
+
+[76 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/tallisC
+heckup.jpg>] <tallisUItable.jpg, id=1483, 239.39438pt x 203.25937pt>
+File: tallisUItable.jpg Graphic file (type jpg)
+
+<use tallisUItable.jpg>
+Package pdftex.def Info: tallisUItable.jpg used on input line 1900.
+(pdftex.def)             Requested size: 191.51575pt x 162.60771pt.
+
+<tallisUIevolve.jpg, id=1486, 499.8675pt x 713.66624pt>
+File: tallisUIevolve.jpg Graphic file (type jpg)
+
+<use tallisUIevolve.jpg>
+Package pdftex.def Info: tallisUIevolve.jpg used on input line 1909.
+(pdftex.def)             Requested size: 399.89453pt x 570.93376pt.
+ [77 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/tallis
+UItable.jpg>] [78 <C:/Users/user/Documents/GitHub/Real/remote-care-application/
+report/tallisUIevolve.jpg>] [79]
+<server-environment-pdf-2.pdf, id=1510, 508.90125pt x 342.27875pt>
+File: server-environment-pdf-2.pdf Graphic file (type pdf)
+
+<use server-environment-pdf-2.pdf>
+Package pdftex.def Info: server-environment-pdf-2.pdf used on input line 1953.
+(pdftex.def)             Requested size: 432.5681pt x 290.9383pt.
+ [80] [81 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/s
+erver-environment-pdf-2.pdf>] [82] [83]
+[84] [85] [86] [87] [88]
+<passwordhashing-loginform.pdf, id=1675, 547.04375pt x 242.9075pt>
+File: passwordhashing-loginform.pdf Graphic file (type pdf)
+
+<use passwordhashing-loginform.pdf>
+Package pdftex.def Info: passwordhashing-loginform.pdf used on input line 2164.
+
+(pdftex.def)             Requested size: 464.98938pt x 206.47234pt.
+ [89 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/passwo
+rdhashing-loginform.pdf>]
+<passwordsfreq.png, id=1741, 1168.365pt x 528.97626pt>
+File: passwordsfreq.png Graphic file (type png)
+ <use passwordsfreq.png>
+Package pdftex.def Info: passwordsfreq.png used on input line 2177.
+(pdftex.def)             Requested size: 467.33772pt x 211.58675pt.
+
+[90 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/passwor
+dsfreq.png (PNG copy)>] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100]
+[101] [102] <strokecost.png, id=2067, 359.3425pt x 259.97125pt>
+File: strokecost.png Graphic file (type png)
+
+<use strokecost.png>
+Package pdftex.def Info: strokecost.png used on input line 2627.
+(pdftex.def)             Requested size: 143.73445pt x 103.98665pt.
+
+Underfull \hbox (badness 3281) in paragraph at lines 2631--2647
+>>>>>>> FETCH_HEAD
 \T1/phv/m/n/10.95 a fur-ther 20,000 tran-sient
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 1226) in paragraph at lines 2690--2706
 \T1/phv/m/n/10.95 is-chaemic at-tacks oc-cur in
  []
@@ -1711,49 +2444,129 @@ Overfull \hbox (22.23651pt too wide) in paragraph at lines 2744--2745
 
 [109 <./costing.png>] [110]
 Underfull \hbox (badness 10000) in paragraph at lines 2802--2803
+=======
+Underfull \hbox (badness 1226) in paragraph at lines 2631--2647
+\T1/phv/m/n/10.95 is-chaemic at-tacks oc-cur in
+ []
+
+[103 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/stroke
+cost.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2652--2654
+
+ []
+
+[104] <strides.png, id=2086, 225.84375pt x 222.8325pt>
+File: strides.png Graphic file (type png)
+ <use strides.png>
+Package pdftex.def Info: strides.png used on input line 2673.
+(pdftex.def)             Requested size: 22.5857pt x 22.28455pt.
+
+<BPtracker.png, id=2087, 223.83624pt x 221.82875pt>
+File: BPtracker.png Graphic file (type png)
+ <use BPtracker.png>
+Package pdftex.def Info: BPtracker.png used on input line 2674.
+(pdftex.def)             Requested size: 22.38493pt x 22.18416pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2674--2674
+[]\T1/phv/m/n/10.95 Blood Pres-
+ []
+
+<healthcloud.png, id=2088, 223.83624pt x 222.8325pt>
+File: healthcloud.png Graphic file (type png)
+ <use healthcloud.png>
+Package pdftex.def Info: healthcloud.png used on input line 2675.
+(pdftex.def)             Requested size: 22.38493pt x 22.28455pt.
+
+[105 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/stride
+s.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/BPtr
+acker.png> <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/
+healthcloud.png>] <costing.png, id=2099, 556.0775pt x 205.76875pt>
+File: costing.png Graphic file (type png)
+
+<use costing.png>
+Package pdftex.def Info: costing.png used on input line 2685.
+(pdftex.def)             Requested size: 222.42705pt x 82.30603pt.
+
+Overfull \hbox (22.23651pt too wide) in paragraph at lines 2685--2686
+ [][] 
+ []
+
+[106 <C:/Users/user/Documents/GitHub/Real/remote-care-application/report/costin
+g.png>] [107]
+Underfull \hbox (badness 10000) in paragraph at lines 2743--2744
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/9 Krzysztof Za-ucha, W. L. 2014. Web De-vel-oper Salaries. [on-li
 ne] Avail-able at: urlhttp://salary-
  []
 
 [111]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+<<<<<<< HEAD
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 2839.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2839--2840
+=======
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 2780.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2780--2781
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/9 COSSAC. 2014. Knowl-edge Mod-elling - PRO\T1/phv/m/sl/9 forma \
 T1/phv/m/n/9 tasks. [on-line] Avail-able at:
  []
 
+<<<<<<< HEAD
 [112]
 Underfull \hbox (badness 5175) in paragraph at lines 2866--2867
+=======
+[109]
+Underfull \hbox (badness 5175) in paragraph at lines 2807--2808
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/9 Media.ofcom.org.uk, (2014). Of-com | UK adults tak-ing on-line 
 pass-word se-cu-rity risks. [on-line] Avail-able
  []
 
+<<<<<<< HEAD
 [113]
 Underfull \hbox (badness 10000) in paragraph at lines 2941--2942
+=======
+[110]
+Underfull \hbox (badness 10000) in paragraph at lines 2882--2883
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/9 Play.google.com. Blood Pres-sure++ [In-ter-net]. 2014 [23 April
  2014]. Avail-able from:
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 2943--2944
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 2884--2885
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/9 Klimaszewski.mobi. My Heart - Szy-mon Kli-maszewski [In-ter-net
 ]. [23 April 2014]. Avail-able from:
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 2945--2946
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 2886--2887
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/9 Play.google.com. blood pres-sure di-ary [In-ter-net]. [17 April
  2014]. Avail-able from:
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 3557) in paragraph at lines 2947--2948
+=======
+Underfull \hbox (badness 3557) in paragraph at lines 2888--2889
+>>>>>>> FETCH_HEAD
 []\T1/phv/m/n/9 Ihealthlabs.com. iHealth Wire-less Blood Pres-sure Wrist Mon-i-
 tor [In-ter-net]. [17 April 2014]. Avail-able from:
  []
 
+<<<<<<< HEAD
 [114]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2959.
  [115]
@@ -1795,4 +2608,47 @@ PDF statistics:
  2204 compressed objects within 23 object streams
  1042 named destinations out of 1200 (max. 500000)
  984 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+[111] [112]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2900.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2900.
+
+("C:\Users\user\Documents\GitHub\Real\remote-care-application\report\combined r
+eport 1.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2900.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2900.
+
+Package rerunfilecheck Info: File `combined*report*1.out' has not changed.
+(rerunfilecheck)             Checksum: <no file>.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2900.
+ ) 
+Here is how much of TeX's memory you used:
+ 26204 strings out of 493921
+ 495919 string characters out of 3144879
+ 943503 words of memory out of 3000000
+ 27956 multiletter control sequences out of 15000+200000
+ 75901 words of font info for 78 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 62i,18n,78p,2068b,3094s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
+rw/helvetic/uhvbo8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helv
+etic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
+ro8a.pfb>
+Output written on "combined report 1.pdf" (113 pages, 9149974 bytes).
+PDF statistics:
+ 2461 PDF objects out of 2487 (max. 8388607)
+ 1032 named destinations out of 1200 (max. 500000)
+ 973 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> FETCH_HEAD
 
