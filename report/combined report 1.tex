@@ -349,62 +349,6 @@ In addition to providing more accurate and reliable data, home monitoring of hyp
 
 The online treatment aid implements the most up to date NICE guidelines for the management of hypertension. This can be regularly updated to implement best practice and ensure the doctor is offering consistent, high quality, safe and accountable care.
 
-Our aim is to research, design and build an intelligent software application that will aid clinicians with the pharmacological treatment of primary hypertension\footnote{Note: patients will have already been diagnosed with the condition by a medical professional.}. The application will comprise of two separate web-based applications, one for the doctor and one for the patient, which can both read-from and write-to a shared database. Patients will be able to upload their blood pressure remotely (i.e. not within a clinical setting) to the database on a daily basis. The doctor application will read in the patients' blood pressure data and display it on a chart for the doctor to view. The doctor application will also provide a link to launch a Tallis web decision tool that will advise the doctor on the best course of treatment, based on a patient's medical history, background, and charted blood pressure history.
-
-\subsection{Patient Application}
-\begin{itemize}
-\item The application must run in a desktop, tablet or mobile web browser.
-\item The application must be hosted on a suitable server.
-\item The application must have a secure login system, to identify the patient using the application and to prevent others from accessing sensitive patient data.
-\item The application must be able to read-from and write-to the shared database.
-\item The application must provide a submission form, allowing patients to enter their systolic and diastolic blood pressure values. This data must be uploaded to the database, along with the time and date of upload. Note: this may be extended to include other metrics which may be of value (e.g. heart rate, weight etc.).
-\item The application must have a charting tool which plots blood pressure values against date, to allow the user to track their progress.
-\item The application must provide the contact details for the patient's doctor.
-\item The application must indicate when the patient is due for a scheduled follow up appointment with their doctor.
-\item The application must advise the patient if they should contact their doctor (for example if their blood pressure has not reached the target level, or has risen unexpectedly). An alert should be sent to the doctor if this is the case so that the responsibility is not solely on the patient to make contact.
-\end{itemize}
-
-\subsection{Doctor Application}
-\begin{itemize}
-\item The application must run in a desktop or tablet web browser.
-\item The application must be hosted on a suitable server.
-\item The application must have a secure login system, which identifies the doctor and grants them access to view only their own patients' profiles.
-\item The application must be able to read-from and write-to the shared database.
-\item The application must allow the doctor to create a new patient profile.
-	\begin{itemize}
-    \item The doctor must be able to enter relevant patient data\footnote{The information required to determine the appropriate course of treatment for a patient is defined in NICE Clinical Guideline 127 \cite{CG127}.} (e.g. age, gender, medical history etc.)
-    \item The patient's target blood pressure must be determined based on the patient data provided
-    \item All patient data must be submitted to the database
-    \item Each patient must be assigned a unique Patient ID.
-    \item The doctor must be able to assign the patient unique login details for access to the patient application
-    \item The patient must meet the scope of the application\footnote{As outlined in NICE Clinical Guideline 127\cite{CG127}.}. The patient profile creation process must terminate if the patient is unsuitable.
-	\end{itemize}
-\item The application must allow the doctor to view the progress of all their patients
-	\begin{itemize}
-    \item The doctor must be able to search for the profile of a specific patient using their unique Patient ID
-    \item The application must have a charting tool which plots the patient's blood pressure against date, to allow the doctor to monitor their progress
-    \item The application must summarize the pharmacological treatment currently being offered to the patient
-    \item The application must alert the doctor if the patient has not met their target blood pressure within the expected time range, or if the patient's blood pressure has suddenly risen above the target value.
-    \end{itemize}
-\item The application must provide a link to launch the Tallis treatment decision tool (see below)
-\end{itemize}
-
-\subsection{Tallis Application}
-\begin{itemize}
-\item The application must run in a desktop or tablet web browser.
-\item The application must be hosted on a suitable server.
-\item The application must be able to read-from and write-to the database
-\item The application must recommend the best initial course of treatment for the patient based on the patient data submitted during the patient profile creation process.
-\item The application must recommend an appropriate drug dosage.
-\item The application must schedule an appropriate review date, by which time the target blood pressure should be met.
-\item The application must allow the doctor to review the patient
-	\begin{itemize}
-    \item The application must allow the doctor to perform a titration assessment of the patient and upload the values to the database.
-    \item The application must recommend a secondary drug treatment or allow the doctor to update the dosage of any previously prescribed drugs if the patient's target blood pressure has not been met.
-    \item The review-recommendation process must cycle until the patient's target blood pressure has been met.
-    \end{itemize}
-\item All medical recommendations must be made in accordance with the relevant medical guideline \cite{CG127}.
-\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Design brief and specification - \textit{Emma Saragossi}}
