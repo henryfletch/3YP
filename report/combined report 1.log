@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.24)  8 MAY 2014 13:31
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.23)  7 MAY 2014 19:06
+>>>>>>> 19495c43655f1bc0990e9809336d4f9fca1a6fb9
 entering extended mode
 **C:/Users/user/Documents/GitHub/Real/remote-care-application/report/combined*r
 eport*1.tex
@@ -1886,6 +1890,7 @@ Package rerunfilecheck Info: File `combined*report*1.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2901.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  26204 strings out of 493921
  495935 string characters out of 3144879
  942450 words of memory out of 3000000
@@ -1909,6 +1914,31 @@ rw/helvetic/uhvbo8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helv
 etic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
 ro8a.pfb>
 Output written on "combined report 1.pdf" (113 pages, 9156133 bytes).
+=======
+ 26268 strings out of 493312
+ 496840 string characters out of 6137870
+ 947329 words of memory out of 5000000
+ 28195 multiletter control sequences out of 15000+600000
+ 75901 words of font info for 78 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 62i,18n,78p,2003b,3094s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/
+texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/font
+s/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
+1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/h
+elvetic/uhvro8a.pfb>
+Output written on "combined report 1.pdf" (106 pages, 8560255 bytes).
+>>>>>>> 19495c43655f1bc0990e9809336d4f9fca1a6fb9
 PDF statistics:
  2454 PDF objects out of 2487 (max. 8388607)
  1033 named destinations out of 1200 (max. 500000)
