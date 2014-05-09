@@ -167,13 +167,13 @@ Michael \textsc{Fedosiuk}, Henry \textsc{Fletcher}, Emma \textsc{Saragossi} \& J
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Executive Summary - \textit{Michael Fedosiuk}}
 
-There has been a steep rise in the development of software and applications aimed at both patients and doctors alike to aid the treatment and diagnosis of patients. Software has been developed to help free up time pressured GP's condensing the vast rapidly increasing quantities of medical research literature and helping to suggest best practice diagnosis pathways. 
+There has been a steep rise in the development of software and applications aimed at both patients and doctors alike to aid treatment and diagnosis. Software has been developed to help free up time pressured GP's by condensing the vast rapidly increasing quantities of medical research literature and through the telemonitoring of patients.  
 
-The project was linked with OpenClinical "An international organisation that has been created to promote awareness and use of decision support, clinical workflow and other advanced knowledge management technologies for patient care and clinical research." \cite{openclin}  To this end the goal was set to build an intelligent software application which would aid either the treatment or diagnosis of medical conditions.
+The project was linked with OpenClinical, "An international organisation that has been created to promote awareness and use of decision support, clinical workflow and other advanced knowledge management technologies for patient care and clinical research." \cite{openclin}  To this end the goal was set to build an intelligent software application which would aid either the treatment or diagnosis of medical conditions.
 
-From this "Cardiac Track" was created, an integrated solution for prolonged up to date hypertension treatment. It consists of two applications which work in tandem, one for the doctor and one for the patient. The later requires the patient to take their blood pressure (BP) at home each day and then enter this reading into the application. If the patients reading breaches the level which is deemed safe, set by the doctors application, both patient and doctor are alerted. (The patient is prompted to make an appointment with their doctors contact details.) On visiting the surgery the second application can be used by the doctor to track how the patient's BP has varied over time, uncertainty of the data which the patient has inputted and finally prescribe a new antihypertensive medication. The same process is then continued, to ensure the patients BP remains below the target level.
+From this "Cardiac Track" was created, an integrated solution for prolonged up to date hypertension treatment. It consists of two applications that work in tandem, one for the doctor and one for the patient. The later requires the patient to measure their own blood pressure (BP) at home each day and then enter this reading into the application. If the patients BP reading breaches the level which is deemed safe, set by the doctor's application, both patient and doctor are alerted. (The patient is prompted to make an appointment, with their doctor's contact details.) On visiting the surgery the second application can be used by the doctor to track how the patient's BP has varied over time, check the uncertainty of the data that the patient has inputted and finally prescribe a new antihypertensive medication. The same process is then iterated, to ensure the patients BP remains controlled below the safe target level.
 
-The aim is to provide up to date information and treatment for a patient's hypertensive condition, and hence reduce the prevalence of uncontrolled hypertension and so the associated conditions of stroke and ischaemic heart disease.
+The aim is to provide up to date information and treatment for a patient's hypertensive condition, and hence reduce the prevalence of uncontrolled hypertension and so the associated conditions of stroke and ischemic heart disease. Through the course of the project a fully functioning prototype application was built in the languages of HTML, CSS, PHP and OpenClinical's specialist Tallis software. This report outlines the medical background, the clinical need, the technical implementation of the application and finally its economic viability.  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -184,75 +184,6 @@ The aim is to provide up to date information and treatment for a patient's hyper
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\section{Clinical need - \textit{Emma Saragossi}}
-Hypertension is one of the most common conditions treated by primary care in the United Kingdom, affecting more than a quarter of all adults and more than half of those aged 65 years and over \cite{surveyEngland2009}. As it is such a common condition, it places a heavy strain on NHS resources. Our aim is to reduce the amount of contact time between doctors and patients, freeing doctors to better spend their time elsewhere. Remote monitoring of patients' blood pressure ensures that the doctor only need meet the patient for a consultation or check up when necessary. One of the key functions of our application is that it will alert the doctor if a patient's blood pressure is not at the target level, meaning appointments are only scheduled when there is clinical need.
-
-The treatment of hypertension has relied on blood pressure measurements made within a clinical setting for over 100 years \cite{SICC}, but this method of recording blood pressure has its limitations. A single blood pressure reading made at a primary care facility may not represent a patient's true blood pressure; blood pressure changes continuously over time, and is sensitive to both random and systematic errors (e.g. white coat effect). An alternative is to allow the patient to record their own blood pressure at home. A major advantage of out-of-office blood pressure monitoring is that it provides a large number of blood pressure measurements made away from a medical setting, better reflecting the patient's blood pressure during usual daytime activities \cite{ESH}. As a result of this more reliable measure of blood pressure, more suitable treatment decisions can be made.
-
-In addition to providing more accurate and reliable data, home monitoring of hypertension empowers the patient, influencing their attitude and behaviour. The NICE clinical guideline for the management of primary hypertension in adults recognises that engaging patients in their own blood pressure monitoring process could lead to improved blood pressure control \cite{CG127}. Moreover, a meta-analysis by Bray et al., 2010 \cite{metaSelfMonitoring} showed that patients who self-monitor their own blood pressure have an increased chance of achieving their target blood pressure.
-
-The online treatment aid implements the most up to date NICE guidelines for the management of hypertension. This can be regularly updated to implement best practice and ensure the doctor is offering consistent, high quality, safe and accountable care.
-=======
-Our aim is to research, design and build an intelligent software application that will aid clinicians with the pharmacological treatment of primary hypertension\footnote{Note: patients will have already been diagnosed with the condition by a medical professional.}. The application will comprise of two separate web-based applications, one for the doctor and one for the patient, which can both read-from and write-to a shared database. Patients will be able to upload their blood pressure remotely (i.e. not within a clinical setting) to the database on a daily basis. The doctor application will read in the patients' blood pressure data and display it on a chart for the doctor to view. The doctor application will also provide a link to launch a Tallis web decision tool that will advise the doctor on the best course of treatment, based on a patient's medical history, background, and charted blood pressure history.
-
-\subsection{Patient Application}
-\begin{itemize}
-\item The application must run in a desktop, tablet or mobile web browser.
-\item The application must be hosted on a suitable server.
-\item The application must have a secure login system, to identify the patient using the application and to prevent others from accessing sensitive patient data.
-\item The application must be able to read-from and write-to the shared database.
-\item The application must provide a submission form, allowing patients to enter their systolic and diastolic blood pressure values. This data must be uploaded to the database, along with the time and date of upload. Note: this may be extended to include other metrics which may be of value (e.g. heart rate, weight etc.).
-\item The application must have a charting tool which plots blood pressure values against date, to allow the user to track their progress.
-\item The application must provide the contact details for the patient's doctor.
-\item The application must indicate when the patient is due for a scheduled follow up appointment with their doctor.
-\item The application must advise the patient if they should contact their doctor (for example if their blood pressure has not reached the target level, or has risen unexpectedly). An alert should be sent to the doctor if this is the case so that the responsibility is not solely on the patient to make contact.
-\end{itemize}
-
-\subsection{Doctor Application}
-\begin{itemize}
-\item The application must run in a desktop or tablet web browser.
-\item The application must be hosted on a suitable server.
-\item The application must have a secure login system, which identifies the doctor and grants them access to view only their own patients' profiles.
-\item The application must be able to read-from and write-to the shared database.
-\item The application must allow the doctor to create a new patient profile.
-	\begin{itemize}
-    \item The doctor must be able to enter relevant patient data\footnote{The information required to determine the appropriate course of treatment for a patient is defined in NICE Clinical Guideline 127 \cite{CG127}.} (e.g. age, gender, medical history etc.)
-    \item The patient's target blood pressure must be determined based on the patient data provided
-    \item All patient data must be submitted to the database
-    \item Each patient must be assigned a unique Patient ID.
-    \item The doctor must be able to assign the patient unique login details for access to the patient application
-    \item The patient must meet the scope of the application\footnote{As outlined in NICE Clinical Guideline 127\cite{CG127}.}. The patient profile creation process must terminate if the patient is unsuitable.
-	\end{itemize}
-\item The application must allow the doctor to view the progress of all their patients
-	\begin{itemize}
-    \item The doctor must be able to search for the profile of a specific patient using their unique Patient ID
-    \item The application must have a charting tool which plots the patient's blood pressure against date, to allow the doctor to monitor their progress
-    \item The application must summarize the pharmacological treatment currently being offered to the patient
-    \item The application must alert the doctor if the patient has not met their target blood pressure within the expected time range, or if the patient's blood pressure has suddenly risen above the target value.
-    \end{itemize}
-\item The application must provide a link to launch the Tallis treatment decision tool (see below)
-\end{itemize}
-
-\subsection{Tallis Application}
-\begin{itemize}
-\item The application must run in a desktop or tablet web browser.
-\item The application must be hosted on a suitable server.
-\item The application must be able to read-from and write-to the database
-\item The application must recommend the best initial course of treatment for the patient based on the patient data submitted during the patient profile creation process.
-\item The application must recommend an appropriate drug dosage.
-\item The application must schedule an appropriate review date, by which time the target blood pressure should be met.
-\item The application must allow the doctor to review the patient
-	\begin{itemize}
-    \item The application must allow the doctor to perform a titration assessment of the patient and upload the values to the database.
-    \item The application must recommend a secondary drug treatment or allow the doctor to update the dosage of any previously prescribed drugs if the patient's target blood pressure has not been met.
-    \item The review-recommendation process must cycle until the patient's target blood pressure has been met.
-    \end{itemize}
-\item All medical recommendations must be made in accordance with the relevant medical guideline \cite{CG127}.
-\end{itemize}
->>>>>>> 19495c43655f1bc0990e9809336d4f9fca1a6fb9
-
-=======
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hypertension Care Pathway - \textit{Jeffrey Yu}}
@@ -293,8 +224,6 @@ For both these cycles, the blood pressure is only measured at the end of the wai
 The project stems from an idea of a relatively novel combination of different aspects of current medical practice and technology for the treatment of hypertension. Although the usual care of hypertension has been well established, there are new technologies and techniques being developed to improve it.   In particular, the focus of this project would be on informatic systems, which could be useful for handling and communicating with a large population of hypertension patients. 
 \\ \indent
  The two main subtopics to be focused on are namely telemonitoring, clinical decision support, both of which show modest improvement of care of chronic illnesses in general \cite{Lit1}. Other common informatics systems implemented include: population reports, audit/feedback, advanced order entry, and electronic scheduling \cite{Lit1}. The two were selected initially for simplicity; keeping fewer features could improve clarity.  Specifically for hypertension, there are a good number of studies and products for the general telemonitoring of hypertension.
-
-
 
 \subsection{General telemedicine}
 Telemedicine is an emerging facet. As the name implies, it is the practice of medicine remotely between healthcare professionals and patients, as opposed to the usual care in a clinical setting, or a carer transmitting data from the patients' location. With the advancement of the enabling communications technology, the treatment of patients through such medium is starting to be considered and implemented. The term itself encompasses a range of activities, including educating patients, transferring data, promoting patient-doctor contact, and improving electronic health records. There are also two main modes of communication: real time (video-conferencing), and asynchronous transmission of data. Another parameter to examine is the degree of user input from the patient. Some systems passively monitor automatically, while others require patient measurement and input \cite{TM5}.
@@ -410,6 +339,7 @@ On the market, there are also patient side apps available.  They have a method t
 
 It would be useful to have a system where a doctor's app could both monitor and recommend decisions. While a patient app could connect and feed data remotely.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Clinical need - \textit{Emma Saragossi}}
 Hypertension is one of the most common conditions treated by primary care in the United Kingdom, affecting more than a quarter of all adults and more than half of those aged 65 years and over \cite{surveyEngland2009}. As it is such a common condition, it places a heavy strain on NHS resources. Our aim is to reduce the amount of contact time between doctors and patients, freeing doctors to better spend their time elsewhere. Remote monitoring of patients' blood pressure ensures that the doctor only need meet the patient for a consultation or check up when necessary. One of the key functions of our application is that it will alert the doctor if a patient's blood pressure is not at the target level, meaning appointments are only scheduled when there is clinical need.
 
@@ -418,8 +348,63 @@ The treatment of hypertension has relied on blood pressure measurements made wit
 In addition to providing more accurate and reliable data, home monitoring of hypertension empowers the patient, influencing their attitude and behaviour. The NICE clinical guideline for the management of primary hypertension in adults recognises that engaging patients in their own blood pressure monitoring process could lead to improved blood pressure control \cite{CG127}. Moreover, a meta-analysis by Bray et al., 2010 \cite{metaSelfMonitoring} showed that patients who self-monitor their own blood pressure have an increased chance of achieving their target blood pressure.
 
 The online treatment aid implements the most up to date NICE guidelines for the management of hypertension. This can be regularly updated to implement best practice and ensure the doctor is offering consistent, high quality, safe and accountable care.
-=======
+
 Our aim is to research, design and build an intelligent software application that will aid clinicians with the pharmacological treatment of primary hypertension\footnote{Note: patients will have already been diagnosed with the condition by a medical professional.}. The application will comprise of two separate web-based applications, one for the doctor and one for the patient, which can both read-from and write-to a shared database. Patients will be able to upload their blood pressure remotely (i.e. not within a clinical setting) to the database on a daily basis. The doctor application will read in the patients' blood pressure data and display it on a chart for the doctor to view. The doctor application will also provide a link to launch a Tallis web decision tool that will advise the doctor on the best course of treatment, based on a patient's medical history, background, and charted blood pressure history.
+
+\subsection{Patient Application}
+\begin{itemize}
+\item The application must run in a desktop, tablet or mobile web browser.
+\item The application must be hosted on a suitable server.
+\item The application must have a secure login system, to identify the patient using the application and to prevent others from accessing sensitive patient data.
+\item The application must be able to read-from and write-to the shared database.
+\item The application must provide a submission form, allowing patients to enter their systolic and diastolic blood pressure values. This data must be uploaded to the database, along with the time and date of upload. Note: this may be extended to include other metrics which may be of value (e.g. heart rate, weight etc.).
+\item The application must have a charting tool which plots blood pressure values against date, to allow the user to track their progress.
+\item The application must provide the contact details for the patient's doctor.
+\item The application must indicate when the patient is due for a scheduled follow up appointment with their doctor.
+\item The application must advise the patient if they should contact their doctor (for example if their blood pressure has not reached the target level, or has risen unexpectedly). An alert should be sent to the doctor if this is the case so that the responsibility is not solely on the patient to make contact.
+\end{itemize}
+
+\subsection{Doctor Application}
+\begin{itemize}
+\item The application must run in a desktop or tablet web browser.
+\item The application must be hosted on a suitable server.
+\item The application must have a secure login system, which identifies the doctor and grants them access to view only their own patients' profiles.
+\item The application must be able to read-from and write-to the shared database.
+\item The application must allow the doctor to create a new patient profile.
+	\begin{itemize}
+    \item The doctor must be able to enter relevant patient data\footnote{The information required to determine the appropriate course of treatment for a patient is defined in NICE Clinical Guideline 127 \cite{CG127}.} (e.g. age, gender, medical history etc.)
+    \item The patient's target blood pressure must be determined based on the patient data provided
+    \item All patient data must be submitted to the database
+    \item Each patient must be assigned a unique Patient ID.
+    \item The doctor must be able to assign the patient unique login details for access to the patient application
+    \item The patient must meet the scope of the application\footnote{As outlined in NICE Clinical Guideline 127\cite{CG127}.}. The patient profile creation process must terminate if the patient is unsuitable.
+	\end{itemize}
+\item The application must allow the doctor to view the progress of all their patients
+	\begin{itemize}
+    \item The doctor must be able to search for the profile of a specific patient using their unique Patient ID
+    \item The application must have a charting tool which plots the patient's blood pressure against date, to allow the doctor to monitor their progress
+    \item The application must summarize the pharmacological treatment currently being offered to the patient
+    \item The application must alert the doctor if the patient has not met their target blood pressure within the expected time range, or if the patient's blood pressure has suddenly risen above the target value.
+    \end{itemize}
+\item The application must provide a link to launch the Tallis treatment decision tool (see below)
+\end{itemize}
+
+\subsection{Tallis Application}
+\begin{itemize}
+\item The application must run in a desktop or tablet web browser.
+\item The application must be hosted on a suitable server.
+\item The application must be able to read-from and write-to the database
+\item The application must recommend the best initial course of treatment for the patient based on the patient data submitted during the patient profile creation process.
+\item The application must recommend an appropriate drug dosage.
+\item The application must schedule an appropriate review date, by which time the target blood pressure should be met.
+\item The application must allow the doctor to review the patient
+	\begin{itemize}
+    \item The application must allow the doctor to perform a titration assessment of the patient and upload the values to the database.
+    \item The application must recommend a secondary drug treatment or allow the doctor to update the dosage of any previously prescribed drugs if the patient's target blood pressure has not been met.
+    \item The review-recommendation process must cycle until the patient's target blood pressure has been met.
+    \end{itemize}
+\item All medical recommendations must be made in accordance with the relevant medical guideline \cite{CG127}.
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Design brief and specification - \textit{Emma Saragossi}}
@@ -509,7 +494,7 @@ Our aim is to research, design and build an intelligent software application tha
 \section{Application User Interface - \textit{Michael Fedosiuk}}
 The user interface (UI) for the Cardiac Track application is in two parts. There is a patient app, currently optimised for smartphones, where BP measurements are inputted and the patient is alerted to make an appointment with their GP when they breach their BP limit. The app also provides the patient with their GP contact details and a graphical representation of their historical BP data.
 \\ \indent
-The second part is a doctor app, currently optimised for desktops and tablets, which allows the doctor to check up on the details of any of their patients. It alerts them to which have breached their targets, and provides suggestions on how to best medicate their hypertension on an individual basis. 
+The second part is a doctor app, currently optimised for desktops and tablets, which allows the doctor to check up on the details of any of their patients. It alerts them to which have breached their targets, and provides perscription suggestions on how to best medicate their hypertension on an individual basis. 
 
 \subsection{Why a Web based application was chosen and what languages were used}
 The UI has been written in HTML5, CSS3, Javascript and JQuery. All these languages are standard in web development. An initial design decision for the project was whether to code the UI in either a web-based format using these languages or to instead create a native application. The two most common types of native application are those programmed in iOS or Android, these are download from an app store and then run on the devices own operating system. The benefit from having a native application is that they can be more complex and an Internet connection is not required for the application to run. The major limitation to native applications is that the programming syntax for iOS and Android are different, meaning that the same application must be coded twice. Therefore a decision was made to create a web-based application for the following reasons.
@@ -519,39 +504,42 @@ A web based application means that it can run on any platform, both iOS and Andr
 \item
 This application requires only simple functionality.
 \item
-The application is most likely to be used by patients in home or at work when they take BP measurement and by the doctor when within their surgery. Therefore in most use cases Internet connectivity can be assumed and the app's main function updating the database requires it.
+The application is most likely to be used by patients in home or at work when they take BP measurement and by the doctor when within their surgery. Therefore in most use cases Internet connectivity can be assumed and the app's main function of updating the database requires it.
 \end{itemize}
 
 \subsubsection{HTML5}
-This stands for HyperText Mark-up Language and the 5 references the version. This language is used to format all web pages. It allows different sections to be created the most common are called div's. In the code these are surrounded by the following tags $<$div id="one"$>$This is inside a div $<$/div$>$. Note the id="one" (also could be class="one") is what name's the div so it can be referenced within the CSS style sheet. In HTML it is also possible to format tables (see medication section in doctors app) and create forms for data submission (see search box in doctor app). However only simple text manipulation such as paragraphs (using $<$p$>$in a paragraph$<$/p$>$) is possible. Any further formatting must be done within the CSS. It should also be noted that html script can be written within .php file this is done when websites require the extra functionality offered within PHP such as the currentpatients/index.php page. In this case the entire html is surrounded by $<$html$>$ ... $<$/html$>$ tags. 
+This stands for HyperText Mark-up Language and the 5 references the version. This language is used to format all web pages. It allows different sections to be created, the most common are called div's. In the code these are surrounded by the following tags $<$div id="one"$>$This is inside a div $<$/div$>$. Note the id="one" (also could be class="one") is what name's the div so it can be referenced within the CSS style sheet. In HTML it is also possible to format tables (see medication section in doctors app) and create forms for data submission (see search box in doctor app). However only simple text manipulation such as paragraphs (using $<$p$>$in a paragraph$<$/p$>$) is possible. Any further formatting must be done within the CSS. It should also be noted that html script can be written within .php file this is done when websites require the extra functionality offered within PHP such as the currentpatients/index.php page. In this case the entire html is surrounded by $<$html$>$ ... $<$/html$>$ tags. 
 \subsubsection{CSS3}
 This stands for Cascading Style Sheet and the 3 references the version. This language works in tandem with HTML to improve the aesthetics of websites. It is written in a separate .css file and is called within the $<$head$>$ tags of the HTML script, fig.\ref{csslink}. 
 \begin{figure}[h!] 
-\minipage{0.79\textwidth}
-\includegraphics[width=\linewidth]{csslink.png}
+\minipage{\textwidth}
+\includegraphics[width=0.9\linewidth]{csslink.png}
 \caption{Calling CSS script \label{csslink}}
 \endminipage\hfill
-\minipage{0.19\textwidth}
-\includegraphics[width=\linewidth]{exampleclass.png}
-\caption{CSS example \label{CSSex}}
-\endminipage
 \end{figure} 
+
+\begin{wrapfigure}{l}{.40\textwidth}
+\centering
+\includegraphics[width=0.75\linewidth]{exampleclass.png}
+\caption{CSS example \label{CSSex}}
+\end{wrapfigure} 
+
 The general format of a .css file is shown in fig.\ref{CSSex}, in this example the "exampleclass" denotes which class in the html is being formatted, "." is used to prefix a class and "\#" an id. Within the "\{\}" brackets are the commands, here the font is made red and in the Helvetica style. The style sheet is called cascading because any div's that are contained within other div's inherit the style of the parent div they are contained within. The CSS is also used for the positioning, and size of all divs. 
 
 \subsubsection{JavaScript and JQuery}
 JavaScript facilitates dynamic functions to be performed within the browser. "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers." \cite{Jquery}. Javascript is specifically used in this website to form the tutorial, graph, the uncertainty bar and the patient selector. It should be noted that because the functions are performed within the user's browser it is not trivial to pass variables between JavaScript and PHP which is conversely run on the server side of the website. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\clearpage
 \section{Patient Application - \textit{Michael Fedosiuk}}
-
-\begin{wrapfigure}{l}{.50\textwidth}
+\begin{figure}[h!]
 \centering
-\includegraphics[width=0.75\linewidth]{patientUI.png}
+\includegraphics[width=0.85\linewidth]{patientUI.png}
 \caption{Patient UI journey walkthrough (page names shown in black at the bottom and refer to the following sections) \label{patientUI}}
-\end{wrapfigure} 
+\end{figure} 
 
-The key goal for the patient application was usability. Due to hypertension mainly affecting those over 50 years of age, this is the target audience of the application. Firstly simplicity is key, uncluttered pages with distinct labelled buttons where possible. Secondly both font and button size need to be large, to account for loss of vision and dexterity in some users. Finally consistency between pages making learning to use the application easier and faster. The app itself is written in PHP for all but one page, however most of the content of these files consist of html. The app has been optimised for use on iPhone 5 however will also function on an iPad and android phones with minimal scaling problems. All pages bar one are styled using the same CSS file "Cardiac\_Track\_Style.css" that is 297 lines long. 
+\clearpage
+The key goal for the patient application was usability. Due to hypertension mainly affecting those over 50 years of age, this is the target audience of the application. Firstly simplicity is key, uncluttered pages with distinct labelled buttons where possible. Secondly both font and button size need to be large, to account for loss of vision and dexterity in some users. Finally consistency between pages making learning to use the application easier and faster. The app itself is written in PHP for all but one page, however most of the content of these files consist of html. The app has been optimised for use on iPhone 5 however will also function on an iPad and android phones with minimal scaling problems. All pages bar one are styled using the same CSS file "Cardiac\_Track\_Style.css" (that is 297 lines long). 
 
 \subsection{General format}
 For consistency and efficiency of programming, most pages have the same standard format. Fig.\ref{appstandard} shows the PHP, HTML and CSS that together form the standard page, also shown.
@@ -563,7 +551,7 @@ The PHP script starts with a PHP function which checks if a user is logged in, i
 \\ \indent
 The rest of the script is written in html between the $<$html$>$ tags. Firstly in the page header the title is set; this is displayed in the top of a web browser. The link to the CSS page is then made and finally within the head meta-properties for the viewport are set. The viewport properties affect how the site is shown on the device. The first term "width=device-width" means that the content of the page fills the device's screen, hence maximises the size of the content displayed. The "Initial-scale=1.0; maximum-scale=0.95; user-scalable=0;" means that when the page loads the page is scaled to the device width, and that the user is unable to zoom in or out of the page. Disabling the zoom function aids the application's usability as the page remains consistent when the user may accidentally tap the screen. 
 \\ \indent
-The first main div within the body of the page is given the class="main\_page", as seen in the CSS this sets the background of the app using the vh/vw units. Initially the app was programmed with the px unit (these has been left in for old browser compatibility), however they were updated to the new CSS 3 unit once they had been discovered for use in the currentpatients/index.php page. The benefit of their use in the patient app is that they provide greater device compatibility, as the app is now able to fill any screen. Before using the px unit meant the app specifically only fitted the screen of an iPhone 5. For further information on the scaling unit refer to the currentpatients/index.php, Page segments and scaling section. Finally the margin term is to remove the white edges which are automatically shown when a web page is displayed and the "overflow-x:hidden" stops the page from moving when scroll selection in the update page is used. The "title\_menu" is what formats the white "Cardiac Track" title. The final div "page\_header" is what creates the white band at the top of the page. The "position:relative" which is seen throughout all CSS means that any positioning is done relative to the surrounding div's, the other option is to set "position:absolute" this means positioning is done relative to the edge of the page. Within the div the image "menu\_button.png", the grey button, which was drawn in Paint \cite{paint} is screened. This is linked to the "menu.php" page. The CSS for the menu button has been written with the html using style="float:left" this makes the button position itself to the far left of the div it is within. The pages based on this format are the same except the title and the additional content which is added between the final $<$/div$>$ and $<$/body$>$ tags. 
+The first main div within the body of the page is given the class="main\_page", as seen in the CSS this sets the background of the app using the vh/vw units. Initially the app was programmed with the px unit (these has been left in for old browser compatibility), however they were updated to the new CSS 3 unit once they had been discovered for use in the currentpatients/index.php page. The benefit of their use in the patient app is that they provide greater device compatibility, as the app is now able to fill any screen. Initially using the px unit meant the app specifically only fitted the screen of an iPhone 5. For further information on the scaling unit refer to the "Patient checking and review", "Page segments and scaling" section. Finally the margin term is to remove the white edges which are automatically shown when a web page is displayed and the "overflow-x:hidden" stops the page from moving when scroll selection in the update page is used. The "title\_menu" is what formats the white "Cardiac Track" title. The final div "page\_header" is what creates the white band at the top of the page. The "position:relative" which is seen throughout all CSS means that any positioning is done relative to the surrounding div's, the other option is to set "position:absolute" this means positioning is done relative to the edge of the page. Within the div the image "menu\_button.png", the grey button, which was drawn in Paint \cite{paint} is screened. This is linked to the "menu.php" page. The CSS for the menu button has been written with the html using style="float:left" this makes the button position itself to the far left of the div it is within. The pages based on this format are the same except the title and the additional content which is added between the final $<$/div$>$ and $<$/body$>$ tags. 
 
 \subsection{patient/index.php}
 The index.php page is the page to which all users are initially directed so they can login. It based around a JavaScript form (left fig.\ref{logincode}), of which the JavaScript function (top right fig.\ref{logincode}) is held in the page's head and the form itself is a table within the html. There is a specific JavaScript function "submitform" which extracts the data from the form specified, in this case with the id="jsform". The form seen in the html has the action="login.php" and method="post", this means that the data entered is sent to the script login.php. 
@@ -584,11 +572,11 @@ The $<$input$>$ tags set what the input type is (password turns the covers text 
 This is the page to which the patient is sent once they have logged into the app. It allows users access to any of the apps other pages. It is very simple in its construction simply screening the text and arrow images and sets the applicable href="..." tag to set the link it to the relevant page. 
 
 \subsubsection{update.php}
-\begin{wrapfigure}{r}{.35\textwidth}
+\begin{wrapfigure}{r}{.45\textwidth}
 \includegraphics[width=1\linewidth]{updateform.png}
 \caption{Update Systolic BP form \label{updateform}}
 \end{wrapfigure} 
-This is where the user comes to enter their BP measurement each day. The data is posted using the same JavaScript function, (top right of fig.\ref{logincode}) as the login page. However the location and the make up of the form are naturally different. Although as seen in the top line of fig.\ref{updateform}, the method="post" is the same as in the login page the action has change to "submit.php" which is where the update data is sent to be entered into the database. The form is a drop down menu which is created using the $<$select$>$ tags in conjunction with the $<$option$>$ tags. Within each tag the value="..." must be set as well as the option that is displayed. This is because it is the value not the option that is sent to the database. Options for systolic range from 100mmHg to 190mmHg (above 180mmHg is a hypertensive crisis) and for diastolic range from 60mmHg to 150mmHg, encompassing all possible measurements.
+This is where the user comes to enter their BP measurement each day. The data is posted using the same JavaScript function, (top right of fig.\ref{logincode}) as the login page. However the location and the make up of the form are naturally different. Although as seen in the top line of fig.\ref{updateform}, the method="post" is the same as in the login page the action has been changed to "submit.php" which is where the update data is sent to be entered into the database. The form is a drop down menu which is created using the $<$select$>$ tags in conjunction with the $<$option$>$ tags. Within each tag the value="..." must be set as well as the option that is displayed. This is because it is the value not the option that is sent to the database. Options for systolic range from 100mmHg to 190mmHg (above 180mmHg is a hypertensive crisis) and for diastolic range from 60mmHg to 150mmHg, encompassing all possible measurements.
 
 \subsubsection{Result pages}
 On submitting the update form patients are direct to one of three pages (bottom fig.\ref{patientUI}) by the submit.php script dependant on what their current BP status is. The pages themselves are created from the general format shown at the start of this section. If the patient has had their medication reviewed within the last 28 days their BP may have not yet stabilised hence they are sent to the pending.php page. If they are below their target BP they are directed to the continue.html. If however they have breached their target BP they are sent to alert.php. This page provides a link to the contact.php page easing the process of booking an appointment. Note the link is in the same style as that on the menu page to preserve continuity. 
@@ -597,13 +585,11 @@ On submitting the update form patients are direct to one of three pages (bottom 
 
 \subsubsection{history.php}
  
-\begin{wrapfigure}{r}{.5\textwidth}
-\minipage{0.50\textwidth}
+\begin{figure}[h!]
 \centering 
 \includegraphics[width=0.95\linewidth]{historyJS.png}
 \caption{JavaScript for graph creation \label{historyJS}}
-\endminipage\hfill
-\end{wrapfigure} 
+\end{figure} 
 This section can be accessed from the menu and allows the user to see how their BP has varied overtime. It has been added as an incentive to use the app. A line graph is created dynamically using Google charts \cite{chart} which is based in JavaScript. To use the Google JavaScript application-programming interface, it must first be imported which is done in the top line of fig.\ref{historyJS}. In the main script the required packages that draw the graph are loaded and then a function is created to set the details of the chart. The variable data is created and script, graph-data.php is used to query this data from the database and load it in the correct format. Finally the variable chart is used to set the type of graph and name the element in which the chart will appear on the page, "chart\_div". 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1261,11 +1247,11 @@ At present, the prototype application only makes it possible for the doctor to c
 Overview of index.php: It is a PHP file containing html, JavaScript, jQuery and SQL, it is 791 lines long. It is styled by the CSS file "Cardiac\_Track\_Style\_Pro.css", which is 835 lines long. 
 \subsubsection{Page Segments and Scaling - \textit{Michael Fedosiuk}}
 
-\begin{wrapfigure}{l}{.34\textwidth}
+\begin{wrapfigure}{l}{.4\textwidth}
 \centering
-\includegraphics[scale=0.4]{CSSscaling.png}
+\includegraphics[scale=0.6]{CSSscaling.png}
 \caption{Use of vh/vw scaling \label{CSSscaling}} 
-\includegraphics[scale=0.028]{ipad.png}
+\includegraphics[scale=0.035]{ipad.png}
 \caption{tablet comaptibility \label{ipad}} 
 \end{wrapfigure} 
 The page is created in 3 main div's, on the left, the patient selector, the top right the graph and the bottom is the patient information that is split between medication and personal information. The div's were created in the html and given different class names so they could be manipulated in CSS. Originally the page scaling in the CSS was set using the \% unit, which sets the div to the stated \% of the viewport. The text within the div's was then set using the standard "font-size:20px", the px unit sets the size of the font by pixel number. This led to problems due to the page being programmed on a large high resolution screen when it was opened on a smaller device or in a smaller window the size of the div's change dramatically in terms of pixel width however the text remained constant. This caused the page to become a jumbled with text overflowing off the page. This problem was solved with the use of a new tag introduced in the 3rd version of CSS. The new units are denoted vh (for height) and vw (for width), 1 unit corresponds to $1/100$th of the viewport's height or width respectively. What makes this so useful is that it can also be used for scaling text. Therefore when the page is loaded both the font and dimensions are set in proportion to the viewport. The graph container CSS in fig.\ref{CSSscaling} to shows this, note that the original percentage settings are still kept. This is so that if someone is using an old browser that is not updated for CSS3 the divs will still be created in the old style. Using this new scaling technique means that the site is also compatible with tablet's, fig.\ref{ipad}. Also note in fig.\ref{CSSscaling}, the "background-image:url('cardioPic5.jpg')" command means that the jpg image which is saved within the currentpatients folder on the website is shown. Its repetition is set to "no-repeat" as without this the image is shown in its original pixel size but is repeated in a grid format. 
@@ -1284,51 +1270,47 @@ This is what the doctor uses to select the patient whom he wishes to review. Fir
 \end{figure} 
 The "while" loop is used to write the html code which forms the div's for each individual patient. The "echo" function in PHP allows items to be written in the html script of a page, this extends to div's as well as plain text. Therefore the first line of the while function opens the div "Apatient",fig.\ref{selectorphp}. It's CSS styling sets the size, font-colour, background and border for the div. It also contains the "cursor: pointer" command this enhances usability by changing the cursor style when it is hovering over the div showing the user it is clickable. The next line of the while function creates the Identification div, this has no styling related to it but instead a data tag label idNo, "data-idNo='.\$row['id'].'$>$". This means that each div has a unique data tag which corresponds to the id number of the patient, which is called from the SQL \$row result array in PHP. This is required for selecting the patient using JavaScript. The central echo row simply writes the patient data from the same array into the div so it is displayed on the page. Note this code only forms the alerted section the normal section's code is very similar. 
 
-\begin{wrapfigure}{l}{.34\textwidth}
+\begin{wrapfigure}{l}{.5\textwidth}
 \centering
-\includegraphics[scale=0.5]{selectfunc.png}
+\includegraphics[scale=0.69]{selectfunc.png}
 \caption{JavaScript selection function \label{selectfunc}} 
 \end{wrapfigure}
 The second step of implementation was the ability to bring up a patients data by clicking on their name in the list. This was done by using the JavaScript function, fig.\ref{selectfunc}. The first line within the $<$script$<$ tags (which switches the language in between them to be in JavaScript) sets the condition for initialising the function, which is on clicking an ".Identification" div. Once a function has been enacted it creates a variable "idNum" and sets this equal to the data-idNo attribute linked to that div. Finally the "window.location.href = "index.php?w1=" + idNum" function appends the newly created variable to the URL of the page creating a global variable "w1". The page reloads with this global variable in the URL, which can be accessed in PHP scripts within the page using the command "\$ \_GET["w1"]". This is the only way (bar a very similar jQuery AJAX method) in which a variable can be passed from JavaScript to PHP due to the fact the PHP runs on the server side it has no link to what happens within the JavaScript which is performed on the client side in the browser. 
 \\ \indent
 Patient selection was also implemented in a search bar, to enhance the usability for the doctor when dealing with large numbers of patients and the common scenario of needing to quickly find a particular patient when they come to be checked in the clinic. The search bar is found above the patient selector container on the top left of the page shown in fig.\ref{indexover}. The search bar is a html form, fig.\ref{searchbarhtml}. 
 
-\begin{wrapfigure}{l}{0.70\textwidth}
+\begin{figure}[h!]
 \centering
-\includegraphics[scale=0.4]{searchbarhtml.png}
+\includegraphics[scale=0.6]{searchbarhtml.png}
 \caption{Html for the search bar \label{searchbarhtml}} 
-\end{wrapfigure}
+\end{figure}
 The form is initialised in the first line, action specifies the URL to which the forms data is directed, which in this case will be the same page. The "method="get"" command is what tells the form to append the data inputted to the URL, for this application it is the specific patient id variable. The next line sets the attributes of the search bar. The placeholder value is set so the doctor knows what they must enter and "name="w1"" is what is used to name the variable inputted. Note w1 again is used so the appended variable in the URL can be called by the PHP script in the same way. Finally the second input line screens the image of the magnifying glass which is used instead of the standard text search button to improve aesthetics. Once a patient id is entered into the bar and the magnifying glass is clicked the page is reloaded with the inputted id number appended to the URL as the global w1 variable, thus producing the patients data within the page. 
 
 \subsubsection{Graph - \textit{Michael Fedosiuk}}
 As an aid to diagnosis the variation of the patients BP over time is presented graphically to the doctor. This is done using the same Google JavaScript package as was used within the patient app, for further details on its implementation refer to the patient application UI section. The one difference from the patient app was that it was not possible to call the graph-data.php script to import the relevant data array. This is due to the fact that global page variable "w1" which denotes the user selected is required in the SQL data query. As the graph-data.php is a small script the simple solution of copying its contents into the body of JavaScript was acceptable. The SQL query was also updated to include the w1 variable so that it was updated upon a new patient being selected. 
 
 \subsubsection{Patient information - \textit{Michael Fedosiuk}}
-This section is found at the bottom of fig.\ref{indexover}. Firstly the data had to be called from the database and be formed into a series of arrays. The SQL queries for the data are shown in fig.\ref{infoSQL}, note that the "*" refers to all data being called for the relevant patient. The relevant data was then displayed in a html table by creating a short PHP section within the relevant cells which selects data from the array and displays it using echo command. Fig.\ref{medtable} shows the table for the first piece of medication, the $<$tr$>$ tags surround rows and the $<$td$>$ create cells within these rows. The patient info section is similar in creation however it does include the uncertainty bar and two buttons. The uncertainty bar is formed using jQuery, therefore scripts and links had to be imported within the page header, fig.\ref{buttonscripts}. The linked scripts contain the JavaScript functions that constructs the bar. 
-
-\begin{wrapfigure}{l}{0.35\textwidth}
+This section is found at the bottom of fig.\ref{indexover}. Firstly the data had to be called from the database and be formed into a series of arrays. The SQL queries for the data are shown in fig.\ref{infoSQL}, note that the "*" refers to all data being called for the relevant patient. The relevant data was then displayed in a html table by creating a short PHP section within the relevant cells which selects data from the array and displays it using echo command. Fig.\ref{medtable} shows the table for the first piece of medication, the $<$tr$>$ tags surround rows and the $<$td$>$ create cells within these rows. The patient info section is similar in creation however it does include the uncertainty bar and two buttons. The uncertainty bar is formed using jQuery, therefore scripts and links had to be imported within the page header, fig.\ref{buttonscripts}. 
+\begin{wrapfigure}{l}{0.6\textwidth}
 \centering
 \includegraphics[width=\linewidth]{infoSQL.png}
 \caption{Calling patient information from DB \label{infoSQL}}
 \includegraphics[width=\linewidth]{medtable.png}
 \caption{Formatting patient medication data \label{medtable}}
 \end{wrapfigure} 
-All that is required is to specify a div in which it should appear in this case "\#progressbar" and then set the value which here is the "\$flagno" (the patients data uncertainty) multiplied by 10 as the bar has 100 increments, fig.\ref{progressbar}. Outside the script in the html the div is created and given the required id="progressbar". The metric value is displayed on top of of the bar in the class="progress-label". The first button seen below is the uncertainty metric reset button, this calls a PHP script which enacts a single SQL query, "UPDATE patientInfo SET fraudFlag='0' WHERE patientID = '\$patientUsername'" this resets the patients uncertainty metric to 0. The second button opens the Tallis enactment script within a new window allowing the patient to be reviewed.
+The linked scripts contain the JavaScript functions that constructs the bar. All that is required is to specify a div in which it should appear in this case "\#progressbar" and then set the value which here is the "\$flagno" (the patients data uncertainty) multiplied by 10 as the bar has 100 increments, fig.\ref{progressbar}. Outside the script in the html the div is created and given the required id="progressbar". The metric value is displayed on top of of the bar in the class="progress-label". The first button seen below is the uncertainty metric reset button, this calls a PHP script which enacts a single SQL query, "UPDATE patientInfo SET fraudFlag='0' WHERE patientID = '\$patientUsername'" this resets the patients uncertainty metric to 0. The second button opens the Tallis enactment script within a new window allowing the patient to be reviewed.
 
 \begin{figure}[h!] 
-\minipage{0.49\textwidth}
-\includegraphics[width=\linewidth]{buttonscripts.png}
+\centering
+\includegraphics[width=0.9\linewidth]{buttonscripts.png}
 \caption{Calling in jQuery scripts \label{buttonscripts}}
-\endminipage\hfill
-\minipage{0.49\textwidth}
-\includegraphics[width=\linewidth]{progressbar.png}
+\includegraphics[width=0.9\linewidth]{progressbar.png}
 \caption{Creating the uncertainity bar \label{progressbar}}
-\endminipage
 \end{figure} 
 
 
 \subsubsection{Tutorial, About Us and Site Terms - \textit{Michael Fedosiuk}}
-All of these are initiated within the bottom left hand of the index.php file. They each display their data in a similar format, with the tutorial being slightly more complex. The tutorial was included to aid usability for the doctor. Due to the time pressures GP's are under they will not have time to figure out how an application works and so may not use it unless they are succinctly taught how to operate it. The tutorial as shown from fig.\ref{tut}, highlights segments of the page individually and displays text on how to use them. The "About Us" and "Site Terms" are in the exact same format as the first tutorial section and just display the relevant data. 
+
 \begin{figure}[h!] 
 \minipage{0.49\textwidth}
 \centering
@@ -1344,14 +1326,18 @@ All of these are initiated within the bottom left hand of the index.php file. Th
 \endminipage
 \caption{Tutorial \label{tut}}
 \end{figure} 
-The first stage of the implementation was creating the multitude of different divs that form the tutorial. The background shading is a div that covers a section of the viewport, has a black background colour and its opacity set to 55\%. In the first section of the tutorial the background can be set with a single div however the subsequent sections require multiple background divs to leave the highlighted section uncovered. The CSS command "z-index" is used to set the layering of different divs, the higher the "z-index" the further to the front the div is placed. The "z-index" of the background is set to 90 and then the text box is set to 92 so that is placed on top. The text box also has its opacity set to 1, as seen in fig.\ref{tutcss}, the "!important" is used so that this command is not overwritten.
-\begin{wrapfigure}{r}{0.35\textwidth}
+
+\begin{wrapfigure}{r}{0.6\textwidth}
 \centering
-\includegraphics[scale=0.4]{tutorialCSS.png}
+\includegraphics[scale=0.7]{tutorialCSS.png}
 \caption{Tutorial section 1 CSS \label{tutcss}} 
-\includegraphics[scale=0.4]{tutorial1jQuery.png}
+\includegraphics[scale=0.7]{tutorial1jQuery.png}
 \caption{Tutorial section 1 jQuery \label{tutjq}} 
 \end{wrapfigure}
+All of these are initiated within the bottom left hand of the index.php file. They each display their data in a similar format, with the tutorial being slightly more complex. The tutorial was included to aid usability for the doctor. Due to the time pressures GP's are under they will not have time to figure out how an application works and so may not use it unless they are succinctly taught how to operate it. The tutorial as shown from fig.\ref{tut}, highlights segments of the page individually and displays text on how to use them. The "About Us" and "Site Terms" are in the exact same format as the first tutorial section and just display the relevant data. 
+
+The first stage of the implementation was creating the multitude of different divs that form the tutorial. The background shading is a div that covers a section of the viewport, has a black background colour and its opacity set to 55\%. In the first section of the tutorial the background can be set with a single div however the subsequent sections require multiple background divs to leave the highlighted section uncovered. The CSS command "z-index" is used to set the layering of different divs, the higher the "z-index" the further to the front the div is placed. The "z-index" of the background is set to 90 and then the text box is set to 92 so that is placed on top. The text box also has its opacity set to 1, as seen in fig.\ref{tutcss}, the "!important" is used so that this command is not overwritten.
+
 All of the divs that are made to use up the tutorial have the CSS command "display:none;" meaning that when the page loads they are unseen until the jQuery function is enacted. As seen in fig.\ref{tut} all the tutorial sections bar the first and last contain a "next" and "close" button, these are the action buttons that enact the jQuery functions seen in fig.\ref{tutjq}. The top line of the function selects the relevant div which when clicked causes the commands within the \{\} brackets to take place. The jQuery functions affect the display command within the CSS, fig.\ref{tutcss}. The previous tutorial div's are hidden by the ".hide();" command which sets the CSS of the div back to "display:none;". Simultaneously the next tutorial's divs are shown with the ".show();" command. This was a very time intensive aspect of the page to implement as unique individual divs had to be made for each section of the tutorial because the jQuery function would not be able to distinguish between two divs with the same name. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1427,14 +1413,13 @@ The variance of blood pressure over time for patients taking anti-hypertension m
 Although there are risks which come with these assumptions, accepting them meant that we were able to implement a linear model for the set of seven daily blood pressure measurements of each patient. The analysis was initially performed in Excel, this was chosen because it was readily available, the data was already in this format and it allowed for simple data manipulation and graphical representation.
 
 \subsubsection{Linear Regression}
-Linear regression is a set of mathematical operations that creates a line of best fit for a set of scattered data points. Linear regression can either be multivariate linear regression or simple linear regression. 
 
 \begin{wrapfigure}{r}{.40\textwidth}
 \centering
 \fbox{\includegraphics[scale=0.4]{linexmp.png}}
 \caption{Least Squares Linear Regression Overview \cite{linregdia} \label{linregfig}}
 \end{wrapfigure} 
-Multivariate analysis allows you to considered multiple variables whereas simple regression analysis just relates a single driven variable. For this application simple regression analysis was sufficient, to asses the single variable of BP over time. The use of linear regression usually falls within two main segments, prediction and correlation. This use of the model falls within the correlation category. For correlation testing a given variable $Y$ , in this model BP measurements relates a number of driving variables $X_1, X_2,...,X_i$ , in this model time progression. These are analysed with a linear regression to find out how strongly they are related and to highlight which values of $X_1, X_2,...,X_i$ contain data which does not conform.
+Linear regression is a set of mathematical operations that creates a line of best fit for a set of scattered data points. Linear regression can either be multivariate linear regression or simple linear regression. Multivariate analysis allows you to considered multiple variables whereas simple regression analysis just relates a single driven variable. For this application simple regression analysis was sufficient, to asses the single variable of BP over time. The use of linear regression usually falls within two main segments, prediction and correlation. This use of the model falls within the correlation category. For correlation testing a given variable $Y$ , in this model BP measurements relates a number of driving variables $X_1, X_2,...,X_i$ , in this model time progression. These are analysed with a linear regression to find out how strongly they are related and to highlight which values of $X_1, X_2,...,X_i$ contain data which does not conform.
 \\ \indent 
 In this model, linear least squares regression is "The straight line $y=a + bx$ should be fitted through the given points $(x_1,y_1)...(x_i,y_i)$ so that the sum of the squares of the distances of those points from the straight line is minimum, where the distance is measured on the vertical direction (the y-direction)" \cite{Kryzig}. Each data point is of the form shown below:
 \begin{figure}[h]
@@ -1608,26 +1593,22 @@ Within the database the patients BP measurements are stored in a database called
 
 \begin{wrapfigure}{r}{.60\textwidth}
 \centering
-\includegraphics[scale=0.4]{DB1.png}
+\includegraphics[scale=0.5]{DB1.png}
 \caption{Initial patientCurrentBP table \label{DB1}} 
 \end{wrapfigure} 
 
 It was initially thought that the best way to call only the 7 previous data variables for a single patient in chronological order was to set up a routine in which an SQL statement would be automatically run on the server periodically. This would input the data from patientCurrentBP to another table, fraudTest where the data could be accessed. It was subsequently found that this was cumbersome and that it was possible to extract the data directly from the currentPatientBP table using an iterative query. The query below must be initialised using a pre query seen on the right that sets the initial value for the iteration.
 
 \begin{figure}[h!] 
-\minipage{0.79\textwidth}
 \includegraphics[width=\linewidth]{SQLBPquery.png}
 \caption{SQL BP query \label{SQLBPquery}}
-\endminipage\hfill
-\minipage{0.19\textwidth}
-\includegraphics[width=\linewidth]{SQLBPprequery.png}
-\caption{SQL BP pre-query}
-\endminipage
 \end{figure} 
 
 To dissect an SQL statement firstly the innermost query should be considered. The "SELECT" command is retrieving both the date and patientCurrentBPSystolic "FROM" the patientCurrentBP table. 
 \begin{wrapfigure}{r}{.25\textwidth}
 \centering
+\includegraphics[width=\linewidth]{SQLBPprequery.png}
+\caption{SQL BP pre-query}
 \includegraphics[scale=0.4]{DB2.png}
 \caption{Input for SQL calculation \label{DB2}} 
 \end{wrapfigure} 
@@ -1635,9 +1616,9 @@ The "WHERE" clause sets the proviso that data only pertaining to the patients ow
 \\ \indent
 The statement has 4 main sections nested within each other, as with all SQL statements it starts in the middle and works out. The first query section, fig.\ref{SQLBPquery} calls in the raw BP data. Then the next section which is found directly above in the code and finds the values of the components which make up the linear regression and correlation coefficient calculations. 
 
-\begin{wrapfigure}{l}{.50\textwidth}
+\begin{wrapfigure}{l}{.60\textwidth}
 \centering
-\includegraphics[scale=0.30]{mainSQL.png}
+\includegraphics[scale=0.50]{mainSQL.png}
 \caption{\label{DB3} SQL linear regression and correlation coefficient equation \cite{Mike}} 
 \end{wrapfigure} 
 The $\overline{x}$ and $\overline{y}$ are simply found using the "avg()" function which finds the mean value of a column. The number of data points is found using the "count()" function. Finally $\Sigma x^2, \Sigma y^2, \Sigma xy, \Sigma x$ can all be calculated by sum(x*x), sum(y*y), sum(x*y) and sum(x) respectively. The sum function adds all values within a column (* denotes multiplication of data points). 
@@ -1652,16 +1633,10 @@ To set the new uncertainty metric the current value of uncertainty attributed to
 
 \subsubsection{Calculating limits and test points for patient inputted data}
 
-\begin{wrapfigure}{l}{.25\textwidth}
+\begin{wrapfigure}{r}{.42\textwidth}
 \centering
 \includegraphics[scale=0.6]{corrcheck}
 \caption{Correlation coefficient inequalities \label{corrcheck}} 
-\end{wrapfigure} 
-The simplest limit to test is the correlation coefficient, which is done using two "if" statements, as shown in fig.\ref{corrcheck}. The correlation coefficient variable is called from within the array, it is then placed in an inequality with the boundary value of either +/- 0.98. If the inequality is correct the \$patient\_flag variable is increased by 1 using the PHP ++ incrementation function.
-\\ \indent
-For the linear regression percentage error limit's test the values of the regression for each day must be calculated. This was initially performed for each of the values individually; top line of fig.\ref{inbound}. Both regression coefficients are called from the array and the $m_1$ value is multiplied by 1 so that the first days value can be found. Once the value has been found in this case labelled \$dayone the +/- 10\% boundaries for this day are calculated using multiplication. 
-\begin{wrapfigure}{r}{.42\textwidth}
-\centering
 \includegraphics[scale=0.6]{linbound}
 \caption{Correlation coefficient inequalities \label{inbound}} 
 \includegraphics[scale=0.6]{boundtest1}
@@ -1669,7 +1644,10 @@ For the linear regression percentage error limit's test the values of the regres
 \includegraphics[scale=0.6]{dowhile}
 \caption{The "do while" loop \label{dowhile}} 
 \end{wrapfigure}
- 
+The simplest limit to test is the correlation coefficient, which is done using two "if" statements, as shown in fig.\ref{corrcheck}. The correlation coefficient variable is called from within the array, it is then placed in an inequality with the boundary value of either +/- 0.98. If the inequality is correct the \$patient\_flag variable is increased by 1 using the PHP ++ incrementation function.
+
+For the linear regression percentage error limit's test the values of the regression for each day must be calculated. This was initially performed for each of the values individually; top line of fig.\ref{inbound}. Both regression coefficients are called from the array and the $m_1$ value is multiplied by 1 so that the first days value can be found. Once the value has been found in this case labelled \$dayone the +/- 10\% boundaries for this day are calculated using multiplication.  
+
 This was coded for all 7 days; the first two are shown in the fig.\ref{inbound}. Following this, a slightly modified version of the SQL statement shown in fig.\ref{SQLBPquery} was used to call the BP data inputted by the patient and format it into an array. This meant that inequalities similar to that used for the correlation coefficient could be used to test whether any points laid outside the linear regression error bounds and modify the \$patient\_flag variable accordingly. The "if" statement inequality on the first line relates the top bound \$dayonetop and the day one patient measured value \$dayin[0] which is selected from the \$dayin array. The bottom bound is checked in the second "if" statement.
 \\ \indent 
 This section of code was modified firstly into the form of an "if" loop and then once more into a "do while" loop, fig.\ref{dowhile}. The loop, which is initialised with the command "do", contains exactly the same code segments as before however all sections are completed for each day in turn. Once all the values have been calculated and the boundaries checked for one day, an increment is added (\$i++) and the script is run for the next day. The "while (\$i $<$ 7)" in the final line stops the iterations when the increment reaches 6 as the script has been run for all seven days. Although the loop does not improve the codes efficiency, it does mean that it could be more easily modified to accommodate a longer analysis period. It was not possible to investigate the analysis of uncertainty over a longer time period in the scope of this project as the trial data sourced only spanned 7 days. 
@@ -1680,15 +1658,15 @@ Once the new uncertainty value of the data has been calculated it must be update
 \caption{Updating the new uncertainty value to the database}
 \end{figure} 
 
-\begin{wrapfigure}{r}{.28\textwidth}
+\begin{wrapfigure}{r}{.35\textwidth}
 \centering
-\includegraphics[scale=0.35]{unbar.png}
+\includegraphics[scale=0.4]{unbar.png}
 \caption{Uncertainty bar} 
 \end{wrapfigure} 
 This means that it can be called from the database by the currentpatients.php page and be displayed to the doctor. This is done in the form of a bar that fills up, the greater the uncertainty in the data the more of the bar is filled. The bar creation as well as the calling of the linreg.php script is covered within the UI section of the report. A reset button was also implemented within the currentpatents/index.php page so that the doctor can reset the metric to 0 once they have investigated the concern with the patient in question. 
 
 \subsection{Extensions}
-There are a couple of ways the current system may be improved upon if more data were present to analyse. Firstly it may be possible to devise whether there are long term trends in patients reactions to hypertension drugs, i.e. does their effectiveness drop over time. It may also be possible to collaborate with work such as the BioSign monitoring system being developed at OBS Medical Ltd. \cite{OBS} by Prof Lionel Tarassenko. This system tracks the vital signs of a patient in hospital and alerts nurses when the combination of measurements breach calculated bounds. With a large amount of data which is hoped to be amassed in the Cardiac Track app it may be possible to implement the uncertainty metrics in a similar way to BioSign by setting error bounds on a histogram of large previous data sets rather than a linear regression. 
+There are a couple of ways the current system may be improved upon if more data were present to analyse. Firstly it may be possible to devise whether there are long term trends in patients reactions to hypertension drugs, i.e. does their effectiveness drop over time. It may also be possible to collaborate with work such as the BioSign monitoring system being developed at OBS Medical Ltd. \cite{OBS} by Prof Lionel Tarassenko. This system tracks the vital signs of a patient in hospital and alerts nurses when the combination of measurements breach calculated bounds. With a large amount of data which is hoped to be amassed in the Cardiac Track app it may be possible to implement the uncertainty metrics in a similar way to BioSign by setting error bounds using a histogram of large data sets rather than a linear regression. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2685,7 +2663,7 @@ Finally, \textbf{lines 116 to 126} redirect the patient to one of two pages depe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Economic Viability - \textit{Michael Fedosiuk}}
-This section is to show different ways in which the project could be taken forward. Firstly by stating the benefits it has to potential customers, the NHS is focused on however the same arguments apply to a variety of international markets that could also be tapped. Secondly the analysis of the initial cost and future savings predicted from implementing the application. Then a potential rough pricing model and finally what the next steps would be taken.
+This section is to show different ways in which the project could be taken forward commercially. Firstly by stating the benefits it has to potential customers, the NHS is focused on however the same arguments apply to a variety of international markets. Secondly the analysis of the initial cost and future savings predicted from implementing the application. Then a potential rough pricing model and finally what the next steps would be.
 
 \subsection{Cost benefits to the customer: Focused on NHS}
 There are two potential cost saving benefits the app could present to the NHS. Firstly the reduction of patients who present with diseases caused by hypertension the most common being Stroke and Ischaemic heat disease. All statistics (unless otherwise stated) for this section are taken from two NHS national costing reports. The first being a 2011 report "Hypertension, Costing report, Implementing NICE guidance" \cite{costhome} focused on the relative saving of switching from using clinical blood pressure measurements (CBPM) to either ambulatory (ABPM) or home blood pressure measurements (HMBP) to improve diagnosis. The second published in 2006, titled "Management of hypertension in adults in primary care: partial update, Costing report, Implementing NICE guidance" \cite{costdrug} this report was focused on how patients could be medicated more intensively initially to avoid the possibility of their BP rising above 140 mmHg systolic. The first report was written in 2011 and the second was written in 2006, although this means that some predictions may have changed the general arguments of the report holds true. To bring the reports in line with today's values the costings in the reports have been increased in line with inflation (22.56\% total compound CPI inflation since 2006 and 3.2\% since 2011). 
@@ -2694,21 +2672,21 @@ There are two potential cost saving benefits the app could present to the NHS. F
 
 \begin{wrapfigure}{r}{0.70\textwidth}
 \centering
-\includegraphics[scale=0.4]{strokecost.png}
+\includegraphics[scale=0.8]{strokecost.png}
 \caption{Costs of Stroke to the NHS and general UK \label{strokecost}} 
 \end{wrapfigure}
 
 \textbf{Strokes}
 \\
-The report states "Approximately 110,000 strokes and a further 20,000 transient ischaemic attacks occur in England each year. Stroke accounts for 11\% of deaths in England." This brings large costs, the national audit office produced the following table, in fig.\ref{strokecost}, in a report "Reducing brain damage: Faster access to better stroke care". The table shows that the estimated cost (\pounds 2.834 Billion in 2006) today of strokes direct to the NHS is approximately \pounds 3.47 Billion; this is a lower bound estimate due to the increase in prevalence of the disease in recent years.
+The 2006 report states "Approximately 110,000 strokes and a further 20,000 transient ischaemic attacks occur in England each year. Stroke accounts for 11\% of deaths in England." This brings large costs, the national audit office produced the following table, in fig.\ref{strokecost}, in a report "Reducing brain damage: Faster access to better stroke care". The table shows that the estimated cost (\pounds 2.834 Billion in 2006) today of strokes direct to the NHS is approximately \pounds 3.47 Billion; this is a lower bound estimate due to the increase in prevalence of the disease in recent years.
 \\ \indent 
-The report then stated "It has been calculated that significant reductions in stroke and ischaemic heart disease could be achieved by reducing the blood pressure of everyone with hypertension to a systolic pressure of 140 mmHg. For adults there would be a reduction of 28 to 44\% in stroke and a 20 to 35\% reduction in ischaemic heart disease, depending on age." More over it states that only "40\% of patients achieve their target blood pressure through current prescribing." The app is the direct solution to this problem by alerting a medical professional when a patient breaches a set limit. This would mean that additional medication could be sought to help reduce the patients BP to below 140 mmHg. The report itself tackles this problem by increasing the strength of initial drugs prescribed, these drugs cost more. The app will be able to determine those who are particularly in need of the extra drugs and therefore be more efficient than the apply to all method.
+The report then stated "It has been calculated that significant reductions in stroke and ischaemic heart disease could be achieved by reducing the blood pressure of everyone with hypertension to a systolic pressure of 140 mmHg. For adults there would be a reduction of 28\% to 44\% in stroke and a 20\% to 35\% reduction in ischaemic heart disease, depending on age." More over it states that only "40\% of patients achieve their target blood pressure through current prescribing." The app is the direct solution to this problem by alerting a medical professional when a patient breaches a set limit. This would mean that additional medication could be sought to help reduce the patients BP to below 140 mmHg. The report itself tackles this problem by increasing the strength of initial drugs prescribed, these drugs cost more. The app will be able to determine those who are particularly in need of the extra drugs and therefore be more efficient.
 \\ \indent 
 Using the blanket all change in medication method the report made the conservative estimate in a 9\% reduction of strokes. Out of the 60\% patients who do not have their hypertension controlled if 16\% required additional drugs, the direct saving to the NHS from stroke prevention will be \pounds 255.1 Million. 
 \\
 \noindent \textbf{Ischaemic Heart Disease}
 \\
-It is stated  "a reduction of 5 mmHg in systolic pressure is associated with a reduction in ischaemic heart disease incidence of 11\%" \cite{isch}. This means that even if a reduction to below 140 mmHg is not attainable for some patients, continued treatment to create a 5 mmHg drop would still have markable effects. The NICE report made a conservative estimate of a 4\% reduction in ischaemic heart disease through better treatment. Agreeing with this assumption it followed that with 300000 hospitalisations each year a 4\% reduction is 12000 admittances that were given the average direct to the NHS of \pounds 2582 (in 2006 \pounds 2107). This gives a predicted yearly saving of \pounds 30.98 Million (in 2006 \pounds 25.2 Million). This figure is conservative as it does not incorporated any primary, outpatient or coronary care.
+It is stated  "a reduction of 5 mmHg in systolic pressure is associated with a reduction in ischaemic heart disease incidence of 11\%" \cite{isch}. This means that even if a reduction to below 140 mmHg is not attainable for some patients, continued treatment to create a 5 mmHg drop would still have markable effects. The NICE report made a conservative estimate of a 4\% reduction in ischaemic heart disease through better treatment. Agreeing with this assumption it followed that with 300000 hospitalisations each year a 4\% reduction is 12000 admittances each given the average direct to the NHS of \pounds 2582 (in 2006 \pounds 2107). This gives a predicted yearly saving of \pounds 30.98 Million (in 2006 \pounds 25.2 Million). This figure is conservative as it does not incorporated any primary, outpatient or coronary care.
 \\
 \minipage{\textwidth}
 \centering
@@ -2748,14 +2726,14 @@ Icon & Name & Price & Description\\ \hline
 \end{center}
 All these apps are for the iOS operating system and are therefore purchased from the apple iTunes store \cite{itunes}. They were chosen as comparables as no similar web based app exists. It should be noted that when an app is sold on the iTunes store 30\% of the sale price is given to Apple for hosting costs. 
 \\ \indent 
-No comparable app has the Cardiac Track App USP the integrated doctor's system. It is the ability to alert the patient and doctor to when a patients hypertension is putting them at risk, this is what adds value for the NHS in the prevention of Strokes and Ischaemic Heart Disease. Given the unique competency it seems reasonable to set a high user price for an app that is completed and fully maintained (i.e. the first pricing model suggestion) at \pounds 3 per user. Cutting 30\% for placement as a native app on iTunes. It must then be realised that in selling directly to the NHS there is only a single major customer, and they will be buying the app users in bulk hence a large discount rate from a user price would have to be agreed upon. If this is set at a 70\% discount it would give a price per unit of 63p. If it were assume that the application would be rolled out to 10\% of patients in the first year revenue of \pounds 2.67 Million would be generated. 
+No comparable app has the Cardiac Track App unique selling point is the integrated doctor's system. It is the ability to alert the patient and doctor to when a patients hypertension is putting them at risk, that adds value for the NHS in the prevention of Strokes and Ischaemic Heart Disease. Given the unique competency it seems reasonable to set a high user price for an app that is completed and fully maintained (i.e. the first pricing model suggestion) at \pounds 3 per user. Cutting 30\% for placement as a native app on iTunes. It must then be realised that in selling directly to the NHS there is only a single major customer, and they will be buying the app user licences in bulk hence a large discount rate from a user price would have to be agreed upon. If this is set at a 70\% discount from the most expensive application it would give a price per unit of 63p. If it were assumed that the application would be rolled out to 10\% of patients in the first year revenue of \pounds 2.67 Million would be generated. 
 
 \begin{wrapfigure}{r}{0.40\textwidth}
 \centering
 \includegraphics[scale=0.4]{costing.png}
 \caption{First year predicted income \label{costing}} 
 \end{wrapfigure}
-The salaries for developers to finish and maintain the app would have to be deducted for 5 full time web developers; on the average salary of \pounds 40000 \cite{salary} would cost \pounds 200000. We require 4 servers to have one dedicated Apache and MySQL and redundancies for both. A suitable server for the predicted number of initial users would be the  would be the PowerEdge R420 costing \pounds4656 for all four \cite{dell}. To use MySQL enterprise edition a licence must be purchased for \pounds3000 \cite{MySQL}. Including a generous contingency this predicts a first year pre tax profit of \pounds3.16 Million if the NHS were to push for implementation if the project at the projected price, fig.\ref{costing}.
+The salaries for developers to finish and maintain the app would have to be deducted for 5 full time web developers; on the average salary of \pounds 40000 \cite{salary} this would cost \pounds 200000 in total. We require 4 servers to have one dedicated Apache and MySQL and redundancies for both. A suitable server for the predicted number of initial users would be the  would be the PowerEdge R420 costing \pounds4656 for all four \cite{dell}. To use MySQL enterprise edition a licence must be purchased for \pounds3000 \cite{MySQL}. Including a generous contingency this predicts a first year pre tax profit of \pounds2.66 Million if the NHS were to push for implementation of the project at the projected price, fig.\ref{costing}.
 
 \section{Conclusion - \textit{Emma Saragossi}}
 When challenged with the task of developing a software tool to aid a clinical diagnostic or treatment pathway, we chose to design a remote care application for treating hypertension. In the early development stages, our focus was telemonitoring, and we began developing an application which would allow patients to regularly upload their blood pressure values from a non-clinical setting. These could then be monitored remotely by a doctor to aid treatment selection. A Tallis tool to implement the treatment protocol for primary hypertension in adults was developed separately. The design naturally evolved to incorporate the two functions to provide a holistic treatment tool for hypertension. 
